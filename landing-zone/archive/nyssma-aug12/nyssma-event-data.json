@@ -1,0 +1,537 @@
+{
+  "schema_version": "1.0",
+  "last_structured_update": "2026-05-07",
+  "purpose": "Machine-readable NYSSMA Solo Night and audition transport data for student/family Q&A, printable programs, and future lookup tools.",
+  "source_files": {
+    "authoritative_student_roster": "nyssma/students.md",
+    "solo_night_program": "nyssma/NYSSMA Night.html",
+    "mc_cheat_sheet": "nyssma/NYSSMA Night MC Cheat Sheet.html",
+    "audition_transport": "nyssma/nyssma-transport.html"
+  },
+  "solo_night": {
+    "event_name": "NYSSMA Solo Night",
+    "date": "2026-05-05",
+    "start_time": "18:00",
+    "end_time": "20:05",
+    "time_zone": "America/New_York",
+    "venue": {
+      "name": "Maple Ridge Community Center",
+      "address": null,
+      "room": null,
+      "parking": null,
+      "directions": null,
+      "notes": "Room, parking, address, and detailed arrival directions have not yet been added to the structured data. Do not invent these details; ask Jesse or reference an updated logistics file when available."
+    },
+    "general_arrival_guidance": {
+      "performers": "Arrive at least 15–20 minutes before your block unless Jesse gives a different instruction.",
+      "audience": "Arrive before the block you plan to watch. Transition breaks are built into the schedule."
+    },
+    "blocks": [
+      {
+        "block_number": 1,
+        "title": "Baroque & Dance Music",
+        "start_time": "18:00",
+        "end_time": "18:25",
+        "theme_description": "Elegant dances and early music full of rhythm, style, and energy.",
+        "room": null,
+        "students": [
+          "Megan",
+          "Christel",
+          "Janice",
+          "Amy Mae",
+          "Keith",
+          "Amy S",
+          "Franklin",
+          "Giana"
+        ]
+      },
+      {
+        "type": "transition",
+        "start_time": "18:25",
+        "end_time": "18:32",
+        "description": "Transition Break"
+      },
+      {
+        "block_number": 2,
+        "title": "Classical & Light Favorites",
+        "start_time": "18:32",
+        "end_time": "18:57",
+        "theme_description": "Beautiful melodies, expressive playing, and pieces that sing.",
+        "room": null,
+        "students": [
+          "Tyler",
+          "Rhona",
+          "Jessica",
+          "Joseph",
+          "Evan",
+          "Catherine",
+          "Kevin"
+        ]
+      },
+      {
+        "type": "transition",
+        "start_time": "18:57",
+        "end_time": "19:04",
+        "description": "Transition Break"
+      },
+      {
+        "block_number": 3,
+        "title": "Baroque Masters & Expressive Music",
+        "start_time": "19:04",
+        "end_time": "19:30",
+        "theme_description": "Exciting, dramatic, and expressive music with big contrasts.",
+        "room": null,
+        "students": [
+          "Myles",
+          "Davis",
+          "Baxter",
+          "Nigel",
+          "Jade",
+          "Heather"
+        ]
+      },
+      {
+        "type": "transition",
+        "start_time": "19:30",
+        "end_time": "19:37",
+        "description": "Transition Break"
+      },
+      {
+        "block_number": 4,
+        "title": "Feature Performers & Finale",
+        "start_time": "19:37",
+        "end_time": "20:05",
+        "theme_description": "Advanced solos, exciting character pieces, and a powerful finale.",
+        "room": null,
+        "students": [
+          "Sean",
+          "Julian",
+          "Connor",
+          "Zach",
+          "Anita"
+        ]
+      }
+    ],
+    "students": [
+      {
+        "program_order": 1,
+        "student": "Megan",
+        "block": 1,
+        "block_start_time": "18:00",
+        "instrument": "Cello",
+        "piece": "Minuet No. 2",
+        "composer": "J.S. Bach",
+        "nyssma_level": 2
+      },
+      {
+        "program_order": 2,
+        "student": "Christel",
+        "block": 1,
+        "block_start_time": "18:00",
+        "instrument": "Flute",
+        "piece": "Gavotte",
+        "composer": "J.S. Bach",
+        "nyssma_level": 2
+      },
+      {
+        "program_order": 3,
+        "student": "Janice",
+        "block": 1,
+        "block_start_time": "18:00",
+        "instrument": "Trumpet",
+        "piece": "Cantilena",
+        "composer": "G.F. Handel",
+        "nyssma_level": 2
+      },
+      {
+        "program_order": 4,
+        "student": "Amy Mae",
+        "block": 1,
+        "block_start_time": "18:00",
+        "instrument": "Violin",
+        "piece": "Gavotte",
+        "composer": "Jean-Baptiste Lully",
+        "nyssma_level": 2
+      },
+      {
+        "program_order": 5,
+        "student": "Keith",
+        "block": 1,
+        "block_start_time": "18:00",
+        "instrument": "French Horn",
+        "piece": "Minuet",
+        "composer": "Johann Philipp Kirnberger",
+        "nyssma_level": 1
+      },
+      {
+        "program_order": 6,
+        "student": "Amy S",
+        "block": 1,
+        "block_start_time": "18:00",
+        "instrument": "Cello",
+        "piece": "May Song",
+        "composer": "Traditional",
+        "nyssma_level": 1
+      },
+      {
+        "program_order": 7,
+        "student": "Franklin",
+        "block": 1,
+        "block_start_time": "18:00",
+        "instrument": "Alto Sax",
+        "piece": "Minuet",
+        "composer": "Fred Fox",
+        "nyssma_level": 1
+      },
+      {
+        "program_order": 8,
+        "student": "Giana",
+        "block": 1,
+        "block_start_time": "18:00",
+        "instrument": "Viola",
+        "piece": "Menuet (Music Box)",
+        "composer": "Luigi Boccherini",
+        "nyssma_level": 3
+      },
+      {
+        "program_order": 9,
+        "student": "Tyler",
+        "block": 2,
+        "block_start_time": "18:32",
+        "instrument": "Euphonium",
+        "piece": "Sonatina K. 439, No. 1 (Mvts 1–2)",
+        "composer": "W.A. Mozart (arr. Ernst)",
+        "nyssma_level": 4
+      },
+      {
+        "program_order": 10,
+        "student": "Rhona",
+        "block": 2,
+        "block_start_time": "18:32",
+        "instrument": "Violin",
+        "piece": "Lied",
+        "composer": "W.A. Mozart",
+        "nyssma_level": 2
+      },
+      {
+        "program_order": 11,
+        "student": "Jessica",
+        "block": 2,
+        "block_start_time": "18:32",
+        "instrument": "Violin",
+        "piece": "Concertino in G Major, Op. 11",
+        "composer": "Ferdinand Küchler",
+        "nyssma_level": 2
+      },
+      {
+        "program_order": 12,
+        "student": "Joseph",
+        "block": 2,
+        "block_start_time": "18:32",
+        "instrument": "Euphonium/Baritone",
+        "piece": "Andante con Moto",
+        "composer": "Leonard B. Smith",
+        "nyssma_level": 1
+      },
+      {
+        "program_order": 13,
+        "student": "Evan",
+        "block": 2,
+        "block_start_time": "18:32",
+        "instrument": "Bassoon",
+        "piece": "A Little Song",
+        "composer": "Chas. W. Johnson",
+        "nyssma_level": 1
+      },
+      {
+        "program_order": 14,
+        "student": "Catherine",
+        "block": 2,
+        "block_start_time": "18:32",
+        "instrument": "Violin",
+        "piece": "Long Long Ago",
+        "composer": "Traditional",
+        "nyssma_level": 1
+      },
+      {
+        "program_order": 15,
+        "student": "Kevin",
+        "block": 2,
+        "block_start_time": "18:32",
+        "instrument": "Trumpet",
+        "piece": "El Verano",
+        "composer": "Knipfel",
+        "nyssma_level": 2
+      },
+      {
+        "program_order": 16,
+        "student": "Myles",
+        "block": 3,
+        "block_start_time": "19:04",
+        "instrument": "Violin",
+        "piece": "Concerto in A Minor, Op. 3, RV 356 – Allegro",
+        "composer": "Antonio Vivaldi",
+        "nyssma_level": 4
+      },
+      {
+        "program_order": 17,
+        "student": "Davis",
+        "block": 3,
+        "block_start_time": "19:04",
+        "instrument": "Tuba",
+        "piece": "Saraband & Gavotte",
+        "composer": "Arcangelo Corelli",
+        "nyssma_level": 3
+      },
+      {
+        "program_order": 18,
+        "student": "Baxter",
+        "block": 3,
+        "block_start_time": "19:04",
+        "instrument": "Alto Sax",
+        "piece": "Aria from Sonata No. 7",
+        "composer": "Jean-Marie Leclair",
+        "nyssma_level": 4
+      },
+      {
+        "program_order": 19,
+        "student": "Nigel",
+        "block": 3,
+        "block_start_time": "19:04",
+        "instrument": "French Horn",
+        "piece": "I Attempt from Love's Sickness",
+        "composer": "Henry Purcell",
+        "nyssma_level": 3
+      },
+      {
+        "program_order": 20,
+        "student": "Jade",
+        "block": 3,
+        "block_start_time": "19:04",
+        "instrument": "Voice",
+        "piece": "Danny Boy",
+        "composer": "Traditional",
+        "nyssma_level": 3
+      },
+      {
+        "program_order": 21,
+        "student": "Heather",
+        "block": 3,
+        "block_start_time": "19:04",
+        "instrument": "Voice",
+        "piece": "The Wind",
+        "composer": "Gardner",
+        "nyssma_level": 4
+      },
+      {
+        "program_order": 22,
+        "student": "Sean",
+        "block": 4,
+        "block_start_time": "19:37",
+        "instrument": "Drums",
+        "piece": "Colonial Drummer",
+        "composer": "John Beck",
+        "nyssma_level": 4
+      },
+      {
+        "program_order": 23,
+        "student": "Julian",
+        "block": 4,
+        "block_start_time": "19:37",
+        "instrument": "Euphonium",
+        "piece": "Sonatina K. 439, No. 1 (Mvts 1–2)",
+        "composer": "W.A. Mozart (arr. Ernst)",
+        "nyssma_level": 4
+      },
+      {
+        "program_order": 24,
+        "student": "Connor",
+        "block": 4,
+        "block_start_time": "19:37",
+        "instrument": "Trumpet",
+        "piece": "Maid of the Mist",
+        "composer": "Herbert L. Clarke",
+        "nyssma_level": 5
+      },
+      {
+        "program_order": 25,
+        "student": "Zach",
+        "block": 4,
+        "block_start_time": "19:37",
+        "instrument": "Trumpet",
+        "piece": "Sonatina K. 439, No. 1 (Mvts 1–2)",
+        "composer": "W.A. Mozart (arr. Ernst)",
+        "nyssma_level": 4
+      },
+      {
+        "program_order": 26,
+        "student": "Anita",
+        "block": 4,
+        "block_start_time": "19:37",
+        "instrument": "Flute",
+        "piece": "Tango Etudes",
+        "composer": "Astor Piazzolla",
+        "nyssma_level": 5
+      }
+    ],
+    "not_attending_solo_night": [
+      {
+        "student": "Luca",
+        "instrument": "Alto Sax",
+        "piece": "Fanflairs",
+        "composer": "Lennie Niehaus",
+        "nyssma_level": 1
+      }
+    ]
+  },
+  "audition_transport": {
+    "title": "NYSSMA Audition Transport",
+    "important_note": "5th & 6th grade boys should bring their instruments to school Friday AM. Jesse will have their NYSSMA folders and will load instruments in the Transit van before they go fishing.",
+    "days": [
+      {
+        "date": "2026-05-08",
+        "label": "Friday, May 8",
+        "runs": [
+          {
+            "run": "Run 1: Anglers",
+            "departure_location": "South Landing",
+            "departure_time": "15:45",
+            "driver": "Jesse",
+            "vehicle": "Ford Transit",
+            "students": [
+              {
+                "name": "Evan Barton",
+                "audition_time": "16:15"
+              },
+              {
+                "name": "Kevin Hofer",
+                "audition_time": "16:20"
+              },
+              {
+                "name": "Keith Woolsten",
+                "audition_time": "16:30"
+              },
+              {
+                "name": "Zachary Button",
+                "audition_time": "16:40"
+              },
+              {
+                "name": "Franklin Nelson",
+                "audition_time": "16:50"
+              },
+              {
+                "name": "Tyler Frase",
+                "audition_time": "17:00"
+              }
+            ],
+            "note": "Before heading to the river, load your instrument into the Transit parked by the school. High tide is 7:20 PM — best bite of the day, but the auditions come first."
+          },
+          {
+            "run": "Run 2: MPR",
+            "departure_location": "MPR",
+            "departure_time": "16:00",
+            "transport": "4 PM Mount bus",
+            "students": [
+              {
+                "name": "Megan Loewenthal",
+                "audition_time": "16:30"
+              },
+              {
+                "name": "Janice Meier",
+                "audition_time": "16:45"
+              },
+              {
+                "name": "Myles Wipf",
+                "audition_time": "17:05"
+              },
+              {
+                "name": "Christel Mow",
+                "audition_time": "17:05"
+              },
+              {
+                "name": "Baxter Mow",
+                "audition_time": "17:15"
+              },
+              {
+                "name": "Jessica Horning",
+                "audition_time": "17:30"
+              },
+              {
+                "name": "Amy Scott",
+                "audition_time": "17:30"
+              }
+            ],
+            "note": "These students should ride over on the 4 PM Mount bus."
+          },
+          {
+            "run": "Evening",
+            "departure_time": "19:30",
+            "transport": "Parent will take care of transport.",
+            "students": [
+              {
+                "name": "Connor Bazeley",
+                "audition_time": "20:00"
+              },
+              {
+                "name": "Anita Bazeley",
+                "audition_time": "20:10"
+              },
+              {
+                "name": "Sean Bazeley",
+                "audition_time": "20:30"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "date": "2026-05-09",
+        "label": "Saturday, May 9",
+        "runs": [
+          {
+            "run": "Run 1",
+            "departure_location": "MPR",
+            "departure_time": "09:15",
+            "driver": "Jesse",
+            "vehicle": "Ford Transit",
+            "students": [
+              {
+                "name": "Giana Loewenthal",
+                "audition_time": "09:45"
+              },
+              {
+                "name": "Catherine Rimes",
+                "audition_time": "10:25"
+              },
+              {
+                "name": "Rhona Huleatt",
+                "audition_time": "11:30"
+              }
+            ]
+          },
+          {
+            "run": "Run 2",
+            "departure_time": "12:30",
+            "transport": "Parents confirmed",
+            "students": [
+              {
+                "name": "Nigel King",
+                "audition_time": "13:00"
+              },
+              {
+                "name": "Davis Loewenthal",
+                "audition_time": "13:10"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "footer_note": "Please notify your driver if you make different arrangements for transportation."
+  },
+  "data_quality_notes": [
+    "students.md is treated as authoritative for Solo Night roster and includes Franklin and Kevin, who are missing from the current printable HTML program and MC cheat sheet.",
+    "The printable program currently lists 7 students in Block 1 and 6 students in Block 2, while students.md lists 8 and 7 respectively.",
+    "Solo Night room, venue address, parking, and detailed directions are not yet present in the source files reviewed."
+  ]
+}

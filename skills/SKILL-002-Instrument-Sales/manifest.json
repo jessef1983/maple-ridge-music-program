@@ -1,0 +1,26 @@
+{
+  "id": "SKILL-002",
+  "mcp_actions_required": [],
+  "name": "Instrument Sales",
+  "mcp_tools_optional": [],
+  "version": "1.0.0",
+  "mcp_tools_required": [],
+  "output_format": "Updated markdown files; structured summaries and confirmations",
+  "supporting_frameworks": [],
+  "changelog": [
+    {
+      "version": "1.0.0",
+      "date": "2026-08-13",
+      "changes": [
+        "Initial skill packaging for Claude Enterprise"
+      ]
+    }
+  ],
+  "owner": "Maple Ridge School Music Program",
+  "domains": [
+    "Music Program Management"
+  ],
+  "status": "active",
+  "retrieval_pattern": "Read from data/ files (students.md, inventory.md, assignment.md, sale-inventory.md)",
+  "description": "Decide what to sell, identify instrument details from photos and serials, price against comparable sold listings, write eBay and Facebook Marketplace copy, track shipping, and record proceeds."
+}

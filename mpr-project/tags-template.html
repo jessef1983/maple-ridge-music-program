@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Maple Ridge School — Instrument &amp; Student Tags</title>
+<style>
+:root{
+  --tpt:#C1440E; --hrn:#1F5673; --eup:#6A2C70;
+  --fl:#2E7D5B;  --prc:#8B5A2B; --str:#7A1F3D;
+  --ink:#111;
+  /* calibration — adjustable from the panel, saved between visits */
+  --offx:0.0313in;   /* shift right  */
+  --offy:0.0626in;   /* shift down   */
+  --pitch:2.0078in;  /* row-to-row spacing; 2in nominal */
+}
+@page{ size:letter; margin:0; }
+html,body{ margin:0; padding:0; background:#f6f5f2; }
+body{ font-family:Helvetica,Arial,sans-serif; color:var(--ink);
+      -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+
+/* ===================== PANEL (screen only) ===================== */
+.panel{ max-width:54rem; margin:2rem auto; background:#fff;
+        border:2px solid var(--ink); padding:1.5rem 1.75rem; }
+.panel h1{ font-size:1rem; letter-spacing:.14em; text-transform:uppercase; margin:0 0 .3rem; }
+.panel .sub{ font-size:.82rem; color:#555; margin:0 0 1.2rem; line-height:1.5; }
+.panel fieldset{ border:1px solid #ccc; padding:.9rem 1rem 1rem; margin:0 0 1rem; }
+.panel legend{ font-size:.7rem; letter-spacing:.14em; text-transform:uppercase;
+               color:#555; padding:0 .4rem; }
+.fieldrow{ display:flex; gap:.75rem; flex-wrap:wrap; }
+.fieldrow label{ flex:1; min-width:9rem; font-size:.7rem; letter-spacing:.1em;
+                 text-transform:uppercase; color:#555; }
+.fieldrow input, .fieldrow select{
+  display:block; width:100%; box-sizing:border-box; margin-top:.25rem;
+  font-family:inherit; font-size:.9rem; padding:.4rem .5rem;
+  border:1px solid #999; background:#fff; }
+.wide{ width:100%; box-sizing:border-box; font-family:inherit; font-size:.9rem;
+       padding:.45rem .5rem; border:1px solid #999; background:#fff; }
+.seg{ display:flex; margin-bottom:.9rem; }
+.seg button{ flex:1; font:inherit; font-size:.8rem; padding:.5rem;
+             border:1px solid var(--ink); background:#fff; cursor:pointer; letter-spacing:.06em; }
+.seg button[aria-pressed="true"]{ background:var(--ink); color:#fff; }
+
+.warn{ display:none; margin-top:.6rem; padding:.55rem .7rem; font-size:.78rem;
+       line-height:1.45; background:#FDF3E3; border-left:4px solid #C1440E; }
+.warn.show{ display:block; }
+
+.cellpick{ display:grid; grid-template-columns:repeat(2,1fr); gap:.3rem; max-width:16rem; }
+.cellpick button{ font:inherit; font-size:.75rem; padding:.45rem;
+                  border:1px solid #999; background:#fff; cursor:pointer; text-align:left; }
+.cellpick button.used{ background:#e8e8e8; color:#777; }
+.cellpick button[aria-pressed="true"]{ outline:2px solid var(--ink); font-weight:700; }
+
+.actions{ display:flex; gap:.6rem; flex-wrap:wrap; margin-top:.4rem; align-items:center; }
+.actions button{ font:inherit; font-size:.85rem; padding:.55rem 1rem;
+                 border:1px solid var(--ink); background:#fff; cursor:pointer; }
+.actions button.primary{ background:var(--ink); color:#fff; }
+.hint{ font-size:.75rem; color:#666; }
+.notes{ font-size:.78rem; line-height:1.55; color:#333; margin-top:1rem;
+        border-top:1px solid #ddd; padding-top:.9rem; }
+@media print{ .panel{ display:none; } }
+
+/* ===================== SHEET — Avery 5874 / 8871: 3.5x2, 2 across, 5 down ============ */
+.sheet{ width:8.5in; height:11in; box-sizing:border-box; overflow:hidden;
+        padding:calc(.5in + var(--offy)) .75in .5in calc(.75in + var(--offx));
+        background:#fff; margin:0 auto; }
+.grid{ display:grid; grid-template-columns:3.5in 3.5in; grid-auto-rows:var(--pitch); gap:0; }
+@media screen{
+  .sheet{ box-shadow:0 2px 14px rgba(0,0,0,.18); margin-bottom:2rem; }
+  .cell.empty{ outline:1px dashed #ccc; outline-offset:-4px; }
+}
+.cell{ width:3.5in; height:var(--pitch); box-sizing:border-box; overflow:hidden; }
+.tag{ height:2in; }
+.tag{ width:100%; height:100%; display:flex; box-sizing:border-box; }
+.spine{ width:.3in; flex:0 0 .3in; background:var(--c);
+        display:flex; align-items:center; justify-content:center; }
+.spine span{ writing-mode:vertical-rl; transform:rotate(180deg); color:#fff;
+             font-size:7.5pt; font-weight:700; letter-spacing:.22em; text-transform:uppercase; }
+.face{ flex:1; padding:.16in .18in .13in .16in; display:flex; flex-direction:column; }
+.body{ flex:1; display:flex; flex-direction:column; justify-content:center; }
+.mark{ display:inline-block; border:3pt solid var(--c); color:var(--c);
+       font-size:21pt; font-weight:900; padding:.03in .09in; line-height:1.05; }
+.model{ font-size:12pt; font-weight:700; line-height:1.2; margin-top:.07in; }
+.serial{ font-family:'Courier New',Courier,monospace; font-size:10pt;
+         margin-top:.03in; letter-spacing:.02em; }
+.serial em{ font-family:Helvetica,Arial,sans-serif; font-style:normal; font-size:7.5pt;
+            letter-spacing:.12em; text-transform:uppercase; color:#666; margin-right:.04in; }
+.who{ font-size:15pt; font-weight:700; line-height:1.15; margin-top:.07in; }
+.foot{ border-top:1pt solid var(--ink); padding-top:.05in; }
+.prog{ font-family:Georgia,'Times New Roman',serif; font-size:9.5pt;
+       font-weight:700; letter-spacing:.04em; }
+.call{ font-size:8pt; color:#333; margin-top:.01in; }
+.row2{ display:flex; gap:.16in; margin-top:.05in; }
+.row2 .half{ flex:1; display:flex; align-items:baseline; gap:.05in; }
+.row2 b{ font-size:6.5pt; letter-spacing:.1em; text-transform:uppercase;
+         color:#666; flex:0 0 .34in; }
+.row2 .line{ flex:1; border-bottom:.7pt dotted #666; height:.1in; }
+</style>
+</head>
+<body>
+
+<div class="panel">
+  <h1>Tag Builder</h1>
+  <p class="sub">Pick an instrument, choose an unused spot on the sheet, place it.
+  The sheet is remembered between visits, so a part-used sheet stays part-used.</p>
+
+  <div class="seg">
+    <button id="tInst" aria-pressed="true">Instrument tag</button>
+    <button id="tStud" aria-pressed="false">Student tag</button>
+  </div>
+
+  <fieldset>
+    <legend>Pick from inventory</legend>
+    <select id="fPick" class="wide"><option value="">— choose an instrument —</option></select>
+    <div class="warn" id="warn"></div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Card</legend>
+    <div class="fieldrow">
+      <label>MPR ID<input id="fId" placeholder="MPR-013"></label>
+      <label>Family
+        <select id="fFam">
+          <option value="tpt">Trumpet</option><option value="hrn">Horn</option>
+          <option value="eup">Euphonium</option><option value="fl">Flute</option>
+          <option value="prc">Percussion</option><option value="str">Strings</option>
+        </select>
+      </label>
+    </div>
+    <div class="fieldrow" style="margin-top:.7rem">
+      <label id="lbA">Model<input id="fA" placeholder="Yamaha YEP-201M"></label>
+      <label id="lbB">Serial<input id="fB" placeholder="103212"></label>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Print calibration — HP M479fdw, Avery 5874</legend>
+    <div class="fieldrow">
+      <label>Shift right (in)<input id="cX" type="number" step="0.0156" value="0.0313"></label>
+      <label>Shift down (in)<input id="cY" type="number" step="0.0156" value="0.0626"></label>
+      <label>Row pitch (in)<input id="cP" type="number" step="0.0078" value="2.0078"></label>
+    </div>
+    <p class="hint" style="margin:.6rem 0 0">Nominal pitch is 2.0000. Raise it if cards drift
+    <em>upward</em> as you go down the sheet, lower it if they drift down. One step is 1/128". Values below are calibrated for the M479fdw on Avery 5874 &mdash; a different printer or stock will need re-checking.</p>
+  </fieldset>
+
+  <fieldset>
+    <legend>Position on sheet</legend>
+    <div class="cellpick" id="pick"></div>
+  </fieldset>
+
+  <div class="actions">
+    <button class="primary" id="add">Place card</button>
+    <button id="clear">Clear sheet</button>
+    <button id="recal">Reset calibration</button>
+    <button id="print">Print</button>
+    <span class="hint" id="phint">or press Ctrl / &#8984; + P</span>
+  </div>
+
+  <div class="notes">
+    <p style="margin:0 0 .5rem"><b>Print at Actual Size / 100%.</b> Not "Fit to page" — it shifts
+    everything a few millimetres and the sheet is scrap.</p>
+    <p style="margin:0 0 .5rem"><b>Background graphics on</b>, or the colour spines drop out.</p>
+    <p style="margin:0 0 .5rem"><b>Tray 1 only, a few sheets at a time.</b> Avery 5874 is 247 gsm
+    against a 176 gsm tray rating — over spec, usually fine, but not from a full stack.</p>
+    <p style="margin:0"><b>Media type: Cardstock / Heavy</b>, then rub-test a card before
+    laminating. Laminate adhesive lifts poorly-fused toner and there's no undoing it.</p>
+  </div>
+</div>
+
+<div class="sheet"><div class="grid" id="grid"></div></div>
+
+<script>
+const PROGRAM = "MAPLE RIDGE SCHOOL";
+const PHONE   = "(845) 339-6681";
+
+/* serialOk: true = read off the instrument · false = read off a listing photo, unverified */
+const FLEET = [
+  {id:"MPR-001", fam:"fl",  model:"Yamaha YFL-385II",        serial:"",       serialOk:null, holder:"Anita"},
+  {id:"MPR-003", fam:"fl",  model:"Yamaha YFL-221SII",       serial:"323884", serialOk:false,holder:"Christel"},
+  {id:"MPR-006", fam:"tpt", model:"Yamaha YTR-2330S",        serial:"",       serialOk:null, holder:"Janice"},
+  {id:"MPR-007", fam:"tpt", model:"Yamaha YTR-1310",         serial:"",       serialOk:null, holder:"Kevin Hofer"},
+  {id:"MPR-009", fam:"prc", model:"Yamaha YG-50D Glock.",    serial:"",       serialOk:null, holder:"Band Room"},
+  {id:"MPR-010", fam:"tpt", model:"Yamaha YTR-3335S",        serial:"",       serialOk:null, holder:"Matt"},
+  {id:"MPR-011", fam:"tpt", model:"Yamaha YTR-1335S",        serial:"",       serialOk:null, holder:"Connor"},
+  {id:"MPR-013", fam:"eup", model:"Yamaha YEP-201M",         serial:"103212", serialOk:true, holder:"Tyler"},
+  {id:"MPR-014", fam:"eup", model:"Besson 3V Compensating",  serial:"",       serialOk:null ,holder:"Kevin Robertshaw"},
+  {id:"MPR-015", fam:"eup", model:"Besson 767 Compensating", serial:"",       serialOk:null, holder:"Program"},
+  {id:"MPR-016", fam:"eup", model:"Yamaha YEP-201",          serial:"",       serialOk:null, holder:"Julian"},
+  {id:"MPR-017", fam:"hrn", model:"Yamaha YHR-668D",         serial:"",       serialOk:null, holder:"Steph"},
+  {id:"MPR-018", fam:"hrn", model:"Yamaha YHR-668N",         serial:"",       serialOk:null, holder:"Greg"},
+  {id:"MPR-019", fam:"eup", model:"Yamaha YEP-321S",         serial:"001016", serialOk:false,holder:"Unassigned"},
+  {id:"MPR-020", fam:"eup", model:"Yamaha YEP-201S",         serial:"042875", serialOk:false,holder:"Joseph"},
+  {id:"MPR-021", fam:"tpt", model:"Yamaha YTR-3325S",        serial:"",       serialOk:null, holder:"Unassigned"},
+  {id:"MPR-022", fam:"tpt", model:"Nikkan YTR-334S",         serial:"000106", serialOk:false,holder:"Unassigned"},
+  {id:"MPR-023", fam:"hrn", model:"Holton H378 Double",      serial:"",       serialOk:null, holder:"Micah"},
+  {id:"MPR-026", fam:"fl",  model:"Yamaha YFL-225",          serial:"",       serialOk:null, holder:"Unassigned"},
+];
+
+const FAMS = {tpt:"Trumpet", hrn:"Horn", eup:"Euphonium", fl:"Flute", prc:"Percussion", str:"Strings"};
+const KEY = "mpr-tag-sheet-v1";
+let cards = new Array(10).fill(null), mode = "inst", slot = 0;
+
+const $ = id => document.getElementById(id);
+const esc = s => String(s||"").replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+
+const CKEY = "mpr-tag-cal-v1";
+function applyCal(){
+  const r = document.documentElement.style;
+  r.setProperty("--offx", $("cX").value + "in");
+  r.setProperty("--offy", $("cY").value + "in");
+  r.setProperty("--pitch", $("cP").value + "in");
+  try{ localStorage.setItem(CKEY, JSON.stringify(
+        {x:$("cX").value, y:$("cY").value, p:$("cP").value})); }catch(e){}
+}
+function loadCal(){
+  try{ const c = JSON.parse(localStorage.getItem(CKEY) || "null");
+       if(c){ $("cX").value = c.x; $("cY").value = c.y; $("cP").value = c.p; } }catch(e){}
+  applyCal();
+}
+function save(){ try{ localStorage.setItem(KEY, JSON.stringify(cards)); }catch(e){} }
+function load(){
+  try{ const r = localStorage.getItem(KEY);
+       if(r){ const p = JSON.parse(r); if(Array.isArray(p) && p.length===10) cards = p; } }
+  catch(e){}
+}
+
+function render(){
+  $("grid").innerHTML = cards.map(c => {
+    if(!c) return '<div class="cell empty"></div>';
+    const body = c.mode === "inst"
+      ? `<div class="body"><span class="mark">${esc(c.id)}</span>
+           <div class="model">${esc(c.a)}</div>
+           ${c.b ? `<div class="serial"><em>Serial</em>${esc(c.b)}</div>` : ``}</div>
+         <div class="foot"><div class="prog">${esc(PROGRAM)}</div>
+           <div class="call">If found, please call ${esc(PHONE)}</div></div>`
+      : `<div class="body"><span class="mark">${esc(c.id)}</span>
+           <div class="who">${esc(c.a)}</div></div>
+         <div>
+           <div class="row2"><div class="half"><b>Out</b><span class="line"></span></div>
+             <div class="half"><b>In</b><span class="line"></span></div></div>
+           <div class="row2"><div class="half"><b>Cond</b><span class="line"></span></div>
+             <div class="half"><b>Cond</b><span class="line"></span></div></div>
+         </div>`;
+    return `<div class="cell"><div class="tag" style="--c:var(--${c.fam})">
+              <div class="spine"><span>${esc(c.mode==="inst" ? FAMS[c.fam] : "Assigned")}</span></div>
+              <div class="face">${body}</div></div></div>`;
+  }).join("");
+
+  $("pick").innerHTML = cards.map((c,i) =>
+    `<button data-i="${i}" class="${c?'used':''}" aria-pressed="${i===slot}">${i+1}${c?' · '+esc(c.id):''}</button>`
+  ).join("");
+  save();
+}
+
+function setMode(m){
+  mode = m;
+  $("tInst").setAttribute("aria-pressed", m==="inst");
+  $("tStud").setAttribute("aria-pressed", m==="stud");
+  $("lbA").firstChild.textContent = m==="inst" ? "Model" : "Student";
+  $("lbB").style.display = m==="inst" ? "" : "none";
+  if($("fPick").value !== "") fill();
+}
+
+function fill(){
+  const it = FLEET.find(f => f.id === $("fPick").value);
+  $("warn").className = "warn";
+  if(!it) return;
+  $("fId").value = it.id;
+  $("fFam").value = it.fam;
+  $("fA").value = mode === "inst" ? it.model : it.holder;
+  $("fB").value = mode === "inst" ? it.serial : "";
+  if(mode === "inst" && it.serialOk === false){
+    $("warn").className = "warn show";
+    $("warn").innerHTML = "<b>This serial came off a listing photo, not the instrument.</b> "
+      + "Fine for a test print — but don't seal a laminated tag with it. "
+      + "Verify against the valve casing on arrival, then update the file.";
+  } else if(mode === "inst" && it.serialOk === null){
+    $("warn").className = "warn show";
+    $("warn").innerHTML = "<b>No serial on record.</b> Read it off the instrument and type it in "
+      + "before printing a permanent tag.";
+  }
+}
+
+$("fPick").innerHTML += FLEET.map(f =>
+  `<option value="${f.id}">${f.id} — ${f.model} · ${f.holder}</option>`).join("");
+$("fPick").onchange = fill;
+$("tInst").onclick = () => setMode("inst");
+$("tStud").onclick = () => setMode("stud");
+$("pick").onclick = e => { const b = e.target.closest("button"); if(!b) return;
+                           slot = +b.dataset.i; render(); };
+$("add").onclick = () => {
+  const id = $("fId").value.trim(), a = $("fA").value.trim();
+  if(!id || !a){ alert("MPR ID and " + (mode==="inst"?"model":"student name") + " are required."); return; }
+  cards[slot] = {mode, id, fam:$("fFam").value, a, b:$("fB").value.trim()};
+  const next = cards.findIndex(c => !c);
+  if(next !== -1) slot = next;
+  render();
+};
+$("clear").onclick = () => { if(confirm("Clear all ten positions?")){
+                              cards = new Array(10).fill(null); slot = 0; render(); } };
+$("print").onclick = () => {
+  try{ window.print(); }
+  catch(e){ $("phint").textContent = "Blocked here — download the file and open it in your browser."; }
+};
+
+const CAL0 = {x:"0.0313", y:"0.0626", p:"2.0078"};
+["cX","cY","cP"].forEach(id => $(id).oninput = applyCal);
+$("recal").onclick = () => { $("cX").value=CAL0.x; $("cY").value=CAL0.y;
+                             $("cP").value=CAL0.p; applyCal(); };
+loadCal(); load(); setMode("inst"); render();
+</script>
+</body>
+</html>
