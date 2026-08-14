@@ -173,56 +173,59 @@ body{ font-family:Helvetica,Arial,sans-serif; color:var(--ink);
 const PROGRAM = "MAPLE RIDGE SCHOOL";
 const PHONE   = "(845) 339-6681";
 
-/* serialOk: true = read off the instrument · false = read off a listing photo, unverified */
+/* serialOk: true = read off the instrument · false = read off a listing photo, unverified
+   needsTag: true if a permanent tag was never logged, or the student tag predates the
+   current assignment — see tag-log.md and generate-tags.js. needsTagReason explains why. */
 const FLEET = [
-  {id:"MPR-003", fam:"fl", model:"Yamaha YFL-221SII", serial:"319749", serialOk:true, holder:"Assigned"},
-  {id:"MPR-006", fam:"tpt", model:"Yamaha YTR-2330S", serial:"", serialOk:null, holder:"Assigned"},
-  {id:"MPR-007", fam:"tpt", model:"Yamaha YTR-1310", serial:"", serialOk:null, holder:"Assigned"},
-  {id:"MPR-009", fam:"prc", model:"Yamaha YG-50D", serial:"1058955", serialOk:true, holder:"Band Room"},
-  {id:"MPR-010", fam:"tpt", model:"Yamaha YTR-3335S", serial:"", serialOk:null, holder:"Assigned"},
-  {id:"MPR-011", fam:"tpt", model:"Yamaha YTR-1335S", serial:"602497", serialOk:true, holder:"Assigned"},
-  {id:"MPR-013", fam:"eup", model:"Yamaha YEP-201M", serial:"103212", serialOk:true, holder:"Assigned"},
-  {id:"MPR-014", fam:"eup", model:"Besson 3V Comp.", serial:"", serialOk:null, holder:"Assigned"},
-  {id:"MPR-015", fam:"eup", model:"Besson 767 Comp.", serial:"767-716691", serialOk:true, holder:"Assigned"},
-  {id:"MPR-016", fam:"eup", model:"Yamaha YEP-201", serial:"", serialOk:null, holder:"Assigned"},
-  {id:"MPR-017", fam:"hrn", model:"Yamaha YHR-668D", serial:"", serialOk:null, holder:"Assigned"},
-  {id:"MPR-018", fam:"hrn", model:"Yamaha YHR-668N", serial:"020503", serialOk:true, holder:"Storage"},
-  {id:"MPR-019", fam:"eup", model:"Yamaha YEP-321S", serial:"001016", serialOk:true, holder:"Assigned"},
-  {id:"MPR-021", fam:"tpt", model:"Yamaha YTR-3325S", serial:"212795", serialOk:true, holder:"Storage"},
-  {id:"MPR-022", fam:"tpt", model:"Yamaha YTR-334S", serial:"018464", serialOk:true, holder:"Storage"},
-  {id:"MPR-023", fam:"hrn", model:"Holton H378", serial:"", serialOk:null, holder:"Assigned"},
-  {id:"MPR-026", fam:"fl", model:"Yamaha YFL-225", serial:"", serialOk:null, holder:"Storage"},
-  {id:"MPR-027", fam:"str", model:"Fox", serial:"", serialOk:null, holder:"Assigned"},
-  {id:"MPR-028", fam:"str", model:"—", serial:"", serialOk:null, holder:"Assigned"},
-  {id:"MPR-029", fam:"str", model:"Yamaha YAS-52", serial:"021047A", serialOk:true, holder:"Assigned"},
-  {id:"MPR-030", fam:"hrn", model:"Dillon", serial:"", serialOk:null, holder:"Unassigned"},
-  {id:"MPR-032", fam:"str", model:"—", serial:"", serialOk:null, holder:"Storage"},
-  {id:"MPR-033", fam:"str", model:"—", serial:"", serialOk:null, holder:"Assigned"},
-  {id:"MPR-034", fam:"str", model:"Besson Eb Chicago", serial:"74353", serialOk:true, holder:"Storage"},
-  {id:"MPR-035", fam:"str", model:"Bach 42", serial:"", serialOk:null, holder:"Storage"},
-  {id:"MPR-036", fam:"str", model:"Olds (Fullerton)", serial:"", serialOk:null, holder:"Assigned"},
-  {id:"MPR-037", fam:"str", model:"Yamaha YAS-62", serial:"082611", serialOk:true, holder:"Assigned (trial)"},
-  {id:"MPR-038", fam:"str", model:"Boosey & Hawkes", serial:"226730", serialOk:true, holder:"Storage"},
-  {id:"MPR-041", fam:"str", model:"Alexander", serial:"9290", serialOk:true, holder:"Storage"},
-  {id:"MPR-042", fam:"str", model:"Elkhart/Couesnon", serial:"2082", serialOk:true, holder:"Storage"},
-  {id:"MPR-043", fam:"str", model:"F", serial:"", serialOk:null, holder:"Storage"},
-  {id:"MPR-044", fam:"eup", model:"Mac", serial:"0715640", serialOk:true, holder:"Storage"},
-  {id:"MPR-045", fam:"str", model:"Con Limited Bb", serial:"159676", serialOk:true, holder:"Storage"},
-  {id:"MPR-046", fam:"str", model:"Conn BBb", serial:"H77696", serialOk:true, holder:"Storage"},
-  {id:"MPR-047", fam:"str", model:"Conn 906", serial:"066761", serialOk:true, holder:"Storage"},
-  {id:"MPR-048", fam:"str", model:"Dynasty U.S.A. BBb", serial:"11669", serialOk:true, holder:"Assigned"},
-  {id:"MPR-049", fam:"prc", model:"Mark Tree", serial:"", serialOk:null, holder:"Storage"},
-  {id:"MPR-050", fam:"prc", model:"Tama Swingstar Kit", serial:"334296", serialOk:true, holder:"Band Room"},
-  {id:"MPR-051", fam:"prc", model:"Tama Snare", serial:"016210", serialOk:true, holder:"Band Room"},
-  {id:"MPR-052", fam:"prc", model:"Tama Swingstar Snare", serial:"334372", serialOk:true, holder:"Band Room"},
-  {id:"MPR-053", fam:"prc", model:"Tama Hi-Hat", serial:"", serialOk:null, holder:"Band Room"},
-  {id:"MPR-054", fam:"prc", model:"Sabian Hi-Hat Cymbals", serial:"", serialOk:null, holder:"Band Room"},
-  {id:"MPR-055", fam:"prc", model:"Sabian Crash (Large)", serial:"", serialOk:null, holder:"Band Room"},
-  {id:"MPR-056", fam:"prc", model:"Sabian Crash (Small)", serial:"", serialOk:null, holder:"Band Room"},
-  {id:"MPR-057", fam:"str", model:"Martin Imperial", serial:"201622", serialOk:true, holder:"Band Room"},
-  {id:"MPR-058", fam:"str", model:"Spencer", serial:"81597", serialOk:true, holder:"Storage"},
-  {id:"MPR-062", fam:"eup", model:"Buescher True Tone 393", serial:"330366", serialOk:true, holder:"For Sale"},
-  {id:"MPR-063", fam:"str", model:"Conn (Schreiber, Intermediate)", serial:"4865", serialOk:true, holder:"Assigned"},
+  {id:"MPR-001", fam:"fl", model:"Yamaha YFL-385II", serial:"318030", serialOk:true, holder:"Assigned", needsTag:false, needsTagReason:""},
+  {id:"MPR-003", fam:"fl", model:"Yamaha YFL-221SII", serial:"319749", serialOk:true, holder:"Assigned", needsTag:false, needsTagReason:""},
+  {id:"MPR-006", fam:"tpt", model:"Yamaha YTR-2330S", serial:"", serialOk:null, holder:"Assigned", needsTag:true, needsTagReason:"permanent tag not logged"},
+  {id:"MPR-007", fam:"tpt", model:"Yamaha YTR-1310", serial:"", serialOk:null, holder:"Assigned", needsTag:true, needsTagReason:"permanent tag not logged"},
+  {id:"MPR-009", fam:"prc", model:"Yamaha YG-50D", serial:"1058955", serialOk:true, holder:"Band Room", needsTag:true, needsTagReason:"permanent tag not logged"},
+  {id:"MPR-010", fam:"tpt", model:"Yamaha YTR-3335S", serial:"", serialOk:null, holder:"Assigned", needsTag:true, needsTagReason:"permanent tag not logged; active assignment, student tag not logged"},
+  {id:"MPR-011", fam:"tpt", model:"Yamaha YTR-1335S", serial:"602497", serialOk:true, holder:"Assigned", needsTag:false, needsTagReason:""},
+  {id:"MPR-013", fam:"eup", model:"Yamaha YEP-201M", serial:"103212", serialOk:true, holder:"Assigned", needsTag:false, needsTagReason:""},
+  {id:"MPR-014", fam:"eup", model:"Besson 3V Comp.", serial:"", serialOk:null, holder:"Assigned", needsTag:true, needsTagReason:"permanent tag not logged; active assignment, student tag not logged"},
+  {id:"MPR-015", fam:"eup", model:"Besson 767 Comp.", serial:"767-716691", serialOk:true, holder:"Assigned", needsTag:true, needsTagReason:"permanent tag not logged; active assignment, student tag not logged"},
+  {id:"MPR-016", fam:"eup", model:"Yamaha YEP-201", serial:"", serialOk:null, holder:"Assigned", needsTag:true, needsTagReason:"permanent tag not logged"},
+  {id:"MPR-017", fam:"hrn", model:"Yamaha YHR-668D", serial:"", serialOk:null, holder:"Assigned", needsTag:true, needsTagReason:"permanent tag not logged; active assignment, student tag not logged"},
+  {id:"MPR-018", fam:"hrn", model:"Yamaha YHR-668N", serial:"020503", serialOk:true, holder:"Storage", needsTag:true, needsTagReason:"permanent tag not logged"},
+  {id:"MPR-019", fam:"eup", model:"Yamaha YEP-321S", serial:"001016", serialOk:true, holder:"Assigned", needsTag:false, needsTagReason:""},
+  {id:"MPR-021", fam:"tpt", model:"Yamaha YTR-3325S", serial:"212795", serialOk:true, holder:"Storage", needsTag:true, needsTagReason:"permanent tag not logged"},
+  {id:"MPR-022", fam:"tpt", model:"Yamaha YTR-334S", serial:"018464", serialOk:true, holder:"Storage", needsTag:true, needsTagReason:"permanent tag not logged"},
+  {id:"MPR-023", fam:"hrn", model:"Holton H378", serial:"", serialOk:null, holder:"Assigned", needsTag:true, needsTagReason:"permanent tag not logged; active assignment, student tag not logged"},
+  {id:"MPR-026", fam:"fl", model:"Yamaha YFL-225", serial:"", serialOk:null, holder:"Storage", needsTag:true, needsTagReason:"permanent tag not logged"},
+  {id:"MPR-027", fam:"str", model:"Fox", serial:"", serialOk:null, holder:"Assigned", needsTag:true, needsTagReason:"permanent tag not logged; active assignment, student tag not logged"},
+  {id:"MPR-028", fam:"str", model:"—", serial:"", serialOk:null, holder:"Assigned", needsTag:true, needsTagReason:"permanent tag not logged; active assignment, student tag not logged"},
+  {id:"MPR-029", fam:"str", model:"Yamaha YAS-52", serial:"021047A", serialOk:true, holder:"Assigned", needsTag:true, needsTagReason:"permanent tag not logged; active assignment, student tag not logged"},
+  {id:"MPR-030", fam:"hrn", model:"Dillon", serial:"", serialOk:null, holder:"Unassigned", needsTag:true, needsTagReason:"permanent tag not logged"},
+  {id:"MPR-032", fam:"str", model:"—", serial:"", serialOk:null, holder:"Storage", needsTag:true, needsTagReason:"permanent tag not logged"},
+  {id:"MPR-033", fam:"str", model:"—", serial:"", serialOk:null, holder:"Assigned", needsTag:true, needsTagReason:"permanent tag not logged; active assignment, student tag not logged"},
+  {id:"MPR-034", fam:"str", model:"Besson Eb Chicago", serial:"74353", serialOk:true, holder:"Storage", needsTag:true, needsTagReason:"permanent tag not logged"},
+  {id:"MPR-035", fam:"str", model:"Bach 42", serial:"", serialOk:null, holder:"Storage", needsTag:true, needsTagReason:"permanent tag not logged"},
+  {id:"MPR-036", fam:"str", model:"Olds (Fullerton)", serial:"", serialOk:null, holder:"Assigned", needsTag:true, needsTagReason:"permanent tag not logged; active assignment, student tag not logged"},
+  {id:"MPR-037", fam:"str", model:"Yamaha YAS-62", serial:"082611", serialOk:true, holder:"Assigned (trial)", needsTag:true, needsTagReason:"permanent tag not logged; active assignment, student tag not logged"},
+  {id:"MPR-038", fam:"str", model:"Boosey & Hawkes", serial:"226730", serialOk:true, holder:"Storage", needsTag:true, needsTagReason:"permanent tag not logged"},
+  {id:"MPR-041", fam:"str", model:"Alexander", serial:"9290", serialOk:true, holder:"Storage", needsTag:true, needsTagReason:"permanent tag not logged"},
+  {id:"MPR-042", fam:"str", model:"Elkhart/Couesnon", serial:"2082", serialOk:true, holder:"Storage", needsTag:true, needsTagReason:"permanent tag not logged"},
+  {id:"MPR-043", fam:"str", model:"F", serial:"", serialOk:null, holder:"Storage", needsTag:true, needsTagReason:"permanent tag not logged"},
+  {id:"MPR-044", fam:"eup", model:"Mac", serial:"0715640", serialOk:true, holder:"Storage", needsTag:true, needsTagReason:"permanent tag not logged"},
+  {id:"MPR-045", fam:"str", model:"Con Limited Bb", serial:"159676", serialOk:true, holder:"Storage", needsTag:true, needsTagReason:"permanent tag not logged"},
+  {id:"MPR-046", fam:"str", model:"Conn BBb", serial:"H77696", serialOk:true, holder:"Storage", needsTag:true, needsTagReason:"permanent tag not logged"},
+  {id:"MPR-047", fam:"str", model:"Conn 906", serial:"066761", serialOk:true, holder:"Storage", needsTag:true, needsTagReason:"permanent tag not logged"},
+  {id:"MPR-048", fam:"str", model:"Dynasty U.S.A. BBb", serial:"11669", serialOk:true, holder:"Assigned", needsTag:true, needsTagReason:"permanent tag not logged; active assignment, student tag not logged"},
+  {id:"MPR-049", fam:"prc", model:"Mark Tree", serial:"", serialOk:null, holder:"Storage", needsTag:true, needsTagReason:"permanent tag not logged"},
+  {id:"MPR-050", fam:"prc", model:"Tama Swingstar Kit", serial:"334296", serialOk:true, holder:"Band Room", needsTag:true, needsTagReason:"permanent tag not logged"},
+  {id:"MPR-051", fam:"prc", model:"Tama Snare", serial:"016210", serialOk:true, holder:"Band Room", needsTag:true, needsTagReason:"permanent tag not logged"},
+  {id:"MPR-052", fam:"prc", model:"Tama Swingstar Snare", serial:"334372", serialOk:true, holder:"Band Room", needsTag:true, needsTagReason:"permanent tag not logged"},
+  {id:"MPR-053", fam:"prc", model:"Tama Hi-Hat", serial:"", serialOk:null, holder:"Band Room", needsTag:true, needsTagReason:"permanent tag not logged"},
+  {id:"MPR-054", fam:"prc", model:"Sabian Hi-Hat Cymbals", serial:"", serialOk:null, holder:"Band Room", needsTag:true, needsTagReason:"permanent tag not logged"},
+  {id:"MPR-055", fam:"prc", model:"Sabian Crash (Large)", serial:"", serialOk:null, holder:"Band Room", needsTag:true, needsTagReason:"permanent tag not logged"},
+  {id:"MPR-056", fam:"prc", model:"Sabian Crash (Small)", serial:"", serialOk:null, holder:"Band Room", needsTag:true, needsTagReason:"permanent tag not logged"},
+  {id:"MPR-057", fam:"str", model:"Martin Imperial", serial:"201622", serialOk:true, holder:"Band Room", needsTag:true, needsTagReason:"permanent tag not logged"},
+  {id:"MPR-058", fam:"str", model:"Spencer", serial:"81597", serialOk:true, holder:"Storage", needsTag:true, needsTagReason:"permanent tag not logged"},
+  {id:"MPR-062", fam:"eup", model:"Buescher True Tone 393", serial:"330366", serialOk:true, holder:"For Sale", needsTag:true, needsTagReason:"permanent tag not logged"},
+  {id:"MPR-063", fam:"str", model:"Conn (Schreiber, Intermediate)", serial:"4865", serialOk:true, holder:"Assigned", needsTag:true, needsTagReason:"permanent tag not logged; active assignment, student tag not logged"},
 ];
 
 const FAMS = {tpt:"Trumpet", hrn:"Horn", eup:"Euphonium", fl:"Flute", prc:"Percussion", str:"Strings"};
@@ -293,25 +296,33 @@ function setMode(m){
 function fill(){
   const it = FLEET.find(f => f.id === $("fPick").value);
   $("warn").className = "warn";
+  $("warn").innerHTML = "";
   if(!it) return;
   $("fId").value = it.id;
   $("fFam").value = it.fam;
   $("fA").value = mode === "inst" ? it.model : it.holder;
   $("fB").value = mode === "inst" ? it.serial : "";
+
+  const warnings = [];
   if(mode === "inst" && it.serialOk === false){
-    $("warn").className = "warn show";
-    $("warn").innerHTML = "<b>This serial came off a listing photo, not the instrument.</b> "
+    warnings.push("<b>This serial came off a listing photo, not the instrument.</b> "
       + "Fine for a test print — but don't seal a laminated tag with it. "
-      + "Verify against the valve casing on arrival, then update the file.";
+      + "Verify against the valve casing on arrival, then update the file.");
   } else if(mode === "inst" && it.serialOk === null){
+    warnings.push("<b>No serial on record.</b> Read it off the instrument and type it in "
+      + "before printing a permanent tag.");
+  }
+  if(it.needsTag){
+    warnings.push(`<b>Outstanding tag:</b> ${it.needsTagReason || "see tag-log.md"}`);
+  }
+  if(warnings.length){
     $("warn").className = "warn show";
-    $("warn").innerHTML = "<b>No serial on record.</b> Read it off the instrument and type it in "
-      + "before printing a permanent tag.";
+    $("warn").innerHTML = warnings.join("<br><br>");
   }
 }
 
 $("fPick").innerHTML += FLEET.map(f =>
-  `<option value="${f.id}">${f.id} — ${f.model} · ${f.holder}</option>`).join("");
+  `<option value="${f.id}">${f.id} — ${f.model} · ${f.holder}${f.needsTag ? " ⚠️ NEEDS TAG" : ""}</option>`).join("");
 $("fPick").onchange = fill;
 $("tInst").onclick = () => setMode("inst");
 $("tStud").onclick = () => setMode("stud");

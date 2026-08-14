@@ -41,6 +41,22 @@ The mirror of `instrument-sale`: that skill exists so the program never *states*
 
 **The handoff is the doorstep.** Assigning MPR IDs or grading condition here produces two records that disagree. The one fact that crosses the line is the **return deadline** — carry it into intake explicitly and surface it every session until resolved. It is the most perishable fact in the process.
 
+## Recording changes during a Claude Enterprise session
+
+A Claude Enterprise project chat reads the files above, but it cannot edit them in place — nothing written during a conversation is real until it's back in `mpr-project/project-files/` in the actual repo. Handing back an entire regenerated file every time one row changes is heavy, hard for a human to review, and risks silently clobbering someone else's edit made in a different session.
+
+**So: wherever this skill says to write, update, or create a row in a file (most often `watchlist.md`, or `model-reference.md` as findings accrue), do this instead —** append a dated entry to `session-updates.md` describing the change, rather than rewriting the target file itself. Keep `session-updates.md` open as one running artifact for the whole conversation (present it via `present_files`, and append to the same artifact — don't start a new one per change).
+
+**Entry format:**
+```
+## <ISO timestamp> — instrument-purchase, Phase <n> (<phase name>)
+**Target file:** <file.md>
+**Change:** <one line: append row / update field, etc.>
+<the literal row or field value, in the target file's own table format, ready to paste in>
+```
+
+At the natural end of a purchase decision ("Done"), remind the user once: "Download `session-updates.md` and bring it back to Claude Code — it merges these into the real files." Don't repeat the reminder after every entry within the same session.
+
 ---
 
 # Seven phases

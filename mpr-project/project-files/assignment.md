@@ -1,7 +1,7 @@
 # Assignment Log
  
 **Maple Ridge School** · Ulster Park, NY  
-**Last updated:** August 13, 2026 (reconciled against inventory.md)
+**Last updated:** August 14, 2026 (reconciled against inventory.md)
  
 ---
  
@@ -17,12 +17,10 @@
 | Assignment | MPR | Instrument | Student | Date Out | Condition Out | Notes |
 |---|---|---|---|---|---|---|
 | ASGN-001 | MPR-001 | Flute | Anita Bazeley | 2024-09-?? | Unknown | — |
-| ASGN-002 | MPR-003 | Flute | Christel Mow | 2026-03-20 | Very Good | Cork replaced; SVC-FLT-001 pending bill |
 | ASGN-003 | MPR-006 | Trumpet | Janice Meier | 2026-01-12 | Good | — |
 | ASGN-004 | MPR-007 | Trumpet | Kevin Hofer | 2025-10-21 | Fair | Sticky valves; heavier oil trial in progress |
 | ASGN-006 | MPR-010 | Trumpet | Matt | 2025-04-29 | Unknown | **Not in student roster** — verify status |
 | ASGN-007 | MPR-011 | Trumpet | Connor Bazeley | 2025-01-28 | Unknown | — |
-| ASGN-008 | MPR-013 | Euphonium | Tyler Frase | 2021-09-04 | Unknown | Serial: 103212 ✅ |
 | ASGN-009 | MPR-014 | Euphonium | Kevin Robertshaw (Instructor) | 2021-08-16 | Good | — |
 | ASGN-010 | MPR-016 | Euphonium | Julian Alexander | ⚠️ date pending | Good | — |
 | ASGN-011 | MPR-017 | French Horn | Steph | TBD | Unknown | **Not in student roster** — verify status |
@@ -37,8 +35,10 @@
 | ASGN-031 | MPR-037 | Alto Sax | Baxter Mow | 2026-08-13 | Good | Yamaha YAS-62 — trial loan, deciding whether to upgrade from his YAS-52 (MPR-029). Bell rim dent deferred (SVC-SAX-001). Using the MPR-029 mouthpiece for the trial — still needs its own if he keeps it or it's reassigned |
 | ASGN-032 | MPR-036 | Trombone | Emmanuel Martinie-Eiler | 2026-08-13 | Good | Olds trombone (Fullerton, CA), early vintage with reversed tuning slide (male-female connector for smooth airflow). No F attachment. Playable. Water key cork missing — temporary paper towel plug (SVC-TRB-001, cork replacement pending). **MPR ID updated Aug 14** — this row previously read MPR-061; consolidated into MPR-036 (duplicate registration of the same instrument, see `inventory.md` Retired IDs note) |
 | ASGN-033 | MPR-063 | Bassoon | Roger Woolston | 2026-08-14 | Good | Conn bassoon, donated free transfer from Platte Clove School. Maker's mark confirmed by photo. Serial 4865 read from two worn stamps — flagged ⚠️ unconfirmed, needs a cleaner read. **Bocal missing — not currently playable**; sourcing one is a prerequisite before Roger can actually use it. Crutch/water key presence unconfirmed from photos |
+| ASGN-034 | MPR-013 | Euphonium | Joseph Wipf | 2026-08-14 | Unknown | Handed down directly from Tyler Frase (closed ASGN-008) once Tyler's second euphonium (MPR-019) was in service — not a return through storage. Both permanent and student tags printed 2026-08-14 |
+| ASGN-035 | MPR-003 | Flute | Anita Bazeley | 2026-08-14 | Very Good | Second flute for Anita, reassigned directly from Christel Mow (closed ASGN-002) — not a return through storage. Both permanent and student tags printed 2026-08-14 |
  
-**21 active assignments.** Three students (Matt, Steph, Micah) not in the student roster — clarify whether they're continuing or need to be added/removed. Aug 13 reconciliation: added Davis Loewenthal (MPR-048), Jesse Frase (MPR-015), Evan Barton (MPR-027), Franklin Nelson (MPR-028), Baxter Mow (MPR-029), Sheridan Durgin (MPR-033), Emmanuel Martinie-Eiler (MPR-036, placeholder — see Aug 14 consolidation below), Tyler Frase (MPR-019, second euphonium), Baxter Mow (MPR-037, trial loan); closed out Sean Bazeley (MPR-009, returned to band room), Greg (MPR-018, returned to storage), and Joseph Wipf (MPR-020, returned to seller — retired ID). **Aug 14 consolidation:** ASGN-029 (MPR-036 placeholder trombone) and ASGN-032 (MPR-061 Olds trombone) were the same physical instrument logged twice; ASGN-029 closed out below, ASGN-032 now carries the corrected MPR-036 ID.
+**21 active assignments.** Three students (Matt, Steph, Micah) not in the student roster — clarify whether they're continuing or need to be added/removed. Aug 13 reconciliation: added Davis Loewenthal (MPR-048), Jesse Frase (MPR-015), Evan Barton (MPR-027), Franklin Nelson (MPR-028), Baxter Mow (MPR-029), Sheridan Durgin (MPR-033), Emmanuel Martinie-Eiler (MPR-036, placeholder — see Aug 14 consolidation below), Tyler Frase (MPR-019, second euphonium), Baxter Mow (MPR-037, trial loan); closed out Sean Bazeley (MPR-009, returned to band room), Greg (MPR-018, returned to storage), and Joseph Wipf (MPR-020, returned to seller — retired ID). **Aug 14 consolidation:** ASGN-029 (MPR-036 placeholder trombone) and ASGN-032 (MPR-061 Olds trombone) were the same physical instrument logged twice; ASGN-029 closed out below, ASGN-032 now carries the corrected MPR-036 ID. **Aug 14 tagging-session reassignments:** MPR-013 handed down from Tyler Frase to Joseph Wipf (ASGN-008 closed, ASGN-034 opened) once Tyler's MPR-019 was in service; MPR-003 reassigned from Christel Mow to Anita Bazeley as her second flute (ASGN-002 closed, ASGN-035 opened). Both moves were direct handoffs, not returns through storage, and both instruments got fresh permanent + student tags the same day.
  
 ---
  
@@ -109,6 +109,8 @@ When new students are placed or returning students swap instruments, use this se
 | ASGN-012 | MPR-018 | French Horn | Greg | TBD | 2026-08-13 | Unknown | Unknown | Returned to storage (confirmed Aug 13 reconciliation) — student status still not in roster, unresolved |
 | ASGN-013 | MPR-020 | Euphonium | Joseph Wipf | 2026-08 | 2026-08-13 | Unknown | Filthy valves | Returned to seller (musiqueweb) within return window — advertised as brass-shop cleaned, valves were filthy on inspection; not needed once MPR-019 filled the slot. MPR ID retired |
 | ASGN-029 | MPR-036 | Trombone | Emmanuel Martinie-Eiler | 2026-08-13 | 2026-08-14 | Unknown | — | Not a real return — data-entry duplicate. This was a placeholder assignment for the same physical trombone independently logged as MPR-061 (ASGN-032). Consolidated Aug 14: ASGN-032 now carries the corrected MPR-036 ID and remains active; this row is closed to avoid double-counting one instrument |
+| ASGN-008 | MPR-013 | Euphonium | Tyler Frase | 2021-09-04 | 2026-08-14 | Unknown | Unknown | Not a return to storage — handed down directly to Joseph Wipf (ASGN-034) the same day, once Tyler's second euphonium (MPR-019) was in service |
+| ASGN-002 | MPR-003 | Flute | Christel Mow | 2026-03-20 | 2026-08-14 | Very Good | Very Good | Not a return to storage — reassigned directly to Anita Bazeley (ASGN-035) the same day as her second flute |
  
 ---
  
@@ -147,9 +149,9 @@ When new students are placed or returning students swap instruments, use this se
  
 *This is a denormalized view for at-a-glance checking. Update it whenever an assignment changes.*
  
-**Flute:** Anita (MPR-001), Christel (MPR-003)  
+**Flute:** Anita (MPR-001, MPR-003)  
 **Trumpet:** Janice (MPR-006), Kevin H. (MPR-007), Matt (MPR-010), Connor (MPR-011)  
-**Euphonium:** Tyler (MPR-013, MPR-019), Kevin R. (Instructor, MPR-014), Jesse Frase (MPR-015), Julian (MPR-016)  
+**Euphonium:** Joseph Wipf (MPR-013), Tyler (MPR-019), Kevin R. (Instructor, MPR-014), Jesse Frase (MPR-015), Julian (MPR-016)  
 **French Horn:** Steph (MPR-017), Micah (MPR-023)  
 **Tuba:** Davis Loewenthal (MPR-048), Sheridan Durgin (Assistant Director, MPR-033)  
 **Bassoon:** Evan Barton (MPR-027), Roger Woolston (MPR-063)  

@@ -10,26 +10,29 @@ When a user selects a workflow or mentions a task, route them using this logic. 
  
 Present the workflow picker as a **tappable dropdown**, not rendered HTML and not a prose list. Project files cannot be rendered in chat, so there is no visual menu to load — the dropdown is the menu.
  
-**Options to offer:**
-- Student assignment
-- Instrument tagging
-- Instrument onboarding
-- Instrument maintenance
-- Instrument sale
-- Instrument removal
-- Review open items
-Nothing else in the response. No preamble, no priority list, no summary of what each option does — the descriptions live in `GETTING_STARTED.md` and the user already knows their workflows. Surfacing time-sensitive items belongs to **Review open items**, not to the picker.
+**Options to offer** — labeled as "Get Started with ___" rather than a bare noun, so the phrase the user actually sends (by tapping, or by typing it directly to skip the picker) gives each conversation a distinct, readable name instead of every chat opening on the same generic "get started":
+- Get Started with Student Assignment
+- Get Started with Instrument Tagging
+- Get Started with Instrument Onboarding
+- Get Started with Instrument Maintenance
+- Get Started with Instrument Sale
+- Get Started with Instrument Removal
+- Get Started with Review
+
+Nothing else in the response. No preamble, no priority list, no summary of what each option does — the descriptions live in `GETTING_STARTED.md` and the user already knows their workflows. Surfacing time-sensitive items belongs to **Get Started with Review**, not to the picker.
  
-Grade Progression is deliberately not in this picker — it runs once a year (August 1) and is triggered by the user naming it directly rather than by browsing a dropdown they'll see the other eleven months for no reason.
+Grade Progression is deliberately not in this picker — it runs once a year (August 1) and is triggered by the user naming it directly rather than by browsing a dropdown they'll see the other eleven months for no reason. It follows the same naming pattern if typed directly: "Get Started with Grade Progression".
  
-End the turn after presenting the picker. The user's selection arrives as their next message.
+End the turn after presenting the picker. The user's selection arrives as their next message — since that message is now the distinct "Get Started with ___" phrase rather than a single word, it also reads well as the conversation's name in chat history.
+ 
+**Skipping the picker:** a user who already knows what they want can type the full phrase directly (e.g. "Get Started with Instrument Tagging") instead of typing `get started` first — same route, one less turn, and the phrase becomes the conversation's first message.
  
 ---
  
 ## Tier 1: Primary Workflows
  
 ### 🎓 Student Assignment
-**When:** User clicks card, or says "assign [instrument] to [student]"
+**When:** User clicks "Get Started with Student Assignment", or says "assign [instrument] to [student]"
  
 **Route to:** `instrument-inventory` skill, Workflow 2  
 **What happens:**
@@ -43,7 +46,7 @@ End the turn after presenting the picker. The user's selection arrives as their 
 ---
  
 ### 🏷️ Instrument Tagging
-**When:** User clicks card, or says "print tags", "tag [MPR-ID]"
+**When:** User clicks "Get Started with Instrument Tagging", or says "print tags", "tag [MPR-ID]"
  
 **Route to:** `mpr-tags.html` — surface the project copy with `present_files` so the user gets a file card with a download button. Do not simply tell them to open it locally; hand them the file.
  
@@ -60,7 +63,7 @@ End the turn after presenting the picker. The user's selection arrives as their 
 ---
  
 ### 📦 Instrument Onboarding
-**When:** User clicks card, or says "I received [instrument]", "new horn arrived"
+**When:** User clicks "Get Started with Instrument Onboarding", or says "I received [instrument]", "new horn arrived"
  
 **Route to:** `instrument-inventory` skill, Workflow 1  
 **What happens:**
@@ -76,7 +79,7 @@ End the turn after presenting the picker. The user's selection arrives as their 
 ---
  
 ### 🔧 Instrument Maintenance
-**When:** User clicks card, or says "[student]'s horn needs repair", "sticky valves"
+**When:** User clicks "Get Started with Instrument Maintenance", or says "[student]'s horn needs repair", "sticky valves"
  
 **Route to:** `instrument-inventory` skill, Workflow 4  
 **What happens:**
@@ -92,7 +95,7 @@ End the turn after presenting the picker. The user's selection arrives as their 
 ---
  
 ### 💰 Instrument Sale
-**When:** User clicks card, or says "I want to sell [instrument]", "list this on eBay/Facebook", "what's this worth", "help me price this clarinet"
+**When:** User clicks "Get Started with Instrument Sale", or says "I want to sell [instrument]", "list this on eBay/Facebook", "what's this worth", "help me price this clarinet"
  
 **Route to:** `instrument-sale` skill  
 **What happens:**
@@ -110,7 +113,7 @@ End the turn after presenting the picker. The user's selection arrives as their 
 ---
  
 ### 🚪 Instrument Removal
-**When:** User clicks card, or says "[instrument] sold", "retire [MPR-ID]", "we never owned that, take it off the roster"
+**When:** User clicks "Get Started with Instrument Removal", or says "[instrument] sold", "retire [MPR-ID]", "we never owned that, take it off the roster"
  
 **Route to:** `instrument-inventory` skill, Workflow 5  
 **What happens:**
@@ -127,7 +130,7 @@ This is where an `Instrument Sale` conversation ends up once a fleet instrument'
 ---
  
 ### 📋 Review Open Items
-**When:** User clicks card, or says "what needs attention?", "open items"
+**When:** User clicks "Get Started with Review", or says "what needs attention?", "open items"
  
 **Route to:** Inline response  
 **What happens:**

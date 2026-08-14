@@ -19,6 +19,7 @@ project-files/
 ├── sale-inventory.md          # Disposal pipeline: LOT-### items for sale
 ├── students.md                 # Roster of all 83 students
 ├── watchlist.md                 # Purchase candidates under evaluation (WATCH-### IDs)
+├── tag-log.md                   # Log of every permanent/student tag print event
 ├── model-reference.md          # Instrument brands/models reference
 ├── onboarding-photo-index.md   # Onboarding photo folder index
 ├── mpr-tags.html                # Tag printer (generated; served to users, never hand-edited)
@@ -29,7 +30,7 @@ project-files/
 └── CLAUDE.md                    # This file
 ```
 
-The three skills that drive the workflows below (`Instrument Inventory Management`, `Instrument Sales`, `Instrument Purchase`) are uploaded **separately** as `.skill` packages — they are not part of this folder. Their source lives in the repo under `skills/SKILL-00N-*/`.
+The four skills that drive the workflows below (`Instrument Inventory Management`, `Instrument Sales`, `Instrument Purchase`, `Coupa Expense Reconciliation`) are uploaded **separately** as `.skill` packages — they are not part of this folder. Their source lives in the repo under `skills/SKILL-00N-*/`.
 
 `generate-tags.js` and `tags-template.html` are **not** part of this upload — they're local dev tools (see below).
 
@@ -39,7 +40,7 @@ The three skills that drive the workflows below (`Instrument Inventory Managemen
 
 ### Data Files
 
-All data lives in seven files. Skills read and write to these automatically, but they're also human-readable:
+All data lives in eight files. Skills read and write to these automatically, but they're also human-readable:
 
 **Core Program Data:**
 - **`students.md`** — 83 students, grades 2–12, status, birthday
@@ -54,6 +55,9 @@ All data lives in seven files. Skills read and write to these automatically, but
 **Onboarding:**
 - **`onboarding-photo-index.md`** — Index of intake photos per instrument, no student names in paths
 
+**Tagging:**
+- **`tag-log.md`** — Log of every permanent and student tag print event; drives the outstanding-tag flag in `mpr-tags.html`
+
 **Why markdown?**
 - Human-readable and searchable
 - Version control–friendly (clean diffs, no binary formats)
@@ -62,7 +66,7 @@ All data lives in seven files. Skills read and write to these automatically, but
 
 ### Skills
 
-Three separate skill packages, uploaded alongside this project:
+Four separate skill packages, uploaded alongside this project:
 
 - **Instrument Inventory Management** — 6 core workflows:
   1. **Student Assignment** — Assign instrument to student
@@ -83,6 +87,12 @@ Three separate skill packages, uploaded alongside this project:
   - Tracks bidding, auctions, return windows
   - Hands off to Instrument Onboarding (Workflow 1) when the box arrives
 
+- **Coupa Expense Reconciliation** — Ties money already spent back to the record:
+  - Matches a Coupa expense report/invoice line to one or more instruments in `inventory.md`
+  - Splits shared shipping/tax across multi-item purchases
+  - Flags cost or vendor variance against the recorded landed cost
+  - Requires an active Coupa MCP connection
+
 ### Tag Printer (`mpr-tags.html`)
 
 An interactive tag builder for Avery 5874 (3.5" × 2", 2 across, 5 down).
@@ -92,6 +102,7 @@ An interactive tag builder for Avery 5874 (3.5" × 2", 2 across, 5 down).
 - Choose instrument or student tags
 - Print calibration controls (for HP M479fdw)
 - Print at 100% actual size (not "fit to page")
+- **Outstanding-tag flag** — an instrument with no permanent tag logged, or an active assignment whose student tag predates it, shows "⚠️ NEEDS TAG" right in the dropdown, with the reason in the on-screen warning once selected (see `tag-log.md`)
 
 **How to use:**
 1. Claude serves this file directly via `present_files` when a user asks to print tags
@@ -108,7 +119,13 @@ An interactive tag builder for Avery 5874 (3.5" × 2", 2 across, 5 down).
 ```bash
 node generate-tags.js
 ```
-This reads `project-files/inventory.md`, merges the fleet into `tags-template.html`, and writes the result to `project-files/mpr-tags.html`. Run it any time the fleet changes, before the next upload or print run.
+This reads `project-files/inventory.md`, `tag-log.md`, and `assignment.md`, merges the fleet into `tags-template.html`, and writes the result to `project-files/mpr-tags.html` — including the outstanding-tag flag on each instrument. Run it any time the fleet, tag log, or assignments change, before the next upload or print run.
+
+---
+
+## Recording changes made during a Claude Enterprise session
+
+Claude Enterprise reads this project's files during a chat but can't edit them in place — nothing a skill "writes" during a conversation is real until it's back in this folder in the repo. As of 2026-08-14, every skill records changes as dated entries in `session-updates.md` (a running artifact for the whole conversation) instead of handing back an entire regenerated file. The user downloads that one file, drops it in `/updates/`, and Claude Code merges each entry into the correct file here — see `UPDATE-PROCESS.md` Step 1b for the exact merge process. `session-updates.md` is never itself one of this folder's 14 files; it's an inbox artifact, archived once merged.
 
 ---
 
@@ -150,6 +167,18 @@ The row then moves to "Assignment history" (closed assignments).
 - **📷** Read from a listing photo, not yet verified on the physical instrument
 - **⚠️** Partial or unconfirmed (e.g., missing one digit)
 
+### Tag Log (tag-log.md)
+
+One row per tag print event — never overwritten, so the log accumulates every printing over time:
+
+| MPR ID | Tag Type | Date Printed | Notes |
+|---|---|---|---|
+
+- **Tag Type** is `Permanent` (sealed exterior tag, printed once) or `Student` (interior tag, reprinted per assignment) — exact casing matters, `generate-tags.js` matches on it literally.
+- **Date Printed** must be ISO `YYYY-MM-DD` — the outstanding-tag flag compares it against `assignment.md`'s Date Out chronologically, which silently fails to flag staleness on a non-ISO date.
+- `generate-tags.js` uses only the **latest** row per MPR ID + Tag Type when computing the flag.
+- This file started empty on 2026-08-14 — it has no history of tags printed before that date, so every instrument shows as needing a permanent tag until logged or manually backfilled.
+
 ---
 
 ## Workflow: Adding a New Instrument
@@ -184,12 +213,13 @@ The row then moves to "Assignment history" (closed assignments).
 
 Full process lives in `UPDATE-PROCESS.md` at the repo root. Summary:
 
-1. Merge anything in `/updates/` into the matching file here (compare mtimes)
+1. Merge anything in `/updates/` into the matching file here — manual full-file replacements by mtime, AND any `session-updates.md` from a CE session, applied entry by entry
 2. Merge skill file updates into the matching `skills/SKILL-00N-*/` folder, rebuild the `.skill` package
-3. Regenerate `mpr-tags.html` locally (`node generate-tags.js`)
-4. Archive session clutter (summaries, handoffs, audits) to `landing-zone/archive/`
-5. Verify this folder holds exactly the 13 files listed above, nothing else
+3. Regenerate `mpr-tags.html` locally (`node generate-tags.js`), after Step 1 so tag-log.md merges are reflected
+4. Archive session clutter (summaries, handoffs, audits, merged `session-updates.md`) to `landing-zone/archive/`
+5. Verify this folder holds exactly the 14 files listed above, nothing else
 6. Delete this folder entirely and re-upload it fresh — anything sitting here at upload time goes to Enterprise
+7. **Reminder:** re-upload project-files/ and/or reinstall any updated `.skill` package in Claude Enterprise — nothing here takes effect there until it does
 
 ---
 
@@ -230,7 +260,9 @@ Open `inventory.md`, find "Storage" section.
 
 ## Revision History
 
-- **2026-08-14** — Rewrote to match the current flat `project-files/` upload structure and all 3 skills (previously documented a nested `data/`/`skills/`/`tools/`/`docs/` layout that no longer existed). Moved `generate-tags.js`/`tags-template.html` out of the upload into `mpr-project/` as local-only tooling; fixed a stale off-by-one column bug in `generate-tags.js` that was silently producing 0 tagged instruments.
+- **2026-08-14** (3rd update) — Added `tag-log.md` (14th project file) and the outstanding-tag flag in `mpr-tags.html`; fixed an off-by-one bug in `generate-tags.js` that silently dropped the first row of the fleet table (MPR-001) from every generated tag file. Documented the `session-updates.md` protocol: all four skills now record CE-session changes as dated deltas instead of regenerating whole files, since Claude Enterprise can't edit project files in place. Reworded the concierge picker options as "Get Started with ___" in `ROUTING.md`/`GETTING_STARTED.md` so CE chats get a readable name instead of a generic one.
+- **2026-08-14** (2nd update) — Added the fourth skill, Coupa Expense Reconciliation (converted from a technical integration spec into the conversational workflow format used by the other three).
+- **2026-08-14** (1st update) — Rewrote to match the current flat `project-files/` upload structure and all 3 skills (previously documented a nested `data/`/`skills/`/`tools/`/`docs/` layout that no longer existed). Moved `generate-tags.js`/`tags-template.html` out of the upload into `mpr-project/` as local-only tooling; fixed a stale off-by-one column bug in `generate-tags.js` that was silently producing 0 tagged instruments.
 - **2026-08-13** (2nd update) — Added Music Purchasing skill, watchlist tracking, NYSSMA event data & sheet music inventory. Updated CLAUDE.md with new skills & data files.
 - **2026-08-13** (1st update) — Restructured for Claude Enterprise: folder organization, tag generation automation, CLAUDE.md documentation.
 - **2026-08-10** — Initial landing-zone commit with all core skills and data files.

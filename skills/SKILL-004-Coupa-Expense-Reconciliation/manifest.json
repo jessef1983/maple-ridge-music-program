@@ -1,0 +1,34 @@
+{
+  "id": "SKILL-004",
+  "mcp_actions_required": [],
+  "name": "Coupa Expense Reconciliation",
+  "mcp_tools_optional": [],
+  "version": "1.0.0",
+  "mcp_tools_required": [
+    "get_expense_reports",
+    "get_invoices",
+    "get_record_by_id",
+    "search_suppliers"
+  ],
+  "output_format": "session-updates.md deltas (Claude Enterprise can't edit project files in place); structured summaries and variance flags",
+  "supporting_frameworks": [],
+  "changelog": [
+    {
+      "version": "1.0.0",
+      "date": "2026-08-14",
+      "changes": [
+        "Initial skill packaging for Claude Enterprise",
+        "Converted from a technical integration spec (JSON I/O schemas) into a conversational workflow, matching the format of the other three skills",
+        "Added session-updates.md protocol: writes now append dated deltas to a session artifact instead of rewriting inventory.md, since CE can't edit project files in place"
+      ]
+    }
+  ],
+  "owner": "Maple Ridge School Music Program",
+  "domains": [
+    "Music Program Management",
+    "Finance & Procurement"
+  ],
+  "status": "active",
+  "retrieval_pattern": "Read from inventory.md (landed cost, purchase date, supplier, service records) and from Coupa (expense reports, invoices) via MCP tools",
+  "description": "Reconcile instrument purchase and repair expenses against Coupa expense reports and invoices — matching receipt line items to inventory records, allocating shared shipping/tax across multi-item purchases, flagging cost variances, and recording the Coupa link for audit trail. Requires an active Coupa MCP connection."
+}

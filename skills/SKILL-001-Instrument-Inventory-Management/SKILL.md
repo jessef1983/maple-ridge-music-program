@@ -23,14 +23,32 @@ This skill works with three separate files, each with a distinct purpose:
 
 **Why this split:** An instrument's facts (serial, cost, service) don't change when it gets passed to a different student. A student's record doesn't change when they swap horns. Only the junction table (`assignment.md`) captures the dynamic pairings and their history.
 
-**A fourth file is derived, not authoritative.** `mpr-tags.html` carries a hardcoded copy of the fleet in its `FLEET` array, because a local file cannot read `inventory.md` at runtime — browsers block it. It is a snapshot that goes stale silently. Regenerate it whenever the fleet changes: a new instrument, a departed one, or a serial promoted from 📷 to ✅. When rebuilding, `inventory.md` is the source of truth and the tag file is rewritten to match — never the reverse.
+**A fourth file, `tag-log.md`, is also a log, not a fact table** — every permanent- and student-tag print event, one row per printing. It exists so a stale or missing tag is visible without checking cases by hand.
+
+**A fifth file is derived, not authoritative.** `mpr-tags.html` carries a hardcoded copy of the fleet in its `FLEET` array, because a local file cannot read `inventory.md` at runtime — browsers block it. It is a snapshot that goes stale silently. Regenerate it whenever the fleet changes: a new instrument, a departed one, a serial promoted from 📷 to ✅, or a tag getting printed (logged in `tag-log.md`). When rebuilding, `inventory.md`/`assignment.md`/`tag-log.md` are the source of truth and the tag file is rewritten to match — never the reverse.
 
 **File references in this skill:**
-- Workflows 1 & 2 (onboarding, assignment) reference all three
-- Workflow 3 (tagging) reads from `students.md` and `inventory.md`, inputs to `assignment.md`
+- Workflows 1 & 2 (onboarding, assignment) reference all three core files
+- Workflow 3 (tagging) reads from `students.md`, `inventory.md`, and `assignment.md`; writes to `tag-log.md` every time a tag is printed
 - Workflow 4 (maintenance) updates `inventory.md` and `assignment.md`
 - Workflow 5 (removal) updates `inventory.md` and closes rows in `assignment.md`
 - Workflow 6 (transitions) updates `students.md` and manages `assignment.md` for graduating students
+
+## Recording changes during a Claude Enterprise session
+
+A Claude Enterprise project chat reads the files above, but it cannot edit them in place — nothing written during a conversation is real until it's back in `mpr-project/project-files/` in the actual repo. Handing back an entire regenerated file (all of `inventory.md`, say) every time one row changes is heavy, hard for a human to review, and risks silently clobbering someone else's edit made in a different session.
+
+**So: wherever a workflow below says to write, update, or create a row in a file, do this instead —** append a dated entry to `session-updates.md` describing the change, rather than rewriting the target file itself. Keep `session-updates.md` open as one running artifact for the whole conversation (present it via `present_files`, and append to the same artifact — don't start a new one per change).
+
+**Entry format:**
+```
+## <ISO timestamp> — instrument-inventory, Workflow <n> (<workflow name>)
+**Target file:** <file.md>
+**Change:** <one line: append row / update field, etc.>
+<the literal row or field value, in the target file's own table format, ready to paste in>
+```
+
+At the natural end of a workflow ("Done"), remind the user once: "Download `session-updates.md` and bring it back to Claude Code — it merges these into the real files." Don't repeat the reminder after every entry within the same session; once per completed workflow is enough. If the user runs multiple workflows in one conversation, keep appending to the same `session-updates.md` rather than starting a fresh one each time.
 
 ## Identity model
 
@@ -190,7 +208,14 @@ Handles both adding a new student to the program and assigning (or reassigning) 
 
 ## 3. Tag printing
 
-**Files involved:** `inventory.md` (read serial & MPR), `students.md` (read student name), `assignment.md` (reference for dates)
+**Files involved:** `inventory.md` (read serial & MPR), `students.md` (read student name), `assignment.md` (reference for dates), `tag-log.md` (write — one entry per print)
+
+**Log every print, both kinds.** Immediately after printing a permanent tag or a student tag, record it — following the session-updates.md protocol above — as a new row in `tag-log.md`:
+```
+| MPR ID | Tag Type | Date Printed | Notes |
+| MPR-021 | Permanent | 2026-08-14 | |
+```
+Use `Permanent` or `Student` exactly (case-sensitive match expected by `generate-tags.js`) and an ISO `YYYY-MM-DD` date — the outstanding-tag flag in `mpr-tags.html` depends on chronological comparison against `assignment.md`'s Date Out, which breaks silently on a non-ISO date. Skipping this step is why the picker would keep flagging an instrument as needing a tag after it's already been printed.
 
 **The tool lives on disk, not in chat.** It is synced from the SharePoint Music Resources library to:
 

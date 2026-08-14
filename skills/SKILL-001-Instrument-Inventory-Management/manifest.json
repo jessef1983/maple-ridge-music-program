@@ -3,9 +3,9 @@
   "mcp_actions_required": [],
   "name": "Instrument Inventory Management",
   "mcp_tools_optional": [],
-  "version": "2.0.0",
+  "version": "2.1.0",
   "mcp_tools_required": [],
-  "output_format": "Updated markdown files; structured summaries and confirmations",
+  "output_format": "session-updates.md deltas (Claude Enterprise can't edit project files in place); structured summaries and confirmations",
   "supporting_frameworks": [],
   "changelog": [
     {
@@ -25,6 +25,15 @@
         "Rewrote onboarding workflow: duplicate-instrument check, ownership determination, sourced research, accessory-completeness check, 8-item done-checklist",
         "Added Appendix on single-source-of-truth rules and retroactive schema fixes"
       ]
+    },
+    {
+      "version": "2.1.0",
+      "date": "2026-08-14",
+      "changes": [
+        "Added session-updates.md protocol: writes now append dated deltas to a session artifact instead of rewriting whole files, since CE can't edit project files in place",
+        "Added tag-log.md as a fourth log file; Workflow 3 (tagging) now logs every permanent/student tag print",
+        "Documented mpr-tags.html's outstanding-tag flag, derived from tag-log.md cross-referenced against assignment.md"
+      ]
     }
   ],
   "owner": "Maple Ridge School Music Program",
@@ -32,6 +41,6 @@
     "Music Program Management"
   ],
   "status": "active",
-  "retrieval_pattern": "Read from data/ files (students.md, inventory.md, assignment.md, sale-inventory.md)",
+  "retrieval_pattern": "Read from project-files/ (students.md, inventory.md, assignment.md, sale-inventory.md, tag-log.md); writes via session-updates.md",
   "description": "Assign instruments to students, print tags, log new instruments, record maintenance and repairs, manage annual grade progression, and mark instruments sold/retired."
 }

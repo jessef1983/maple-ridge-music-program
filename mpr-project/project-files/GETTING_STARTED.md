@@ -178,7 +178,7 @@ Four files hold the program's records. **Skills read and write to these automati
  
 **Type `get started` in this conversation** to get a dropdown of the workflows.
  
-Or **type the workflow name** directly (e.g., "student assignment", "tagging", "maintenance", "instrument sale") and the skill will begin.
+Or skip the dropdown and **type "Get Started with ___" directly** (e.g., "Get Started with Student Assignment", "Get Started with Instrument Tagging", "Get Started with Instrument Maintenance") — this also gives the chat a readable name in your history instead of a generic one.
  
 Or **just describe what you need** ("Connor's trumpet is being serviced, and it should be back next week" or "I want to sell these three clarinets") and I'll route you to the right skill.
  

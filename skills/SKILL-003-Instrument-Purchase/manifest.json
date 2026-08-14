@@ -3,9 +3,9 @@
   "mcp_actions_required": [],
   "name": "Instrument Purchase",
   "mcp_tools_optional": [],
-  "version": "1.0.0",
+  "version": "1.1.0",
   "mcp_tools_required": [],
-  "output_format": "Updated markdown files; structured summaries and confirmations",
+  "output_format": "session-updates.md deltas (Claude Enterprise can't edit project files in place); structured summaries and confirmations",
   "supporting_frameworks": [],
   "changelog": [
     {
@@ -14,6 +14,13 @@
       "changes": [
         "Initial skill packaging for Claude Enterprise"
       ]
+    },
+    {
+      "version": "1.1.0",
+      "date": "2026-08-14",
+      "changes": [
+        "Added session-updates.md protocol: writes now append dated deltas to a session artifact instead of rewriting whole files, since CE can't edit project files in place"
+      ]
     }
   ],
   "owner": "Maple Ridge School Music Program",
@@ -21,6 +28,6 @@
     "Music Program Management"
   ],
   "status": "active",
-  "retrieval_pattern": "Read from data/ files (students.md, inventory.md, assignment.md, sale-inventory.md)",
+  "retrieval_pattern": "Read from project-files/ (watchlist.md, model-reference.md, inventory.md, students.md, assignment.md, sale-inventory.md); writes via session-updates.md",
   "description": "Evaluate instrument listings from eBay, Reverb, or retailers. Verify specs from photos, calculate landed cost including tax and shipping, bid strategically, and track return windows."
 }

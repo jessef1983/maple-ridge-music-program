@@ -173,7 +173,9 @@ body{ font-family:Helvetica,Arial,sans-serif; color:var(--ink);
 const PROGRAM = "MAPLE RIDGE SCHOOL";
 const PHONE   = "(845) 339-6681";
 
-/* serialOk: true = read off the instrument · false = read off a listing photo, unverified */
+/* serialOk: true = read off the instrument · false = read off a listing photo, unverified
+   needsTag: true if a permanent tag was never logged, or the student tag predates the
+   current assignment — see tag-log.md and generate-tags.js. needsTagReason explains why. */
 const FLEET = [
   {id:"MPR-001", fam:"fl",  model:"Yamaha YFL-385II",        serial:"",       serialOk:null, holder:"Anita"},
   {id:"MPR-003", fam:"fl",  model:"Yamaha YFL-221SII",       serial:"323884", serialOk:false,holder:"Christel"},
@@ -264,25 +266,33 @@ function setMode(m){
 function fill(){
   const it = FLEET.find(f => f.id === $("fPick").value);
   $("warn").className = "warn";
+  $("warn").innerHTML = "";
   if(!it) return;
   $("fId").value = it.id;
   $("fFam").value = it.fam;
   $("fA").value = mode === "inst" ? it.model : it.holder;
   $("fB").value = mode === "inst" ? it.serial : "";
+
+  const warnings = [];
   if(mode === "inst" && it.serialOk === false){
-    $("warn").className = "warn show";
-    $("warn").innerHTML = "<b>This serial came off a listing photo, not the instrument.</b> "
+    warnings.push("<b>This serial came off a listing photo, not the instrument.</b> "
       + "Fine for a test print — but don't seal a laminated tag with it. "
-      + "Verify against the valve casing on arrival, then update the file.";
+      + "Verify against the valve casing on arrival, then update the file.");
   } else if(mode === "inst" && it.serialOk === null){
+    warnings.push("<b>No serial on record.</b> Read it off the instrument and type it in "
+      + "before printing a permanent tag.");
+  }
+  if(it.needsTag){
+    warnings.push(`<b>Outstanding tag:</b> ${it.needsTagReason || "see tag-log.md"}`);
+  }
+  if(warnings.length){
     $("warn").className = "warn show";
-    $("warn").innerHTML = "<b>No serial on record.</b> Read it off the instrument and type it in "
-      + "before printing a permanent tag.";
+    $("warn").innerHTML = warnings.join("<br><br>");
   }
 }
 
 $("fPick").innerHTML += FLEET.map(f =>
-  `<option value="${f.id}">${f.id} — ${f.model} · ${f.holder}</option>`).join("");
+  `<option value="${f.id}">${f.id} — ${f.model} · ${f.holder}${f.needsTag ? " ⚠️ NEEDS TAG" : ""}</option>`).join("");
 $("fPick").onchange = fill;
 $("tInst").onclick = () => setMode("inst");
 $("tStud").onclick = () => setMode("stud");
