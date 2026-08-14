@@ -7,6 +7,10 @@
 :root{
   --tpt:#C1440E; --hrn:#1F5673; --eup:#6A2C70;
   --fl:#2E7D5B;  --prc:#8B5A2B; --str:#7A1F3D;
+  --tub:#4B3F72; --trb:#B8860B; --bsn:#4A5568;
+  --clr:#0F6E5C; --asx:#B5651D; --tsx:#8E4A9E;
+  --ahn:#2F6690; --dsc:#17394D; --mel:#5B7B9A;
+  --flg:#A63446; --oth:#555555;
   --ink:#111;
   /* calibration — adjustable from the panel, saved between visits */
   --offx:0.0313in;   /* shift right  */
@@ -71,6 +75,12 @@ body{ font-family:Helvetica,Arial,sans-serif; color:var(--ink);
 .cell{ width:3.5in; height:var(--pitch); box-sizing:border-box; overflow:hidden; }
 .tag{ height:2in; }
 .tag{ width:100%; height:100%; display:flex; box-sizing:border-box; }
+.tag.stud{ flex-direction:column; }
+.band{ height:.3in; flex:0 0 .3in; background:var(--c);
+       display:flex; align-items:center; padding-left:.16in; }
+.band span{ color:#fff; font-size:7.5pt; font-weight:700;
+            letter-spacing:.22em; text-transform:uppercase; }
+.tag.stud .face{ padding:.14in .18in .13in .16in; }
 .spine{ width:.3in; flex:0 0 .3in; background:var(--c);
         display:flex; align-items:center; justify-content:center; }
 .spine span{ writing-mode:vertical-rl; transform:rotate(180deg); color:#fff;
@@ -84,16 +94,12 @@ body{ font-family:Helvetica,Arial,sans-serif; color:var(--ink);
          margin-top:.03in; letter-spacing:.02em; }
 .serial em{ font-family:Helvetica,Arial,sans-serif; font-style:normal; font-size:7.5pt;
             letter-spacing:.12em; text-transform:uppercase; color:#666; margin-right:.04in; }
-.who{ font-size:15pt; font-weight:700; line-height:1.15; margin-top:.07in; }
+.who{ font-size:30pt; font-weight:700; line-height:1.02; letter-spacing:-.01em;
+       color:var(--c); }
 .foot{ border-top:1pt solid var(--ink); padding-top:.05in; }
 .prog{ font-family:Georgia,'Times New Roman',serif; font-size:9.5pt;
        font-weight:700; letter-spacing:.04em; }
 .call{ font-size:8pt; color:#333; margin-top:.01in; }
-.row2{ display:flex; gap:.16in; margin-top:.05in; }
-.row2 .half{ flex:1; display:flex; align-items:baseline; gap:.05in; }
-.row2 b{ font-size:6.5pt; letter-spacing:.1em; text-transform:uppercase;
-         color:#666; flex:0 0 .34in; }
-.row2 .line{ flex:1; border-bottom:.7pt dotted #666; height:.1in; }
 </style>
 </head>
 <body>
@@ -120,9 +126,14 @@ body{ font-family:Helvetica,Arial,sans-serif; color:var(--ink);
       <label>MPR ID<input id="fId" placeholder="MPR-013"></label>
       <label>Family
         <select id="fFam">
-          <option value="tpt">Trumpet</option><option value="hrn">Horn</option>
+          <option value="tpt">Trumpet</option><option value="hrn">French Horn</option>
           <option value="eup">Euphonium</option><option value="fl">Flute</option>
-          <option value="prc">Percussion</option><option value="str">Strings</option>
+          <option value="prc">Percussion</option><option value="tub">Tuba</option>
+          <option value="trb">Trombone</option><option value="bsn">Bassoon</option>
+          <option value="clr">Clarinet</option><option value="asx">Alto Sax</option>
+          <option value="tsx">Tenor Sax</option><option value="ahn">Alto Horn</option>
+          <option value="dsc">Descant Horn</option><option value="mel">Mellophone</option>
+          <option value="flg">Flugelhorn</option><option value="str">Strings</option>
         </select>
       </label>
     </div>
@@ -198,12 +209,22 @@ const FLEET = [
   {id:"MPR-026", fam:"fl",  model:"Yamaha YFL-225",          serial:"",       serialOk:null, holder:"Unassigned"},
 ];
 
-const FAMS = {tpt:"Trumpet", hrn:"Horn", eup:"Euphonium", fl:"Flute", prc:"Percussion", str:"Strings"};
+const FAMS = {
+  tpt:"Trumpet", hrn:"French Horn", eup:"Euphonium", fl:"Flute", prc:"Percussion",
+  tub:"Tuba", trb:"Trombone", bsn:"Bassoon", clr:"Clarinet", asx:"Alto Sax",
+  tsx:"Tenor Sax", ahn:"Alto Horn", dsc:"Descant Horn", mel:"Mellophone",
+  flg:"Flugelhorn", str:"Strings", oth:"Other",
+};
 const KEY = "mpr-tag-sheet-v1";
 let cards = new Array(10).fill(null), mode = "inst", slot = 0;
 
 const $ = id => document.getElementById(id);
 const esc = s => String(s||"").replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+/* "Anita Bazeley" -> ["Anita","Bazeley"]; a single word stays on one line */
+const splitName = n => {
+  const p = String(n||"").trim().split(/\s+/);
+  return p.length < 2 ? [p[0]||"", ""] : [p.slice(0,-1).join(" "), p[p.length-1]];
+};
 
 const CKEY = "mpr-tag-cal-v1";
 function applyCal(){
@@ -235,21 +256,21 @@ function render(){
            ${c.b ? `<div class="serial"><em>Serial</em>${esc(c.b)}</div>` : ``}</div>
          <div class="foot"><div class="prog">${esc(PROGRAM)}</div>
            <div class="call">If found, please call ${esc(PHONE)}</div></div>`
-      : `<div class="body"><span class="mark">${esc(c.id)}</span>
-           <div class="who">${esc(c.a)}</div></div>
-         <div>
-           <div class="row2"><div class="half"><b>Out</b><span class="line"></span></div>
-             <div class="half"><b>In</b><span class="line"></span></div></div>
-           <div class="row2"><div class="half"><b>Cond</b><span class="line"></span></div>
-             <div class="half"><b>Cond</b><span class="line"></span></div></div>
-         </div>`;
-    return `<div class="cell"><div class="tag" style="--c:var(--${c.fam})">
-              <div class="spine"><span>${esc(c.mode==="inst" ? FAMS[c.fam] : "Assigned")}</span></div>
-              <div class="face">${body}</div></div></div>`;
+      : (() => { const [first, last] = splitName(c.a); return `
+         <div class="body"><div class="who">${esc(first)}${last ? `<br>${esc(last)}` : ``}</div></div>
+         <div class="foot"><div class="prog">${esc(PROGRAM)}</div></div>`; })();
+    return c.mode === "inst"
+      ? `<div class="cell"><div class="tag" style="--c:var(--${c.fam})">
+           <div class="spine"><span>${esc(FAMS[c.fam])}</span></div>
+           <div class="face">${body}</div></div></div>`
+      : `<div class="cell"><div class="tag stud" style="--c:var(--${c.fam})">
+           <div class="band"><span>${esc(FAMS[c.fam])} &middot; Assigned to</span></div>
+           <div class="face">${body}</div></div></div>`;
   }).join("");
 
   $("pick").innerHTML = cards.map((c,i) =>
-    `<button data-i="${i}" class="${c?'used':''}" aria-pressed="${i===slot}">${i+1}${c?' · '+esc(c.id):''}</button>`
+    `<button data-i="${i}" class="${c?'used':''}" aria-pressed="${i===slot}">${i+1}${
+       c ? ' &middot; ' + esc(c.mode === "inst" ? c.id : c.a.split(/\s+/)[0]) : ''}</button>`
   ).join("");
   save();
 }
@@ -300,7 +321,8 @@ $("pick").onclick = e => { const b = e.target.closest("button"); if(!b) return;
                            slot = +b.dataset.i; render(); };
 $("add").onclick = () => {
   const id = $("fId").value.trim(), a = $("fA").value.trim();
-  if(!id || !a){ alert("MPR ID and " + (mode==="inst"?"model":"student name") + " are required."); return; }
+  if(mode === "inst" && !id){ alert("MPR ID is required."); return; }
+  if(!a){ alert((mode==="inst" ? "Model" : "Student name") + " is required."); return; }
   cards[slot] = {mode, id, fam:$("fFam").value, a, b:$("fB").value.trim()};
   const next = cards.findIndex(c => !c);
   if(next !== -1) slot = next;

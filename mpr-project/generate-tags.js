@@ -18,23 +18,27 @@ const ASSIGNMENT_PATH = path.join(__dirname, 'project-files/assignment.md');
 const TAGS_TEMPLATE_PATH = path.join(__dirname, 'tags-template.html');
 const OUTPUT_PATH = path.join(__dirname, 'project-files/mpr-tags.html');
 
-// Instrument family mapping
+// Instrument family mapping — must cover every distinct value in inventory.md's
+// Instrument column, or a real instrument silently gets mislabeled by the fallback.
+// Check `awk -F'|' '...' inventory.md | sort -u` against this map whenever a new
+// instrument type is added to the fleet.
 const FAMILY_MAP = {
   'Trumpet': 'tpt',
-  'Flute': 'fl',
-  'Euphonium': 'eup',
   'French Horn': 'hrn',
+  'Euphonium': 'eup',
+  'Flute': 'fl',
   'Percussion': 'prc',
+  'Tuba': 'tub',
+  'Trombone': 'trb',
+  'Bassoon': 'bsn',
+  'Clarinet': 'clr',
+  'Alto Sax': 'asx',
+  'Tenor Sax': 'tsx',
+  'Alto Horn (F)': 'ahn',
+  'Descant Horn (F)': 'dsc',
+  'Mellophone': 'mel',
+  'Flugelhorn': 'flg',
   'Strings': 'str',
-};
-
-const FAMILY_NAMES = {
-  'tpt': 'Trumpet',
-  'fl': 'Flute',
-  'eup': 'Euphonium',
-  'hrn': 'Horn',
-  'prc': 'Percussion',
-  'str': 'Strings',
 };
 
 /**
@@ -74,18 +78,21 @@ function parseInventory(content) {
     if (!mpr.startsWith('MPR-')) continue;
 
     // Determine family from instrument type
-    const fam = FAMILY_MAP[instrument] || 'str';
+    const fam = FAMILY_MAP[instrument];
+    if (!fam) {
+      console.warn(`⚠ Unmapped instrument type "${instrument}" (${mpr}) — add it to FAMILY_MAP in generate-tags.js, defaulting to "oth" (Other) for now`);
+    }
     const serialText = serial.replace(/[✅📷⚠️]/g, '').trim();
     const hasSerial = /\d/.test(serialText);
     const serialOk = serial.includes('✅') ? true : serial.includes('📷') ? false : null;
 
     fleet.push({
       id: mpr,
-      fam: fam,
+      fam: fam || 'oth',
       model: model,
       serial: hasSerial ? serialText : '',
       serialOk: serialOk,
-      holder: holder === '—' ? '' : holder,
+      location: holder === '—' ? '' : holder, // inventory.md's "Location" column — a status (Assigned/Storage/etc.), NOT a student name
     });
   }
 
@@ -133,10 +140,11 @@ function parseTagLog(content) {
 }
 
 /**
- * Parse assignment.md's "Active assignments" table into { mprId: 'Date Out' (raw string) }
+ * Parse assignment.md's "Active assignments" table into
+ * { mprId: { student: 'Full Name', dateOut: 'Date Out' (raw string) } }
  */
-function parseActiveAssignmentDates(content) {
-  const dates = {};
+function parseActiveAssignments(content) {
+  const assignments = {};
   const lines = content.split('\n');
   let inTable = false;
 
@@ -151,31 +159,53 @@ function parseActiveAssignmentDates(content) {
     const cells = line.split('|').map(c => c.trim()).filter(c => c);
     if (cells.length < 5) continue;
 
-    const [, mpr, , , dateOut] = cells;
+    const [, mpr, , student, dateOut] = cells;
     if (!mpr || !mpr.startsWith('MPR-')) continue;
 
-    dates[mpr] = dateOut;
+    // Drop a trailing role annotation like "(Instructor)" / "(Assistant Director)" for tag display
+    const displayName = (student || '').replace(/\s*\([^)]*\)\s*$/, '').trim();
+
+    assignments[mpr] = { student: displayName, dateOut };
   }
 
-  return dates;
+  return assignments;
 }
 
 /**
- * Decide whether each fleet item needs a tag printed, and why.
- * Flags: permanent tag never logged, OR an active assignment whose student tag
+ * Decide the correct holder to print/display, and whether each fleet item needs
+ * a tag printed and why.
+ *
+ * Holder: the student's name from assignment.md's active table — NOT inventory.md's
+ * "Location" column (that's a status like Assigned/Storage/Band Room, never a name;
+ * conflating the two used to print "Assigned" as a student's name on the tag).
+ * Falls back to the Location status when there's no active assignment (Storage, Band
+ * Room, Unassigned) — and flags the rare case where Location says "Assigned" but
+ * assignment.md has no matching active row, since that's a real data inconsistency,
+ * not something to silently print as if it were a name.
+ *
+ * needsTag: permanent tag never logged, OR an active assignment whose student tag
  * was never logged or was printed before the assignment's Date Out (stale).
  */
-function applyTagStatus(fleet, tagLog, activeAssignmentDates) {
+function applyTagStatus(fleet, tagLog, activeAssignments) {
   for (const item of fleet) {
     const log = tagLog[item.id] || {};
-    const dateOut = activeAssignmentDates[item.id];
+    const assignment = activeAssignments[item.id];
     const reasons = [];
+
+    if (assignment) {
+      item.holder = assignment.student;
+    } else if (item.location && item.location.toLowerCase() === 'assigned') {
+      item.holder = '⚠️ Assigned but no assignment.md record';
+    } else {
+      item.holder = item.location;
+    }
 
     if (!log.permanent) {
       reasons.push('permanent tag not logged');
     }
 
-    if (dateOut) {
+    if (assignment) {
+      const dateOut = assignment.dateOut;
       if (!log.student) {
         reasons.push('active assignment, student tag not logged');
       } else if (ISO_DATE.test(dateOut) && ISO_DATE.test(log.student) && log.student < dateOut) {
@@ -228,8 +258,8 @@ function main() {
 
     const fleet = parseInventory(inventoryContent);
     const tagLog = parseTagLog(tagLogContent);
-    const activeAssignmentDates = parseActiveAssignmentDates(assignmentContent);
-    applyTagStatus(fleet, tagLog, activeAssignmentDates);
+    const activeAssignments = parseActiveAssignments(assignmentContent);
+    applyTagStatus(fleet, tagLog, activeAssignments);
 
     const htmlContent = generateHTML(fleet);
     fs.writeFileSync(OUTPUT_PATH, htmlContent, 'utf-8');
