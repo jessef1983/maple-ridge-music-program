@@ -26,7 +26,7 @@
 | MPR-009 | Percussion | Yamaha YG-50D | Band Room | 1058955 ✅ | `$602.64` | Owned | Unknown |
 | MPR-010 | Trumpet | Yamaha YTR-3335S | Assigned | — | `$626.40` | Owned | Unknown |
 | MPR-011 | Trumpet | Yamaha YTR-1335S | Assigned | 602497 ✅ | `$345.06` | Owned | Unknown |
-| MPR-013 | Euphonium | Yamaha YEP-201M | Assigned | 103212 ✅ | `$691.20` | Owned | Unknown |
+| MPR-013 | Euphonium | Yamaha YEP-201M | Assigned | 103212 ✅ | `$691.20` | Owned | Good |
 | MPR-014 | Euphonium | Besson 3V Comp. | Assigned | — | `$815.40` | Owned | Good |
 | MPR-015 | Euphonium | Besson 767 Comp. | Assigned | 767-716691 ✅ | `$2,160.00` | Owned | Good |
 | MPR-016 | Euphonium | Yamaha YEP-201 | Assigned | — | `$595.00` | Owned | Good |
@@ -84,7 +84,7 @@
 | MPR-009 | 2025-08-14 | eBay | item `16-13441-20064` | **Brand:** Yamaha. **Model:** YG-50D Glockenspiel. **Serial:** 1058955 ✅. **Outstanding:** none |
 | MPR-010 | 2025-04-29 | eBay (leaf-japan) | item `17-13007-31485` | **Brand:** Yamaha. **Model:** YTR-3335S. **Serial:** not on record. **Outstanding:** none |
 | MPR-011 | 2025-01-28 | eBay (leaf-japan) | item `03-12646-99043` | **Brand:** Yamaha. **Model:** YTR-1335S. **Serial:** 602497 ✅. **Outstanding:** none |
-| MPR-013 | 2021-09-04 | eBay (musicianstopschoice) | item `20-07558-34850` | **Brand:** Yamaha. **Model:** YEP-201M. **Serial:** 103212 ✅. **Outstanding:** none |
+| MPR-013 | 2021-09-04 | eBay (musicianstopschoice) | item `20-07558-34850` | **Brand:** Yamaha. **Model:** YEP-201M. **Serial:** 103212 ✅. **Outstanding:** none. **Service history:** Springs and valve guides replaced in 2025; full bath, cleaning, and lubrication 2026-08-14 (SVC-EUP-003) |
 | MPR-014 | 2021-08-16 | eBay (thehom\*doctor) | item `08-07479-22103` | **Brand:** Besson. **Model:** 3V Compensating. **Serial:** not on record. **Outstanding:** none — in use, player satisfied |
 | MPR-015 | 2021-06-28 | eBay (anben-5074) | item `05-07269-87932` | **Brand:** Besson. **Model:** 767 Compensating. **Serial:** 767-716691 ✅ (inscription verified). **Outstanding:** none |
 | MPR-016 | ⚠️ pending | Reverb | item `47541756` | **Brand:** Yamaha. **Model:** YEP-201. **Serial:** not on record. **Outstanding:** purchase date still not logged (+$89.95 shipping) |
@@ -114,6 +114,7 @@
 | SVC-PRC-001 | MPR-050 | High tom missing (out for repair) | TBD | pending | TBD | Location/status TBD |
 | SVC-EUP-001 | MPR-019 | Dent removal + chem flush (above bow) | TBD | pending | TBD | Deferred / budget pending |
 | SVC-EUP-002 | MPR-019 | Valve caps frozen/stuck on arrival | DIY | 2026-08-13 | `$0` | Completed — penetrating oil, hot soak, non-marring pliers freed all caps; horn cleaned up well |
+| SVC-EUP-003 | MPR-013 | Full bath, cleaning, lubrication — routine maintenance | DIY | 2026-08-14 | `$0` | Completed |
 | SVC-CLR-001 | MPR-038 | Playing issues on assessment — mouthpiece fits loosely; likely old/worn corks not sealing well (tenon corks) | TBD | pending | TBD | Pending quote — corks are a cheap fix if that's all it is |
 | SVC-SAX-001 | MPR-037 | Bell rim dent | TBD | pending | TBD | Deferred / budget pending |
 | SVC-TRB-001 | MPR-036 | Water key cork missing — temporary paper towel plug | DIY | pending | `$0` (cork on hand) | Pending — cork replacement |
