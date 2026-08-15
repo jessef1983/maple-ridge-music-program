@@ -122,18 +122,51 @@ This is the workflow `instrument-sale` (below) hands off to once a fleet instrum
  
 ---
  
-### Tier 2: Secondary Workflows (Future)
+### Tier 2: Repertoire & Money
+
+#### **Music Purchase** 🎼
+*Choose concert band music for the band you actually have*
+
+**When:** Planning a concert, filling a gap in the library, or judging whether a specific piece will work  
+**What it does:**
+- Builds a picture of the current ensemble — who plays what, and how well
+- Pins down the musical need before opening a catalog
+- Searches publisher and vendor catalogs against a written specification
+- Evaluates each piece against this band: instrumentation, ranges, exposed parts, percussion practicality
+- Scores candidates and returns a ranked shortlist with a direct BUY / CONSIDER / STRETCH / PASS
+- Records purchased titles as `REP-###` in `repertoire.md`
+**Typical time:** 20–45 minutes for a concert's worth of repertoire
+
+**Files:** reads/writes `repertoire.md`; reads `students.md`, `assignment.md`, `inventory.md`
+
+The published grade is a filter, not a verdict — a Grade 2 piece with an exposed horn part can be harder for this band than a Grade 2.5 whose difficulty sits in the strong sections.
+
+---
+
+#### **Expense Reconciliation** 💵
+*Tie money already spent back to the record*
+
+**When:** A Coupa expense report or invoice needs matching, or you want to know what was already paid  
+**What it does:**
+- Finds the expense in Coupa by report ID, line ID, or exact merchant string
+- Matches receipt lines to instruments in `inventory.md` or titles in `repertoire.md`
+- Splits shared shipping and tax across a multi-item order
+- Flags variance against the recorded cost
+**Typical time:** 5–15 minutes per expense
+
+**Requires an active Coupa connection.** Without one, it will say so rather than guess.
+
+---
+
+### Tier 3: Future Workflows
  
 *Coming soon:*
- 
-#### **Music Purchasing** 💰
-Find and evaluate eBay/Reverb listings, calculate landed costs, track proxy bids, compare sellers
  
 #### **NYSSMA Solo Night** 🎼
 Assign solo pieces to students, build the program, manage rehearsal schedules
  
 #### **Music Library** 📚
-Search or add sheet music to the program collection
+Catalog and search the wider sheet music collection beyond concert band repertoire
  
 ---
  
@@ -158,19 +191,24 @@ Search or add sheet music to the program collection
 | It's August 1 and students are advancing | **Grade Progression** | 1 |
 | An instrument sold, or is being retired | **Instrument Removal** | 1 |
 | I want to sell the YFL-225, or price/list any LOT item | **Instrument Sale** | 1 |
-| I found a good Besson online | Music Purchasing | 2 |
-| I need to add a Bach 1.5C mouthpiece to inventory | Music Library | 2 |
+| I found a good Besson online | **Instrument Purchase** | 1 |
+| What music should we buy for the fall concert? | **Music Purchase** | 2 |
+| Will this Grade 2.5 piece work for our band? | **Music Purchase** | 2 |
+| Did we already buy this march? | **Music Purchase** (then Expense Reconciliation if the library record is thin) | 2 |
+| Split the shipping on that three-horn eBay order | **Expense Reconciliation** | 2 |
+| I need to add a Bach 1.5C mouthpiece to inventory | Music Library | 3 |
  
 ---
  
 ## File structure
  
-Four files hold the program's records. **Skills read and write to these automatically.** You can browse them anytime:
+These files hold the program's records. **Skills read and write to these automatically.** You can browse them anytime:
  
 - **`students.md`** — Roster of all 83 students (grades 2–12), their status, birthday
 - **`inventory.md`** — Fleet assets: MPR-### instruments, serials, costs, service history
 - **`assignment.md`** — Active & historical: who has what, dates, condition
 - **`sale-inventory.md`** — Disposal pipeline: LOT-### items held for sale, separate from the fleet, with identification evidence, condition, and pricing per item
+- **`repertoire.md`** — Concert band music library: REP-### titles owned, programming history, and titles deliberately rejected
 - **`mpr-tags.html`** — Tag printer template (open locally to print)
 ---
  

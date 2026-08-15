@@ -1,0 +1,28 @@
+{
+  "id": "SKILL-005",
+  "mcp_actions_required": [],
+  "name": "Music Purchase",
+  "mcp_tools_optional": [],
+  "version": "1.0.0",
+  "mcp_tools_required": [],
+  "output_format": "session-updates.md deltas (Claude Enterprise can't edit project files in place); ranked repertoire shortlists and final purchase lists",
+  "supporting_frameworks": [],
+  "changelog": [
+    {
+      "version": "1.0.0",
+      "date": "2026-08-14",
+      "changes": [
+        "Initial skill packaging for Claude Enterprise",
+        "Added repertoire.md as the durable record of owned and rejected concert band literature (REP-### IDs)",
+        "Past-purchase spending history hands off to coupa-expense-reconciliation rather than calling Coupa MCP tools from this skill"
+      ]
+    }
+  ],
+  "owner": "Maple Ridge School Music Program",
+  "domains": [
+    "Music Program Management"
+  ],
+  "status": "active",
+  "retrieval_pattern": "Read from project-files/ (students.md, assignment.md, inventory.md, repertoire.md, sale-inventory.md); writes via session-updates.md",
+  "description": "Select concert band repertoire starting from the actual ensemble — instrumentation, ranges, exposed parts, and student capability — rather than the published grade alone. Searches publisher catalogs, scores candidates, compares editions and prices, and records purchase decisions in repertoire.md."
+}

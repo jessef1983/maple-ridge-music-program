@@ -2,13 +2,16 @@
   "id": "SKILL-004",
   "mcp_actions_required": [],
   "name": "Coupa Expense Reconciliation",
-  "mcp_tools_optional": [],
-  "version": "1.0.0",
-  "mcp_tools_required": [
+  "mcp_tools_optional": [
     "get_expense_reports",
     "get_invoices",
-    "get_record_by_id",
     "search_suppliers"
+  ],
+  "version": "1.1.0",
+  "mcp_tools_required": [
+    "coupa_graphql",
+    "coupa_schema",
+    "get_record_by_id"
   ],
   "output_format": "session-updates.md deltas (Claude Enterprise can't edit project files in place); structured summaries and variance flags",
   "supporting_frameworks": [],
@@ -21,6 +24,20 @@
         "Converted from a technical integration spec (JSON I/O schemas) into a conversational workflow, matching the format of the other three skills",
         "Added session-updates.md protocol: writes now append dated deltas to a session artifact instead of rewriting inventory.md, since CE can't edit project files in place"
       ]
+    },
+    {
+      "version": "1.1.0",
+      "date": "2026-08-14",
+      "changes": [
+        "Added a Querying Coupa section with live-verified coupa_graphql patterns, replacing improvised query syntax that was failing against the connector",
+        "Documented confirmed failures: Relay-style first/filters/edges, dotted nested-field filters, and ~ / [c]= wildcard operators all error rather than returning empty",
+        "Documented that the query filter is exact-match and case-insensitive, and that no-argument queries default to ascending id with a ~50-record cut, making recent reports appear missing",
+        "Added a data-boundary rule: unfiltered expenseReports queries return cross-organization expense data and must never be logged or written to session-updates.md",
+        "Added field-parsing rules (comma-formatted total, non-padded amount, ISO timestamp expenseDate, signed expiring artifact URLs, expenseArtifacts not attachments)",
+        "Rewrote the periodic audit to page with orderBy/limit/offset and filter dates client-side, since range operators error on this connector",
+        "Added music mode: reconcile sheet-music purchases against repertoire.md REP-### rows, supporting handoff from music-purchase",
+        "Bundled the verified API guide under references/ so the package stays self-contained"
+      ]
     }
   ],
   "owner": "Maple Ridge School Music Program",
@@ -29,6 +46,6 @@
     "Finance & Procurement"
   ],
   "status": "active",
-  "retrieval_pattern": "Read from inventory.md (landed cost, purchase date, supplier, service records) and from Coupa (expense reports, invoices) via MCP tools",
-  "description": "Reconcile instrument purchase and repair expenses against Coupa expense reports and invoices — matching receipt line items to inventory records, allocating shared shipping/tax across multi-item purchases, flagging cost variances, and recording the Coupa link for audit trail. Requires an active Coupa MCP connection."
+  "retrieval_pattern": "Read from inventory.md (landed cost, purchase date, supplier, service records) and repertoire.md (REP-###, title, vendor, price), and from Coupa (expense reports, expense lines, receipt artifacts) via coupa_graphql; writes via session-updates.md",
+  "description": "Reconcile instrument, repair, and sheet-music expenses against Coupa expense reports and invoices — searching Coupa with verified query patterns, matching receipt line items to inventory or repertoire records, allocating shared shipping/tax across multi-item purchases, flagging cost variances, and recording the Coupa link for audit trail. Requires an active Coupa MCP connection."
 }

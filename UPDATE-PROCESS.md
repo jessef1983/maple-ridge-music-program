@@ -14,7 +14,7 @@ C:\jf-devops\maple-ridge-music-program\
 ├── mpr-project\
 │   ├── generate-tags.js                              ← Local dev tool. Run from here: `node generate-tags.js`. NOT uploaded.
 │   ├── tags-template.html                            ← Master template for generate-tags.js. NOT uploaded.
-│   └── project-files\                                ← Deployment folder. Exactly 14 files. Nothing else, ever.
+│   └── project-files\                                ← Deployment folder. Exactly 15 files. Nothing else, ever.
 └── skills\                                            ← ALL skill material lives here. Nowhere else.
     ├── SKILL-001-Instrument-Inventory-Management\     ← Source folder for skill 1
     │   ├── SKILL.md
@@ -31,17 +31,27 @@ C:\jf-devops\maple-ridge-music-program\
     ├── SKILL-004-Coupa-Expense-Reconciliation\        ← Source folder for skill 4 (needs Coupa MCP connection)
     │   ├── SKILL.md
     │   ├── README.md
+    │   ├── manifest.json
+    │   └── references\
+    │       └── coupa-api-expense-search-guide.md      ← Live-verified Coupa query patterns. Ships INSIDE the package.
+    ├── SKILL-005-Music-Purchase\                      ← Source folder for skill 5
+    │   ├── SKILL.md
+    │   ├── README.md
     │   └── manifest.json
     ├── archives\                                      ← Superseded .skill package builds only
     │   ├── instrument-inventory-management-1.0.0.skill
     │   ├── instrument-inventory-management-2.0.0.skill
     │   ├── instrument-sales-1.0.0.skill
-    │   └── instrument-purchase-1.0.0.skill
+    │   ├── instrument-purchase-1.0.0.skill
+    │   └── coupa-expense-reconciliation-1.0.0.skill
     ├── instrument-inventory-management-2.1.0.skill    ← CURRENT build. One per skill, latest version only.
     ├── instrument-sales-1.1.0.skill
     ├── instrument-purchase-1.1.0.skill
-    └── coupa-expense-reconciliation-1.0.0.skill
+    ├── coupa-expense-reconciliation-1.1.0.skill
+    └── music-purchase-1.0.0.skill
 ```
+
+**A skill folder may carry a `references/` subfolder** (SKILL-004 does). Those files ship inside the `.skill` package so it stays self-contained — never link out of the package with `../`.
 
 **Naming convention for packages:** `<skill-slug>-<version>.skill`, matching the slug used in `manifest.json`'s changelog. Do not invent a new slug (e.g. don't build `instrument-inventory.skill` when the established name is `instrument-inventory-management`).
 
@@ -68,7 +78,7 @@ For each file in /updates/ that matches a project-files/ filename (a manual edit
   if /updates/ is newer → cp /updates/FILE → project-files/FILE
   else → skip
 ```
-Applies to: `assignment.md`, `inventory.md`, `sale-inventory.md`, `students.md`, `watchlist.md`, `tag-log.md`,
+Applies to: `assignment.md`, `inventory.md`, `sale-inventory.md`, `students.md`, `watchlist.md`, `tag-log.md`, `repertoire.md`,
 and the reference docs (`README.md`, `CLAUDE.md`, `GETTING_STARTED.md`, `ROUTING.md`,
 `PROJECT_DESCRIPTION.md`, `model-reference.md`, `onboarding-photo-index.md`).
 
@@ -136,7 +146,7 @@ Move to `landing-zone/archive/session-docs-YYYY-MM-DD/`:
 
 ---
 
-## project-files/ — exactly 14 files, nothing else
+## project-files/ — exactly 15 files, nothing else
 
 ```
 ✅ assignment.md          ✅ CLAUDE.md
@@ -145,7 +155,8 @@ Move to `landing-zone/archive/session-docs-YYYY-MM-DD/`:
 ✅ students.md            ✅ README.md
 ✅ watchlist.md           ✅ ROUTING.md
 ✅ tag-log.md             ✅ model-reference.md
-✅ mpr-tags.html          ✅ onboarding-photo-index.md
+✅ repertoire.md          ✅ onboarding-photo-index.md
+✅ mpr-tags.html
 
 ❌ NEVER: .skill files (belong in skills/ root, never project-files/)
 ❌ NEVER: generate-tags.js / tags-template.html (local dev tools — belong in mpr-project/, one level up.
@@ -158,7 +169,7 @@ Move to `landing-zone/archive/session-docs-YYYY-MM-DD/`:
 
 The user's deploy process is: **delete project-files/ entirely, then upload it fresh.** That means
 anything sitting in project-files/ at the moment of upload IS going to Enterprise. If it's not on
-the list of 14 above, it doesn't belong there — no exceptions, no "just this once" reference docs,
+the list of 15 above, it doesn't belong there — no exceptions, no "just this once" reference docs,
 no local tooling (Claude Enterprise reads files, it doesn't execute them).
 
 ---
@@ -166,12 +177,13 @@ no local tooling (Claude Enterprise reads files, it doesn't execute them).
 ## Verification Checklist (run every time, before declaring done)
 
 ```
-[ ] project-files/ contains exactly the 14 files listed above — count them
+[ ] project-files/ contains exactly the 15 files listed above — count them
 [ ] Every data file in project-files/ has the SAME mtime as its /updates/ source (if one existed)
 [ ] If /updates/session-updates.md existed, every dated entry was applied to its Target file — not just copied verbatim into the wrong place
 [ ] mpr-tags.html was freshly regenerated this session, AFTER any tag-log.md/assignment.md merges (check its mtime is TODAY)
-[ ] skills/ root contains exactly 4 .skill files — one per SKILL-00N folder, all "latest"
+[ ] skills/ root contains exactly 5 .skill files — one per SKILL-00N folder, all "latest"
 [ ] Every SKILL-00N-*/manifest.json version number matches its .skill package filename
+[ ] Any references/ files are inside the built package (SKILL-004) — no ../ links out of a skill
 [ ] Every superseded .skill build has been moved to skills/archives/
 [ ] No stray folders exist: no mpr-project/skills/, no skills/instrument-inventory/ (unnumbered)
 [ ] /updates/ has been archived or cleared

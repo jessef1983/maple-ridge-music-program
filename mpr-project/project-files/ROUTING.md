@@ -17,6 +17,7 @@ Present the workflow picker as a **tappable dropdown**, not rendered HTML and no
 - Get Started with Instrument Maintenance
 - Get Started with Instrument Sale
 - Get Started with Instrument Removal
+- Get Started with Music Purchase
 - Get Started with Review
 
 Nothing else in the response. No preamble, no priority list, no summary of what each option does — the descriptions live in `GETTING_STARTED.md` and the user already knows their workflows. Surfacing time-sensitive items belongs to **Get Started with Review**, not to the picker.
@@ -153,9 +154,45 @@ This is where an `Instrument Sale` conversation ends up once a fleet instrument'
  
 ---
  
+### 🎼 Music Purchase
+**When:** User clicks "Get Started with Music Purchase", or says "what music should we buy", "find repertoire for the fall concert", "will this piece work for our band", "build a concert program"
+
+**Route to:** `music-purchase` skill  
+**What happens:**
+1. Skill establishes the current ensemble from `students.md`, `assignment.md`, and `inventory.md` — and asks whether the roster is current rather than assuming
+2. Skill pins down the actual repertoire need (concert, count, level, educational goal, budget) before opening any catalog
+3. Skill writes a target specification, then searches publisher and vendor catalogs against it
+4. Skill evaluates each candidate against this ensemble — instrumentation, ranges, exposed parts, percussion practicality — not the published grade alone
+5. Skill returns a ranked shortlist with a direct BUY / CONSIDER / STRETCH / PASS on each
+6. On "let's buy these", Skill writes the purchase list and the `REP-###` rows via `session-updates.md`
+7. Done
+**Preamble:** "What are we buying music for — a specific concert, or filling a gap in the library?"
+
+**Files:** `repertoire.md` (read/write), `students.md`, `assignment.md`, `inventory.md` (read)
+
+This skill decides *what music to buy*. What the program actually **paid** — Coupa expense history, or attaching a Coupa line to a purchased title — belongs to `coupa-expense-reconciliation`.
+
+---
+
+### 💵 Expense Reconciliation
+**When:** User mentions a Coupa expense report or invoice, asks "what did we already spend on this", "has this been reconciled", "split the shipping across these three", or asks what was already purchased in Coupa
+
+**Route to:** `coupa-expense-reconciliation` skill  
+**What happens:**
+1. Skill finds the expense in Coupa by report ID, line ID, or exact merchant string
+2. Skill matches receipt lines to `inventory.md` (instruments) or `repertoire.md` (sheet music)
+3. Skill prorates shared shipping/tax and flags variance against the recorded cost
+4. Skill records the Coupa reference via `session-updates.md`
+5. Done
+**Preamble:** "Which expense — do you have a report ID, or should I search by merchant?"
+
+**Requires an active Coupa MCP connection.** Without it, say so plainly rather than guessing at spending history.
+
+---
+
 ## Tier 2: Secondary Workflows (Future)
  
-*Music Purchasing, NYSSMA Solo Night, Music Library*
+*NYSSMA Solo Night, Music Library*
  
 **Route:** Not implemented yet. When mentioned, say: "That's coming soon — not wired yet."
  
@@ -168,8 +205,9 @@ This is where an `Instrument Sale` conversation ends up once a fleet instrument'
 - Route to the closest matching workflow once clear
 - Example: "Tyler's trumpet came back from the shop" → Instrument Maintenance feedback → redirect to "mark MPR-007 as Available, update condition"
 - Example: "I got $80 for the Bundy clarinet on Facebook" → Instrument Sale (record proceeds) → hands off to Instrument Removal (close the fleet record)
+- Example: "Did we already buy this march?" → Music Purchase reads `repertoire.md`; if the library record is thin, hands off to Expense Reconciliation for what Coupa shows
 **If user wants to browse files without a skill:**
-- Encourage it: "You can always read `students.md`, `inventory.md`, `assignment.md`, or `sale-inventory.md` directly anytime."
+- Encourage it: "You can always read `students.md`, `inventory.md`, `assignment.md`, `sale-inventory.md`, or `repertoire.md` directly anytime."
 - Don't force them through a workflow
 ---
  
@@ -207,6 +245,17 @@ or a fleet instrument?
 ### Kickoff (Instrument Removal)
 ```
 Which instrument, and is it Sold, Retired, or External?
+```
+ 
+### Kickoff (Music Purchase)
+```
+What are we buying music for — a specific concert, or filling a gap
+in the library?
+```
+ 
+### Kickoff (Expense Reconciliation)
+```
+Which expense — do you have a report ID, or should I search by merchant?
 ```
  
 ### Scan (Review Open Items)

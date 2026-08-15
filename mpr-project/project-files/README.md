@@ -35,11 +35,13 @@ This skill reads and writes to (all flat in this project, no `data/` subfolder):
 - **sale-inventory.md** — Disposal pipeline
 - **watchlist.md** — Purchase candidates
 - **tag-log.md** — Tag print log
+- **repertoire.md** — Concert band music library (`REP-###`)
 
 ## Integration
 
-All four skills work together:
+All five skills work together:
 1. **Instrument Purchase** — Brings instruments into the pipeline
 2. **Instrument Inventory Management** — Assigns and tracks them
 3. **Instrument Sales** — Removes them when the time comes
-4. **Coupa Expense Reconciliation** — Ties money already spent on 1–3 back to Coupa
+4. **Music Purchase** — Builds the repertoire library the ensemble plays
+5. **Coupa Expense Reconciliation** — Ties money already spent on 1–4 back to Coupa

@@ -18,6 +18,7 @@ project-files/
 ├── inventory.md                # Fleet instruments: MPR-###, serials, costs, service history
 ├── sale-inventory.md          # Disposal pipeline: LOT-### items for sale
 ├── students.md                 # Roster of all 83 students
+├── repertoire.md                # Concert band music library: REP-### owned, programmed, rejected
 ├── watchlist.md                 # Purchase candidates under evaluation (WATCH-### IDs)
 ├── tag-log.md                   # Log of every permanent/student tag print event
 ├── model-reference.md          # Instrument brands/models reference
@@ -30,7 +31,7 @@ project-files/
 └── CLAUDE.md                    # This file
 ```
 
-The four skills that drive the workflows below (`Instrument Inventory Management`, `Instrument Sales`, `Instrument Purchase`, `Coupa Expense Reconciliation`) are uploaded **separately** as `.skill` packages — they are not part of this folder. Their source lives in the repo under `skills/SKILL-00N-*/`.
+The five skills that drive the workflows below (`Instrument Inventory Management`, `Instrument Sales`, `Instrument Purchase`, `Coupa Expense Reconciliation`, `Music Purchase`) are uploaded **separately** as `.skill` packages — they are not part of this folder. Their source lives in the repo under `skills/SKILL-00N-*/`.
 
 `generate-tags.js` and `tags-template.html` are **not** part of this upload — they're local dev tools (see below).
 
@@ -40,7 +41,7 @@ The four skills that drive the workflows below (`Instrument Inventory Management
 
 ### Data Files
 
-All data lives in eight files. Skills read and write to these automatically, but they're also human-readable:
+All data lives in nine files. Skills read and write to these automatically, but they're also human-readable:
 
 **Core Program Data:**
 - **`students.md`** — 83 students, grades 2–12, status, birthday
@@ -51,6 +52,9 @@ All data lives in eight files. Skills read and write to these automatically, but
 **Purchase & Acquisition:**
 - **`watchlist.md`** — Candidate listings under evaluation (WATCH-### IDs); closed auctions kept for comp data
 - **`model-reference.md`** — Instrument model bands, price ranges, brand families, sticky-valve traps, finish gotchas
+
+**Repertoire:**
+- **`repertoire.md`** — Concert band music library: REP-### titles owned, programming history, deliberately rejected titles, and standing library gaps. Started empty on 2026-08-14 — an absent title is not proof the program never owned it
 
 **Onboarding:**
 - **`onboarding-photo-index.md`** — Index of intake photos per instrument, no student names in paths
@@ -66,7 +70,7 @@ All data lives in eight files. Skills read and write to these automatically, but
 
 ### Skills
 
-Four separate skill packages, uploaded alongside this project:
+Five separate skill packages, uploaded alongside this project:
 
 - **Instrument Inventory Management** — 6 core workflows:
   1. **Student Assignment** — Assign instrument to student
@@ -88,10 +92,19 @@ Four separate skill packages, uploaded alongside this project:
   - Hands off to Instrument Onboarding (Workflow 1) when the box arrives
 
 - **Coupa Expense Reconciliation** — Ties money already spent back to the record:
-  - Matches a Coupa expense report/invoice line to one or more instruments in `inventory.md`
+  - Searches Coupa with verified `coupa_graphql` query patterns (see the skill's `references/coupa-api-expense-search-guide.md` — improvised query syntax fails against this connector)
+  - Matches a Coupa expense report/invoice line to instruments in `inventory.md` or titles in `repertoire.md`
   - Splits shared shipping/tax across multi-item purchases
   - Flags cost or vendor variance against the recorded landed cost
+  - Never logs unfiltered query results — they span the whole organization, not just this program
   - Requires an active Coupa MCP connection
+
+- **Music Purchase** — Concert band repertoire selection:
+  - Establishes the current ensemble before opening any catalog
+  - Evaluates a piece against this band's instrumentation, ranges, exposed parts, and percussion — not the published grade alone
+  - Scores candidates and returns a ranked shortlist with BUY / CONSIDER / STRETCH / PASS
+  - Records purchased titles as `REP-###` in `repertoire.md`
+  - Hands off to Coupa Expense Reconciliation for what was actually paid
 
 ### Tag Printer (`mpr-tags.html`)
 
@@ -125,7 +138,7 @@ This reads `project-files/inventory.md`, `tag-log.md`, and `assignment.md`, merg
 
 ## Recording changes made during a Claude Enterprise session
 
-Claude Enterprise reads this project's files during a chat but can't edit them in place — nothing a skill "writes" during a conversation is real until it's back in this folder in the repo. As of 2026-08-14, every skill records changes as dated entries in `session-updates.md` (a running artifact for the whole conversation) instead of handing back an entire regenerated file. The user downloads that one file, drops it in `/updates/`, and Claude Code merges each entry into the correct file here — see `UPDATE-PROCESS.md` Step 1b for the exact merge process. `session-updates.md` is never itself one of this folder's 14 files; it's an inbox artifact, archived once merged.
+Claude Enterprise reads this project's files during a chat but can't edit them in place — nothing a skill "writes" during a conversation is real until it's back in this folder in the repo. As of 2026-08-14, every skill records changes as dated entries in `session-updates.md` (a running artifact for the whole conversation) instead of handing back an entire regenerated file. The user downloads that one file, drops it in `/updates/`, and Claude Code merges each entry into the correct file here — see `UPDATE-PROCESS.md` Step 1b for the exact merge process. `session-updates.md` is never itself one of this folder's 15 files; it's an inbox artifact, archived once merged.
 
 ---
 
@@ -217,7 +230,7 @@ Full process lives in `UPDATE-PROCESS.md` at the repo root. Summary:
 2. Merge skill file updates into the matching `skills/SKILL-00N-*/` folder, rebuild the `.skill` package
 3. Regenerate `mpr-tags.html` locally (`node generate-tags.js`), after Step 1 so tag-log.md merges are reflected
 4. Archive session clutter (summaries, handoffs, audits, merged `session-updates.md`) to `landing-zone/archive/`
-5. Verify this folder holds exactly the 14 files listed above, nothing else
+5. Verify this folder holds exactly the 15 files listed above, nothing else
 6. Delete this folder entirely and re-upload it fresh — anything sitting here at upload time goes to Enterprise
 7. **Reminder:** re-upload project-files/ and/or reinstall any updated `.skill` package in Claude Enterprise — nothing here takes effect there until it does
 
@@ -260,6 +273,7 @@ Open `inventory.md`, find "Storage" section.
 
 ## Revision History
 
+- **2026-08-14** (4th update) — Added the fifth skill, **Music Purchase** (`SKILL-005`), and `repertoire.md` as the 15th project file: concert band repertoire chosen from the actual ensemble rather than the published grade, with `REP-###` titles, programming history, and reusable rejection reasons. Rewired the concierge — "Music Purchasing" was a Tier-2 stub still describing eBay/Reverb *instrument* buying, which is `instrument-purchase`'s job. Bumped **Coupa Expense Reconciliation to 1.1.0** with live-verified `coupa_graphql` query patterns after the skill kept failing against the connector: it named the MCP tools but taught no query syntax, so Relay-style `first:`/`filters:`, dotted nested-field filters, and `~`/`[c]=` wildcards were being improvised — all of which throw internal server errors rather than returning empty. Also documented that the `query` filter is exact-match only, that no-argument queries default to ascending `id` (making recent reports look missing), and a new data-boundary rule: an unfiltered `expenseReports` query returns cross-organization expense data and must never be logged or written to `session-updates.md`.
 - **2026-08-14** (3rd update) — Added `tag-log.md` (14th project file) and the outstanding-tag flag in `mpr-tags.html`; fixed an off-by-one bug in `generate-tags.js` that silently dropped the first row of the fleet table (MPR-001) from every generated tag file. Documented the `session-updates.md` protocol: all four skills now record CE-session changes as dated deltas instead of regenerating whole files, since Claude Enterprise can't edit project files in place. Reworded the concierge picker options as "Get Started with ___" in `ROUTING.md`/`GETTING_STARTED.md` so CE chats get a readable name instead of a generic one.
 - **2026-08-14** (2nd update) — Added the fourth skill, Coupa Expense Reconciliation (converted from a technical integration spec into the conversational workflow format used by the other three).
 - **2026-08-14** (1st update) — Rewrote to match the current flat `project-files/` upload structure and all 3 skills (previously documented a nested `data/`/`skills/`/`tools/`/`docs/` layout that no longer existed). Moved `generate-tags.js`/`tags-template.html` out of the upload into `mpr-project/` as local-only tooling; fixed a stale off-by-one column bug in `generate-tags.js` that was silently producing 0 tagged instruments.
