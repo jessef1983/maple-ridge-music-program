@@ -105,7 +105,8 @@ The most-purchased family and the one where the finish trap bites hardest. Cross
 | Yamaha YFL-385 / 385II | Intermediate step-up | Intermediate | ~$900–1,200 band; $900 paid | MPR-001. Strong value in a constrained budget |
 | Yamaha YFL-362H | Open-hole, B-foot | Intermediate | ~$1,500 | Above the approved band; a stretch option |
 | Yamaha YFL-462 / 462H | Upper step-up | Upper intermediate | ~$3,000+ | Desirable, outside budget |
-| Yamaha YFL-225 / 221SII | Student | Student | Repad from ~$300 | MPR-026, MPR-003. Aging platform, diminishing service ROI |
+| Yamaha YFL-225 / 225S / 221SII | Student | Student | Repad from ~$300 | MPR-026 (YFL-225S, Japan-stamped, serial 033480 ✅ — Excellent after April 2026 service; prior retire/sell note dropped), MPR-003. Aging platform, but 026 is assignment-ready |
+| Trevor James Privilege III | Intermediate step-up | Intermediate | — | MPR-087. Silver-plate; serial P54427 ✅. Serviced Apr 2026 (SVC-FLT-002). Play-test pending |
 
 **Configuration trade-offs:**
 

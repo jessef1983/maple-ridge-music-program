@@ -192,7 +192,7 @@ Catalog and search the wider sheet music collection beyond concert band repertoi
 | Kevin's horn has sticky valves | **Instrument Maintenance** | 1 |
 | It's August 1 and students are advancing | **Grade Progression** | 1 |
 | An instrument sold, or is being retired | **Instrument Removal** | 1 |
-| I want to sell the YFL-225, or price/list any LOT item | **Instrument Sale** | 1 |
+| I want to price or list a LOT clarinet | **Instrument Sale** | 1 |
 | I found a good Besson online | **Instrument Purchase** | 1 |
 | What music should we buy for the fall concert? | **Music Purchase** | 2 |
 | Will this Grade 2.5 piece work for our band? | **Music Purchase** | 2 |

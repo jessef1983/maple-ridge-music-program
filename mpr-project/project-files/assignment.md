@@ -52,7 +52,8 @@
 | MPR-021 | Trumpet | Storage | Yamaha YTR-3325S; arrived Aug 13, serial 212795 ✅; valves excellent; **SVC-TPT-001** — 1st/3rd slides need lubrication/easing before assign; shipped w/ Yamaha 11C4 mouthpiece | Good |
 | MPR-022 | Trumpet | Storage | Yamaha YTR-334S; serial 018464 ✅; ready to assign — valve set near-new, minor valve-cap thread wear (1st/3rd caps swapped); Yamaha #11 mouthpiece; excellent period case | Excellent |
 | MPR-082 | Clarinet | Storage | Yamaha YCL-250; serial 110041 ✅; excellent, complete hardshell-case outfit; ready for assignment | Excellent |
-| MPR-026 | Flute | Storage | Yamaha YFL-225; retire or sell — repad cost ~$300 against low value | Unknown |
+| MPR-026 | Flute | Storage | Yamaha YFL-225S; serial **033480 ✅**; Japan-stamped (pre-2012); Excellent after April service (SVC-FLT-003). Ready for assignment — prior retire/sell note superseded | Excellent |
+| MPR-087 | Flute | Storage | Trevor James Privilege III; serial **P54427 ✅**; Good; SVC-FLT-002 closed (Appleseed P/C $100, tag 064). CE labeled MPR-059 — remapped to MPR-087. Play-test + permanent tag pending | Good |
 | MPR-032 | Tuba | Storage | Model/serial pending | Unknown |
 | MPR-034 | Tuba | For Sale | Besson Eb Chicago, 3-valve non-comp; serial 74353 ✅; Ask $1,100–1,250 / floor $700–750; **cash, local pickup only** | Fair |
 | MPR-035 | Trombone | Storage | Bach 42; serial pending | Unknown |
@@ -69,7 +70,7 @@
 | MNT-001 | Bassoon | Storage | **Borrowed from MNT Academy** — not MPR-owned; see `inventory.md` Borrowed Instruments section. Not yet play-tested | Unknown |
 | MNT-002 | Clarinet | Storage | **Borrowed from MNT Academy** — not MPR-owned; see `inventory.md` Borrowed Instruments section. Needs a holder | Good |
  
-**18 MPR-owned instruments in storage or incoming**, plus 2 MNT-owned instruments on loan (MNT-001, MNT-002 — see `inventory.md` Borrowed Instruments section). Both trumpets arrived Aug 13. MPR-021 needs a bath/chem flush before assigning. MPR-022 turned out to be a genuine Yamaha YTR-334S in excellent condition (not the "Nikkan" it was listed as) — seller notified, kept as the better deal. MPR-082 is a ready-to-assign Yamaha YCL-250. MPR-037 is out on trial with Baxter Mow, see Active. MPR-015 assigned to Jesse Frase (ASGN-024). MPR-020 returned to seller Aug 13 — no longer part of the fleet (see history and inventory.md Retired IDs).
+**19 MPR-owned instruments in storage or incoming**, plus 2 MNT-owned instruments on loan (MNT-001, MNT-002 — see `inventory.md` Borrowed Instruments section). Both trumpets arrived Aug 13. MPR-021 needs a bath/chem flush before assigning. MPR-022 turned out to be a genuine Yamaha YTR-334S in excellent condition (not the "Nikkan" it was listed as) — seller notified, kept as the better deal. MPR-082 is a ready-to-assign Yamaha YCL-250. MPR-026 (YFL-225S) and MPR-087 (Trevor James Privilege III) are unassigned flutes ready for play-test/assignment. MPR-037 is out on trial with Baxter Mow, see Active. MPR-015 assigned to Jesse Frase (ASGN-024). MPR-020 returned to seller Aug 13 — no longer part of the fleet (see history and inventory.md Retired IDs).
  
 ---
  

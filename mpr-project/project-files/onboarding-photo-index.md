@@ -10,13 +10,37 @@
 
 | Scope | Indexed here | Gap |
 |---|---|---|
-| Fleet onboardings with photo sessions (MPR-023, 036, 063–086) | ✅ sections below | — |
+| Fleet onboardings with photo sessions (MPR-023, 026, 036, 063–087) | ✅ sections below | — |
 | MPR-019 accessory (tuba mouthpiece in shipment) | ✅ | Maker ID still open |
 | Sale flutes LOT-016–018 | ✅ | LOT-016 needs serial-stamp photo |
 | Sale Camelot LOT-003 | ✅ partial | 2 filenames indexed; serial stamp still pending |
 | Sale saxophones LOT-001, 004 | ❌ stubs only | Original Drive filenames never copied into this file |
 | Sale clarinets LOT-005–015 | ❌ stubs only | LOT-014/015 were indexed in an Aug 13 CE session but filenames were not preserved into this durable index; LOT-011–013 serials confirmed, filenames never logged |
 | Sale trombone LOT-019 | ❌ named only | `1000033786/3787` not in local dump yet |
+
+---
+
+## MPR-026 — Yamaha YFL-225S
+
+**Onboarded:** August 17, 2026  
+**Source:** On-hand (acquisition date unknown)  
+**Folder:** `MPR-026_Yamaha-YFL-225S/`
+
+| # | Filename | Shows | Notes |
+|:-:|---|---|---|
+| 1 | `PXL_20260817_164042677.jpg` | Mouthpiece detail (silver band, "180" engraving) | Serial-region / headjoint detail |
+| 2 | `PXL_20260817_163819037.jpg` | Upper tube engraving | **YAMAHA**, **YFL225S**, NIPPON GAKKI CO., LTD, JAPAN ✅ |
+| 3 | `PXL_20260817_164024835.jpg` | Embouchure hole + upper body | Condition assessment |
+| 4 | `PXL_20260817_163759439.jpg` | Full upper tube | Serial region |
+| 5 | `PXL_20260817_163755519_MP.jpg` | Full upper tube, alternate angle | Condition overview |
+| 6 | `PXL_20260817_163814543.jpg` | Lower tube engraving | YAMAHA, YFL225S, NIPPON GAKKI, JAPAN |
+| 7 | `PXL_20260817_163708495.jpg` | Retaining strap tag (form 095) | Condition indicators |
+| 8 | `PXL_20260817_163751979.jpg` | Retaining strap tag reverse | Handwritten service/condition notes |
+| 9 | `PXL_20260817_163714921.jpg` | Handwritten tag detail | Assessment reference |
+| 10 | `PXL_20260817_164019332_MP.jpg` | Full instrument in case | Red velvet case, good condition |
+| 11 | `PXL_20260817_163658030.jpg` | Case interior detail | Instrument seated, padding intact |
+
+**Status:** Yamaha YFL-225S; serial **033480 ✅**; Japan-stamped (pre-March 2012). Condition **Excellent**. SVC-FLT-003 closed (Appleseed, April 2026). Ready for assignment.
 
 ---
 
@@ -39,7 +63,7 @@
 **Status:**
 - Brand: ✅ confirmed (Conn, Schreiber-made, Intermediate tier)
 - Serial: ✅ **confirmed** — 4865, clearly visible in photos
-- Bocal: ✅ **sourced from MPR-059 (Selmer Signet spare)** — awaiting compatibility verification; once transferred, horn will be playable
+- Bocal: ✅ **sourced from MNT-001 (Selmer Signet spare)** — fit confirmed Aug 16 (SVC-BAS-001 closed); in use on MPR-063. Earlier notes called this “MPR-059” — that ID was a stale alias, never a fleet bassoon.
 - Crutch / seat strap / grease / reeds: ✅ confirmed present, accessory compartment (photo #7)
 - Case: intact, cosmetically worn
 - Tier & Value: Intermediate-level German bassoon (1950s–60s vintage); market value $800–1,500
@@ -373,6 +397,28 @@
 | 5 | `PXL_20260816_201558294.jpg` | Full head, second angle | Remo Weatherking confirmed |
 
 **Status:** W.F.L. Concert Grand (**not** Planet as maker — Planet = gauge brand). Size pending. Serial likely none.
+
+---
+
+## MPR-087 — Trevor James Privilege III
+
+**Onboarded:** August 17, 2026  
+**Source:** On-hand (acquisition date unknown)  
+**Folder:** `MPR-087_Trevor-James-Privilege-III/`  
+**CE ID:** session labeled this horn **MPR-059** — remapped at merge to **MPR-087**
+
+| # | Filename | Shows | Notes |
+|:-:|---|---|---|
+| 1 | `PXL_20260817_164701662.jpg` | Headjoint engraving | “TREVOR JAMES” + “PRIVILEGE”; serial **P54427 ✅** |
+| 2 | `PXL_20260817_164703953_MP.jpg` | Body engraving (full) | “TREVOR” · “JAMES” · “PRIVILEGE” · serial **P54427 ✅** |
+| 3 | `PXL_20260817_164723743_MP.jpg` | Body engraving (lower) | “JAMES” · “PRIVILEGE” · serial **P54427 ✅** |
+| 4 | `PXL_20260817_164643037.jpg` | Repair tag #064 front | Jesse Frase, 4/18, “Flute - Trevor James”, Work: “P/C” |
+| 5 | `PXL_20260817_164706503_MP.jpg` | Foot-joint engraving | Serial **P54427 ✅** |
+| 6 | `PXL_20260817_164633722.jpg` | Flute in case, open lid | Black foam interior, two-flute case |
+| 7 | `PXL_20260817_164659040.jpg` | Headjoint close-up | “TREVOR” · “PRIVILEGE” · serial stamp |
+| 8 | `PXL_20260817_164638362.jpg` | Repair tag #064 back | “keys adjusted + oiled / pods sealed / key corks replaced” / $100 |
+
+**Status:** Trevor James Privilege III; serial **P54427 ✅**; Good. SVC-FLT-002 closed (Appleseed P/C $100, tag 064). Play-test and permanent tag still outstanding.
 
 ---
 
