@@ -1,0 +1,15 @@
+---
+description: MPR CE session-updates protocol — chat-named files, photo index, no invented MPR IDs
+alwaysApply: true
+---
+
+# Session-updates protocol (Maple Ridge Music Program)
+
+When merging CE intake or editing skills/concierge docs for this repo:
+
+1. **Expect** `session-updates-<chat-name-slug>.md` in `/updates/` (kebab-case chat title). Also accept legacy `session-updates.md` / `session-updates (N).md`.
+2. **At merge:** assign real `MPR-###` wherever entries say `MPR-TBD` — never trust a CE-suggested next ID (parallel chats collide).
+3. **Photo indexes** in session-updates targeting `onboarding-photo-index.md` must be merged; filenames must not stay chat-only.
+4. **Skills/concierge must teach CE to:** present a chat-named session-updates file at end of session; index photos into it; never invent new MPR IDs for new instruments.
+
+Canonical wording: `mpr-project/project-files/CLAUDE.md` (Recording changes…), `ROUTING.md` (End of every session), `UPDATE-PROCESS.md` Step 1b, and each `skills/SKILL-00N-*/SKILL.md`.

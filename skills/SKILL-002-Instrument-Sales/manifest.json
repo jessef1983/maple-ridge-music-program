@@ -3,9 +3,9 @@
   "mcp_actions_required": [],
   "name": "Instrument Sales",
   "mcp_tools_optional": [],
-  "version": "1.1.0",
+  "version": "1.2.0",
   "mcp_tools_required": [],
-  "output_format": "session-updates.md deltas (Claude Enterprise can't edit project files in place); structured summaries and confirmations",
+  "output_format": "session-updates-<chat-name>.md deltas (Claude Enterprise can't edit project files in place); structured summaries and confirmations",
   "supporting_frameworks": [],
   "changelog": [
     {
@@ -20,6 +20,13 @@
       "date": "2026-08-14",
       "changes": [
         "Added session-updates.md protocol: writes now append dated deltas to a session artifact instead of rewriting whole files, since CE can't edit project files in place"
+      ]
+    },
+    {
+      "version": "1.2.0",
+      "date": "2026-08-17",
+      "changes": [
+        "Session-updates: chat-named file, end-of-session present, photo index, no invented MPR IDs"
       ]
     }
   ],

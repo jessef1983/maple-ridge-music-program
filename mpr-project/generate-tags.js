@@ -24,6 +24,7 @@ const OUTPUT_PATH = path.join(__dirname, 'project-files/mpr-tags.html');
 // instrument type is added to the fleet.
 const FAMILY_MAP = {
   'Trumpet': 'tpt',
+  'Piccolo Trumpet': 'pct',
   'French Horn': 'hrn',
   'Euphonium': 'eup',
   'Flute': 'fl',
@@ -34,10 +35,14 @@ const FAMILY_MAP = {
   'Clarinet': 'clr',
   'Alto Sax': 'asx',
   'Tenor Sax': 'tsx',
+  // Oboe + English horn share one tag color/label (double-reed family). Bassoon stays its own.
+  'Oboe': 'dbl',
+  'English Horn': 'dbl',
   'Alto Horn (F)': 'ahn',
   'Descant Horn (F)': 'dsc',
   'Mellophone': 'mel',
   'Flugelhorn': 'flg',
+  'Cornet': 'crt',
   'Strings': 'str',
 };
 
@@ -126,6 +131,9 @@ function parseTagLog(content) {
 
     const key = tagType.trim().toLowerCase();
     if (key !== 'permanent' && key !== 'student') continue;
+    // A Pending/TBD row documents an outstanding print, not a completed tag event.
+    // Only actual print dates can clear a tag requirement.
+    if (!ISO_DATE.test(datePrinted)) continue;
 
     if (!log[mpr]) log[mpr] = {};
     const existing = log[mpr][key];

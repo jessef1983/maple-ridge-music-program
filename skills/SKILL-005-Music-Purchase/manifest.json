@@ -3,9 +3,9 @@
   "mcp_actions_required": [],
   "name": "Music Purchase",
   "mcp_tools_optional": [],
-  "version": "1.0.0",
+  "version": "1.1.0",
   "mcp_tools_required": [],
-  "output_format": "session-updates.md deltas (Claude Enterprise can't edit project files in place); ranked repertoire shortlists and final purchase lists",
+  "output_format": "session-updates-<chat-name>.md deltas (Claude Enterprise can't edit project files in place); ranked repertoire shortlists and final purchase lists",
   "supporting_frameworks": [],
   "changelog": [
     {
@@ -15,6 +15,13 @@
         "Initial skill packaging for Claude Enterprise",
         "Added repertoire.md as the durable record of owned and rejected concert band literature (REP-### IDs)",
         "Past-purchase spending history hands off to coupa-expense-reconciliation rather than calling Coupa MCP tools from this skill"
+      ]
+    },
+    {
+      "version": "1.1.0",
+      "date": "2026-08-17",
+      "changes": [
+        "Session-updates: chat-named file, end-of-session present; REP-TBD when repertoire upload may be stale"
       ]
     }
   ],

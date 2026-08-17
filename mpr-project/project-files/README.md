@@ -24,7 +24,7 @@ Core workflows for managing the music program's instrument fleet.
 
 1. Share the skill with Claude Enterprise
 2. Users can ask Claude to help with any of the workflows above
-3. Claude records changes via `session-updates.md` (see `CLAUDE.md`) rather than rewriting project files directly — Claude Enterprise can't edit them in place
+3. Claude records changes via `session-updates-<chat-name>.md` (see `CLAUDE.md`) rather than rewriting project files directly — Claude Enterprise can't edit them in place. Always present that file at end of session; never invent new MPR IDs in chat.
 
 ## Data Files
 

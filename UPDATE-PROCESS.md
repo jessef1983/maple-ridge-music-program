@@ -8,7 +8,7 @@
 
 ```
 C:\jf-devops\maple-ridge-music-program\
-├── updates\                                          ← Inbox. User drops new files here — manual file replacements AND session-updates.md from CE.
+├── updates\                                          ← Inbox. User drops new files here — manual file replacements AND session-updates*.md from CE.
 ├── landing-zone\
 │   └── archive\                                      ← Everything superseded goes here, dated.
 ├── mpr-project\
@@ -82,24 +82,28 @@ Applies to: `assignment.md`, `inventory.md`, `sale-inventory.md`, `students.md`,
 and the reference docs (`README.md`, `CLAUDE.md`, `GETTING_STARTED.md`, `ROUTING.md`,
 `PROJECT_DESCRIPTION.md`, `model-reference.md`, `onboarding-photo-index.md`).
 
-### Step 1b: session-updates.md → merge deltas into project-files/
+### Step 1b: session-updates*.md → merge deltas into project-files/
 Claude Enterprise can't edit the uploaded project files in place, so as of 2026-08-14 every skill records
-changes made during a chat session as dated entries in `session-updates.md` (format: timestamp, skill/workflow
+changes made during a chat session as dated entries in a session-updates artifact (format: timestamp, skill/workflow
 origin, target file, the literal row/field to apply) instead of handing back a whole regenerated file. The
 user downloads that one file per CE session and drops it in `/updates/`.
+
+**Expected filenames:** `session-updates-<chat-name-slug>.md` (preferred) or legacy `session-updates.md` /
+`session-updates (N).md`. Match any `session-updates*.md` in `/updates/`.
 ```
-If /updates/session-updates.md exists:
-  → read every dated entry in chronological order
-  → for each entry: open its Target file in project-files/, and apply the change exactly as described
-    (append the given row, or update the given field) — don't reinterpret or "clean up" the entry's content,
-    it's already the literal row the skill produced
-  → if an entry is ambiguous or its target row can't be found (e.g. an MPR ID that doesn't exist), stop and
-    ask the user rather than guessing where it goes
-  → once every entry is applied, archive session-updates.md to landing-zone/archive/session-docs-YYYY-MM-DD/
-    (per Step 4) rather than deleting it — it's the audit trail for what changed and why
+If /updates/ contains session-updates*.md:
+  → read every dated entry in chronological order (across files if several)
+  → for each entry: open its Target file in project-files/, and apply the change
+    - if the entry uses MPR-TBD (or omits ID for a new instrument): assign the next free MPR-###
+      from inventory.md at merge time — never trust a CE-suggested next ID
+    - otherwise apply exactly as described (append row / update field)
+  → if an entry is ambiguous or its target row can't be found, stop and ask the user
+  → photo-index entries targeting onboarding-photo-index.md must be merged (create section if missing)
+  → once every entry is applied, archive the session-updates files to
+    landing-zone/archive/updates-YYYY-MM-DD/ (per Step 4)
 ```
-A `session-updates.md` entry whose `Target file` is `tag-log.md` or `inventory.md`'s reconciliation block
-follows the same apply-literally rule — these aren't hand-written project files with their own step, they're
+A session-updates entry whose `Target file` is `tag-log.md` or `inventory.md`'s reconciliation block
+follows the same apply rule — these aren't hand-written project files with their own step, they're
 just another target file an entry can point at.
 
 ### Step 2: Skill files → the matching SKILL-00N folder, in place
@@ -163,7 +167,7 @@ Move to `landing-zone/archive/session-docs-YYYY-MM-DD/`:
           Claude Enterprise doesn't execute code, so these have no purpose in the upload.)
 ❌ NEVER: mpr-tags.html left over from a prior session (regenerate, don't carry forward)
 ❌ NEVER: session-summary-*.md / HANDOFF-*.md / research-quality-audit-*.md (archive immediately)
-❌ NEVER: an unmerged session-updates.md sitting in project-files/ — it belongs in /updates/ until
+❌ NEVER: an unmerged session-updates*.md sitting in project-files/ — it belongs in /updates/ until
           merged (Step 1b), then archived (Step 4); it is never itself a project-files/ file
 ```
 
@@ -179,7 +183,7 @@ no local tooling (Claude Enterprise reads files, it doesn't execute them).
 ```
 [ ] project-files/ contains exactly the 15 files listed above — count them
 [ ] Every data file in project-files/ has the SAME mtime as its /updates/ source (if one existed)
-[ ] If /updates/session-updates.md existed, every dated entry was applied to its Target file — not just copied verbatim into the wrong place
+[ ] If /updates/session-updates*.md existed, every dated entry was applied (MPR-TBD → next free MPR-### at merge) — not just copied verbatim into the wrong place
 [ ] mpr-tags.html was freshly regenerated this session, AFTER any tag-log.md/assignment.md merges (check its mtime is TODAY)
 [ ] skills/ root contains exactly 5 .skill files — one per SKILL-00N folder, all "latest"
 [ ] Every SKILL-00N-*/manifest.json version number matches its .skill package filename
@@ -187,7 +191,7 @@ no local tooling (Claude Enterprise reads files, it doesn't execute them).
 [ ] Every superseded .skill build has been moved to skills/archives/
 [ ] No stray folders exist: no mpr-project/skills/, no skills/instrument-inventory/ (unnumbered)
 [ ] /updates/ has been archived or cleared
-[ ] Session docs (summaries, audits, handoffs, and any merged session-updates.md) archived to landing-zone/archive/, not left in project-files/
+[ ] Session docs (summaries, audits, handoffs, and any merged session-updates*.md) archived to landing-zone/archive/, not left in project-files/
 ```
 
 If any box fails, fix it before telling the user it's done. Do not report "ready for deployment"

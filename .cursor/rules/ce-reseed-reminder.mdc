@@ -1,0 +1,34 @@
+---
+description: Remind to re-seed CE project and/or reinstall skill packages when local sources changed
+alwaysApply: true
+---
+
+# Claude Enterprise re-seed / skill install reminder
+
+Claude Enterprise does not pick up repo edits automatically. After work that changes what CE serves, **end the response with a short deploy reminder** naming only what actually changed.
+
+## When to remind
+
+**Re-seed project** (delete `project-files/` in CE, upload fresh from `mpr-project/project-files/`):
+- Any file under `mpr-project/project-files/` changed (inventory, assignment, tags HTML, CLAUDE/ROUTING/skills docs that ship in the upload, etc.)
+- After merging `/updates/` session-updates into project-files
+
+**Reinstall skill(s)** (rebuild `.skill` zip, upload/replace in CE):
+- Any change under `skills/SKILL-00N-*/` (especially `SKILL.md` or `manifest.json` version bump)
+- Packaging/layout fixes that affect the zip CE mounts
+
+## When not to remind
+
+- Docs or tooling that never upload (`UPDATE-PROCESS.md`, `generate-tags.js`, `tags-template.html` alone — unless `mpr-tags.html` was regenerated)
+- Pure local investigation with no durable CE-facing edits
+- Reminder already given in this turn for the same changes
+
+## Reminder format (keep short)
+
+```
+CE deploy still needed:
+- Re-seed project-files (…list why if helpful…)
+- Rebuild/reinstall SKILL-00N … (version x.y.z)
+```
+
+Omit the bullet that does not apply. Do not invent packaging steps the user did not ask for — just flag that CE is stale until they re-seed / reinstall.

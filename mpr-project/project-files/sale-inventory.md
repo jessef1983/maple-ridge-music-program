@@ -1,7 +1,7 @@
 # Sale Inventory
 
 **Maple Ridge School** · Ulster Park, NY · (845) 339-6681  
-**Last updated:** August 13, 2026  
+**Last updated:** August 16, 2026  
 **Numbering:** `LOT-###` — this is a **disposal pipeline, not the fleet.**
 
 ---
@@ -9,8 +9,7 @@
 ## Summary
 
 **18 items total:** 4 saxophones · 11 clarinets · 3 flutes  
-**Assessed:** 15 of 18 (all saxophones and clarinets play-tested Aug 13)  
-**Unassessed:** 3 flutes awaiting location in photo batch
+**Assessed:** 18 of 18 (all saxophones, clarinets, and flutes play-tested Aug 13–15)
 
 ---
 
@@ -39,24 +38,26 @@
 | LOT-014 | Artley 175 | 249004 ✅ | Fair | Assessed | **Playable.** Squeaky top register (likely pad leak). Bell is Artley; mouthpiece is American Music (both correct, separate brands). Old LeBlanc case. Pricing needed |
 | LOT-015 | Bundy | 225852 ✅ | Fair | Assessed | **Playable.** Loose low F# key (rattles — likely loose pivot screw). Case in great cosmetic condition (~$40 comp value). Quick regulation fix. Pricing needed |
 
-## Flutes (UNASSESSED)
+## Flutes (PLAY-TESTED AUG 15)
 
 | LOT | Brand / Model | Serial | Condition | Stage | Status |
 |:---:|---|:---:|:---:|:---:|---|
-| LOT-016 | Artley 18-0 | 252-817 ✋ | Unassessed | Logged | Not yet located in Drive photo batch |
-| LOT-017 | Armstrong | G9116 ✋ | Unassessed | Logged | Not yet located in Drive photo batch |
-| LOT-018 | Reynolds R11C | 41249 ✋ | Unassessed | Logged | Not yet located in Drive photo batch |
+| LOT-016 | Artley 18-0 | 252-817 ✋ | Fair | Assessed | **Play-tested Aug 15:** Headjoint lip plate tarnished & worn; interior tarnished; crown turns smoothly. Body silver plating worn in 2 places; keys move quietly & relatively fast. **RH 2nd trill key missing its pad — major problem.** Other pads fine. Sound: very big, slightly fuzzy. **Missing cleaning rod.** Proposed ask **$75** / floor **$40** (factor trill-pad repair). |
+| LOT-017 | Armstrong 104 | G9114 / G9116 ✅ | Fair | Assessed | **Play-tested Aug 15:** Headjoint minor lip-plate scratches, small dent; inside looks great; crown turns stiffly. Body tiny scratches/minor rust. Sticky pads (paper fixable); thumb key severely misaligned; 1st finger RH slightly misaligned. Sound: low/mid gorgeous; upper range thin/hard over high G. **Missing cleaning rod.** Proposed ask **$150** / floor **$80**. |
+| LOT-018 | Reynolds R11C | 41249 ✅ | Good | Assessed | **Play-tested Aug 15:** Best of the three. Lip plate slightly worn; crown smooth; one barely noticeable dent. Body plating worn in 2 large areas. Sticky pads (fixable); large RH pad may leak slightly. Sound: stunning, clear through all registers. **Has cleaning rod.** Proposed ask **$200** / floor **$120**. |
 
 ---
 
-## Open Items (Aug 13 priorities)
+## Open Items (Aug 16 priorities)
 
 1. **Pricing pass for all assessed clarinets** — LOT-005–015 need prices factored for their specific faults
-2. **Repair quotes** — LOT-005 (bridge key), LOT-008 (missing keys) to inform repair-vs-as-is decisions
-3. **Flute batch** — locate LOT-016–018 in Google Drive
+2. **Repair quotes** — LOT-005 (bridge key), LOT-008 (missing keys), LOT-016 (missing trill pad) to inform repair-vs-as-is decisions
+3. **Flute pricing pass** — LOT-016–018 assessed; ask/floor above are proposals pending final determination
 4. **LOT-012 gap inspection** — determine if bell/lower-joint gap is mismatch (reframes pricing) or just wear
-5. **Provenance** — record where all 18 items came from and which budget line proceeds go to
+5. **LOT-016 serial photo** — 252-817 from handwritten notes; physical stamp photo recommended for archive
+6. **Provenance** — record where all 18 items came from and which budget line proceeds go to
+7. **Photo index backfill (LOT-001–015)** — recover original `PXL_…` filenames from Drive / `intrument-pics` into `onboarding-photo-index.md` (LOT-014/015 were indexed Aug 13 in CE but never saved here)
 
 ---
 
-Last session: August 13, 2026 (play-testing & photo indexing)
+Last session: August 16, 2026 (flute play-tests merged from CE updates)

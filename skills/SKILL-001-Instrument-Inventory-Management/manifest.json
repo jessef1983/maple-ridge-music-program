@@ -3,9 +3,9 @@
   "mcp_actions_required": [],
   "name": "Instrument Inventory Management",
   "mcp_tools_optional": [],
-  "version": "2.1.0",
+  "version": "2.3.0",
   "mcp_tools_required": [],
-  "output_format": "session-updates.md deltas (Claude Enterprise can't edit project files in place); structured summaries and confirmations",
+  "output_format": "session-updates-<chat-name>.md deltas (Claude Enterprise can't edit project files in place); structured summaries and confirmations",
   "supporting_frameworks": [],
   "changelog": [
     {
@@ -34,6 +34,23 @@
         "Added tag-log.md as a fourth log file; Workflow 3 (tagging) now logs every permanent/student tag print",
         "Documented mpr-tags.html's outstanding-tag flag, derived from tag-log.md cross-referenced against assignment.md"
       ]
+    },
+    {
+      "version": "2.2.0",
+      "date": "2026-08-17",
+      "changes": [
+        "Session-updates filename must include chat name slug; always present file at end of session",
+        "Photos require onboarding-photo-index.md section inside session-updates",
+        "Never invent new MPR-### in CE — use MPR-TBD; merge assigns real ID (prevents parallel-chat collisions)"
+      ]
+    },
+    {
+      "version": "2.3.0",
+      "date": "2026-08-17",
+      "changes": [
+        "Tag printer Clear sheet can export session-updates-tag-print-*.md with tag-log.md rows after a confirmed successful print",
+        "Workflow 3 prefers that export path; manual session-updates rows remain the fallback"
+      ]
     }
   ],
   "owner": "Maple Ridge School Music Program",
@@ -41,6 +58,6 @@
     "Music Program Management"
   ],
   "status": "active",
-  "retrieval_pattern": "Read from project-files/ (students.md, inventory.md, assignment.md, sale-inventory.md, tag-log.md); writes via session-updates.md",
+  "retrieval_pattern": "Read from project-files/ (students.md, inventory.md, assignment.md, sale-inventory.md, tag-log.md); writes via session-updates-<chat-name>.md",
   "description": "Assign instruments to students, print tags, log new instruments, record maintenance and repairs, manage annual grade progression, and mark instruments sold/retired."
 }

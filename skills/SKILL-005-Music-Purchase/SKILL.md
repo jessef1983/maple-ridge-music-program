@@ -88,9 +88,9 @@ Whenever this skill says to add, update, or create something in `repertoire.md`,
 
 Do not silently rewrite the target file.
 
-Append a dated entry to `session-updates.md`.
+Append a dated entry to `session-updates-<chat-name-slug>.md` (**filename includes the chat name**, kebab-case).
 
-Keep one `session-updates.md` artifact open for the entire conversation.
+Keep one session-updates artifact open for the entire conversation (`present_files`, append in place). At session end, always present it for download into `/updates/`. If score/cover photos were indexed, include them in the session-updates entry (same photo-index discipline as instruments). Prefer `REP-TBD` for brand-new repertoire titles when the uploaded `repertoire.md` may be stale — merge assigns the real `REP-###`.
 
 ### Entry format
 
@@ -101,9 +101,9 @@ Keep one `session-updates.md` artifact open for the entire conversation.
 <the literal row or field value, in the target file's own format, ready to paste in>
 ```
 
-At the natural end of a repertoire-selection session, remind Jesse once:
+At the natural end of a repertoire-selection session, present the session-updates file and remind Jesse once:
 
-> Download `session-updates.md` and bring it back to Claude Code — it merges these into the real project files.
+> Download this and drop it in `/updates/` — Claude Code merges these into the real project files.
 
 Do not repeat that reminder after every individual update.
 

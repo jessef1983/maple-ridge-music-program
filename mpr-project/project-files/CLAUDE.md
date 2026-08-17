@@ -116,11 +116,13 @@ An interactive tag builder for Avery 5874 (3.5" × 2", 2 across, 5 down).
 - Print calibration controls (for HP M479fdw)
 - Print at 100% actual size (not "fit to page")
 - **Outstanding-tag flag** — an instrument with no permanent tag logged, or an active assignment whose student tag predates it, shows "⚠️ NEEDS TAG" right in the dropdown, with the reason in the on-screen warning once selected (see `tag-log.md`)
+- **Clear-sheet print log** — after a successful print, Clear sheet asks whether the sheet printed; OK downloads `session-updates-tag-print-YYYY-MM-DD.md` with `tag-log.md` rows (instrument → Permanent, student → Student). Drop that file in `/updates/` for merge. Cancel skips logging.
 
 **How to use:**
 1. Claude serves this file directly via `present_files` when a user asks to print tags
 2. User downloads and opens it in a browser (buttons don't work in the chat preview)
 3. Select an instrument, place it on the sheet, print at actual size
+4. Click **Clear sheet** → confirm the print succeeded → save the downloaded session-updates file into `/updates/`
 
 **This file is generated, not hand-edited.** It's regenerated locally before each upload — see below.
 
@@ -138,7 +140,27 @@ This reads `project-files/inventory.md`, `tag-log.md`, and `assignment.md`, merg
 
 ## Recording changes made during a Claude Enterprise session
 
-Claude Enterprise reads this project's files during a chat but can't edit them in place — nothing a skill "writes" during a conversation is real until it's back in this folder in the repo. As of 2026-08-14, every skill records changes as dated entries in `session-updates.md` (a running artifact for the whole conversation) instead of handing back an entire regenerated file. The user downloads that one file, drops it in `/updates/`, and Claude Code merges each entry into the correct file here — see `UPDATE-PROCESS.md` Step 1b for the exact merge process. `session-updates.md` is never itself one of this folder's 15 files; it's an inbox artifact, archived once merged.
+Claude Enterprise reads this project's files during a chat but can't edit them in place — nothing a skill "writes" during a conversation is real until it's back in this folder in the repo. Every skill records changes as dated entries in a **session-updates** artifact instead of handing back an entire regenerated file. The user downloads that file, drops it in `/updates/`, and Claude Code merges each entry into the correct file here — see `UPDATE-PROCESS.md` Step 1b.
+
+### Hard rules (all skills + concierge)
+
+1. **Always create and present a session-updates file at end of session.** Keep one running artifact for the whole conversation (`present_files`, append in place). When the session wraps ("Done", user leaving, or natural end), present the file again and remind once: download it and drop it in `/updates/` for Claude Code to merge. Never end a session that changed records without a downloadable session-updates file.
+
+2. **Filename includes the chat name.** Do **not** use bare `session-updates.md` when a conversation title / first-message name is known. Name it:
+   ```
+   session-updates-<chat-name-slug>.md
+   ```
+   Slug = conversation name (often the "Get Started with ___" phrase or the chat title) in lowercase kebab-case, punctuation stripped. Examples: `session-updates-holton-h378-double-horn-updates.md`, `session-updates-instrument-onboarding.md`.
+
+3. **Photos always get a photo-index entry in session-updates.** Whenever intake / assessment photos are added or reviewed, write a complete `onboarding-photo-index.md` section (folder name, filename table, what each shot shows, status) and include it as a session-updates entry targeting `onboarding-photo-index.md`. Filenames must not live only in chat prose.
+
+4. **Never suggest or assign a new `MPR-###` for a brand-new instrument.** Uploaded project files go stale across parallel CE chats; guessing "next ID" causes collisions (multiple chats historically all chose `MPR-064`). For new instruments:
+   - Use placeholder **`MPR-TBD`** (or omit the ID column) and identify the horn by **brand / model / serial / photos**
+   - Explicitly write: *Assign next free MPR ID at merge time — do not invent here*
+   - **Exception:** updates to an instrument **already** listed in the uploaded `inventory.md` may use that known MPR ID
+   - Sale-pipeline `LOT-###`: prefer describing the item unless a LOT ID is already confirmed in the uploaded `sale-inventory.md`
+
+Session-updates files are never among this folder's 15 project files; they are inbox artifacts, archived once merged.
 
 ---
 
@@ -198,15 +220,15 @@ One row per tag print event — never overwritten, so the log accumulates every 
 
 1. **Acquire instrument** (eBay, Reverb, retailer, etc.)
 2. **Run Instrument Onboarding skill**
-   - Assign next MPR ID
-   - Record serial, model, landed cost, acquisition source
-   - Assess condition
-   - Creates row in `inventory.md`
-3. **Regenerate tags locally:** `node generate-tags.js` (from `mpr-project/`)
+   - Record serial, model, landed cost, acquisition source (use **`MPR-TBD`** in CE — merge assigns the real ID)
+   - Assess condition; photograph serial + outfit
+   - Write inventory + **photo-index** deltas into `session-updates-<chat-name>.md`
+3. **After merge in Claude Code:** real `MPR-###` assigned; regenerate tags: `node generate-tags.js`
 4. **Print tags**
    - Open `mpr-tags.html` in browser
    - New instrument appears in dropdown
    - Pick it, place on sheet, print
+   - Clear sheet → confirm successful print → drop the downloaded `session-updates-tag-print-*.md` in `/updates/`
 
 ---
 
@@ -226,7 +248,7 @@ One row per tag print event — never overwritten, so the log accumulates every 
 
 Full process lives in `UPDATE-PROCESS.md` at the repo root. Summary:
 
-1. Merge anything in `/updates/` into the matching file here — manual full-file replacements by mtime, AND any `session-updates.md` from a CE session, applied entry by entry
+1. Merge anything in `/updates/` into the matching file here — manual full-file replacements by mtime, AND any `session-updates*.md` from a CE session, applied entry by entry (assign real `MPR-###` where entries say `MPR-TBD`)
 2. Merge skill file updates into the matching `skills/SKILL-00N-*/` folder, rebuild the `.skill` package
 3. Regenerate `mpr-tags.html` locally (`node generate-tags.js`), after Step 1 so tag-log.md merges are reflected
 4. Archive session clutter (summaries, handoffs, audits, merged `session-updates.md`) to `landing-zone/archive/`

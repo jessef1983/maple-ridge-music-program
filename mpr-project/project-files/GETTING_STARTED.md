@@ -41,6 +41,7 @@ Instead of juggling files, you use **skills** — guided workflows that ask the 
 - Generates permanent tag (laminated, exterior)
 - Generates student tag (swappable, interior)
 - Calibrates to your printer (HP M479fdw)
+- After print, Clear sheet can download a `session-updates-tag-print-*.md` for the tag log (drop in `/updates/`)
 - Instructions for sealing
 **Typical time:** 3–5 minutes per instrument
  
@@ -51,7 +52,8 @@ Instead of juggling files, you use **skills** — guided workflows that ask the 
  
 **When:** You receive an instrument from eBay, Reverb, or a retailer  
 **What it does:**
-- Assigns the next MPR ID
+- Records the instrument as **`MPR-TBD`** in session-updates (merge assigns the real MPR ID — CE must not invent one)
+- Indexes intake photos into the same session-updates file (`onboarding-photo-index.md` section)
 - Photographs and records the serial
 - Captures landed cost, seller info, return deadline
 - Assesses condition (leadpipe, valves, slides, cosmetics)

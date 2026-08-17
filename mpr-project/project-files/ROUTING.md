@@ -58,8 +58,9 @@ End the turn after presenting the picker. The user's selection arrives as their 
 4. Tool warns about photo-read serials (📷) vs. confirmed (✅)
 5. User picks MPR ID and position on sheet
 6. User prints at 100%, Cardstock/Heavy
-7. Done
-**Preamble:** "Here's the tag printer. Download it and open it in your browser — the buttons don't work in the chat preview."
+7. User clicks **Clear sheet** and confirms the print succeeded — the page downloads `session-updates-tag-print-YYYY-MM-DD.md` with `tag-log.md` rows
+8. Remind once: drop that file in `/updates/` for Claude Code merge (then local `node generate-tags.js` clears the outstanding-tag flags)
+**Preamble:** "Here's the tag printer. Download it and open it in your browser — the buttons don't work in the chat preview. After you print, use Clear sheet to save the tag-log session-updates file."
  
 ---
  
@@ -73,8 +74,8 @@ End the turn after presenting the picker. The user's selection arrives as their 
 3. Skill asks: "Date and price?"
 4. Skill asks: "Return deadline?" (if any)
 5. Skill asks: "Condition assessment" (leadpipe, valves, slides, cosmetics)
-6. Skill assigns next MPR ID, writes inventory.md row
-7. Done
+6. Skill records the instrument as **`MPR-TBD`** (never invents a next MPR ID — merge assigns it) and writes inventory + photo-index deltas into `session-updates-<chat-name>.md`
+7. Done — present the session-updates file for download
 **Preamble:** "Let's log the new instrument. First, what arrived?"
  
 ---
@@ -223,7 +224,9 @@ What student are you assigning an instrument to?
 [present_files on /mnt/project/mpr-tags.html]
  
 Here's the tag printer. Download it and open it in your browser —
-the buttons don't work in the chat preview.
+the buttons don't work in the chat preview. After a successful print,
+use Clear sheet to download the tag-log session-updates file, then drop
+it in /updates/ for merge.
 ```
  
 ### Workflow Kickoff (Instrument Onboarding)
@@ -263,4 +266,15 @@ Which expense — do you have a report ID, or should I search by merchant?
 Here's what needs attention right now:
 - [list with links to fix workflows]
 ```
+
+---
+
+## End of every session (all workflows)
+
+Before leaving the conversation that changed any record:
+
+1. Ensure a single **`session-updates-<chat-name-slug>.md`** artifact exists (chat name from the "Get Started with ___" phrase or conversation title; kebab-case).
+2. If photos were added this session, it must include an **`onboarding-photo-index.md`** section (filenames + what each shows) — not chat-only lists.
+3. **`present_files`** that session-updates file and remind once: download → drop in `/updates/` for Claude Code merge.
+4. Never invent a new `MPR-###` for a brand-new instrument — use `MPR-TBD` and brand/serial/photos; merge assigns the real ID.
  

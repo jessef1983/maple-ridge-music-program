@@ -35,7 +35,7 @@ Failure modes this exists to prevent: an instrument's landed cost silently drift
 
 A Claude Enterprise project chat reads `inventory.md`, but it cannot edit it in place — nothing written during a conversation is real until it's back in `mpr-project/project-files/` in the actual repo. Handing back an entire regenerated `inventory.md` every time one reconciliation completes is heavy, hard for a human to review, and risks silently clobbering someone else's edit made in a different session.
 
-**So: wherever this skill says to record or append a reconciliation, do this instead —** append a dated entry to `session-updates.md` describing the change, rather than rewriting `inventory.md` itself. Keep `session-updates.md` open as one running artifact for the whole conversation (present it via `present_files`, and append to the same artifact — don't start a new one per change).
+**So: wherever this skill says to record or append a reconciliation, do this instead —** append a dated entry to `session-updates-<chat-name-slug>.md` describing the change, rather than rewriting `inventory.md` itself. Keep one running artifact for the whole conversation (present via `present_files`, append in place). **Filename must include the chat name** (kebab-case). At session end, always present that file for download into `/updates/`.
 
 **Entry format:**
 ```
@@ -47,7 +47,7 @@ coupa_reconciliation: { expense_report_id: ..., line_item_id: ..., allocated_tot
 
 In music mode the same format applies with **Target file:** `repertoire.md` and the change appended to the `REP-###` row.
 
-At the natural end of a reconciliation ("Done") or an audit sweep, remind the user once: "Download `session-updates.md` and bring it back to Claude Code — it merges these into the real file." Don't repeat the reminder after every entry within the same session.
+At the natural end of a reconciliation ("Done") or an audit sweep, present the session-updates file and remind once: "Download this and drop it in `/updates/` — Claude Code merges these into the real file."
 
 ---
 

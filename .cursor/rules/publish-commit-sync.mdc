@@ -1,0 +1,29 @@
+---
+description: After packaging/publishing CE-facing artifacts, commit and push so git history is the rollback trail
+alwaysApply: true
+---
+
+# Commit and sync after publish
+
+Git history is the project-files evolution / rollback trail. Do **not** rely on dated `landing-zone/archive/project-files-*` copies unless the user asks for one.
+
+## When this applies
+
+Treat as "published" and **commit + `git push`** (same session, without waiting for a separate "wrap") when you have finished any of:
+
+- Packaging new/updated `.skill` files under `skills/`
+- Declaring project-files ready for CE seed / re-seed
+- Completing a merge of `/updates/` into `mpr-project/project-files/` that is meant to go live
+
+This instruction **is** commit-and-push approval for those publish moments.
+
+## How
+
+1. Stage only the intentional publish set (project-files, skills sources + packages, related process/docs/rules). Exclude secrets and unrelated dirty files.
+2. Commit with a why-focused message.
+3. `git push` to the tracked remote (no force).
+4. Still give the CE re-seed / skill-install reminder if CE is not updated yet.
+
+## Maple Ridge note
+
+This repo may commit on `main`. Do not invent a branch unless the user asks or another repo's rules forbid main commits.

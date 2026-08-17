@@ -38,7 +38,17 @@ This skill works with three separate files, each with a distinct purpose:
 
 A Claude Enterprise project chat reads the files above, but it cannot edit them in place — nothing written during a conversation is real until it's back in `mpr-project/project-files/` in the actual repo. Handing back an entire regenerated file (all of `inventory.md`, say) every time one row changes is heavy, hard for a human to review, and risks silently clobbering someone else's edit made in a different session.
 
-**So: wherever a workflow below says to write, update, or create a row in a file, do this instead —** append a dated entry to `session-updates.md` describing the change, rather than rewriting the target file itself. Keep `session-updates.md` open as one running artifact for the whole conversation (present it via `present_files`, and append to the same artifact — don't start a new one per change).
+**So: wherever a workflow below says to write, update, or create a row in a file, do this instead —** append a dated entry to the session-updates artifact describing the change, rather than rewriting the target file itself.
+
+### Session-updates hard rules
+
+1. **Filename includes the chat name:** `session-updates-<chat-name-slug>.md` (kebab-case from the conversation title / "Get Started with ___" phrase). Do not leave it as bare `session-updates.md` when a chat name is known. Keep one running artifact for the whole conversation (`present_files`, append in place).
+
+2. **Always present it at end of session.** When a workflow ends ("Done") or the user wraps: finalize and `present_files` the session-updates file; remind once to download and drop it in `/updates/` for Claude Code merge. Never end a session that changed records without that downloadable file.
+
+3. **Photos → photo index inside session-updates.** Whenever intake/assessment photos are added or reviewed, write a complete section for `onboarding-photo-index.md` (folder, filename table, what each shot shows, status) as a session-updates entry targeting that file. Filenames must not live only in chat prose.
+
+4. **Never invent a new `MPR-###` for a brand-new instrument.** Project uploads go stale across parallel CE chats; guessing the next ID caused repeated `MPR-064` collisions. Use **`MPR-TBD`** (or omit ID) and identify by brand / model / serial / photos; write *Assign next free MPR ID at merge time*. Exception: updates to an instrument **already** in the uploaded `inventory.md` may use that known MPR ID.
 
 **Entry format:**
 ```
@@ -47,8 +57,6 @@ A Claude Enterprise project chat reads the files above, but it cannot edit them 
 **Change:** <one line: append row / update field, etc.>
 <the literal row or field value, in the target file's own table format, ready to paste in>
 ```
-
-At the natural end of a workflow ("Done"), remind the user once: "Download `session-updates.md` and bring it back to Claude Code — it merges these into the real files." Don't repeat the reminder after every entry within the same session; once per completed workflow is enough. If the user runs multiple workflows in one conversation, keep appending to the same `session-updates.md` rather than starting a fresh one each time.
 
 ## Identity model
 
@@ -60,7 +68,7 @@ Three separate identifiers, often confused:
 | **Serial number** | The manufacturer's mark on the instrument | Never |
 | **Assignee** | Which student currently holds it | Often |
 
-Assign MPR IDs sequentially in acquisition order. Never reuse a retired ID — if an instrument is removed, mark it `Sold` or `Retired` and leave the row. Physical tags carry the MPR ID; the serial is what proves the tag matches the horn.
+Assign MPR IDs sequentially in acquisition order **at merge time in the repo** — never reuse a retired ID. In a Claude Enterprise session, **do not suggest or assign a new `MPR-###`** for a brand-new instrument (use `MPR-TBD`); parallel chats and stale uploads make "next ID" guesses collide. Physical tags carry the MPR ID; the serial is what proves the tag matches the horn.
 
 ## Condition rubric
 
@@ -128,9 +136,9 @@ Run this whenever an instrument arrives or is discovered (e.g. during a walkthro
 
 2. **Determine ownership.** Program-owned (`MPR-###`), borrowed from another organization (a separate `###-###` prefix — see Ownership vocabulary above), or not program property at all? Don't default to assuming program ownership just because it's sitting in the building. Ask if it's unclear.
 
-3. **Assign the next ID** in the correct series for its ownership bucket. Check the relevant table in `inventory.md` for the highest existing ID first.
+3. **Do not invent the next MPR ID in CE.** For a **new** program-owned instrument, use placeholder **`MPR-TBD`** and identify by brand/model/serial/photos. Write *Assign next free MPR ID at merge time*. Only use a real `MPR-###` when updating an instrument already present in the uploaded `inventory.md`. For borrowed instruments, use the correct prefix with `TBD` the same way (e.g. `MNT-TBD`) unless the ID already exists in the uploaded file.
 
-4. **Photograph the serial** and any bell/brand engraving, before the instrument goes into rotation. This never gets easier than the day the case opens. Photograph *every* accessory compartment too, not just the main case bay — a missing bocal, mouthpiece, or crutch is much easier to prove absent from two angles than one.
+4. **Photograph the serial** and any bell/brand engraving, before the instrument goes into rotation. This never gets easier than the day the case opens. Photograph *every* accessory compartment too, not just the main case bay — a missing bocal, mouthpiece, or crutch is much easier to prove absent from two angles than one. **Immediately index those photos** into a session-updates entry targeting `onboarding-photo-index.md` (folder name provisional as `MPR-TBD_Brand-Model/` until merge assigns the ID).
 
 5. **Record acquisition data**: date, source (seller/donor/on-hand), landed cost (item + shipping + tax, or `$0.00` for a donation/transfer), order number if applicable.
 
@@ -153,19 +161,21 @@ Run this whenever an instrument arrives or is discovered (e.g. during a walkthro
 
 12. **Tag the case** (see Workflow 3, Tag printing) — but only with a ✅ confirmed serial. If the serial is still ⚠️ or 📷, note that a permanent tag has to wait.
 
-13. **Write the inventory row** in `inventory.md` with all fields including the confirmed serial. Do **not** write a holder/assignee into `inventory.md` — that belongs only in `assignment.md` (see Three-file architecture above). If an assignment is being made in the same session, create the `assignment.md` row too, but keep the two writes separate so `inventory.md` never duplicates who-has-what.
+13. **Write the inventory row** (via session-updates) in `inventory.md` with all fields including the confirmed serial. Use **`MPR-TBD`** for new instruments. Do **not** write a holder/assignee into `inventory.md` — that belongs only in `assignment.md` (see Three-file architecture above). If an assignment is being made in the same session, create the `assignment.md` row too (also `MPR-TBD` until merge), but keep the two writes separate so `inventory.md` never duplicates who-has-what.
 
-14. **Regenerate `mpr-tags.html`.** The tag tool carries a hardcoded `FLEET` array — it does not read `inventory.md`. A new instrument does not appear in the picker until the file is rebuilt. Add the entry with `id`, `fam`, `model`, `serial`, `serialOk`, and `holder`, then hand over the updated file. Borrowed (non-`MPR-###`) instruments still get tagged if they're going into rotation — the tag identifies the instrument, not the ownership.
+14. **Do not regenerate `mpr-tags.html` inside CE.** Tags regenerate locally after merge. Note in session-updates that tags need a local `node generate-tags.js` pass once the real MPR ID is assigned.
 
 **Before calling an onboarding done, confirm you have:**
-- [ ] An ID in the correct series (checked for duplicates first)
+- [ ] Placeholder **`MPR-TBD`** (or known existing MPR if this is an update) — **not** a guessed next sequential ID
 - [ ] Ownership determined and correctly bucketed
 - [ ] Serial photographed, and marked ✅/📷/⚠️ accurately — not upgraded to ✅ without actually seeing it clearly
+- [ ] Photo-index section written into session-updates (filenames + what each shows)
 - [ ] Brand/model/tier researched with sources, or explicitly marked unconfirmed
 - [ ] A market-value estimate with a date and source basis, or explicitly marked "not researched"
 - [ ] Every accessory checked and confirmed present or flagged missing
 - [ ] Condition assessed (not left at `Unknown`) or a clear reason it's still pending (e.g. blocked on a missing part)
 - [ ] No holder/assignee written into `inventory.md` — only into `assignment.md`
+- [ ] Session-updates file named with chat slug and presented for download
 
 If any box can't be checked, say so to the user rather than marking the onboarding complete.
 
@@ -210,7 +220,9 @@ Handles both adding a new student to the program and assigning (or reassigning) 
 
 **Files involved:** `inventory.md` (read serial & MPR), `students.md` (read student name), `assignment.md` (reference for dates), `tag-log.md` (write — one entry per print)
 
-**Log every print, both kinds.** Immediately after printing a permanent tag or a student tag, record it — following the session-updates.md protocol above — as a new row in `tag-log.md`:
+**Log every print, both kinds.** Preferred path: after printing, click **Clear sheet** in `mpr-tags.html` and confirm the sheet printed successfully. The page downloads `session-updates-tag-print-YYYY-MM-DD.md` with one `tag-log.md` row per placed card (instrument → `Permanent`, student → `Student`, ISO date). Drop that file in `/updates/` for Claude Code merge — same as any other session-updates artifact.
+
+If Clear-sheet export was skipped, record the prints the usual way — append a dated entry to the session-updates artifact describing each new `tag-log.md` row:
 ```
 | MPR ID | Tag Type | Date Printed | Notes |
 | MPR-021 | Permanent | 2026-08-14 | |
@@ -250,6 +262,7 @@ Two tags per instrument; only one is laminated.
 **Technical notes:**
 - Hand the user the file rather than referring to it — surface `mpr-tags.html` from the project with `present_files` so they get a download button
 - The buttons only work at `file://` origin. In a chat preview the frame is sandboxed: print, Clear, and Reset are all blocked, and only Place card responds. Tell the user to download and open it in their browser
+- After print, remind them to use **Clear sheet** → confirm success → drop `session-updates-tag-print-*.md` in `/updates/`
 - Use Avery 5874 laser business cards (2" × 3.5") on an HP M479fdw or equivalent
 - Print calibration is printer-and-stock specific; if you change hardware, recalibrate
 - Media type: Cardstock/Heavy; rub-test a card before laminating

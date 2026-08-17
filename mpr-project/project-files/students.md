@@ -26,7 +26,7 @@
 | Christina | Arnold | Active | — | — |
 | James | Horning | Active | — | — |
 | Kaitlyn | Zimmerman | Active | — | — |
-| Sarah | Frase | Active | — | — |
+| Sarah | Frase | Active | Cornet | MPR-080 |
 | AnnMarie | Wipf | Active | — | — |
  
 ### 4th Grade (Year 3)
@@ -72,7 +72,7 @@
  
 | Name | Last Name | Status | Instrument | MPR |
 |---|---|---|---|:---:|
-| Christel | Mow | Active | Flute | MPR-003 |
+| Christel | Mow | Active | Flute | MPR-081 |
 | Sheldon | Mow | Active | — | — |
 | Megan | Loewenthal | Active | Cello | — |
 | Simon | Martinie-Eiler | Active | — | — |
@@ -131,7 +131,7 @@
 | Name | Last Name | Status | Instrument | MPR |
 |---|---|---|---|:---:|
 | Myla | Maas | Active | — | — |
-| Micah | Frase | Active | — | — |
+| Micah | Frase | Active | French Horn | MPR-023 |
 | Paige | Mow | Active | — | — |
 | Timothy | Woolston | Active | — | — |
 | Zane | Wipf | Active | — | — |

@@ -5,12 +5,12 @@
 <title>Maple Ridge School — Instrument &amp; Student Tags</title>
 <style>
 :root{
-  --tpt:#C1440E; --hrn:#1F5673; --eup:#6A2C70;
+  --tpt:#C1440E; --pct:#9A3412; --hrn:#1F5673; --eup:#6A2C70;
   --fl:#2E7D5B;  --prc:#8B5A2B; --str:#7A1F3D;
   --tub:#4B3F72; --trb:#B8860B; --bsn:#4A5568;
   --clr:#0F6E5C; --asx:#B5651D; --tsx:#8E4A9E;
   --ahn:#2F6690; --dsc:#17394D; --mel:#5B7B9A;
-  --flg:#A63446; --oth:#555555;
+  --flg:#A63446; --crt:#C1440E; --dbl:#3D6B4F; --oth:#555555;
   --ink:#111;
   /* calibration — adjustable from the panel, saved between visits */
   --offx:0.0313in;   /* shift right  */
@@ -126,14 +126,17 @@ body{ font-family:Helvetica,Arial,sans-serif; color:var(--ink);
       <label>MPR ID<input id="fId" placeholder="MPR-013"></label>
       <label>Family
         <select id="fFam">
-          <option value="tpt">Trumpet</option><option value="hrn">French Horn</option>
+          <option value="tpt">Trumpet</option><option value="pct">Piccolo Trumpet</option>
+          <option value="hrn">French Horn</option>
           <option value="eup">Euphonium</option><option value="fl">Flute</option>
           <option value="prc">Percussion</option><option value="tub">Tuba</option>
           <option value="trb">Trombone</option><option value="bsn">Bassoon</option>
+          <option value="dbl">Double Reed</option>
           <option value="clr">Clarinet</option><option value="asx">Alto Sax</option>
           <option value="tsx">Tenor Sax</option><option value="ahn">Alto Horn</option>
           <option value="dsc">Descant Horn</option><option value="mel">Mellophone</option>
-          <option value="flg">Flugelhorn</option><option value="str">Strings</option>
+          <option value="flg">Flugelhorn</option><option value="crt">Cornet</option>
+          <option value="str">Strings</option>
         </select>
       </label>
     </div>
@@ -173,8 +176,12 @@ body{ font-family:Helvetica,Arial,sans-serif; color:var(--ink);
     <p style="margin:0 0 .5rem"><b>Background graphics on</b>, or the colour spines drop out.</p>
     <p style="margin:0 0 .5rem"><b>Tray 1 only, a few sheets at a time.</b> Avery 5874 is 247 gsm
     against a 176 gsm tray rating — over spec, usually fine, but not from a full stack.</p>
-    <p style="margin:0"><b>Media type: Cardstock / Heavy</b>, then rub-test a card before
+    <p style="margin:0 0 .5rem"><b>Media type: Cardstock / Heavy</b>, then rub-test a card before
     laminating. Laminate adhesive lifts poorly-fused toner and there's no undoing it.</p>
+    <p style="margin:0"><b>After a successful print, click Clear sheet.</b> Confirm the print, then
+    download the offered <code>session-updates-tag-print-YYYY-MM-DD.md</code> and drop it in
+    <code>/updates/</code> so the tag log can be merged. Cancel the print confirmation to clear
+    without logging.</p>
   </div>
 </div>
 
@@ -210,10 +217,10 @@ const FLEET = [
 ];
 
 const FAMS = {
-  tpt:"Trumpet", hrn:"French Horn", eup:"Euphonium", fl:"Flute", prc:"Percussion",
-  tub:"Tuba", trb:"Trombone", bsn:"Bassoon", clr:"Clarinet", asx:"Alto Sax",
+  tpt:"Trumpet", pct:"Piccolo Trumpet", hrn:"French Horn", eup:"Euphonium", fl:"Flute", prc:"Percussion",
+  tub:"Tuba", trb:"Trombone", bsn:"Bassoon", dbl:"Double Reed", clr:"Clarinet", asx:"Alto Sax",
   tsx:"Tenor Sax", ahn:"Alto Horn", dsc:"Descant Horn", mel:"Mellophone",
-  flg:"Flugelhorn", str:"Strings", oth:"Other",
+  flg:"Flugelhorn", crt:"Cornet", str:"Strings", oth:"Other",
 };
 const KEY = "mpr-tag-sheet-v1";
 let cards = new Array(10).fill(null), mode = "inst", slot = 0;
@@ -328,8 +335,99 @@ $("add").onclick = () => {
   if(next !== -1) slot = next;
   render();
 };
-$("clear").onclick = () => { if(confirm("Clear all ten positions?")){
-                              cards = new Array(10).fill(null); slot = 0; render(); } };
+function isoToday(){
+  const d = new Date();
+  return d.getFullYear() + "-"
+    + String(d.getMonth() + 1).padStart(2, "0") + "-"
+    + String(d.getDate()).padStart(2, "0");
+}
+
+function normalizeMpr(id){
+  const m = String(id || "").trim().match(/^MPR-(\d+)$/i);
+  return m ? "MPR-" + m[1].padStart(3, "0") : "";
+}
+
+/* Build merge-ready tag-log rows from the current sheet.
+   Instrument cards → Permanent; student cards → Student.
+   Cards without a real MPR-### are skipped. */
+function printLogRows(placed){
+  const date = isoToday();
+  const rows = [];
+  for(const c of placed){
+    const id = normalizeMpr(c.id);
+    if(!id) continue;
+    const tagType = c.mode === "stud" ? "Student" : "Permanent";
+    let note = "";
+    if(c.mode === "stud"){
+      note = String(c.a || "").trim();
+    } else {
+      const parts = [];
+      if(c.a) parts.push(String(c.a).trim());
+      if(c.b) parts.push("serial " + String(c.b).trim());
+      note = parts.join("; ");
+    }
+    rows.push("| " + id + " | " + tagType + " | " + date + " | " + note + " |");
+  }
+  return rows;
+}
+
+function downloadTagPrintSessionUpdates(rows){
+  const date = isoToday();
+  const body = [
+    "# Session Updates — Tag Print Log",
+    "",
+    "**Date:** " + date,
+    "**Source:** mpr-tags.html Clear sheet export",
+    "",
+    "## File: tag-log.md",
+    "",
+    "Append these rows (one per print event):",
+    "",
+    "| MPR ID | Tag Type | Date Printed | Notes |",
+    "|---|---|---|---|",
+    ...rows,
+    "",
+    "---",
+    "",
+    "Drop this file in `/updates/` for Claude Code merge, then regenerate tags: `node generate-tags.js`.",
+    ""
+  ].join("\n");
+  const blob = new Blob([body], { type: "text/markdown;charset=utf-8" });
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = "session-updates-tag-print-" + date + ".md";
+  document.body.appendChild(a);
+  a.click();
+  setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 0);
+}
+
+function clearSheet(){
+  cards = new Array(10).fill(null);
+  slot = 0;
+  render();
+}
+
+$("clear").onclick = () => {
+  const placed = cards.filter(Boolean);
+  if(!placed.length){
+    clearSheet();
+    return;
+  }
+  const loggable = printLogRows(placed);
+  if(loggable.length){
+    if(confirm("Did this sheet print successfully?\n\nOK = download a session-updates file for tag-log.md, then clear the sheet.\nCancel = do not log yet.")){
+      downloadTagPrintSessionUpdates(loggable);
+      $("phint").textContent = "Downloaded tag-log session-updates — drop it in /updates/.";
+      clearSheet();
+      return;
+    }
+    if(!confirm("Clear the sheet without logging these prints?")) return;
+    clearSheet();
+    return;
+  }
+  if(!confirm("Clear all ten positions? (No MPR-### cards to log.)")) return;
+  clearSheet();
+};
 $("print").onclick = () => {
   try{ window.print(); }
   catch(e){ $("phint").textContent = "Blocked here — download the file and open it in your browser."; }
