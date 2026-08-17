@@ -10,7 +10,7 @@
 
 | Scope | Indexed here | Gap |
 |---|---|---|
-| Fleet onboardings with photo sessions (MPR-023, 036, 063–086) | ✅ sections below | MPR-081 physical photos pending |
+| Fleet onboardings with photo sessions (MPR-023, 036, 063–086) | ✅ sections below | — |
 | MPR-019 accessory (tuba mouthpiece in shipment) | ✅ | Maker ID still open |
 | Sale flutes LOT-016–018 | ✅ | LOT-016 needs serial-stamp photo |
 | Sale saxophones LOT-001–004 | ❌ stubs only | Original Drive filenames never copied into this file |
@@ -270,8 +270,9 @@
 | 1 | `PXL_20260816_213537309.jpg` | Valve casing serial stamp | **596484 ✅** clearly visible on brass valve block; double-horn stop mechanism present |
 | 2 | `PXL_20260816_213155100.jpg` | Bell engraving | Elkhorn stamp; lacquered brass with moderate patina/tarnish |
 | 3 | `PXL_20260816_213143452_MP.jpg` | Mouthpiece shank detail | **H378** stamped on shank |
-| 4 | `PXL_20260816_213919147.jpg` | Full outfit overhead | Complete double horn; all four pistons and mouthpiece visible |
-| 5 | `PXL_20260816_213902152.jpg` | Valve cluster detail | Three-valve piston cluster; slides clean and no visible corrosion |
+| 4 | `PXL_20260816_213900124.jpg` | Full horn overhead (no mouthpiece) | Double F/Bb; four levers; age-typical tarnish on brass and nickel-silver valve block |
+| 5 | `PXL_20260816_213919147.jpg` | Full outfit overhead | Complete double horn; all four pistons and mouthpiece visible |
+| 6 | `PXL_20260816_213902152.jpg` | Valve cluster detail | Three-valve piston cluster; slides clean and no visible corrosion |
 
 **Status:** Holton H378 double F/Bb; serial **596484 ✅**; Good condition. Fall 2025 D&M chem flush, corks, stops, and valve restringing documented. Valves now sluggish; oil and a 30-minute play test before clearing.
 
@@ -285,9 +286,12 @@
 
 | # | Filename | Shows | Notes |
 |:-:|---|---|---|
-| — | *Pending* | — | Awaiting physical photo upload |
+| 1 | `PXL_20260816_202443247_MP.jpg` | Body model stamp | **JFL-507** and **CHINA** clearly engraved |
+| 2 | `PXL_20260816_202440892_MP.jpg` | Adjacent body engraving | Reads **409 HP** (related Jupiter body mark) |
+| 3 | `PXL_20260816_202638259_MP.jpg` | Serial stamp close-up | **P68134 ✅** |
+| 4 | `PXL_20260816_202640193_MP.jpg` | Serial stamp alternate angle | Same **P68134 ✅** read |
 
-**Status:** Jupiter JFL 507; serial **P68134 ✅** verified from instrument. Condition, case, and outfit documentation pending.
+**Status:** Jupiter JFL 507; serial **P68134 ✅** photo-confirmed. Model/China stamps documented. Case and full-outfit overview shots still outstanding.
 
 ---
 
@@ -330,9 +334,10 @@
 | # | Filename | Shows | Notes |
 |:-:|---|---|---|
 | 1 | `PXL_20260816_200715323.jpg` | Underside maker's stamp | W.F.L. and Symphony Model clearly stamped |
-| 2 | `PXL_20260816_200653734.jpg` | Tuning mechanism and stand | Piano-style key markings on tuning bar |
-| 3 | `PXL_20260816_200648503.jpg` | Full drum overview | Pedal mechanism, lugs, bearing edge; head intact |
-| 4 | `PXL_20260816_200640613.jpg` | Stand and lug assembly | Interior rim photo still needed for serial |
+| 2 | `PXL_20260816_201157059.jpg` | Pedal/base stamp close-up | **W.F.L. / SYMPHONY MODEL / W.F.L. DRUM CO. / CHICAGO USA / PAT. PEND.** |
+| 3 | `PXL_20260816_200653734.jpg` | Tuning mechanism and stand | Piano-style key markings on tuning bar |
+| 4 | `PXL_20260816_200648503.jpg` | Full drum overview | Pedal mechanism, lugs, bearing edge; head intact |
+| 5 | `PXL_20260816_200640613.jpg` | Stand and lug assembly | Interior rim photo still needed for serial |
 
 **Status:** W.F.L. Symphony Model. Size (estimated 25–26") and serial pending inspection.
 
@@ -345,6 +350,7 @@
 | # | Filename | Shows | Notes |
 |:-:|---|---|---|
 | 1 | `PXL_20260816_201148310.jpg` | Full drum, top view | **28" / 71 cm** marked on Remo Weatherking replacement head |
+| 2 | `PXL_20260816_201427491.jpg` | Head brand print close-up | **Remo Weatherking Tympani · Made in U.S.A.** |
 
 **Status:** Ludwig Ensemble; serial pending interior-rim/lug inspection. A prior photo label was corrected because it depicted the W.F.L. drum, not this instrument.
 
@@ -357,10 +363,12 @@
 | # | Filename | Shows | Notes |
 |:-:|---|---|---|
 | 1 | `PXL_20260816_201139768.jpg` | Underside maker's stamp and pedal housing | Planet script, Concert Grand, and PAT PEND |
-| 2 | `PXL_20260816_201143144.jpg` | Tuning mechanism close-up | Planet pedal housing |
-| 3 | `PXL_20260816_201133253.jpg` | Full drum from above | Remo Weatherking replacement head |
-| 4 | `PXL_20260816_201558294.jpg` | Head detail | Remo Weatherking, Made in USA |
-| 5 | `PXL_20260816_201547761.jpg` | Interior shell | Pedal mechanism and lug assembly; no serial visible |
+| 2 | `PXL_20260816_201444784.jpg` | Pedal footboard stamps | **Planet** sticker + embossed **WFL CONCERT GRAND / PAT. PEND.**; EZ-WHEEL caster visible |
+| 3 | `PXL_20260816_201143144.jpg` | Tuning mechanism close-up | Planet pedal housing |
+| 4 | `PXL_20260816_201437353.jpg` | Tuning gauge detail | **Planet** branded gauge with pitch markers; copper bowl visible |
+| 5 | `PXL_20260816_201133253.jpg` | Full drum from above | Remo Weatherking replacement head |
+| 6 | `PXL_20260816_201558294.jpg` | Head detail | Remo Weatherking, Made in USA |
+| 7 | `PXL_20260816_201547761.jpg` | Interior shell | Pedal mechanism and lug assembly; no serial visible |
 
 **Status:** Planet Concert Grand. Size and serial pending inspection.
 

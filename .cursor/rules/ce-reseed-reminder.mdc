@@ -32,3 +32,9 @@ CE deploy still needed:
 ```
 
 Omit the bullet that does not apply. Do not invent packaging steps the user did not ask for — just flag that CE is stale until they re-seed / reinstall.
+
+## Personal Claude interim (through Sep 2026 usage reset)
+
+As of **2026-08-17**, the user is working in **personal Claude** because Enterprise tokens are exhausted. Local `project-files/` / skills may advance without CE catching up (cherry-picks only when practical).
+
+**When Enterprise usage resets next month (~September 2026):** remind them to do a **full CE reseed** from `mpr-project/project-files/` (and reinstall any skill packages bumped since the last CE sync) — not just the latest cherry-pick. Clear or update this section after that reseed lands.
