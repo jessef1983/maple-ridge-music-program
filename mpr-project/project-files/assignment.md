@@ -59,7 +59,7 @@
 | MPR-038 | Clarinet | In service | Boosey & Hawkes, made in England; serial 226730 ✅ (matches on lower joint and upper joint back); mouthpiece is non-original S.M.L. (Paris). Mouthpiece fits loosely, likely worn corks not sealing (SVC-CLR-001) — probably a cheap fix | Fair |
 | MPR-041 | Descant Horn (F) | Storage | Alexander (Mainz, West Germany); serial 9290 ✅ | Unknown |
 | MPR-042 | Alto Horn (F) | Storage | Elkhart/Couesnon (Paris stencil); serial 2082 ✅ | Unknown |
-| MPR-043 | Mellophone | Storage | F mellophone — brand/model/serial still pending (never fully onboarded; easy to confuse with MPR-042 alto horn or MPR-079 Olds Ambassador) | Unknown |
+| MPR-043 | Mellophone (F) | Storage | F mellophone — brand/model/serial still pending (never fully onboarded; easy to confuse with MPR-042 alto horn or MPR-079 Olds Ambassador) | Unknown |
 | MPR-044 | Euphonium | Storage | Mack Brass; serial 0715640 ✅ | Good |
 | MPR-045 | Tuba | For Sale | Conn Eb, 3-valve non-comp; serial 159676 ✅ (~1918/early 1919); Ask $1,250–1,450 / floor $800–850; **cash, local pickup only** | Fair |
 | MPR-046 | Tuba | Storage | Conn BBb, gold lacquer, detachable bell (repaired); serial H77696 ✅ | Fair |
@@ -87,9 +87,9 @@
 | MPR-056 | Percussion | Sabian Crash (Small); serial/size pending | Unknown |
 | MPR-057 | Flugelhorn | Martin Imperial; serial 201622 ✅ | Good |
 | MPR-083 | Tuba | Olds 0-991 BBb, 3-valve non-compensating; serial 947832 ✅; play-test pending | Unknown |
-| MPR-084 | Percussion | W.F.L. Symphony Model timpani; size and serial pending | Unknown |
-| MPR-085 | Percussion | Ludwig Ensemble timpani; 28" (71 cm); serial pending | Unknown |
-| MPR-086 | Percussion | Planet Concert Grand timpani; size and serial pending | Unknown |
+| MPR-084 | Percussion | W.F.L. Symphony Model timpani, 25 in; no gauge; serial likely none | Unknown |
+| MPR-085 | Percussion | W.F.L. Symphony Model timpani, 28 in, Planet Exactone + EZ-Wheel; serial likely none | Unknown |
+| MPR-086 | Percussion | W.F.L. Concert Grand timpani, Planet Exactone; size pending; serial likely none | Unknown |
 
 **13 shared band room items**, not tied to an individual student.
  

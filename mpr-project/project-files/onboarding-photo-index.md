@@ -13,8 +13,10 @@
 | Fleet onboardings with photo sessions (MPR-023, 036, 063–086) | ✅ sections below | — |
 | MPR-019 accessory (tuba mouthpiece in shipment) | ✅ | Maker ID still open |
 | Sale flutes LOT-016–018 | ✅ | LOT-016 needs serial-stamp photo |
-| Sale saxophones LOT-001–004 | ❌ stubs only | Original Drive filenames never copied into this file |
+| Sale Camelot LOT-003 | ✅ partial | 2 filenames indexed; serial stamp still pending |
+| Sale saxophones LOT-001, 004 | ❌ stubs only | Original Drive filenames never copied into this file |
 | Sale clarinets LOT-005–015 | ❌ stubs only | LOT-014/015 were indexed in an Aug 13 CE session but filenames were not preserved into this durable index; LOT-011–013 serials confirmed, filenames never logged |
+| Sale trombone LOT-019 | ❌ named only | `1000033786/3787` not in local dump yet |
 
 ---
 
@@ -327,50 +329,50 @@
 
 ---
 
-## MPR-084 — W.F.L. Symphony Model Timpani
+## MPR-084 — W.F.L. Symphony Model Timpani (25", no gauge)
 
-**Onboarded:** August 16, 2026 · **Source:** Band room discovery · **Folder:** `Timpani-Three-Drum-Discovery_Aug16/`
+**Onboarded:** August 16, 2026 · **Corrected:** August 17, 2026 · **Source:** Band room discovery · **Folder:** `Timpani-Three-Drum-Discovery_Aug16/`
 
 | # | Filename | Shows | Notes |
 |:-:|---|---|---|
-| 1 | `PXL_20260816_200715323.jpg` | Underside maker's stamp | W.F.L. and Symphony Model clearly stamped |
-| 2 | `PXL_20260816_201157059.jpg` | Pedal/base stamp close-up | **W.F.L. / SYMPHONY MODEL / W.F.L. DRUM CO. / CHICAGO USA / PAT. PEND.** |
-| 3 | `PXL_20260816_200653734.jpg` | Tuning mechanism and stand | Piano-style key markings on tuning bar |
-| 4 | `PXL_20260816_200648503.jpg` | Full drum overview | Pedal mechanism, lugs, bearing edge; head intact |
-| 5 | `PXL_20260816_200640613.jpg` | Stand and lug assembly | Interior rim photo still needed for serial |
+| 1 | `PXL_20260816_200640613.jpg` | Stand and lug assembly | Drum 1 cluster |
+| 2 | `PXL_20260816_200648503.jpg` | Full drum overview | Pedal, lugs, bearing edge; head intact |
+| 3 | `PXL_20260816_200653734.jpg` | Pedal housing cast | **WFL SYMPHONY MODEL / PAT. PEND.** — gauge mount blank (no gauge) |
+| 4 | `PXL_20260816_200715323.jpg` | Kettle underside plaque | **W.F.L. SYMPHONY MODEL · W.F.L. DRUM CO · CHICAGO USA · PAT. PEND.** |
 
-**Status:** W.F.L. Symphony Model. Size (estimated 25–26") and serial pending inspection.
+**Status:** W.F.L. Symphony Model. Size **25" / 64 cm ✅** from Ludwig Ensemble *replacement head* badge (head ≠ maker). Serial likely none — still search counterhoop/spider/base. Era est. c. 1937–1939.
 
 ---
 
-## MPR-085 — Ludwig Ensemble Timpani
+## MPR-085 — W.F.L. Symphony Model Timpani (28", Planet Exactone)
 
-**Onboarded:** August 16, 2026 · **Source:** Band room discovery · **Folder:** `Timpani-Three-Drum-Discovery_Aug16/`
+**Onboarded:** August 16, 2026 · **Corrected:** August 17, 2026 · **Source:** Band room discovery · **Folder:** `Timpani-Three-Drum-Discovery_Aug16/`
 
 | # | Filename | Shows | Notes |
 |:-:|---|---|---|
-| 1 | `PXL_20260816_201148310.jpg` | Full drum, top view | **28" / 71 cm** marked on Remo Weatherking replacement head |
-| 2 | `PXL_20260816_201427491.jpg` | Head brand print close-up | **Remo Weatherking Tympani · Made in U.S.A.** |
+| 1 | `PXL_20260816_201133253.jpg` | Head logo | **Ludwig Ensemble** Reg. Timpani White, **28"/71cm** — replacement head, not maker |
+| 2 | `PXL_20260816_201139768.jpg` | Planet Exactone gauge bar | Aftermarket Falls Percussion retrofit |
+| 3 | `PXL_20260816_201143144.jpg` | Pedal housing | Cast **WFL SYMPHONY MODEL**; Planet nameplate on gauge mount |
+| 4 | `PXL_20260816_201148310.jpg` | EZ-Wheel third caster | Falls Percussion retrofit |
+| 5 | `PXL_20260816_201157059.jpg` | Pedal/cluster detail | Same Drum 2 cluster |
 
-**Status:** Ludwig Ensemble; serial pending interior-rim/lug inspection. A prior photo label was corrected because it depicted the W.F.L. drum, not this instrument.
+**Status:** W.F.L. Symphony Model (**not** Ludwig & Ludwig). Size **28" ✅**. Serial likely none. Prior “Ludwig Ensemble timpani” label discarded.
 
 ---
 
-## MPR-086 — Planet Concert Grand Timpani
+## MPR-086 — W.F.L. Concert Grand Timpani (Planet Exactone)
 
-**Onboarded:** August 16, 2026 · **Source:** Band room discovery · **Folder:** `Timpani-Three-Drum-Discovery_Aug16/`
+**Onboarded:** August 16, 2026 · **Corrected:** August 17, 2026 · **Source:** Band room discovery · **Folder:** `Timpani-Three-Drum-Discovery_Aug16/`
 
 | # | Filename | Shows | Notes |
 |:-:|---|---|---|
-| 1 | `PXL_20260816_201139768.jpg` | Underside maker's stamp and pedal housing | Planet script, Concert Grand, and PAT PEND |
-| 2 | `PXL_20260816_201444784.jpg` | Pedal footboard stamps | **Planet** sticker + embossed **WFL CONCERT GRAND / PAT. PEND.**; EZ-WHEEL caster visible |
-| 3 | `PXL_20260816_201143144.jpg` | Tuning mechanism close-up | Planet pedal housing |
-| 4 | `PXL_20260816_201437353.jpg` | Tuning gauge detail | **Planet** branded gauge with pitch markers; copper bowl visible |
-| 5 | `PXL_20260816_201133253.jpg` | Full drum from above | Remo Weatherking replacement head |
-| 6 | `PXL_20260816_201558294.jpg` | Head detail | Remo Weatherking, Made in USA |
-| 7 | `PXL_20260816_201547761.jpg` | Interior shell | Pedal mechanism and lug assembly; no serial visible |
+| 1 | `PXL_20260816_201427491.jpg` | Head logo | **Remo Weatherking Tympani · Made in U.S.A.** — replacement head |
+| 2 | `PXL_20260816_201437353.jpg` | Planet Exactone gauge | Same style retrofit as MPR-085 |
+| 3 | `PXL_20260816_201444784.jpg` | Pedal footboard | Cast **WFL CONCERT GRAND / PAT. PEND.** + Planet nameplate; EZ-Wheel visible |
+| 4 | `PXL_20260816_201547761.jpg` | Kettle underside | Painted finish; no maker plaque on this surface |
+| 5 | `PXL_20260816_201558294.jpg` | Full head, second angle | Remo Weatherking confirmed |
 
-**Status:** Planet Concert Grand. Size and serial pending inspection.
+**Status:** W.F.L. Concert Grand (**not** Planet as maker — Planet = gauge brand). Size pending. Serial likely none.
 
 ---
 
@@ -423,15 +425,25 @@
 
 ---
 
+### LOT-003 — Camelot tenor sax
+
+**Assessed:** August 13, 2026 · **Folder:** `LOT-003_Camelot-tenor/`
+
+| # | Filename | Shows | Notes |
+|:-:|---|---|---|
+| 1 | `PXL_20260813_164216425.jpg` | Case overview | Present in `intrument-pics` |
+| 2 | `PXL_20260813_164318921.jpg` | Goldentone 3 mouthpiece detail | Not Selmer |
+
+**Status:** Poor (missing pearls/key caps). Serial stamp still ⚠️ pending confirm. Ask $185 / floor $120 in `sale-inventory.md`.
+
 ### LOT-001 through LOT-015 — stubs (filenames not yet in durable index)
 
-These lots were assessed / play-tested Aug 11–13. Photo work happened in Google Drive / CE chats, but **most original `PXL_…` filenames were never written into this file.** Do not invent filenames — backfill from Drive / `intrument-pics` when re-matched.
+These lots were assessed / play-tested Aug 11–13. Photo work happened in Google Drive / CE chats, but **most original `PXL_…` filenames were never written into this file.** Do not invent filenames — backfill from Drive / `intrument-pics` when re-matched. **LOT-003** partially indexed above. **LOT-002** removed from sale (Baxter parts).
 
 | LOT | Instrument | Serial | Photo index status |
 |:---:|---|:---:|---|
 | LOT-001 | Spencer alto sax | 400654 ✅ | ❌ filenames not in this index |
-| LOT-002 | Alto sax, unbranded | ⚠️ none | ❌ filenames not in this index |
-| LOT-003 | Camelot tenor sax | ⚠️ none | ❌ filenames not in this index |
+| LOT-002 | *(removed — Baxter parts)* | — | — |
 | LOT-004 | Bundy II alto sax | 905114 ✅ | ❌ filenames not in this index |
 | LOT-005 | M. Masson (Thibouville Frères) | N.1673 ✅ | ❌ filenames not in this index |
 | LOT-006 | Bundy 577 Resonite | 1324589 ✅ | ❌ filenames not in this index |
@@ -444,6 +456,7 @@ These lots were assessed / play-tested Aug 11–13. Photo work happened in Googl
 | LOT-013 | Bundy Resonite | 645-107 ✅ | Serial confirmed in Drive; **filenames never logged** |
 | LOT-014 | Artley 175 | 249004 ✅ | Aug 13 session claimed full filename index — **not preserved here**; recover from Drive |
 | LOT-015 | Bundy clarinet | 225852 ✅ | Aug 13 session claimed full filename index — **not preserved here**; recover from Drive |
+| LOT-019 | Bundy trombone | 678064 ✅ | Named `1000033786.jpg`, `1000033787.jpg` — **not in local dump yet** |
 
 **Related cluster (unassigned):** timestamps `PXL_20260806_145811167`–`145847697` were briefly mislabeled LOT-012, then **LOT-UNKNOWN-A** — clarinet with no readable serial in those 4 frames.
 

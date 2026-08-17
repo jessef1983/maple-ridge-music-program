@@ -40,8 +40,10 @@ const FAMILY_MAP = {
   'English Horn': 'dbl',
   'Alto Horn (F)': 'ahn',
   'Descant Horn (F)': 'dsc',
-  'Mellophone': 'mel',
+  'Mellophone (F)': 'mel',
+  'Mellophone': 'mel', // legacy Type string if any rows remain un-suffixed
   'Flugelhorn': 'flg',
+  'Flugelhorn (Bb)': 'flg',
   'Cornet': 'crt',
   'Strings': 'str',
 };

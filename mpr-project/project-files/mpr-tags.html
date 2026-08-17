@@ -134,8 +134,8 @@ body{ font-family:Helvetica,Arial,sans-serif; color:var(--ink);
           <option value="dbl">Double Reed</option>
           <option value="clr">Clarinet</option><option value="asx">Alto Sax</option>
           <option value="tsx">Tenor Sax</option><option value="ahn">Alto Horn</option>
-          <option value="dsc">Descant Horn</option><option value="mel">Mellophone</option>
-          <option value="flg">Flugelhorn</option><option value="crt">Cornet</option>
+          <option value="dsc">Descant Horn (F)</option><option value="mel">Mellophone (F)</option>
+          <option value="flg">Flugelhorn (Bb)</option><option value="crt">Cornet</option>
           <option value="str">Strings</option>
         </select>
       </label>
@@ -223,11 +223,11 @@ const FLEET = [
   {id:"MPR-035", fam:"trb", model:"Bach 42", serial:"", serialOk:null, holder:"Storage", needsTag:true, needsTagReason:"permanent tag not logged"},
   {id:"MPR-036", fam:"trb", model:"Olds (Fullerton)", serial:"798865", serialOk:true, holder:"Emmanuel Martinie-Eiler", needsTag:false, needsTagReason:""},
   {id:"MPR-037", fam:"asx", model:"Yamaha YAS-62", serial:"082611", serialOk:true, holder:"Baxter Mow", needsTag:true, needsTagReason:"permanent tag not logged; active assignment, student tag not logged"},
-  {id:"MPR-038", fam:"clr", model:"Boosey & Hawkes", serial:"226730", serialOk:true, holder:"Storage", needsTag:true, needsTagReason:"permanent tag not logged"},
+  {id:"MPR-038", fam:"clr", model:"Boosey & Hawkes", serial:"226730", serialOk:true, holder:"Storage", needsTag:false, needsTagReason:""},
   {id:"MPR-041", fam:"dsc", model:"Alexander", serial:"9290", serialOk:true, holder:"Storage", needsTag:false, needsTagReason:""},
   {id:"MPR-042", fam:"ahn", model:"Elkhart/Couesnon", serial:"2082", serialOk:true, holder:"Storage", needsTag:false, needsTagReason:""},
   {id:"MPR-043", fam:"mel", model:"F Mellophone (brand/model pending)", serial:"", serialOk:null, holder:"Storage", needsTag:true, needsTagReason:"permanent tag not logged"},
-  {id:"MPR-044", fam:"eup", model:"Mack Brass", serial:"0715640", serialOk:true, holder:"Storage", needsTag:true, needsTagReason:"permanent tag not logged"},
+  {id:"MPR-044", fam:"eup", model:"Mack Brass", serial:"0715640", serialOk:true, holder:"Storage", needsTag:false, needsTagReason:""},
   {id:"MPR-045", fam:"tub", model:"Conn Eb, 3-valve non-compensating", serial:"159676", serialOk:true, holder:"For Sale", needsTag:false, needsTagReason:""},
   {id:"MPR-046", fam:"tub", model:"Conn BBb", serial:"H77696", serialOk:true, holder:"Storage", needsTag:false, needsTagReason:""},
   {id:"MPR-047", fam:"trb", model:"Conn 906", serial:"066761", serialOk:true, holder:"Storage", needsTag:false, needsTagReason:""},
@@ -250,30 +250,30 @@ const FLEET = [
   {id:"MPR-067", fam:"dbl", model:"Forrest (Marigaux stencil)", serial:"4041", serialOk:true, holder:"Storage", needsTag:true, needsTagReason:"permanent tag not logged"},
   {id:"MPR-068", fam:"dbl", model:"Conn", serial:"P509", serialOk:true, holder:"Storage", needsTag:true, needsTagReason:"permanent tag not logged"},
   {id:"MPR-069", fam:"dbl", model:"Fritz Schüller (Markneukirchen)", serial:"7905", serialOk:true, holder:"Storage", needsTag:true, needsTagReason:"permanent tag not logged"},
-  {id:"MPR-070", fam:"tpt", model:"Bach Stradivarius Model 43", serial:"465243", serialOk:true, holder:"Storage", needsTag:true, needsTagReason:"permanent tag not logged"},
+  {id:"MPR-070", fam:"tpt", model:"Bach Stradivarius Model 43", serial:"465243", serialOk:true, holder:"Storage", needsTag:false, needsTagReason:""},
   {id:"MPR-071", fam:"pct", model:"Getzen Eterna Piccolo A/Bb", serial:"P16101", serialOk:true, holder:"Storage", needsTag:true, needsTagReason:"permanent tag not logged"},
   {id:"MPR-072", fam:"pct", model:"Mack Piccolo Bb/A", serial:"943", serialOk:true, holder:"For Sale", needsTag:true, needsTagReason:"permanent tag not logged"},
-  {id:"MPR-073", fam:"tpt", model:"Vincent Bach Stradivarius 236 (D)", serial:"46696", serialOk:true, holder:"Storage", needsTag:true, needsTagReason:"permanent tag not logged"},
+  {id:"MPR-073", fam:"tpt", model:"Vincent Bach Stradivarius 236 (D)", serial:"46696", serialOk:true, holder:"Storage", needsTag:false, needsTagReason:""},
   {id:"MPR-074", fam:"tpt", model:"E. Benge Custom (D / Eb)", serial:"16510", serialOk:true, holder:"Storage", needsTag:true, needsTagReason:"permanent tag not logged"},
-  {id:"MPR-075", fam:"tpt", model:"Bach 1530", serial:"E91664", serialOk:true, holder:"Storage", needsTag:true, needsTagReason:"permanent tag not logged"},
-  {id:"MPR-076", fam:"trb", model:"Signature 2000 Custom Series (F attachment)", serial:"26", serialOk:null, holder:"Storage", needsTag:true, needsTagReason:"permanent tag not logged"},
-  {id:"MPR-077", fam:"trb", model:"Vincent Bach Model 42 (F attachment)", serial:"55971", serialOk:true, holder:"Storage", needsTag:true, needsTagReason:"permanent tag not logged"},
-  {id:"MPR-078", fam:"trb", model:"Model 11B2 C-valve (maker unknown)", serial:"Valve casing: 2316; bell: 887888", serialOk:true, holder:"Storage", needsTag:true, needsTagReason:"permanent tag not logged"},
+  {id:"MPR-075", fam:"tpt", model:"Bach 1530", serial:"E91664", serialOk:true, holder:"For Sale", needsTag:false, needsTagReason:""},
+  {id:"MPR-076", fam:"trb", model:"Signature 2000 Custom Series (F attachment)", serial:"26", serialOk:null, holder:"Storage", needsTag:false, needsTagReason:""},
+  {id:"MPR-077", fam:"trb", model:"Vincent Bach Model 42 (F attachment)", serial:"55971", serialOk:true, holder:"Storage", needsTag:false, needsTagReason:""},
+  {id:"MPR-078", fam:"trb", model:"Model 11B2 C-valve (maker unknown)", serial:"Valve casing: 2316; bell: 887888", serialOk:true, holder:"Storage", needsTag:false, needsTagReason:""},
   {id:"MPR-079", fam:"ahn", model:"Olds Ambassador", serial:"758200", serialOk:true, holder:"Storage", needsTag:true, needsTagReason:"permanent tag not logged"},
-  {id:"MPR-080", fam:"crt", model:"American Standard (H.N. White)", serial:"22909", serialOk:true, holder:"Sarah Frase", needsTag:true, needsTagReason:"permanent tag not logged; active assignment, student tag not logged"},
+  {id:"MPR-080", fam:"crt", model:"American Standard (H.N. White)", serial:"22909", serialOk:true, holder:"Sarah Frase", needsTag:false, needsTagReason:""},
   {id:"MPR-081", fam:"fl", model:"Jupiter JFL 507", serial:"P68134", serialOk:true, holder:"Christel Mow", needsTag:true, needsTagReason:"permanent tag not logged; active assignment, student tag not logged"},
   {id:"MPR-082", fam:"clr", model:"Yamaha YCL-250", serial:"110041", serialOk:true, holder:"Storage", needsTag:true, needsTagReason:"permanent tag not logged"},
   {id:"MPR-083", fam:"tub", model:"Olds 0-991 BBb, 3-valve non-compensating", serial:"947832", serialOk:true, holder:"Band Room", needsTag:true, needsTagReason:"permanent tag not logged"},
-  {id:"MPR-084", fam:"prc", model:"W.F.L. Symphony Model Timpani", serial:"", serialOk:null, holder:"Band Room", needsTag:true, needsTagReason:"permanent tag not logged"},
-  {id:"MPR-085", fam:"prc", model:"Ludwig Ensemble Timpani (28")", serial:"", serialOk:null, holder:"Band Room", needsTag:true, needsTagReason:"permanent tag not logged"},
-  {id:"MPR-086", fam:"prc", model:"Planet Concert Grand Timpani", serial:"", serialOk:null, holder:"Band Room", needsTag:true, needsTagReason:"permanent tag not logged"},
+  {id:"MPR-084", fam:"prc", model:"W.F.L. Symphony Model Timpani (25 in)", serial:"", serialOk:null, holder:"Band Room", needsTag:true, needsTagReason:"permanent tag not logged"},
+  {id:"MPR-085", fam:"prc", model:"W.F.L. Symphony Model Timpani (28 in, Planet Exactone gauge)", serial:"", serialOk:null, holder:"Band Room", needsTag:true, needsTagReason:"permanent tag not logged"},
+  {id:"MPR-086", fam:"prc", model:"W.F.L. Concert Grand Timpani (Planet Exactone gauge)", serial:"", serialOk:null, holder:"Band Room", needsTag:true, needsTagReason:"permanent tag not logged"},
 ];
 
 const FAMS = {
   tpt:"Trumpet", pct:"Piccolo Trumpet", hrn:"French Horn", eup:"Euphonium", fl:"Flute", prc:"Percussion",
   tub:"Tuba", trb:"Trombone", bsn:"Bassoon", dbl:"Double Reed", clr:"Clarinet", asx:"Alto Sax",
-  tsx:"Tenor Sax", ahn:"Alto Horn", dsc:"Descant Horn", mel:"Mellophone",
-  flg:"Flugelhorn", crt:"Cornet", str:"Strings", oth:"Other",
+  tsx:"Tenor Sax", ahn:"Alto Horn (F)", dsc:"Descant Horn (F)", mel:"Mellophone (F)",
+  flg:"Flugelhorn (Bb)", crt:"Cornet", str:"Strings", oth:"Other",
 };
 const KEY = "mpr-tag-sheet-v1";
 let cards = new Array(10).fill(null), mode = "inst", slot = 0;

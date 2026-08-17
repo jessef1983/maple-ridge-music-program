@@ -50,7 +50,7 @@
 | MPR-038 | Clarinet | Boosey & Hawkes | Storage | 226730 ✅ | TBD | In service | Fair |
 | MPR-041 | Descant Horn (F) | Alexander | Storage | 9290 ✅ | TBD | Owned | Unknown |
 | MPR-042 | Alto Horn (F) | Elkhart/Couesnon | Storage | 2082 ✅ | TBD | Owned | Unknown |
-| MPR-043 | Mellophone | F Mellophone (brand/model pending) | Storage | ⚠️ pending | TBD | Owned | Unknown |
+| MPR-043 | Mellophone (F) | F Mellophone (brand/model pending) | Storage | ⚠️ pending | TBD | Owned | Unknown |
 | MPR-044 | Euphonium | Mack Brass | Storage | 0715640 ✅ | TBD | Owned | Good |
 | MPR-045 | Tuba | Conn Eb, 3-valve non-compensating | For Sale | 159676 ✅ | TBD | Owned | Fair |
 | MPR-046 | Tuba | Conn BBb | Storage | H77696 ✅ | TBD | Owned | Fair |
@@ -79,7 +79,7 @@
 | MPR-072 | Piccolo Trumpet | Mack Piccolo Bb/A | For Sale | 943 ✅ | TBD | Owned | Excellent |
 | MPR-073 | Trumpet | Vincent Bach Stradivarius 236 (D) | Storage | 46696 ✅ | TBD | Owned | Good |
 | MPR-074 | Trumpet | E. Benge Custom (D / Eb) | Storage | 16510 ✅ | TBD | Owned | Excellent |
-| MPR-075 | Trumpet | Bach 1530 | Storage | E91664 ✅ | TBD | Owned | Good |
+| MPR-075 | Trumpet | Bach 1530 | For Sale | E91664 ✅ | TBD | Owned | Good |
 | MPR-076 | Trombone | Signature 2000 Custom Series (F attachment) | Storage | 26 ⚠️ | TBD | Owned | Good |
 | MPR-077 | Trombone | Vincent Bach Model 42 (F attachment) | Storage | 55971 ✅ | `$0.00` | Owned | Excellent |
 | MPR-078 | Trombone | Model 11B2 C-valve (maker unknown) | Storage | Valve casing: 2316; bell: 887888 ✅ | TBD | Owned | Fair |
@@ -88,9 +88,9 @@
 | MPR-081 | Flute | Jupiter JFL 507 | Assigned | P68134 ✅ | TBD | Owned | Unknown |
 | MPR-082 | Clarinet | Yamaha YCL-250 | Storage | 110041 ✅ | TBD | Owned | Excellent |
 | MPR-083 | Tuba | Olds 0-991 BBb, 3-valve non-compensating | Band Room | 947832 ✅ | TBD | Owned | Unknown |
-| MPR-084 | Percussion | W.F.L. Symphony Model Timpani | Band Room | ⚠️ pending | TBD | Owned | Unknown |
-| MPR-085 | Percussion | Ludwig Ensemble Timpani (28") | Band Room | ⚠️ pending | TBD | Owned | Unknown |
-| MPR-086 | Percussion | Planet Concert Grand Timpani | Band Room | ⚠️ pending | TBD | Owned | Unknown |
+| MPR-084 | Percussion | W.F.L. Symphony Model Timpani (25 in) | Band Room | ⚠️ none expected | TBD | Owned | Unknown |
+| MPR-085 | Percussion | W.F.L. Symphony Model Timpani (28 in, Planet Exactone gauge) | Band Room | ⚠️ none expected | TBD | Owned | Unknown |
+| MPR-086 | Percussion | W.F.L. Concert Grand Timpani (Planet Exactone gauge) | Band Room | ⚠️ none expected | TBD | Owned | Unknown |
 
 **72 MPR-owned instruments total.** Last verified: August 17, 2026. Fleet by category: 4 flutes, 2 clarinets, 3 saxophones, 8 trumpets, 1 cornet, 2 piccolo trumpets, 3 French horns, 1 mellophone, 1 flugelhorn, 6 trombones, 8 euphoniums, 7 tubas, **2 bassoons**, 2 oboes, 4 English horns, 3 specialty horns, 10+ percussion. Plus **2 MNT-owned (borrowed) instruments** — see Borrowed Instruments section below. **52+ serials verified** ✅; remainder pending photo/label reads. MPR-020 returned to seller Aug 13. MPR-062 flagged for sale. MPR-063 (Conn Schreiber Intermediate) donated from Platte Clove School; MNT-001 spare bocal fits and is in use (SVC-BAS-001 closed). MPR-036/MPR-061 consolidated Aug 14 (duplicate registration of one trombone). CE session labels colliding MPR-081 entries were reconciled at merge: MPR-081 Jupiter flute, MPR-082 Yamaha clarinet, MPR-083 Olds tuba, and MPR-084–086 timpani. See `assignment.md` for current holders.
  
@@ -124,7 +124,7 @@
 | MPR-045 | TBD | On-hand | — | **Brand:** C.G. Conn Ltd., Elkhart Ind. **Model:** Eb, 3-valve non-compensating (no named model line). **Serial:** 159676 ✅ (~1918/early 1919). **Play-test Aug 15:** plays well — stronger than MPR-034; responsive valves; all slides free. **Package:** vintage hard case + J. Marcinkiewicz (Glendale, CA) mouthpiece. **Sale:** Ask **$1,250–1,450** / floor **$800–850** (revised Aug 15). **Terms: cash, local pickup only** (no shipping). Disclose age-typical valve-guide cosmetic wear. |
 | MPR-036 | 2026-08-13 | On-hand (band room) | — | **Consolidated Aug 14, 2026** — this ID was double-logged as a placeholder ("Student trombone") and separately as MPR-061 ("Olds trombone, Fullerton") after a closer look revealed they're the same physical instrument. MPR-036 is now the single canonical ID. **Brand:** Olds. **Model:** Fullerton, CA vintage — early production with reversed tuning slide (male-female connector design for smooth airflow), no F attachment. **Serial:** 798865 ✅ (verified from instrument ferrule, Aug 16). **Outstanding:** water key cork missing, currently a temporary paper-towel plug (SVC-TRB-001, corks on hand for repair). Playable condition otherwise. See `assignment.md` for current holder |
 | MPR-047 | TBD | On-hand | — | **Brand:** Conn. **Model:** 906 F-attachment trombone, red brass bell. **Serial:** 066761 ✅. **Outstanding:** rotary valve string loose (deferred note, not yet a service ticket). |
-| MPR-062 | 2026-08-13 | On-hand (band room) | — | **Brand:** Buescher (Elkhart, Indiana, USA). **Model:** True Tone Model 393. **Serial:** 330366 ✅ (stamped on valve set). **Outstanding:** **FOR SALE** — bell attachment needs repair (both tightening screws missing, one fixture fallen off). Otherwise plays well, good intonation, fair valve compression. Includes Vincent Bach 12C mouthpiece (good condition) |
+| MPR-062 | 2026-08-13 | On-hand (band room) | — | **Brand:** Buescher (Elkhart, Indiana, USA). **Model:** True Tone Model 393. **Serial:** 330366 ✅ (stamped on valve set). **Disposition:** **FOR SALE** — see `sale-inventory.md` **LOT-020**. Ask **$275** / floor **$175**, FBM local. Bell attachment needs repair (both tightening screws missing, one fixture fallen off). Otherwise plays well, good intonation, fair valve compression. Includes Vincent Bach 12C mouthpiece (good condition). |
 | MPR-063 | 2026-08-14 | Donated — Platte Clove School | Free transfer, no cost | **Conn/Schreiber Intermediate Bassoon** (German, circa 1950s–60s). Maker's mark: "CONN" arched wreath stamp on boot joint. Serial **4865 ✅** (confirmed from photos; clearly visible in at least one photo). **Tier: Intermediate** (Schreiber-made); current market value **$800–1,500**. Complete outfit confirmed: wing, boot, bass, bell joints; **crutch** ✅; leather seat strap ✅ (deteriorated — replace); Yamaha YAC 1010 grease ✅; 5 reeds ✅. **Bocal:** MNT-001 spare **fits and is in use** (SVC-BAS-001 closed Aug 16). **Accessories needed for Roger:** new neck strap + cork grease (source Appleseed or D&M; no service ticket). Case worn cosmetically but fully functional. See `assignment.md` for current holder.
 | MPR-064 | TBD | On-hand (storage) | — | **Brand:** Selmer, Paris. **Model:** English horn (cor anglais). **Serial:** 02744 ✅. **Condition:** Excellent. **Outfit:** two bocals, cleaning rod, swab, grease, hard case. **Outstanding:** acquisition source/date unknown; bocal ownership still unclarified but leave as-is if in use; not yet play-tested. |
 | MPR-065 | TBD | On-hand (storage) | — | **Brand:** Gordet Paris N.Y. (Ben Storch brand stamp on European import — not a Paris factory). **Origin:** ITALY stamped on body (Italian Gordet line, typically Bulgheroni). **Serial:** B263 ✅. **Model:** unknown — B263 is the serial, not a published Gordet model code. **Outstanding:** acquisition date/cost unknown; play-test before assignment. Earlier “Cabart” / “regular + petit” reads were incorrect. |
@@ -137,7 +137,7 @@
 | MPR-072 | TBD | On-hand (band room) | — | **Brand:** Mack. **Model:** Piccolo trumpet, Bb/A. **Serial:** 943 ✅. **Outfit:** two adjustable leadpipes and mouthpiece. **Disposition:** **FOR SALE** — flagged for sale pipeline (Mack specialty piccolo). **Outstanding:** acquisition date/source unknown; move to `sale-inventory.md` as LOT when ready to price/list. |
 | MPR-073 | TBD | On-hand | — | **Brand:** Vincent Bach. **Model:** Stradivarius 236 (D). **Serial:** 46696 ✅. **Notes:** play-tested Aug 15; excellent valve compression; aftermarket first-valve-slide trigger. **Outstanding:** acquisition date/source unknown. |
 | MPR-074 | TBD | On-hand | — | **Brand:** E. Benge (Los Angeles, CA). **Model:** Custom Built — **D / E♭** (bell engraving reads “D – Eb”; not Bb). Dual tuning-slide configuration for D and E♭. **Serial:** 16510 ✅. **Finish:** silver-plate. **Outfit:** Benge hard case. **Outstanding:** acquisition date/source and serial dating pending. Earlier CE “Bb + E♭” claim was wrong — photo-corrected Aug 16. |
-| MPR-075 | TBD | On-hand | — | **Brand:** Bach (USA). **Model:** 1530. **Serial:** E91664 ✅. **Outfit:** Vincent Bach 2C mouthpiece. **Outstanding:** acquisition date/source unknown. |
+| MPR-075 | TBD | On-hand | — | **Brand:** Bach (USA). **Model:** 1530. **Serial:** E91664 ✅. **Outfit:** Vincent Bach 2C mouthpiece. **Disposition:** **FOR SALE** — see `sale-inventory.md` **LOT-021**. Ask **$175** / floor **$115**, FBM local. **Outstanding:** acquisition date/source unknown. |
 | MPR-076 | TBD | On-hand | — | **Brand:** Signature. **Model:** 2000 Custom Series F-attachment trombone. **Serial:** 26 ⚠️ (slide-stamped; completeness unconfirmed). **Outfit:** Dennis Wick 5AL mouthpiece and case. **Outstanding:** rotary-valve plastic stop broken/rattling; three small bell dents; service needed. |
 | MPR-077 | TBD | Donation — former school member | — | **Brand:** Vincent Bach (Elkhart, USA). **Model:** Model 42, dual-bore F attachment. **Serials:** rotary casing 55971 ✅; slide 24106 ✅; lower bell garland 11655 ✅. **Outfit:** JK Exclusive 4AL and 4CL mouthpieces, hardshell case. **Outstanding:** acquisition date unknown; brief play-test pending. |
 | MPR-078 | TBD | On-hand | — | **Brand:** unknown. **Model:** 11B2 C-valve trombone. **Serials:** valve casing 2316 ✅; tuning-slide/bell stamp 887888 ✅. **Notes:** silver-plate body, yellow-brass bell, plays well. **Outstanding:** maker identification pending. |
@@ -146,9 +146,9 @@
 | MPR-081 | TBD | On-hand, program-owned | — | **Brand:** Jupiter. **Model:** JFL 507. **Serial:** P68134 ✅ (photo-confirmed). **Outstanding:** acquisition date and cost unknown; case/full-outfit overview still thin — model/China/serial stamps indexed. See `assignment.md` (Christel Mow). |
 | MPR-082 | TBD | On-hand, predates current records | — | **Brand:** Yamaha. **Model:** YCL-250 (student-grade ABS resin). **Serial:** 110041 ✅ (verified from photos). **Outfit:** hardshell case, barrel, cleaning rod, strap, grease. **Condition:** Excellent — playable, all pads and keywork intact. **Outstanding:** acquisition date and source unknown; ready for assignment. |
 | MPR-083 | TBD | On-hand, band room | — | **Brand:** Olds (Fullerton, CA). **Model:** 0-991 BBb, **3-valve non-compensating**. **Serial:** 947832 ✅ (verified from valve casing). **Finish:** lacquer, worn with cosmetic tarnish. **Outstanding:** acquisition date/source unknown; play-test and valve-function assessment pending. |
-| MPR-084 | TBD | On-hand, band room | — | **Brand:** W.F.L. Drum Co. (Chicago, USA). **Model:** Symphony Model timpani. **Size:** pending (visual estimate ~25–26"). **Serial:** pending interior rim/lug inspection. **Condition:** Unknown — head intact; stand and tuning mechanism appear functional. |
-| MPR-085 | TBD | On-hand, band room | — | **Brand:** Ludwig & Ludwig (inferred from Ensemble badging). **Model:** Ensemble timpani, **28" (71 cm)**. **Serial:** pending interior rim/lug inspection. **Head:** Remo Weatherking replacement. **Condition:** Unknown — stand and tuning pedal appear functional. |
-| MPR-086 | TBD | On-hand, band room | — | **Brand:** Planet. **Model:** Concert Grand timpani. **Size:** pending measurement or interior marking. **Serial:** pending interior rim/lug inspection. **Head:** Remo Weatherking replacement. **Condition:** Unknown — stand and tuning mechanism appear functional. |
+| MPR-084 | TBD | On-hand, band room | — | **Brand:** W.F.L. Drum Co. (Chicago, USA). **Model:** Symphony Model timpani. **Size:** **25" / 64 cm ✅** (Ludwig Ensemble *replacement head* badge — head brand ≠ drum maker). **Serial:** likely none (era timpani rarely serialized); still check counterhoop underside, kettle interior near spider, base near struts. **Gauge:** none fitted. **Era (est.):** c. 1937–1939 — WFL founded 1937; “PAT. PEND.” casting aligns with Ludwig Timpano Adjuster patent window (US 2,150,981) — inference, not stamped patent #. **Condition:** Unknown — not play-tested. |
+| MPR-085 | TBD | On-hand, band room | — | **Brand:** W.F.L. Drum Co. (Chicago, USA) — **not** Ludwig & Ludwig. **Model:** Symphony Model timpani. **Size:** **28" / 71 cm ✅**. **Serial:** likely none (same note as MPR-084). **Gauge:** Planet Exactone (Falls Percussion aftermarket retrofit). **Wheel:** Falls Percussion EZ-Wheel third-wheel retrofit. **Head:** Ludwig Ensemble Reg. Timpani White replacement — product line, not maker evidence. **Era (est.):** c. 1937–1939 (same basis). **Condition:** Unknown — not play-tested. |
+| MPR-086 | TBD | On-hand, band room | — | **Brand:** W.F.L. Drum Co. (Chicago, USA) — **not** “Planet” as maker. **Model:** Concert Grand timpani. **Size:** ⚠️ pending measurement. **Serial:** likely none (same note as MPR-084). **Gauge:** Planet Exactone retrofit. **Head:** Remo Weatherking Tympani replacement. **Era (est.):** c. 1937–1939 (same basis). **Condition:** Unknown — not play-tested. **Correction Aug 17:** prior “Planet Concert Grand” misread the gauge brand as the drum maker. |
  
 ---
  
@@ -233,12 +233,12 @@
 11. **Collect serials** — remainder of MPR-owned fleet still missing confirmed serials
 12. **MNT-001/002** — see Borrowed Instruments section for open items (holder assignment, condition assessment; confirm MNT OK with bocal loan)
 13. **Back-room wind inventory** — catalog the bari sax, C sax, A clarinet, and remaining oboes with physical photos, maker/model, serial, condition, and explicit count before assigning MPR IDs or creating sale lots
-14. **Fleet sales to list** — MPR-034 / MPR-045 tubas (priced; write listing copy); MPR-062 Buescher euphonium; MPR-072 Mack piccolo (create LOT when pricing)
+14. **Fleet sales to list** — MPR-034 / MPR-045 tubas (priced; write listing copy); MPR-062 / MPR-075 now **LOT-020 / LOT-021** in `sale-inventory.md`; MPR-072 Mack piccolo (create LOT when pricing)
 15. **MPR-076 Signature trombone** — SVC-TRB-002 rotary stop repair before assign/sale decision
 16. **MPR-080 tags** — print permanent + student tags for Sarah Frase cornet
 17. **MPR-023 Holton horn** — oil valves and perform 30-minute play test; arrange D&M inspection if still sluggish
 18. **MPR-081 Jupiter flute** — complete physical photo and condition onboarding; print permanent + student tags for Christel Mow
-19. **MPR-084–086 timpani** — measure MPR-084/086 and inspect all three for serials and playability
+19. **MPR-084–086 timpani** — all three are W.F.L. (maker correction Aug 17). Measure MPR-086; serial search (or record “none”); play-test before student use; interior-rim photos still missing
 
 ---
 

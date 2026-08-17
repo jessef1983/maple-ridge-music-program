@@ -46,8 +46,16 @@ Records every tag print event, both kinds:
 | MPR-048 | Permanent | 2026-08-16 | Dynasty U.S.A. BBb tuba — Davis Loewenthal (photo-confirmed) |
 | MPR-048 | Student | 2026-08-16 | Davis Loewenthal (ASGN-021) |
 | MPR-058 | Permanent | 2026-08-16 | Spencer tenor sax, storage (photo-confirmed) |
-| MPR-077 | — | Pending | Not yet printed — awaiting storage location confirmation |
-| MPR-080 | — | Pending | Not yet printed — Sarah Frase cornet (ASGN-036); permanent + student needed |
+| MPR-080 | Permanent | 2026-08-16 | American Standard (H.N. White) cornet, assigned Sarah Frase (photo-confirmed) |
+| MPR-080 | Student | 2026-08-16 | Sarah Frase (ASGN-036) |
+| MPR-077 | Permanent | 2026-08-16 | Vincent Bach Model 42 trombone (F attachment), storage (photo-confirmed) |
+| MPR-076 | Permanent | 2026-08-16 | Signature 2000 Custom Series trombone (F attachment), storage (photo-confirmed) |
+| MPR-073 | Permanent | 2026-08-16 | Vincent Bach Stradivarius 236 (D) trumpet, storage (photo-confirmed) |
+| MPR-070 | Permanent | 2026-08-16 | Bach Stradivarius Model 43 trumpet, storage (photo-confirmed) |
+| MPR-075 | Permanent | 2026-08-16 | Bach 1530 trumpet, storage (photo-confirmed) |
+| MPR-078 | Permanent | 2026-08-16 | Model 11B2 C-valve trombone (maker unknown), storage (photo-confirmed) |
+| MPR-044 | Permanent | 2026-08-16 | Mack Brass euphonium, storage (photo-confirmed) |
+| MPR-038 | Permanent | 2026-08-16 | Boosey & Hawkes clarinet, storage (photo-confirmed) |
 | MPR-023 | Permanent | Pending | Holton H378 double F/Bb, serial 596484 ✅; print after oil check |
 | MPR-082 | Permanent | Pending | Yamaha YCL-250; storage, awaiting assignment or storage-location confirmation |
 
