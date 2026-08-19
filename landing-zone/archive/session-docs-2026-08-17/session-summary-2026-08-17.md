@@ -70,3 +70,26 @@ Review sale/photo gaps, merge missed CE updates, price the full disposal pipelin
 - `mpr-project/generate-tags.js`, `tags-template.html`
 - Archives: `landing-zone/archive/updates-2026-08-17/`
 - Commits: `2c6636d`, `2265977`
+
+---
+
+## Session Summary (evening) — flute onboarding merge
+
+### Pickup / goal
+
+Merge two CE intake files that were still in `/updates/`: Trevor James Privilege III (new) and Yamaha YFL-225S (update to existing MPR-026).
+
+### Completed
+
+- Trevor James Privilege III onboarded as **MPR-087** (CE had labeled it MPR-059 — stale Signet alias, now MNT-001)
+- MPR-026 updated: **YFL-225S**, serial **033480 ✅**, condition Excellent; prior retire/sell note dropped
+- Service IDs split: **SVC-FLT-002** → MPR-087 (tag 064, $100); **SVC-FLT-003** → MPR-026 (form 095, $100)
+- Photo indexes merged; MPR-063 bocal note corrected from MPR-059 → MNT-001
+- Tags regenerated: fleet **73**, **47** needing a tag
+- Intake archived to `landing-zone/archive/updates-2026-08-17/`
+
+### Still open / next
+
+- Play-test MPR-087; print permanent tags for 026/087
+- Assign MPR-026 (ready) and MPR-087 when students are identified
+- Confirm Appleseed invoices for SVC-FLT-001/002/003 are not double-paid

@@ -36,7 +36,7 @@
 | MPR-021 | Trumpet | Yamaha YTR-3325S | Storage | 212795 ✅ | `$700.92` | Owned | Good |
 | MPR-022 | Trumpet | Yamaha YTR-334S | Storage | 018464 ✅ | `$495.72` | Owned | Excellent |
 | MPR-023 | French Horn | Holton H378 | Assigned | 596484 ✅ | TBD | Owned | Good |
-| MPR-026 | Flute | Yamaha YFL-225 | Storage | — | TBD | Owned | Unknown |
+| MPR-026 | Flute | Yamaha YFL-225S | Storage | 033480 ✅ | TBD | Owned | Excellent |
 | MPR-027 | Bassoon | Fox | Assigned | ⚠️ pending | TBD | Owned | Unknown |
 | MPR-028 | Alto Sax | — | Assigned | ⚠️ pending | TBD | Owned | Unknown |
 | MPR-029 | Alto Sax | Yamaha YAS-52 | Assigned | 021047A ✅ | TBD | Owned | Good |
@@ -91,8 +91,9 @@
 | MPR-084 | Percussion | W.F.L. Symphony Model Timpani (25 in) | Band Room | ⚠️ none expected | TBD | Owned | Unknown |
 | MPR-085 | Percussion | W.F.L. Symphony Model Timpani (28 in, Planet Exactone gauge) | Band Room | ⚠️ none expected | TBD | Owned | Unknown |
 | MPR-086 | Percussion | W.F.L. Concert Grand Timpani (Planet Exactone gauge) | Band Room | ⚠️ none expected | TBD | Owned | Unknown |
+| MPR-087 | Flute | Trevor James Privilege III | Storage | P54427 ✅ | TBD | Owned | Good |
 
-**72 MPR-owned instruments total.** Last verified: August 17, 2026. Fleet by category: 4 flutes, 2 clarinets, 3 saxophones, 8 trumpets, 1 cornet, 2 piccolo trumpets, 3 French horns, 1 mellophone, 1 flugelhorn, 6 trombones, 8 euphoniums, 7 tubas, **2 bassoons**, 2 oboes, 4 English horns, 3 specialty horns, 10+ percussion. Plus **2 MNT-owned (borrowed) instruments** — see Borrowed Instruments section below. **52+ serials verified** ✅; remainder pending photo/label reads. MPR-020 returned to seller Aug 13. MPR-062 flagged for sale. MPR-063 (Conn Schreiber Intermediate) donated from Platte Clove School; MNT-001 spare bocal fits and is in use (SVC-BAS-001 closed). MPR-036/MPR-061 consolidated Aug 14 (duplicate registration of one trombone). CE session labels colliding MPR-081 entries were reconciled at merge: MPR-081 Jupiter flute, MPR-082 Yamaha clarinet, MPR-083 Olds tuba, and MPR-084–086 timpani. See `assignment.md` for current holders.
+**73 MPR-owned instruments total.** Last verified: August 17, 2026. Fleet by category: 5 flutes, 2 clarinets, 3 saxophones, 8 trumpets, 1 cornet, 2 piccolo trumpets, 3 French horns, 1 mellophone, 1 flugelhorn, 6 trombones, 8 euphoniums, 7 tubas, **2 bassoons**, 2 oboes, 4 English horns, 3 specialty horns, 10+ percussion. Plus **2 MNT-owned (borrowed) instruments** — see Borrowed Instruments section below. **54+ serials verified** ✅; remainder pending photo/label reads. MPR-020 returned to seller Aug 13. MPR-062 flagged for sale. MPR-063 (Conn Schreiber Intermediate) donated from Platte Clove School; MNT-001 spare bocal fits and is in use (SVC-BAS-001 closed). MPR-036/MPR-061 consolidated Aug 14 (duplicate registration of one trombone). CE session labels colliding MPR-081 entries were reconciled at merge: MPR-081 Jupiter flute, MPR-082 Yamaha clarinet, MPR-083 Olds tuba, and MPR-084–086 timpani. CE labeled the Trevor James Privilege III as MPR-059 — remapped to **MPR-087** (MPR-059 was a stale Selmer Signet alias, now MNT-001). See `assignment.md` for current holders.
  
 ---
  
@@ -117,7 +118,7 @@
 | MPR-021 | 2026-08 | eBay (yokamonmarket) | — | **Brand:** Yamaha. **Model:** YTR-3325S. **Serial:** 212795 ✅. **Outstanding:** SVC-TPT-001 open — first and third slides need lubrication/easing before assigning to a student. Valves are excellent. Shipped with a Yamaha 11C4 mouthpiece. **Era:** modern student model, likely 2000s–early 2010s based on serial 212795. |
 | MPR-022 | 2026-08 | eBay (yokamonmarket) | — | **Brand:** Yamaha. **Model:** YTR-334S (corrected from "Nikkan" as listed — genuine Yamaha, 1977–82 vintage; seller notified, kept as the better instrument). **Serial:** 018464 ✅ (replaces earlier photo-read 000106). **Outstanding:** none — valve set near-brand-new with zero corrosion; all slides responsive. Minor valve cap threads show age (first cap swapped with third). Shipped with a Yamaha #11 mouthpiece. Original period case in unusually good condition. **Era:** likely 1977–1980 based on serial 018464. |
 | MPR-023 | TBD | On-hand | — | **Brand:** Holton (Elkhorn, Wisconsin). **Model:** H378 (double F/Bb, Kruspe-style). **Serial:** 596484 ✅. **Est. production:** late 1970s–mid 1980s (Farkas line). **Condition:** Good — lacquered brass, moderate patina, piston valves responsive. **Service history:** Fall 2025, D&M Music ($221.00) — chem flush, new corks, stops, valves restrung. **Outstanding:** valves sluggish after one year of weekly play; oil + inspection recommended before assignment. |
-| MPR-026 | TBD | On-hand | — | **Brand:** Yamaha. **Model:** YFL-225. **Serial:** not on record. **Outstanding:** retire or sell — repad cost ~$300 against low value |
+| MPR-026 | TBD | On-hand | — | **Brand:** Yamaha. **Model:** YFL-225S (silver-plated; Japan-stamped, pre-March 2012). **Serial:** 033480 ✅ (verified Aug 17 from body engraving). **Condition:** Excellent (CE said Great) — recently serviced, keys and pads functional. **Service:** SVC-FLT-003, Appleseed Music, April 2026, $100 — keys adjusted & oiled, one pad replaced, key corks replaced (retaining-strap tag form 095). **Outstanding:** acquisition date/source unknown; ready for assignment. Prior “retire or sell / ~$300 repad” note superseded by the Aug 17 assessment. |
 | MPR-037 | 2026-08-13 | On-hand (band room) | — | **Brand:** Yamaha. **Model:** YAS-62. **Serial:** 082611 ✅. **Outstanding:** bell rim dent (SVC-SAX-001, budget-deferred); mouthpiece missing, needs to be ordered. Out on trial (see `assignment.md`) — using another instrument's mouthpiece for the trial, so a dedicated mouthpiece is still needed if kept or reassigned |
 | MPR-038 | 2026-08-13 | On-hand (band room) | — | **Brand:** Boosey & Hawkes (made in England; corrected from initial "Vein" misread — no separate "Vein" brand). **Model:** not specified beyond brand. **Serial:** 226730 ✅ (matches on lower joint and upper joint back, confirming joints belong together). **Outstanding:** SVC-CLR-001 — mouthpiece fits loosely, likely worn tenon corks not sealing; likely a cheap fix. Mouthpiece in case is a non-original S.M.L. (Paris), not evidence of the horn's maker |
 | MPR-034 | TBD | On-hand | — | **Brand:** Besson. **Model:** Eb Chicago bore, 3-valve non-compensating. **Serial:** 74353 ✅. **Era:** ~1890–1920s. **Distributor:** C. Fischer, Sole Agent U.S. (period mark). **Bell:** "50 MEDALS OF HONOUR" (standard Besson branding, not unique provenance). **Play-test Aug 15:** plays well; responsive valves; all slides free; no bell obstruction (SVC-TUB-001 closed). **Package:** modern wheeled hard case + mouthpiece (Haiku called it Besson “B”; stamp not re-verified — list as included mouthpiece only). **Sale:** Ask **$1,100–1,250** / floor **$700–750** (revised Aug 15). **Terms: cash, local pickup only** (no shipping). Disclose DIY/service-level restoration (interior polished, bell re-hammered, valve-bracket rework) and age-typical stuffiness. |
@@ -149,6 +150,7 @@
 | MPR-084 | TBD | On-hand, band room | — | **Brand:** W.F.L. Drum Co. (Chicago, USA). **Model:** Symphony Model timpani. **Size:** **25" / 64 cm ✅** (Ludwig Ensemble *replacement head* badge — head brand ≠ drum maker). **Serial:** likely none (era timpani rarely serialized); still check counterhoop underside, kettle interior near spider, base near struts. **Gauge:** none fitted. **Era (est.):** c. 1937–1939 — WFL founded 1937; “PAT. PEND.” casting aligns with Ludwig Timpano Adjuster patent window (US 2,150,981) — inference, not stamped patent #. **Condition:** Unknown — not play-tested. |
 | MPR-085 | TBD | On-hand, band room | — | **Brand:** W.F.L. Drum Co. (Chicago, USA) — **not** Ludwig & Ludwig. **Model:** Symphony Model timpani. **Size:** **28" / 71 cm ✅**. **Serial:** likely none (same note as MPR-084). **Gauge:** Planet Exactone (Falls Percussion aftermarket retrofit). **Wheel:** Falls Percussion EZ-Wheel third-wheel retrofit. **Head:** Ludwig Ensemble Reg. Timpani White replacement — product line, not maker evidence. **Era (est.):** c. 1937–1939 (same basis). **Condition:** Unknown — not play-tested. |
 | MPR-086 | TBD | On-hand, band room | — | **Brand:** W.F.L. Drum Co. (Chicago, USA) — **not** “Planet” as maker. **Model:** Concert Grand timpani. **Size:** ⚠️ pending measurement. **Serial:** likely none (same note as MPR-084). **Gauge:** Planet Exactone retrofit. **Head:** Remo Weatherking Tympani replacement. **Era (est.):** c. 1937–1939 (same basis). **Condition:** Unknown — not play-tested. **Correction Aug 17:** prior “Planet Concert Grand” misread the gauge brand as the drum maker. |
+| MPR-087 | TBD | On-hand | — | **Brand:** Trevor James. **Model:** Privilege III. **Serial:** P54427 ✅ (verified Aug 17 from headjoint/body/foot stamps). **Finish:** silver-plate. **Condition:** Good. **Outfit:** two-flute case (black foam). **Service:** SVC-FLT-002, Appleseed Music (inferred from tag 064), 2026-04-18, $100 — professional cleaning: keys adjusted + oiled, pads sealed, key corks replaced. **CE ID:** session labeled this horn **MPR-059** — remapped at merge to **MPR-087**. **Outstanding:** acquisition date/source unknown; play-test to confirm Good grade; print permanent tag; assign when a student is identified. |
  
 ---
  
@@ -157,6 +159,8 @@
 | Service ID | MPR | Issue | Provider | Date | Cost | Status |
 |:---:|:---:|---|---|---|---:|---|
 | SVC-FLT-001 | MPR-003 | Missing cork on arrival | Appleseed Music | pending | TBD | ⚠️ **Unbilled since spring** |
+| SVC-FLT-002 | MPR-087 | Professional cleaning (P/C) — keys adjusted + oiled; pads sealed; key corks replaced | Appleseed Music (inferred from tag 064) | 2026-04-18 | `$100.00` | **Closed** — completed before intake; repair tag #064 (Jesse Frase, 4/18, “Flute - Trevor James”) |
+| SVC-FLT-003 | MPR-026 | Keys adjusted & oiled; one pad replaced; key corks replaced | Appleseed Music | 2026-04 | `$100.00` | **Closed** — completed before Aug 17 assessment; retaining-strap tag form 095. CE reused SVC-FLT-002 — remapped at merge. Monitor for bundled billing with SVC-FLT-001 / SVC-FLT-002 |
 | SVC-HRN-001 | MPR-023 | Chem clean, stops, string | D&M Music | Fall 2025 | `$221.00` | Paid |
 | SVC-TUB-001 | MPR-034 | Stuffy tone, possible bell obstruction | DIY inspect | 2026-08-15 | `$0` | **Closed** — Aug 15 play-test: no bell obstruction; plays well; stuffiness is age-typical valve wear/compression, not structural. Listed for sale with that disclosure. |
 | SVC-HRN-002 | MPR-030 | 3rd slide binding/hitting bell | TBD | pending | TBD | Pending diagnosis & quote |
@@ -228,7 +232,7 @@
 6. **MPR-036 (Olds trombone)** — water key cork missing (SVC-TRB-001) — **reminder: do cork replacement (corks on hand)**; serial **798865 ✅** verified Aug 16
 7. **MPR-063 accessories** — bocal fit confirmed (SVC-BAS-001 closed); still need **neck strap + cork grease** for Roger (Appleseed/D&M)
 8. **MPR-019 tuba mouthpiece** — 24AW 1 (maker unknown) arrived with euphonium shipment; disposition pending
-9. **Close Appleseed invoice (SVC-FLT-001)** — unbilled since spring; budget year problem
+9. **Close Appleseed invoice (SVC-FLT-001)** — unbilled since spring; budget year problem. Related closed tickets SVC-FLT-002 (MPR-087, $100, tag 064) and SVC-FLT-003 (MPR-026, $100, form 095) may be on the same or adjacent invoices — do not double-pay
 10. **Purchase date for MPR-016** — last blank on a complete record
 11. **Collect serials** — remainder of MPR-owned fleet still missing confirmed serials
 12. **MNT-001/002** — see Borrowed Instruments section for open items (holder assignment, condition assessment; confirm MNT OK with bocal loan)
@@ -239,6 +243,8 @@
 17. **MPR-023 Holton horn** — oil valves and perform 30-minute play test; arrange D&M inspection if still sluggish
 18. **MPR-081 Jupiter flute** — complete physical photo and condition onboarding; print permanent + student tags for Christel Mow
 19. **MPR-084–086 timpani** — all three are W.F.L. (maker correction Aug 17). Measure MPR-086; serial search (or record “none”); play-test before student use; interior-rim photos still missing
+20. **MPR-087 Trevor James Privilege III** — play-test to confirm Good; print permanent tag; assign when a student is identified (CE had labeled this MPR-059)
+21. **MPR-026 Yamaha YFL-225S** — ready for assignment (serial 033480 ✅; Excellent after April service). Prior retire/sell note dropped
 
 ---
 
@@ -251,4 +257,6 @@
 - **MPR-019 vs. MPR-020 euphonium comparison** — resolved. MPR-019 kept (cleaned up well). MPR-020 returned to seller within the window — advertised as brass-shop cleaned but valves were filthy on inspection, and the program didn't need a second one once MPR-019 worked out.
 - **SVC-TUB-001 (MPR-034)** — closed Aug 15: no bell obstruction; stuffiness is age-typical valve wear; cleared for sale listing with disclosure.
 - **SVC-BAS-001 (MPR-063)** — closed Aug 16: MNT-001 spare bocal fits and is in use.
+- **MPR-026 onboarding (Aug 17)** — model corrected to YFL-225S; serial 033480 ✅; condition Excellent; SVC-FLT-003 closed. Prior retire/sell / ~$300-repad note superseded.
+- **MPR-087 onboarded (Aug 17)** — Trevor James Privilege III, serial P54427 ✅; CE MPR-059 remapped at merge; SVC-FLT-002 closed.
 - **Aug 15 woodwind ID cleanup** — MPR-065–069 corrected (Gordet/Forrest-Marigaux/Schüller/Conn); Haiku Cabart/Buffet/Amolfozia/petit claims dropped.

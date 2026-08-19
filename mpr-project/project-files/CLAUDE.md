@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-The **Maple Ridge Music Program** is a complete management system for Maple Ridge School's music program (Ulster Park, NY). It tracks 83 students across grades 2–12, manages a fleet of 49 program-owned + 2 borrowed instruments, logs assignments and service records, and handles the disposal pipeline for surplus instruments.
+The **Maple Ridge Music Program** is a complete management system for Maple Ridge School's music program (Ulster Park, NY). It tracks 83 students across grades 2–12, manages a fleet of 73 program-owned + 2 borrowed instruments, logs assignments and service records, and handles the disposal pipeline for surplus instruments.
 
 Instead of juggling files, users work through **skills** — guided workflows that update the right files and keep everything consistent.
 
