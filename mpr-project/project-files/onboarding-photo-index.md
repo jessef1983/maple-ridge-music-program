@@ -25,13 +25,14 @@
 |---|---|---|
 | Fleet onboardings with photo sessions (MPR-023, 036, 063–086) | ✅ sections below | — |
 | MPR-019 accessory (tuba mouthpiece in shipment) | ✅ | Maker ID still open |
-| Sale flutes LOT-016, 017 | ✅ **19 files recovered Aug 18** | Backfilled from the Aug 13 sale-inventory session summary; all verified on disk |
-| Sale flute LOT-018 | ◐ cluster known, filenames not | Session summary records "vintage case photos + detail shots" in the Aug 6 shoot; specific frames never listed |
-| Sale Camelot LOT-003 | ✅ partial | 2 filenames indexed; serial stamp still pending. ⚠️ **`164216425.jpg` shows a named tag — crop before any public use** |
-| Sale saxophones LOT-001, 004 | ❌ stubs only | Original Drive filenames never copied into this file |
-| Sale clarinets LOT-005–015 | ❌ stubs only — **but photos exist** | LOT-009's serial shot is `PXL_20260813_132015924.MP.jpg`, on disk, found Aug 18. LOT-011–013 identified from the Aug 6 Drive batch (timestamps `145515`–`152057`); LOT-014/015 were fully indexed in an Aug 13 CE session **whose filename list was never committed anywhere in this repo** |
+| Sale flutes LOT-016, 017 | ✅ Aug 6 + Aug 16 | LOT-016 serial stamp is on disk (`154344451`) — digit string still needs a human confirm before promoting ✋→✅. LOT-017 Aug 6 cluster was **wrong** in the Aug 18 recovery (those NIGHT/vintage-case frames are LOT-018); Aug 6 Armstrong shoot is `154719`–`155004` |
+| Sale flute LOT-018 | ✅ Aug 6 vintage Reynolds case | Serial **41249** is not readable in that cluster — keep the play-test ✅, still want a stamp photo |
+| Sale Camelot LOT-003 | ✅ Aug 6 + Aug 13 | Serial stamp still ⚠️. ⚠️ **`164216425.jpg` shows a named tag — crop before any public use** |
+| Sale saxophones LOT-001, 004 | ✅ Aug 6 | LOT-001 serial **400654** and LOT-004 serial **905114** both on disk |
+| Sale clarinets LOT-005–015 | ✅ Aug 6 (005/006 brand-only) | LOT-005 Masson and LOT-006 Bundy 577 identified; their serial stamps were **not** readable in this pass. LOT-007–015 have serial or unique-fault photos. LOT-014/015 filename list recovered from disk — the lost Aug 13 CE table is no longer blocking |
 | Sale trombone LOT-019 | ❌ named only | `1000033786/3787` — part of the missing `1000######` export |
-| Sale euphonium LOT-020 | ❌ no entry under **either** ID | Checked Aug 18: nothing under `LOT-020` *or* its fleet ID `MPR-062`. Onboarded Aug 13 "on-hand (band room)" with serial **330366 ✅ verified**, which normally implies a serial photo — so look in the 438 orphans before reshooting |
+| Sale euphonium LOT-020 | ◐ mixed Aug 15 cluster | `PXL_20260815_134452`–`135947` is **two** silver 3-valves. Conn **159676** = fleet **MPR-045** (confirmed). Buescher **330366** was not independently confirmed this pass — do not use unmarked overviews as listing photos |
+| Sale trumpet LOT-021 | ✅ via **MPR-075** | Six Aug 15 frames already under the fleet ID |
 
 ### The missing `1000######.jpg` export
 
@@ -422,131 +423,511 @@ are also not on disk — a second un-exported batch, from Aug 17.
 
 ## Sale inventory — LOT photo index
 
-### LOT-016 — Artley 18-0 (flute)
+Backfilled August 18, 2026 from `intrument-pics/` (Aug 6 staged shoot + Aug 13/15 supplements).
+LOT assigned only on readable serial, brand engraving, or a unique documented fault. Continuity-only
+frames are marked. **LOT-002** removed (Baxter parts) — no section.
 
-**Assessed:** August 15, 2026 · **Folder:** `LOT-016_Artley-18-0/` (under `instrument-onboarding/LOT-flutes/`)
+### LOT-001 — Spencer alto sax
 
-**Photo shoot:** August 6, 2026, 15:41–15:45 — staged white-backdrop session. **8 frames,
-all verified on disk Aug 18.** Recovered from `session-summary-2026-08-13-sale-inventory.md`;
-these were never in this index despite existing since Aug 6.
+**Assessed:** August 13, 2026 · **Serial:** **400654 ✅** · **Folder:** `LOT-001_Spencer-alto/`
 
-| # | Filename | Notes |
-|:-:|---|---|
-| 1 | `PXL_20260806_154104731.jpg` | |
-| 2 | `PXL_20260806_154114604.jpg` | |
-| 3 | `PXL_20260806_154136580.jpg` | |
-| 4 | `PXL_20260806_154232547.jpg` | |
-| 5 | `PXL_20260806_154304636.jpg` | |
-| 6 | `PXL_20260806_154330926.MP.jpg` | summary writes this `154330926_MP` |
-| 7 | `PXL_20260806_154344451.jpg` | |
-| 8 | `PXL_20260806_154512629.jpg` | |
-| — | `1000034338.jpg` | Play-test notes page — **not on disk**, see missing-export note above |
-
-**Outstanding:** Serial stamp photo still needed (hand notes: **252-817**) — confirm whether
-one of the 8 above already carries it before reshooting.
-
----
-
-### LOT-017 — Armstrong 104 (flute)
-
-**Assessed:** August 15–16, 2026 · **Folder:** `LOT-017_Armstrong-104/` (under `instrument-onboarding/LOT-flutes/`)
-
-**Photo shoot:** August 6, 2026, 15:52–15:55 — staged white-backdrop session. **11 frames,
-all verified on disk Aug 18.** Recovered from `session-summary-2026-08-13-sale-inventory.md`.
+**Photo shoot:** August 6, 2026, 13:15–13:24.
 
 | # | Filename | Shows | Notes |
 |:-:|---|---|---|
-| 1 | `PXL_20260816_025505855.jpg` | Main body serial stamp | **Model: 104 · Production number: G9114** |
-| 2 | `PXL_20260816_025443940.jpg` | Footjoint serial stamp | **Production number: G9116** |
-| 3 | `PXL_20260806_155229537.NIGHT.jpg` | Aug 6 shoot | summary writes `155229537_NIGHT` |
-| 4 | `PXL_20260806_155235363.NIGHT.jpg` | Aug 6 shoot | summary writes `155235363_NIGHT` |
-| 5 | `PXL_20260806_155317572.jpg` | Aug 6 shoot | |
-| 6 | `PXL_20260806_155335225.jpg` | Aug 6 shoot | |
-| 7 | `PXL_20260806_155403724.jpg` | Aug 6 shoot | |
-| 8 | `PXL_20260806_155419134.jpg` | Aug 6 shoot | |
-| 9 | `PXL_20260806_155423018.jpg` | Aug 6 shoot | |
-| 10 | `PXL_20260806_155431561.jpg` | Aug 6 shoot | |
-| 11 | `PXL_20260806_155437896.MP.jpg` | Aug 6 shoot | summary writes `155437896_MP` |
-| 12 | `PXL_20260806_155459413.jpg` | Aug 6 shoot | |
-| 13 | `PXL_20260806_155511818.jpg` | Aug 6 shoot | |
-| — | `1000034337.jpg` | Play-test notes page | **Not on disk** — missing export |
+| 1 | `PXL_20260806_131504616.jpg` | Full-length alto on cloth; neck on, no MP | |
+| 2 | `PXL_20260806_131554003.jpg` | Side profile; pearls present | |
+| 3 | `PXL_20260806_131639048.jpg` | Bell: **SPENCER** + floral engraving | |
+| 4 | `PXL_20260806_131640843.jpg` | Second **SPENCER** engraving | |
+| 5 | `PXL_20260806_131649666.jpg` | Bell/lower body: **SPENCER** | |
+| 6 | `PXL_20260806_131731738.jpg` | Thumb-rest serial **400654**; oxidized thumb hook | |
+| 7 | `PXL_20260806_131827469.jpg` | Full-length recap | |
+| 8 | `PXL_20260806_132029431.jpg` | Tight serial crop **400654** | |
+| 9 | `PXL_20260806_132223547.jpg` | Open black case; body + neck; no MP | Continuity (no stamp in frame) |
+| 10 | `PXL_20260806_132330080.jpg` | Same outfit | Continuity |
+| 11 | `PXL_20260806_132331899.jpg` | Same case | Continuity |
+| 12 | `PXL_20260806_132405350.jpg` | Open-case overview | Continuity |
+| 13 | `PXL_20260813_171258376.jpg` | Serial **400654** (Aug 13 recap) | |
 
----
-
-### LOT-018 — Reynolds R11C (flute)
-
-**Assessed:** August 15, 2026 · **Folder:** `LOT-018_Reynolds-R11C/` (under `instrument-onboarding/LOT-flutes/`)
-
-**Photo shoot:** August 6, 2026 — `session-summary-2026-08-13-sale-inventory.md` records
-"vintage case photos + detail shots included" but **lists no filenames**. The frames are
-almost certainly in the Aug 6 15:xx staged block alongside LOT-016 (15:41–15:45) and LOT-017
-(15:52–15:55). **Identify and list them before treating this LOT as unphotographed.**
-
-| # | Filename | Shows | Notes |
-|:-:|---|---|---|
-| — | `1000034339.jpg` | Play-test handwritten notes, full page | **Not on disk** — missing export. Margin note “Tenons are good” |
-
----
-
-### LOT-009 — Vito Reso-Tone (clarinet)
-
-**Found during the Aug 18 audit**, not from any prior index — the coverage table called all
-sale clarinets "stubs only" while this was sitting in `intrument-pics/`.
-
-| # | Filename | Shows | Notes |
-|:-:|---|---|---|
-| 1 | `PXL_20260813_132015924.MP.jpg` | Upper joint serial stamp | **C02823-7212** clearly legible, matches `sale-inventory.md` |
-
-**Implication:** the other clarinet LOTs very likely have on-disk photos too. The Aug 13
-13:20–14:00 block and the Aug 6 `145515`–`152057` Drive batch are the places to look.
-
----
-
-### LOT-UNKNOWN-A — unidentified clarinet
-
-Recorded in `session-summary-lots-011-013.md`: a 4-frame mini-cluster, timestamps
-`145811167`–`145847697` (Aug 6), originally mislabelled "LOT-012 (tentative)" and relabelled
-to avoid collision. No visible serial or engraving in those 4 frames. Candidates from the hand
-log: **Artley 175 / 249004** (LOT-014) or **Bundy 225852** (LOT-015). Unresolved.
+**Status:** ID-complete. Listing still needs program-identity stripped and a “Made in” stamp shot.
 
 ---
 
 ### LOT-003 — Camelot tenor sax
 
-**Assessed:** August 13, 2026 · **Folder:** `LOT-003_Camelot-tenor/`
+**Assessed:** August 13, 2026 · **Serial:** ⚠️ pending · **Folder:** `LOT-003_Camelot-tenor/`
+
+**Photo shoots:** August 6, 13:26–13:39 and August 13, 16:42.
 
 | # | Filename | Shows | Notes |
 |:-:|---|---|---|
-| 1 | `PXL_20260813_164216425.jpg` | Case overview | Present in `intrument-pics` |
-| 2 | `PXL_20260813_164318921.jpg` | Goldentone 3 mouthpiece detail | Not Selmer |
+| 1 | `PXL_20260806_132624868.jpg` | Full sax on cloth | |
+| 2 | `PXL_20260806_132635311.jpg` | Tenor profile; **missing pearls** | Unique fault |
+| 3 | `PXL_20260806_132710102.jpg` | Bell/lower body | |
+| 4 | `PXL_20260806_132748756.jpg` | Lower stack / pinky table | |
+| 5 | `PXL_20260806_132803714.jpg` | Bottom bow | |
+| 6 | `PXL_20260806_132825426.jpg` | Front view; missing pearl | |
+| 7 | `PXL_20260806_132859372.jpg` | Neck/upper wear | |
+| 8 | `PXL_20260806_132900511.jpg` | Three-quarter + neck | |
+| 9 | `PXL_20260806_132937837.jpg` | In case; loose white pearl on lining | |
+| 10 | `PXL_20260806_133006364.jpg` | Tenor in case; missing pearls | |
+| 11 | `PXL_20260806_133033169.jpg` | Closed black hardshell | Unbranded; continuity |
+| 12 | `PXL_20260806_133041586.jpg` | Closed case; grey tape on corner | Continuity |
+| 13 | `PXL_20260806_133100627.jpg` | Closed pebbled case | Continuity |
+| 14 | `PXL_20260806_133107421.jpg` | Closed case; scuffed handle | Continuity |
+| 15 | `PXL_20260806_133247793.jpg` | Closed case + blue nylon strap | |
+| 16 | `PXL_20260806_133308661.jpg` | Same closed case | |
+| 17 | `PXL_20260806_133428857.jpg` | Open blue-lined case; green **Camelot (Tenor)** tag; MP in tray | |
+| 18 | `PXL_20260806_133431880.jpg` | Same open-case overview | |
+| 19 | `PXL_20260806_133526107.jpg` | On cloth; **CAMELOT** on bell; MP on | |
+| 20 | `PXL_20260806_133552347.jpg` | Full-length tenor | |
+| 21 | `PXL_20260806_133657466.jpg` | Bell: **CAMELOT** | Brand confirm |
+| 22 | `PXL_20260806_133725701.jpg` | Full tenor; missing pearls; pitting | |
+| 23 | `PXL_20260806_133746175.jpg` | Bell/body **CAMELOT**; missing pearls | |
+| 24 | `PXL_20260806_133759741.jpg` | Neck/upper stack; worn cork | |
+| 25 | `PXL_20260806_133810630.jpg` | Tenor neck + upper body | |
+| 26 | `PXL_20260806_133829539.MP.jpg` | Bell front **CAMELOT** | |
+| 27 | `PXL_20260806_133839298.jpg` | Top-down bell/body | |
+| 28 | `PXL_20260806_133931743.jpg` | Vertical body/keywork | |
+| 29 | `PXL_20260806_133937993.jpg` | Lower body/bell | |
+| 30 | `PXL_20260813_164216425.jpg` | Horn in case | ⚠️ **Named tag in frame — crop before public use** |
+| 31 | `PXL_20260813_164318921.jpg` | **Goldentone 3** mouthpiece | |
+| 32 | `PXL_20260813_164324721.jpg` | Second black mouthpiece | Accessory only |
 
-**Status:** Poor (missing pearls/key caps). Serial stamp still ⚠️ pending confirm. Ask $185 / floor $120 in `sale-inventory.md`.
-
-### LOT-001 through LOT-015 — stubs (filenames not yet in durable index)
-
-These lots were assessed / play-tested Aug 11–13. Photo work happened in Google Drive / CE chats, but **most original `PXL_…` filenames were never written into this file.** Do not invent filenames — backfill from Drive / `intrument-pics` when re-matched. **LOT-003** partially indexed above. **LOT-002** removed from sale (Baxter parts).
-
-| LOT | Instrument | Serial | Photo index status |
-|:---:|---|:---:|---|
-| LOT-001 | Spencer alto sax | 400654 ✅ | ❌ filenames not in this index |
-| LOT-002 | *(removed — Baxter parts)* | — | — |
-| LOT-004 | Bundy II alto sax | 905114 ✅ | ❌ filenames not in this index |
-| LOT-005 | M. Masson (Thibouville Frères) | N.1673 ✅ | ❌ filenames not in this index |
-| LOT-006 | Bundy 577 Resonite | 1324589 ✅ | ❌ filenames not in this index |
-| LOT-007 | Normandy (LeBlanc/Noblet) | 3621A ✅ | ❌ filenames not in this index |
-| LOT-008 | “Bundy” 577 mixed parts | 577 ✋ | ❌ filenames not in this index |
-| LOT-009 | Vito Reso-Tone | CO2823-7212 ✅ | ❌ filenames not in this index |
-| LOT-010 | Artley clarinet | 787905 ✅ | ❌ filenames not in this index |
-| LOT-011 | Jean Baptiste JCL480 | F5495 ✅ | Serial confirmed in Drive; **filenames never logged** |
-| LOT-012 | Bundy clarinet | 775674 ✅ | Serial confirmed in Drive; **filenames never logged** |
-| LOT-013 | Bundy Resonite | 645-107 ✅ | Serial confirmed in Drive; **filenames never logged** |
-| LOT-014 | Artley 175 | 249004 ✅ | Aug 13 session claimed full filename index — **not preserved here**; recover from Drive |
-| LOT-015 | Bundy clarinet | 225852 ✅ | Aug 13 session claimed full filename index — **not preserved here**; recover from Drive |
-| LOT-019 | Bundy trombone | 678064 ✅ | Named `1000033786.jpg`, `1000033787.jpg` — **not in local dump yet** |
-
-**Related cluster (unassigned):** timestamps `PXL_20260806_145811167`–`145847697` were briefly mislabeled LOT-012, then **LOT-UNKNOWN-A** — clarinet with no readable serial in those 4 frames.
+**Status:** Brand + fault documented. Serial stamp still ⚠️.
 
 ---
+
+### LOT-004 — Bundy II alto sax
+
+**Assessed:** August 13, 2026 · **Serial:** **905114 ✅** · **Folder:** `LOT-004_Bundy-II-alto/`
+
+**Photo shoot:** August 6, 2026, 14:41–14:45.
+
+| # | Filename | Shows | Notes |
+|:-:|---|---|---|
+| 1–3 | `PXL_20260806_143854497.jpg`, `143901042.jpg`, `143912220.jpg` | Closed case, **THE SELMER COMPANY** | Likely second case of the dual-case outfit; no horn in frame |
+| 4 | `PXL_20260806_144136562.jpg` | Alto in case; Ponzol + Juno reeds | |
+| 5 | `PXL_20260806_144157585.jpg` | Alto + neck/MP in case | |
+| 6 | `PXL_20260806_144222694.jpg` | In-case overview | |
+| 7 | `PXL_20260806_144306302.jpg` | Assembled on cloth | |
+| 8 | `PXL_20260806_144325613.jpg` | Assembled; worn brass | |
+| 9 | `PXL_20260806_144347189.jpg` | Bell: **BUNDY II** | |
+| 10 | `PXL_20260806_144412865.jpg` | Bell/lower keywork | |
+| 11 | `PXL_20260806_144428785.jpg` | Upper body + neck | |
+| 12 | `PXL_20260806_144446698.jpg` | Neck Bundy **B** key; **Yamaha 6C** | |
+| 13 | `PXL_20260806_144448223.jpg` | Same neck/MP | |
+| 14 | `PXL_20260806_144512907.jpg` | MP alone: **YAMAHA 6C** | |
+| 15 | `PXL_20260806_144527107.MP.jpg` | Body stamp **905114** | Parent-reviewed Aug 18 |
+| 16 | `PXL_20260806_144530369.jpg` | Same stamp | |
+
+**Status:** ID-complete (brand, serial, Yamaha 6C, reed package).
+
+---
+
+### LOT-005 — M. Masson clarinet
+
+**Assessed:** August 13, 2026 · **Serial:** N.1673 ✅ in sale record; **not re-read in these frames** · **Folder:** `LOT-005_Masson/`
+
+**Photo shoot:** August 6, 2026, 13:48–13:50.
+
+| # | Filename | Shows | Notes |
+|:-:|---|---|---|
+| 1 | `PXL_20260806_134829153.jpg` | Assembled clarinet; clear MP | |
+| 2 | `PXL_20260806_134841035.jpg` | Same assembled overview | |
+| 3 | `PXL_20260806_134914474.jpg` | Barrel script **Masson** | Brand confirm |
+| 4 | `PXL_20260806_134954138.jpg` | Clear MP + barrel + upper | |
+| 5 | `PXL_20260806_134957989.jpg` | Bell + lower joint | |
+| 6 | `PXL_20260806_135035928.jpg` | Bell close-up; engraving not confirmed | Do not treat as Penzel-Müller |
+
+**Status:** Brand-matched. Serial **N.1673 vs N.1573** still needs a readable stamp photo.
+
+---
+
+### LOT-006 — Bundy 577 Resonite clarinet
+
+**Assessed:** August 13, 2026 · **Serial:** 1324589 ✅ in sale record; **not re-read in these frames** · **Folder:** `LOT-006_Bundy-577/`
+
+**Photo shoot:** August 6, 2026, 13:52–14:00.
+
+| # | Filename | Shows | Notes |
+|:-:|---|---|---|
+| 1 | `PXL_20260806_135242269.jpg` | Closed case; oval **BUNDY** badge | |
+| 2 | `PXL_20260806_135249633.jpg` | Closed Bundy case | |
+| 3 | `PXL_20260806_135311077.jpg` | Open case; full outfit | |
+| 4 | `PXL_20260806_135342483.jpg` | Parts laid out | |
+| 5 | `PXL_20260806_135348036.jpg` | Same layout | |
+| 6 | `PXL_20260806_135411251.jpg` | Lower-joint profile | |
+| 7 | `PXL_20260806_135419530.MP.jpg` | Upper + lower side by side | |
+| 8 | `PXL_20260806_135512413.jpg` | Bell: **BUNDY RESONITE / THE SELMER COMPANY USA** | |
+| 9 | `PXL_20260806_135542636.jpg` | Upper joint: **BUNDY 577** | Model confirm — not LOT-008 |
+| 10 | `PXL_20260806_135638853.jpg` | Assembled | |
+| 11 | `PXL_20260806_135644259.jpg` | Assembled; MP + ligature | |
+| 12 | `PXL_20260806_135650810.jpg` | Assembled recap | |
+| 13 | `PXL_20260806_140010586.jpg` | Assembled recap ~3 min later | Continuity only |
+
+**Status:** Model-complete (577 + Bundy Resonite + original case). Serial **1324589 vs 1324859** still unread here.
+
+---
+
+### LOT-007 — Normandy clarinet
+
+**Assessed:** August 13, 2026 · **Serial:** **3621A ✅** · **Folder:** `LOT-007_Normandy/`
+
+**Photo shoot:** August 6, 2026, 14:06–14:13. Lives in an **A. Fontaine Paris** labeled case — that is the case, not the horn.
+
+| # | Filename | Shows | Notes |
+|:-:|---|---|---|
+| 1–3 | `PXL_20260806_140647386.jpg`, `140702079.jpg`, `140712839.jpg` | Closed two-tone vintage case | Continuity into open-case |
+| 4 | `PXL_20260806_140755089.jpg` | Open case; **A. Fontaine / PARIS** lid label | Case badge |
+| 5 | `PXL_20260806_141116736.jpg` | Open case + joints; A. Fontaine lid | Audit sample misread this as an A. Fontaine clarinet |
+| 6 | `PXL_20260806_141149628.jpg` | Parts on cloth; bell **Normandy**; joint **3621A**; crumbled cork | |
+| 7 | `PXL_20260806_141205115.jpg` | Bell rim stamp **3621A** | |
+| 8 | `PXL_20260806_141224250.jpg` | Bell **Normandy** crest | |
+| 9 | `PXL_20260806_141329127.jpg` | Bell side **Normandy** | |
+| 10 | `PXL_20260806_141333562.jpg` | Bell crest + script | |
+| 11 | `PXL_20260806_141349522.jpg` | Joint serial **3621A** | |
+
+**Status:** ID-complete. MP and barrel absent in the layout (matches sale record).
+
+---
+
+### LOT-008 — “Bundy” 577 mixed parts
+
+**Assessed:** August 13, 2026 · **Serial:** 577 ✋ (model stamp, not a body serial) · **Folder:** `LOT-008_Bundy-577-mixed/`
+
+**Photo shoot:** August 6, 2026, 14:15–14:19.
+
+| # | Filename | Shows | Notes |
+|:-:|---|---|---|
+| 1 | `PXL_20260806_141524592.jpg` | Closed case; **BUNDY** lid badge | |
+| 2 | `PXL_20260806_141532038.jpg` | Closed case, worn corners | |
+| 3 | `PXL_20260806_141539574.jpg` | **BUNDY / H. & A. SELMER INC.** plate | |
+| 4 | `PXL_20260806_141605984.jpg` | Open case, outfit in burgundy | |
+| 5 | `PXL_20260806_141625869.jpg` | Parts laid out | |
+| 6–8 | `PXL_20260806_141737640.jpg`, `141746364.jpg`, `141754977.jpg` | Assembled overviews | |
+| 9 | `PXL_20260806_141816901.jpg` | Upper joint **BUNDY 577** | |
+| 10 | `PXL_20260806_141818860.jpg` | Upper joint **BUNDY 577** | |
+| 11 | `PXL_20260806_141828413.jpg` | MP: **Noblet Paris** | Unique fault set |
+| 12 | `PXL_20260806_141828514.jpg` | **Noblet Paris** | |
+| 13 | `PXL_20260806_141855586.jpg` | MP alone **Noblet Paris** | |
+| 14 | `PXL_20260806_141928995.jpg` | Bell: **PENZEL MÜLLER & CO. NEW YORK** + eagle | Unique fault set |
+
+**Status:** Mixed-parts identity complete. Missing-keys list still needed for the parts listing.
+
+---
+
+### LOT-009 — Vito Reso-Tone clarinet
+
+**Assessed:** August 13, 2026 · **Serial:** **C02823-7212 ✅** · **Folder:** `LOT-009_Vito/`
+
+**Photo shoots:** August 6, 14:22–14:28 and August 13, 13:20.
+
+| # | Filename | Shows | Notes |
+|:-:|---|---|---|
+| 1–3 | `PXL_20260806_142224290.jpg`, `142232041.jpg`, `142238591.jpg` | Closed case; circular **BUNDY** badge | Vito in a Bundy-badged case |
+| 4 | `PXL_20260806_142322091.jpg` | Open case; **VITO** on joints; tag **CO2823 7212** | |
+| 5 | `PXL_20260806_142358550.jpg` | Layout | Same horn |
+| 6 | `PXL_20260806_142434222.jpg` | Oval **VITO** + fleur-de-lis | |
+| 7 | `PXL_20260806_142655145.jpg` | Serial **C02823 / 7212** | |
+| 8 | `PXL_20260806_142656626.jpg` | Same serial | |
+| 9–10 | `PXL_20260806_142740597.jpg`, `142742446.jpg` | Upper joint | Same cluster; do not split as Bundy |
+| 11 | `PXL_20260806_142823053.jpg` | **VITO RESO-TONE U.S.A.** + **C02823-7212** | |
+| 12 | `PXL_20260813_132015924.MP.jpg` | Upper-joint stamp **C02823-7212** | |
+| 13 | `PXL_20260813_135720435.jpg` | Bell **Vito / Reso-Tone** | Aug 13 mixed group shot; no serial in frame |
+
+**Status:** ID-complete. Sale record says mouthpiece missing; `PXL_20260806_160234714.jpg` is a loose **VITO** MP — do not attach without a hand confirm.
+
+---
+
+### LOT-010 — Artley clarinet
+
+**Assessed:** August 13, 2026 · **Serial:** **787905 ✅** · **Folder:** `LOT-010_Artley/`
+
+**Photo shoots:** August 6, 14:51–14:52 and August 13, 13:21.
+
+| # | Filename | Shows | Notes |
+|:-:|---|---|---|
+| 1 | `PXL_20260806_145119257.jpg` | Assembled hero | |
+| 2 | `PXL_20260806_145130917.jpg` | Assembled, other side | |
+| 3 | `PXL_20260806_145153253.jpg` | Lower-joint/bell serial **787905** | Parent-reviewed Aug 18 |
+| 4 | `PXL_20260806_145205583.jpg` | Bell: **Artley / USA** | |
+| 5 | `PXL_20260806_145224048.jpg` | Mid-joint / thumb rest | |
+| 6 | `PXL_20260806_145229343.jpg` | Upper/lower + bridge | |
+| 7 | `PXL_20260806_145235179.jpg` | MP + ligature + barrel | |
+| 8 | `PXL_20260806_145241412.jpg` | MP / barrel / upper start | |
+| 9 | `PXL_20260806_145251742.MP.jpg` | Mid-body side keys | |
+| 10 | `PXL_20260813_132109720.MP.jpg` | Held joint **787905**; Artley USA bell | Was sitting next to the LOT-009 serial shot |
+
+**Status:** ID-complete. Not LOT-014 (that serial is 249004).
+
+---
+
+### LOT-011 — Jean Baptiste JCL480
+
+**Assessed:** August 13, 2026 · **Serial:** **F5495 ✅** · **Folder:** `LOT-011_Jean-Baptiste-JCL480/`
+
+**Photo shoot:** August 6, 2026, 14:55–14:58. Extra tuning barrel visible.
+
+The four frames formerly **LOT-UNKNOWN-A** (`145811167`–`145847697`) are the assembled tail of this horn: `145811167` reads **Jean Baptiste / JCL 480** on the bell, 45 seconds after the F5495 stamps. Still no serial in those four frames.
+
+| # | Filename | Shows | Notes |
+|:-:|---|---|---|
+| 1–3 | `PXL_20260806_145515177.jpg`, `145520196.jpg`, `145527371.jpg` | Closed worn black case | |
+| 4 | `PXL_20260806_145540128.jpg` | Open case; bell **Jean Baptiste / JCL480**; **two barrels** | |
+| 5 | `PXL_20260806_145612033.jpg` | Parts laid out | |
+| 6 | `PXL_20260806_145626344.jpg` | Upper joint **Jean Baptiste / JCL480** | |
+| 7 | `PXL_20260806_145639880.jpg` | Bell **Jean Baptiste® / JCL480** | |
+| 8 | `PXL_20260806_145724986.jpg` | Joint stamp **F5495** | |
+| 9 | `PXL_20260806_145726443.jpg` | Same **F5495** | |
+| 10 | `PXL_20260806_145811167.jpg` | Assembled; bell **Jean Baptiste / JCL 480** | Former UNKNOWN-A; no serial |
+| 11–13 | `PXL_20260806_145824141.jpg`, `145831570.jpg`, `145847697.jpg` | Assembled overviews | Former UNKNOWN-A; no serial |
+
+**Status:** ID-complete. Old Drive resume note that UNKNOWN-A was 014/015 is wrong.
+
+---
+
+### LOT-012 — Bundy clarinet
+
+**Assessed:** August 13, 2026 · **Serial:** **775674 ✅** · **Folder:** `LOT-012_Bundy/`
+
+**Photo shoot:** August 6, 2026, 15:02–15:05. Shot case (lid lining hanging).
+
+| # | Filename | Shows | Notes |
+|:-:|---|---|---|
+| 1 | `PXL_20260806_150243752.jpg` | Closed case; circular **BUNDY** | |
+| 2 | `PXL_20260806_150249710.jpg` | Closed case; heavy lid scrape | |
+| 3 | `PXL_20260806_150255441.jpg` | Closed case hinge; **BUNDY** | |
+| 4 | `PXL_20260806_150317136.jpg` | Open; **lid lining hanging loose** | Documented fault |
+| 5 | `PXL_20260806_150338995.jpg` | Empty case + five parts | |
+| 6 | `PXL_20260806_150340451.jpg` | Same layout | |
+| 7 | `PXL_20260806_150353117.jpg` | Lower joint alone | |
+| 8–10 | `PXL_20260806_150452421.jpg`, `150501379.jpg`, `150509291.jpg` | Assembled overviews | |
+| 11 | `PXL_20260806_150521968.jpg` | Upper joint **BUNDY / Resonite** cartouche | Material stamp — still LOT-012 |
+| 12 | `PXL_20260806_150530261.jpg` | Serial **775674** | |
+| 13 | `PXL_20260806_150539023.jpg` | Mid-joint keywork | |
+| 14 | `PXL_20260806_150547251.jpg` | Bell + lower-joint join | |
+
+**Status:** ID-complete. Bell/lower-joint gap still needs the hand inspection in Open Item #3.
+
+---
+
+### LOT-013 — Bundy Resonite clarinet
+
+**Assessed:** August 13, 2026 · **Serial:** **645-107 ✅** · **Folder:** `LOT-013_Bundy-Resonite/`
+
+**Photo shoot:** August 6, 2026, 15:07–15:10.
+
+The old Drive resume point `151006121` is **this horn’s serial**, not the start of LOT-014.
+
+| # | Filename | Shows | Notes |
+|:-:|---|---|---|
+| 1–3 | `PXL_20260806_150729919.jpg`, `150737350.jpg`, `150743288.jpg` | Closed case; **BUNDY** badge | |
+| 4 | `PXL_20260806_150755903.jpg` | Open case; lining intact | |
+| 5 | `PXL_20260806_150819278.jpg` | Open case + parts laid out | |
+| 6 | `PXL_20260806_150820404.jpg` | Same layout | |
+| 7–8 | `PXL_20260806_150914879.jpg`, `150926867.jpg` | Assembled overviews | |
+| 9 | `PXL_20260806_150939319.jpg` | Bell: **BUNDY / RESONITE / Selmer / U.S.A.** | |
+| 10 | `PXL_20260806_150947927.jpg` | Upper-joint **BUNDY** shield | |
+| 11 | `PXL_20260806_150959171.jpg` | Joint serial **645107** | |
+| 12 | `PXL_20260806_151006121.jpg` | Same **645-107** | Former “resume here” frame |
+| 13 | `PXL_20260806_151010086.jpg` | Mid-joint rings/bridge | |
+| 14 | `PXL_20260806_151016613.jpg` | Mid-joint / trill keys | |
+| 15 | `PXL_20260806_151023103.jpg` | MP + ligature + barrel | |
+| 16 | `PXL_20260806_151026845.jpg` | MP/barrel | |
+| 17 | `PXL_20260806_151036642.jpg` | Upper joint + MP | |
+
+**Status:** ID-complete.
+
+---
+
+### LOT-014 — Artley 175 clarinet
+
+**Assessed:** August 13, 2026 · **Serial:** **249004 ✅** · **Folder:** `LOT-014_Artley-175/`
+
+**Photo shoot:** August 6, 2026, 15:12–15:16. The Aug 13 CE filename table was never merged; **recovered from disk this pass.**
+
+| # | Filename | Shows | Notes |
+|:-:|---|---|---|
+| 1 | `PXL_20260806_151227317.jpg` | Closed worn-corner case | Same case as LeBlanc below |
+| 2 | `PXL_20260806_151234490.jpg` | Closed case, handle side | |
+| 3 | `PXL_20260806_151240215.jpg` | **LEBLANC / PARIS / KENOSHA** plate | Documented case |
+| 4 | `PXL_20260806_151310305.jpg` | Open, royal-blue lining | |
+| 5 | `PXL_20260806_151346125.jpg` | Parts laid out; metal MP | |
+| 6 | `PXL_20260806_151505486.jpg` | Assembled; MP ring **AMERICAN MUSIC** | |
+| 7 | `PXL_20260806_151514228.MP.jpg` | Assembled overview | |
+| 8 | `PXL_20260806_151536130.jpg` | MP: **AMERICAN MUSIC** | |
+| 9 | `PXL_20260806_151544268.jpg` | Bare MP + barrel | |
+| 10–11 | `PXL_20260806_151551428.jpg`, `151557123.jpg` | Mid-joint keywork | |
+| 12 | `PXL_20260806_151608166.jpg` | Lower joint: **Artley / 175 / 249004** | |
+| 13 | `PXL_20260806_151622553.jpg` | Bell/lower serial **249004** | |
+
+**Status:** ID-complete. Lost CE session no longer blocking.
+
+---
+
+### LOT-015 — Bundy clarinet
+
+**Assessed:** August 13, 2026 · **Serial:** **225852 ✅** · **Folder:** `LOT-015_Bundy/`
+
+**Photo shoot:** August 6, 2026, 15:18–15:22. Nicer LeBlanc-badged case than LOT-014; handle tag **BUNDY #225852**.
+
+| # | Filename | Shows | Notes |
+|:-:|---|---|---|
+| 1 | `PXL_20260806_151834349.jpg` | Handle tag **BUNDY #225852**; McFadyen Music | |
+| 2 | `PXL_20260806_151840688.jpg` | Lid **LEBLANC** badge + McFadyen | |
+| 3 | `PXL_20260806_151846604.MP.jpg` | Closed case; metal corner caps | |
+| 4 | `PXL_20260806_151916485.jpg` | Open, black plush; McFadyen lid label | |
+| 5 | `PXL_20260806_151938922.jpg` | Open case + five parts | |
+| 6–7 | `PXL_20260806_152026207.jpg`, `152035932.jpg` | Assembled | |
+| 8 | `PXL_20260806_152057270.jpg` | MP / ligature / barrel | |
+| 9 | `PXL_20260806_152126269.jpg` | Joint serial **225852** | |
+| 10 | `PXL_20260806_152131891.jpg` | MP / barrel / upper start | |
+| 11 | `PXL_20260806_152137475.jpg` | Mid-joint / trill keys | |
+| 12 | `PXL_20260806_152156940.jpg` | Bell + lower joint | |
+| 13 | `PXL_20260806_152203465.jpg` | Lower joint + bell | |
+
+**Status:** ID-complete. Loose F# not visible in stills.
+
+---
+
+### LOT-016 — Artley 18-0 (flute)
+
+**Assessed:** August 15, 2026 · **Serial:** **252-817 ✋** · **Folder:** `LOT-016_Artley-18-0/`
+
+**Photo shoot:** August 6, 2026, 15:40–15:45.
+
+| # | Filename | Shows | Notes |
+|:-:|---|---|---|
+| 1 | `PXL_20260806_154053252.jpg` | Closed black flute case | Continuity |
+| 2 | `PXL_20260806_154058333.jpg` | Same closed case | Continuity |
+| 3 | `PXL_20260806_154104731.jpg` | Closed case, hinge side | |
+| 4 | `PXL_20260806_154114604.jpg` | Open case; **Artley / Elkhart / 18-0** | Brand |
+| 5 | `PXL_20260806_154136580.jpg` | Artley 18-0 with case | |
+| 6 | `PXL_20260806_154232547.jpg` | Assembled on sheet | |
+| 7 | `PXL_20260806_154245576.jpg` | Assembled extra | |
+| 8 | `PXL_20260806_154304636.jpg` | Body/foot keys | |
+| 9 | `PXL_20260806_154308442.jpg` | Body keywork | |
+| 10 | `PXL_20260806_154330926.MP.jpg` | Headjoint | |
+| 11 | `PXL_20260806_154344451.jpg` | Barrel: **Artley / NOGALES, ARIZ. / 18-0** + serial stamp | **Human confirm digits vs 252-817** |
+| 12 | `PXL_20260806_154512629.jpg` | 3-piece layout | |
+| 13 | `PXL_20260806_154529776.jpg` | 3-piece; Artley 18-0 (Elkhart stamp this angle) | |
+| 14 | `PXL_20260806_154531883.jpg` | 3-piece; Artley 18-0 | |
+| — | `1000034338.jpg` | Play-test notes page | **Not on disk** |
+
+**Outstanding:** Serial stamp is photographed; automated reads disagreed (**252-817** vs **25287**). Do not promote ✋→✅ until a human reads `154344451`.
+
+---
+
+### LOT-017 — Armstrong 104 (flute)
+
+**Assessed:** August 15–16, 2026 · **Serial:** **G9114 / G9116 ✅** · **Folder:** `LOT-017_Armstrong-104/`
+
+**Photo shoots:** August 6, 15:47–15:50 (case/horn) and August 16, 02:54–02:55 (serial stamps).
+
+The Aug 18 recovery put the **Reynolds vintage-case** NIGHT frames here. Those move to LOT-018.
+
+| # | Filename | Shows | Notes |
+|:-:|---|---|---|
+| 1 | `PXL_20260816_025443940.jpg` | Footjoint stamp **G9116** | |
+| 2 | `PXL_20260816_025505855.jpg` | Body stamp **Model 104 · G9114** | |
+| 3 | `PXL_20260806_154719601.jpg` | Closed case; white script **Armstrong** | |
+| 4 | `PXL_20260806_154724131.jpg` | Closed case, no logo this angle | |
+| 5 | `PXL_20260806_154733026.jpg` | Open case, blue/purple plush | |
+| 6 | `PXL_20260806_154750498.jpg` | 3-piece under open case | |
+| 7 | `PXL_20260806_154819837.jpg` | Assembled | |
+| 8 | `PXL_20260806_154833104.jpg` | Assembled | |
+| 9 | `PXL_20260806_154848372.jpg` | **W.T. ARMSTRONG / ELKHART-IND.** | |
+| 10 | `PXL_20260806_154851827.jpg` | Headjoint **ARMSTRONG / ELKHART-IND** | |
+| 11 | `PXL_20260806_154858979.jpg` | Body etch **PGH P SCHOOLS** | School mark |
+| 12 | `PXL_20260806_154907671.jpg` | Foot/body production stamp | Pair with Aug 16 G9116 |
+| 13 | `PXL_20260806_154928048.jpg` | Production stamp, second angle | |
+| 14–15 | `PXL_20260806_154951074.jpg`, `155004438.jpg` | Vertical 3-piece | |
+| — | `1000034337.jpg` | Play-test notes page | **Not on disk** |
+
+**Status:** ID-complete via Aug 16 stamps. Aug 6 cluster is the matching Armstrong case/horn.
+
+---
+
+### LOT-018 — Reynolds R11C (flute)
+
+**Assessed:** August 15, 2026 · **Serial:** **41249 ✅** (play-test; **not** in these frames) · **Folder:** `LOT-018_Reynolds-R11C/`
+
+**Photo shoot:** August 6, 2026, 15:52–15:55 — vintage leather case, royal-blue velvet, **cleaning rod** (016/017 have no rod).
+
+| # | Filename | Shows | Notes |
+|:-:|---|---|---|
+| 1 | `PXL_20260806_155229537.NIGHT.jpg` | Case triangle badge **Reynolds / Band Instruments / Cleveland, Ohio** | Was mis-filed under LOT-017 |
+| 2 | `PXL_20260806_155235363.NIGHT.jpg` | Same vintage case | |
+| 3 | `PXL_20260806_155243373.NIGHT.jpg` | Reynolds badge close-up | |
+| 4 | `PXL_20260806_155317572.jpg` | Flute in vintage case + **cleaning rod** | Outfit |
+| 5 | `PXL_20260806_155335225.jpg` | Same + rod | |
+| 6 | `PXL_20260806_155403724.jpg` | Cluster instrument shot | Continuity |
+| 7 | `PXL_20260806_155410478.MP.jpg` | Assembled flute | Continuity |
+| 8–10 | `PXL_20260806_155419134.jpg`, `155423018.jpg`, `155431561.jpg` | Body; two large plating-wear patches | Matches play-test fault |
+| 11 | `PXL_20260806_155437896.MP.jpg` | Cluster | |
+| 12–13 | `PXL_20260806_155459413.jpg`, `155511818.jpg` | Cluster | |
+| — | `1000034339.jpg` | Play-test notes (“Tenons are good”) | **Not on disk** |
+
+**Status:** Case brand + outfit + rod + plating-wear match. Still want a frame that actually shows **41249**.
+
+---
+
+### LOT-019 — Bundy trombone
+
+**Assessed:** August 13, 2026 · **Serial:** **678064 ✅** · **Folder:** `LOT-019_Bundy-trombone/`
+
+| # | Filename | Shows | Notes |
+|:-:|---|---|---|
+| — | `1000033786.jpg` | Named in sale record | **Not on disk** — `1000######` export |
+| — | `1000033787.jpg` | Named in sale record | **Not on disk** |
+
+**Status:** No recoverable cluster in `intrument-pics/`. Search range tried: all Aug 6 PXL files (saxes/clarinets/flutes only).
+
+---
+
+### LOT-020 — Buescher True Tone 393 euphonium (fleet **MPR-062**)
+
+**Assessed:** August 13 / 17, 2026 · **Serial:** **330366 ✅** in inventory · **Folder:** stays `MPR-062` until a LOT folder exists
+
+August 15 13:44–13:59 (`PXL_20260815_134452237`–`135947155`, 20 files) is a **mixed** silver 3-valve session.
+
+| # | Filename | Shows | Notes |
+|:-:|---|---|---|
+| — | `PXL_20260815_135109889.jpg` | Valve casings: **159676** + PATENTED | **MPR-045 Conn Eb tuba — not this LOT** |
+| — | `PXL_20260815_135157575.jpg` | **159676** again | **MPR-045** |
+| — | `PXL_20260815_134737382.jpg` | Bell crest **C.G. CONN LTD. / Elkhart Ind.** | **MPR-045** |
+| — | `PXL_20260815_134543573.jpg`, `134605865.jpg` | **Marcinkiewicz** mouthpiece | **MPR-045** package |
+
+**Status:** Partial. Buescher **330366** was **not** independently confirmed in this pass — automated serial reads on `PXL_20260815_134632204.jpg` (13:46:32) disagreed. Do not publish unmarked overviews from this cluster. Bach 12C (recorded with LOT-020) does not appear here.
+
+---
+
+### LOT-021 — Bach 1530 trumpet (fleet **MPR-075**)
+
+**Assessed:** August 15 / 17, 2026 · **Serial:** **E91664 ✅** · **Folder:** `MPR-075_Bach-1530/`
+
+Already indexed under **MPR-075**: `PXL_20260815_165739969.jpg`, `165755510`, `165808170` (serial **E91664**), `165814004`, `165837183`, `165841055`.
+
+**Status:** ID-complete. Search LOT-021 → use MPR-075.
+
+---
+
+### Unassigned / not-sale (same dumps)
+
+| Cluster | Files | What it is |
+|---|---|---|
+| Aug 6 13:41 | `PXL_20260806_134111611.jpg`–`134151877.jpg` (4) | Complete Bb clarinet layout; **no brand/serial** |
+| Aug 6 14:08 | `PXL_20260806_140323214.jpg` | Isolated sax bow, missing pearl — not assigned |
+| Aug 6 14:48 | `PXL_20260806_144827355.jpg`–`144936472.jpg` (6) | **A. Fontaine / PARIS** clarinet (instrument, not the LOT-007 case). Not a sale LOT; no MPR ID |
+| Aug 6 16:01–16:04 | `160114371`, `160234714`, `160418056` | Neck straps; loose Vito MP; labeled-case group shot |
+| Aug 13 13:57–14:00 | `135718668.MP`, `135742759.MP`, `140009606` | **MPR-038** Boosey & Hawkes **226730** + S.M.L. Paris MP |
+| Aug 13 13:58 | `135833818`, `135840108` | Signet Special wood clarinet — fleet, not a sale LOT |
+| Aug 13 17:12–17:19 | `171224929`, `171531283`, `171557321`, `171934062` | **MNT-001** Signet Selmer USA bassoon + bocals |
+| Aug 13 17:26–17:31 | `172622389`, `172815087.MP`, `173140830` | **MPR-082** Yamaha clarinet / **MNT-002** Yamaha 450N + Vandoren B45 |
+
+---
+
 
 ## Index maintenance
 

@@ -102,10 +102,10 @@ Former fleet IDs stay on the MPR row in `inventory.md` (Location **For Sale**) u
 1. **Listing preparation** — remove program identity; make serial, fault, case, and included-accessory shots before publishing every LOT
 2. **Repair quotes / repair-versus-as-is decisions** — LOT-005 bridge key, LOT-008 missing keys, LOT-016 trill pad. Current prices deliberately assume as-is sale.
 3. **LOT-012 gap inspection** — if bell/lower-joint mismatch is confirmed, relist as project and revisit the $40/$25 price
-4. **Serial verifies** — LOT-005 (N.1673 vs N.1573); LOT-006 (1324589 vs 1324859); LOT-003 serial stamp confirm; LOT-016 physical serial photo
+4. **Serial verifies** — LOT-005 (N.1673 vs N.1573 — Masson photos exist, stamp unread); LOT-006 (1324589 vs 1324859 — Bundy 577 photos exist, stamp unread); LOT-003 serial stamp still ⚠️; LOT-016 Artley 18-0 stamp is `PXL_20260806_154344451.jpg` — human-read 252-817 vs 25287 before promoting ✋→✅; LOT-018 still wants a **41249** stamp frame
 5. **Provenance** — source + proceeds budget line for all LOTs
-6. **Photo index backfill** — LOT-001, 004–015 filenames; LOT-019 phone pics into dump; flute Aug 6 `PXL_…` clusters from Aug 13 summary
+6. **Photo index backfill** — Aug 18 pass indexed LOT-001, 003–018, 021 from `intrument-pics/`. **Still open:** LOT-019 `1000######` export; LOT-020 human confirm of Buescher **330366** in the Aug 15 13:44–13:59 cluster (mixed with MPR-045 **159676**); crop named tag on LOT-003 `164216425`
 
 ---
 
-Last session: August 17, 2026 (LOT-020 Buescher / LOT-021 Bach 1530 added; all-sale pricing pass)
+Last session: August 18, 2026 (photo-index backfill from `intrument-pics/`; pricing unchanged)
