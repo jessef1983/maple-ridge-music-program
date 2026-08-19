@@ -4,7 +4,20 @@
 **Purpose:** Durable index of intake/assessment photos for fleet instruments (`MPR-###`) and sale-pipeline items (`LOT-###`). Cross-reference against `inventory.md`, `assignment.md`, and `sale-inventory.md`.  
 **Naming convention for folders:** `MPR-###_Brand-Model` or `LOT-###_Brand-Model` (no holder name — holders change)
 
-**Last reconciled:** August 17, 2026
+**Last reconciled:** August 18, 2026 (full disk audit — see `landing-zone/photo-index-audit.md`)
+
+> **Read this before concluding an instrument has no photos.**
+>
+> 1. **This index covered only 27% of `intrument-pics/` before the Aug 18 audit.** 695 files on
+>    disk, 507 of them uncatalogued. An absent entry here is **not** evidence that photos don't
+>    exist — it is far more often evidence that nobody indexed them.
+> 2. **Fleet→LOT items stay filed under the old `MPR-###`.** LOT-020 is under **MPR-062**,
+>    LOT-021 under **MPR-075**. Searching the LOT number returns nothing and reads as "no
+>    photos." See `sale-inventory.md` §"Euphonium / Trumpet (fleet → LOT)".
+> 3. **Filename suffixes differ between docs and disk.** Session summaries write
+>    `154330926_MP` and `155229537_NIGHT`; the files are `.MP.jpg` and `.NIGHT.jpg`. Match on
+>    the 9-digit timestamp, never on the whole string.
+> 4. **39 files are duplicates** (`~2`, `~3`, `" - Copy"`). 695 files, 656 unique photos.
 
 ### Coverage checklist
 
@@ -12,11 +25,29 @@
 |---|---|---|
 | Fleet onboardings with photo sessions (MPR-023, 036, 063–086) | ✅ sections below | — |
 | MPR-019 accessory (tuba mouthpiece in shipment) | ✅ | Maker ID still open |
-| Sale flutes LOT-016–018 | ✅ | LOT-016 needs serial-stamp photo |
-| Sale Camelot LOT-003 | ✅ partial | 2 filenames indexed; serial stamp still pending |
+| Sale flutes LOT-016, 017 | ✅ **19 files recovered Aug 18** | Backfilled from the Aug 13 sale-inventory session summary; all verified on disk |
+| Sale flute LOT-018 | ◐ cluster known, filenames not | Session summary records "vintage case photos + detail shots" in the Aug 6 shoot; specific frames never listed |
+| Sale Camelot LOT-003 | ✅ partial | 2 filenames indexed; serial stamp still pending. ⚠️ **`164216425.jpg` shows a named tag — crop before any public use** |
 | Sale saxophones LOT-001, 004 | ❌ stubs only | Original Drive filenames never copied into this file |
-| Sale clarinets LOT-005–015 | ❌ stubs only | LOT-014/015 were indexed in an Aug 13 CE session but filenames were not preserved into this durable index; LOT-011–013 serials confirmed, filenames never logged |
-| Sale trombone LOT-019 | ❌ named only | `1000033786/3787` not in local dump yet |
+| Sale clarinets LOT-005–015 | ❌ stubs only — **but photos exist** | LOT-009's serial shot is `PXL_20260813_132015924.MP.jpg`, on disk, found Aug 18. LOT-011–013 identified from the Aug 6 Drive batch (timestamps `145515`–`152057`); LOT-014/015 were fully indexed in an Aug 13 CE session **whose filename list was never committed anywhere in this repo** |
+| Sale trombone LOT-019 | ❌ named only | `1000033786/3787` — part of the missing `1000######` export |
+| Sale euphonium LOT-020 | ❌ no entry under **either** ID | Checked Aug 18: nothing under `LOT-020` *or* its fleet ID `MPR-062`. Onboarded Aug 13 "on-hand (band room)" with serial **330366 ✅ verified**, which normally implies a serial photo — so look in the 438 orphans before reshooting |
+
+### The missing `1000######.jpg` export
+
+Seven referenced files are absent from disk, and all seven are from **one non-Pixel device
+whose photos were never exported** — not seven separate oversights:
+
+| File | Belongs to |
+|---|---|
+| `1000033786.jpg`, `1000033787.jpg` | LOT-019 Bundy trombone |
+| `1000034337/8/9.jpg` | LOT-017 / 016 / 018 play-test note pages |
+| `1000034352.jpg`, `1000034353.jpg` | **MPR-036** Olds trombone serial **798865** |
+
+A further **19 `PXL_20260817_*` files** referenced by the two unmerged artifacts in `/updates/`
+are also not on disk — a second un-exported batch, from Aug 17.
+
+**Locating that device closes all of these at once.** Highest-leverage action outstanding.
 
 ---
 
@@ -336,7 +367,7 @@
 | # | Filename | Shows | Notes |
 |:-:|---|---|---|
 | 1 | `PXL_20260816_200640613.jpg` | Stand and lug assembly | Drum 1 cluster |
-| 2 | `PXL_20260816_200648503.jpg` | Full drum overview | Pedal, lugs, bearing edge; head intact |
+| 2 | `PXL_20260816_200648503.jpg` | Full drum overview | ⚠️ **This filename is not on disk.** `PXL_20260816_200653734.jpg` *is* on disk, unindexed, and sits between frame 1 and this entry. Almost certainly a mistyped timestamp rather than a lost photo — confirm and correct |
 | 3 | `PXL_20260816_200653734.jpg` | Pedal housing cast | **WFL SYMPHONY MODEL / PAT. PEND.** — gauge mount blank (no gauge) |
 | 4 | `PXL_20260816_200715323.jpg` | Kettle underside plaque | **W.F.L. SYMPHONY MODEL · W.F.L. DRUM CO · CHICAGO USA · PAT. PEND.** |
 
@@ -395,11 +426,24 @@
 
 **Assessed:** August 15, 2026 · **Folder:** `LOT-016_Artley-18-0/` (under `instrument-onboarding/LOT-flutes/`)
 
-| # | Filename | Shows | Notes |
-|:-:|---|---|---|
-| 1 | `1000034338.jpg` | Play-test handwritten notes, full page | Advanced student assessment |
+**Photo shoot:** August 6, 2026, 15:41–15:45 — staged white-backdrop session. **8 frames,
+all verified on disk Aug 18.** Recovered from `session-summary-2026-08-13-sale-inventory.md`;
+these were never in this index despite existing since Aug 6.
 
-**Outstanding:** Serial stamp photo still needed (hand notes: **252-817**).
+| # | Filename | Notes |
+|:-:|---|---|
+| 1 | `PXL_20260806_154104731.jpg` | |
+| 2 | `PXL_20260806_154114604.jpg` | |
+| 3 | `PXL_20260806_154136580.jpg` | |
+| 4 | `PXL_20260806_154232547.jpg` | |
+| 5 | `PXL_20260806_154304636.jpg` | |
+| 6 | `PXL_20260806_154330926.MP.jpg` | summary writes this `154330926_MP` |
+| 7 | `PXL_20260806_154344451.jpg` | |
+| 8 | `PXL_20260806_154512629.jpg` | |
+| — | `1000034338.jpg` | Play-test notes page — **not on disk**, see missing-export note above |
+
+**Outstanding:** Serial stamp photo still needed (hand notes: **252-817**) — confirm whether
+one of the 8 above already carries it before reshooting.
 
 ---
 
@@ -407,11 +451,25 @@
 
 **Assessed:** August 15–16, 2026 · **Folder:** `LOT-017_Armstrong-104/` (under `instrument-onboarding/LOT-flutes/`)
 
+**Photo shoot:** August 6, 2026, 15:52–15:55 — staged white-backdrop session. **11 frames,
+all verified on disk Aug 18.** Recovered from `session-summary-2026-08-13-sale-inventory.md`.
+
 | # | Filename | Shows | Notes |
 |:-:|---|---|---|
-| 1 | `1000034337.jpg` | Play-test handwritten notes, full page | Advanced student assessment |
-| 2 | `PXL_20260816_025505855.jpg` | Main body serial stamp | **Model: 104 · Production number: G9114** |
-| 3 | `PXL_20260816_025443940.jpg` | Footjoint serial stamp | **Production number: G9116** |
+| 1 | `PXL_20260816_025505855.jpg` | Main body serial stamp | **Model: 104 · Production number: G9114** |
+| 2 | `PXL_20260816_025443940.jpg` | Footjoint serial stamp | **Production number: G9116** |
+| 3 | `PXL_20260806_155229537.NIGHT.jpg` | Aug 6 shoot | summary writes `155229537_NIGHT` |
+| 4 | `PXL_20260806_155235363.NIGHT.jpg` | Aug 6 shoot | summary writes `155235363_NIGHT` |
+| 5 | `PXL_20260806_155317572.jpg` | Aug 6 shoot | |
+| 6 | `PXL_20260806_155335225.jpg` | Aug 6 shoot | |
+| 7 | `PXL_20260806_155403724.jpg` | Aug 6 shoot | |
+| 8 | `PXL_20260806_155419134.jpg` | Aug 6 shoot | |
+| 9 | `PXL_20260806_155423018.jpg` | Aug 6 shoot | |
+| 10 | `PXL_20260806_155431561.jpg` | Aug 6 shoot | |
+| 11 | `PXL_20260806_155437896.MP.jpg` | Aug 6 shoot | summary writes `155437896_MP` |
+| 12 | `PXL_20260806_155459413.jpg` | Aug 6 shoot | |
+| 13 | `PXL_20260806_155511818.jpg` | Aug 6 shoot | |
+| — | `1000034337.jpg` | Play-test notes page | **Not on disk** — missing export |
 
 ---
 
@@ -419,9 +477,37 @@
 
 **Assessed:** August 15, 2026 · **Folder:** `LOT-018_Reynolds-R11C/` (under `instrument-onboarding/LOT-flutes/`)
 
+**Photo shoot:** August 6, 2026 — `session-summary-2026-08-13-sale-inventory.md` records
+"vintage case photos + detail shots included" but **lists no filenames**. The frames are
+almost certainly in the Aug 6 15:xx staged block alongside LOT-016 (15:41–15:45) and LOT-017
+(15:52–15:55). **Identify and list them before treating this LOT as unphotographed.**
+
 | # | Filename | Shows | Notes |
 |:-:|---|---|---|
-| 1 | `1000034339.jpg` | Play-test handwritten notes, full page | Includes margin note “Tenons are good” |
+| — | `1000034339.jpg` | Play-test handwritten notes, full page | **Not on disk** — missing export. Margin note “Tenons are good” |
+
+---
+
+### LOT-009 — Vito Reso-Tone (clarinet)
+
+**Found during the Aug 18 audit**, not from any prior index — the coverage table called all
+sale clarinets "stubs only" while this was sitting in `intrument-pics/`.
+
+| # | Filename | Shows | Notes |
+|:-:|---|---|---|
+| 1 | `PXL_20260813_132015924.MP.jpg` | Upper joint serial stamp | **C02823-7212** clearly legible, matches `sale-inventory.md` |
+
+**Implication:** the other clarinet LOTs very likely have on-disk photos too. The Aug 13
+13:20–14:00 block and the Aug 6 `145515`–`152057` Drive batch are the places to look.
+
+---
+
+### LOT-UNKNOWN-A — unidentified clarinet
+
+Recorded in `session-summary-lots-011-013.md`: a 4-frame mini-cluster, timestamps
+`145811167`–`145847697` (Aug 6), originally mislabelled "LOT-012 (tentative)" and relabelled
+to avoid collision. No visible serial or engraving in those 4 frames. Candidates from the hand
+log: **Artley 175 / 249004** (LOT-014) or **Bundy 225852** (LOT-015). Unresolved.
 
 ---
 
