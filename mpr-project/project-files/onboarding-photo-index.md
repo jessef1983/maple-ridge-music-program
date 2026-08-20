@@ -4,7 +4,7 @@
 **Purpose:** Durable index of intake/assessment photos for fleet instruments (`MPR-###`) and sale-pipeline items (`LOT-###`). Cross-reference against `inventory.md`, `assignment.md`, and `sale-inventory.md`.  
 **Naming convention for folders:** `MPR-###_Brand-Model` or `LOT-###_Brand-Model` (no holder name — holders change)
 
-**Last reconciled:** August 18, 2026 (full disk audit — see `landing-zone/photo-index-audit.md`)
+**Last reconciled:** August 19, 2026 (Aug 19 intake + Aug 18 oboe merge; Aug 17 flute photos on disk)
 
 > **Read this before concluding an instrument has no photos.**
 >
@@ -23,14 +23,14 @@
 
 | Scope | Indexed here | Gap |
 |---|---|---|
-| Fleet onboardings with photo sessions (MPR-023, 026, 036, 063–087) | ✅ sections below | — |
+| Fleet onboardings with photo sessions (MPR-010, 023, 026, 027, 036, 063–092) | ✅ sections below | MPR-091/092 need full-body + play-test frames |
 | MPR-019 accessory (tuba mouthpiece in shipment) | ✅ | Maker ID still open |
 | Sale flutes LOT-016, 017 | ✅ Aug 6 + Aug 16 | LOT-016 serial stamp is on disk (`154344451`) — digit string still needs a human confirm before promoting ✋→✅. LOT-017 Aug 6 cluster was **wrong** in the Aug 18 recovery (those NIGHT/vintage-case frames are LOT-018); Aug 6 Armstrong shoot is `154719`–`155004` |
 | Sale flute LOT-018 | ✅ Aug 6 vintage Reynolds case | Serial **41249** is not readable in that cluster — keep the play-test ✅, still want a stamp photo |
 | Sale Camelot LOT-003 | ✅ Aug 6 + Aug 13 | Serial stamp still ⚠️. ⚠️ **`164216425.jpg` shows a named tag — crop before any public use** |
 | Sale saxophones LOT-001, 004 | ✅ Aug 6 | LOT-001 serial **400654** and LOT-004 serial **905114** both on disk |
 | Sale clarinets LOT-005–015 | ✅ Aug 6 (005/006 brand-only) | LOT-005 Masson and LOT-006 Bundy 577 identified; their serial stamps were **not** readable in this pass. LOT-007–015 have serial or unique-fault photos. LOT-014/015 filename list recovered from disk — the lost Aug 13 CE table is no longer blocking |
-| Sale trombone LOT-019 | ❌ named only | `1000033786/3787` — part of the missing `1000######` export |
+| Sale trombone LOT-019 | ✅ Aug 13 Pixel cluster | Brand/case/bell on disk (`174318443`–`174651883`). Original `1000033786/3787` still not exported |
 | Sale euphonium LOT-020 | ◐ mixed Aug 15 cluster | `PXL_20260815_134452`–`135947` is **two** silver 3-valves. Conn **159676** = fleet **MPR-045** (confirmed). Buescher **330366** was not independently confirmed this pass — do not use unmarked overviews as listing photos |
 | Sale trumpet LOT-021 | ✅ via **MPR-075** | Six Aug 15 frames already under the fleet ID |
 
@@ -39,16 +39,49 @@
 Seven referenced files are absent from disk, and all seven are from **one non-Pixel device
 whose photos were never exported** — not seven separate oversights:
 
-| File | Belongs to |
-|---|---|
-| `1000033786.jpg`, `1000033787.jpg` | LOT-019 Bundy trombone |
-| `1000034337/8/9.jpg` | LOT-017 / 016 / 018 play-test note pages |
-| `1000034352.jpg`, `1000034353.jpg` | **MPR-036** Olds trombone serial **798865** |
+| File | Belongs to | Date to search |
+|---|---|---|
+| `1000033786.jpg`, `1000033787.jpg` | LOT-019 Bundy trombone | **Thu Aug 13, 2026** — now also covered by Pixel shots the same day (see LOT-019 section) |
+| `1000034337/8/9.jpg` | LOT-017 / 016 / 018 play-test note pages | **Sun Aug 16, 2026** |
+| `1000034352.jpg`, `1000034353.jpg` | **MPR-036** Olds trombone serial **798865** | **Sun Aug 16, 2026** — Aug 13 Pixel set has brand/slide, not this serial stamp |
 
-A further **19 `PXL_20260817_*` files** referenced by the two unmerged artifacts in `/updates/`
-are also not on disk — a second un-exported batch, from Aug 17.
+**Aug 17 Pixel flute batch (re-exported 2026-08-19, second pass):** **MPR-026** Yamaha YFL-225S **11/11 on disk**. **MPR-087** Trevor James **8/8 on disk**. The `1000######` export is still a separate missing device.
 
-**Locating that device closes all of these at once.** Highest-leverage action outstanding.
+---
+
+## MPR-010 — Yamaha YTR-3335S (serial confirmation)
+
+**Session:** August 19, 2026  
+**Purpose:** Serial confirmation for existing assigned instrument (not new intake)  
+**Folder:** `MPR-010_Yamaha-YTR-3335S/`
+
+| # | Filename | Shows | Notes |
+|:-:|---|---|---|
+| 1 | `IMG_20260819_172159.jpg` | Serial stamp close-up, valve casing | Reads **YTR3335 / D 010199** — clean, fully legible. No "S" suffix physically engraved; silver-plate confirmed via purchase history and `model-reference.md` |
+| 2 | `IMG_20260819_172204.jpg` | Full case, open — complete outfit laid out | Silver-plate trumpet, two mouthpieces (mounted + spare), cleaning/maintenance kit, soft mute. Case foam in good condition |
+
+**Status:** Serial **010199 ✅**. Condition **Good**. Finish silver-plate (catalog `S`, not stamped on the bell).
+
+---
+
+## MPR-027 — Fox Model IV Bassoon
+
+**Session:** August 19, 2026 · **Folder:** `MPR-027_Fox-Bassoon/`
+
+| # | Filename | Shows | Notes |
+|:-:|---|---|---|
+| 1 | `PXL_20260819_214824232.jpg` | Bocal A, close-up stamp | **"LINTON"** with a shield/leaf mark — not a Fox stamp |
+| 2 | `PXL_20260819_214740462.jpg` | Bocal B, close-up stamp (marking #1 of 2) | **"☆ CVX ☆"** with a separate "2" nearby — same bocal as photo 5 |
+| 3 | `PXL_20260819_214809512.jpg` | Bocal A, full view in case | Cork-wrapped end, same bocal as photo 1 (Linton) |
+| 4 | `PXL_20260819_214720285.jpg` | Bocal B, full view in case | Cork-wrapped end, same bocal as photos 2 and 5 (Fox/CVX) |
+| 5 | `PXL_20260819_214751504.jpg` | Bocal B, close-up stamp (marking #2 of 2) | **"FOX PRODUCTS INDIANA USA"** — matching Fox bocal; "CVX 2" is a size/style code |
+| 6 | `PXL_20260819_214456034.jpg` | Boot joint bottom cap (brass bumper) | Serial **14649 ✅** |
+| 7 | `PXL_20260819_214113633.MP.jpg` | Boot joint side, oval Fox logo | Brand mark on the instrument body |
+| 8 | `PXL_20260819_214051737.jpg` | Full case overview | Wing, boot, bass/long joint, bell — all 4 body joints present |
+| 9 | `PXL_20260819_214101030.jpg` | Oval Fox logo, alternate crop | Duplicate of photo 7, legibility backup |
+| 10 | `PXL_20260819_214206273.jpg` | Tenon cork close-up, boot-to-bass joint | Cork wrap shows wear/patching — check at next service |
+
+**Status:** Fox **Model IV**, **1988**, polypropylene (factory lookup). Serial **14649 ✅**. Condition **Good**. Disk filenames use `.MP.jpg`.
 
 ---
 
@@ -60,19 +93,19 @@ are also not on disk — a second un-exported batch, from Aug 17.
 
 | # | Filename | Shows | Notes |
 |:-:|---|---|---|
-| 1 | `PXL_20260817_164042677.jpg` | Mouthpiece detail (silver band, "180" engraving) | Serial-region / headjoint detail |
-| 2 | `PXL_20260817_163819037.jpg` | Upper tube engraving | **YAMAHA**, **YFL225S**, NIPPON GAKKI CO., LTD, JAPAN ✅ |
-| 3 | `PXL_20260817_164024835.jpg` | Embouchure hole + upper body | Condition assessment |
-| 4 | `PXL_20260817_163759439.jpg` | Full upper tube | Serial region |
-| 5 | `PXL_20260817_163755519_MP.jpg` | Full upper tube, alternate angle | Condition overview |
-| 6 | `PXL_20260817_163814543.jpg` | Lower tube engraving | YAMAHA, YFL225S, NIPPON GAKKI, JAPAN |
-| 7 | `PXL_20260817_163708495.jpg` | Retaining strap tag (form 095) | Condition indicators |
-| 8 | `PXL_20260817_163751979.jpg` | Retaining strap tag reverse | Handwritten service/condition notes |
-| 9 | `PXL_20260817_163714921.jpg` | Handwritten tag detail | Assessment reference |
-| 10 | `PXL_20260817_164019332_MP.jpg` | Full instrument in case | Red velvet case, good condition |
-| 11 | `PXL_20260817_163658030.jpg` | Case interior detail | Instrument seated, padding intact |
+| 1 | `PXL_20260817_164042677.jpg` | Mouthpiece detail (silver band, "180" engraving) | ✅ on disk |
+| 2 | `PXL_20260817_163819037.jpg` | Upper tube engraving | **YAMAHA / YFL225S** — ✅ on disk (second export) |
+| 3 | `PXL_20260817_164024835.jpg` | Embouchure hole + upper body | ✅ on disk |
+| 4 | `PXL_20260817_163759439.jpg` | Full upper tube | ✅ on disk (second export) |
+| 5 | `PXL_20260817_163755519.MP.jpg` | Full upper tube, alternate angle | ✅ on disk (second export) |
+| 6 | `PXL_20260817_163814543.jpg` | Lower tube engraving | ✅ on disk |
+| 7 | `PXL_20260817_163708495.jpg` | Retaining strap tag (form 095) | ✅ on disk |
+| 8 | `PXL_20260817_163751979.jpg` | Retaining strap tag reverse | ✅ on disk (second export) |
+| 9 | `PXL_20260817_163714921.jpg` | Handwritten tag detail | ✅ on disk |
+| 10 | `PXL_20260817_164019332.MP.jpg` | Full instrument in case | ✅ on disk (second export) |
+| 11 | `PXL_20260817_163658030.jpg` | Case interior detail | ✅ on disk |
 
-**Status:** Yamaha YFL-225S; serial **033480 ✅**; Japan-stamped (pre-March 2012). Condition **Excellent**. SVC-FLT-003 closed (Appleseed, April 2026). Ready for assignment.
+**Status:** Yamaha YFL-225S; serial **033480 ✅**; Japan-stamped (pre-March 2012). Condition **Excellent**. SVC-FLT-003 closed. **Photos 11/11 on disk** after the 2026-08-19 second `Flutes` export. Disk uses `.MP.jpg`.
 
 ---
 
@@ -291,10 +324,18 @@ are also not on disk — a second un-exported batch, from Aug 17.
 
 | # | Filename | Shows | Notes |
 |:-:|---|---|---|
-| 1 | `1000034352.jpg` | Serial number close-up, ferrule | **798865** ✅ clearly visible on the ferrule band below the tuning slide knob |
-| 2 | `1000034353.jpg` | Serial number detail, second angle | Confirms read — last four digits **3865** legible in close crop |
+| 1 | `1000034352.jpg` | Serial number close-up, ferrule | **798865** ✅ — **not on disk** (`1000######`, shot **Aug 16**) |
+| 2 | `1000034353.jpg` | Serial number detail, second angle | **not on disk** |
+| 3 | `PXL_20260813_175655889.jpg` | Olds badge on tuning-slide brace | ✅ on disk; **Thu Aug 13** Pixel |
+| 4 | `PXL_20260813_180013025.jpg` | Outer slide, water key | Cork still missing (SVC-TRB-001) |
+| 5 | `PXL_20260813_180034012.jpg` | Slide braces / ferrules | |
+| 6 | `PXL_20260813_180040884.jpg` | Slide joint / knurled ring | |
+| 7 | `PXL_20260813_180047198.jpg` | Inner-slide braces | |
+| 8 | `PXL_20260813_180052475.jpg` | Slide collar / ferrule | Serial stamp not in this crop |
+| 9 | `PXL_20260813_180151877.jpg` | Olds badge, second angle | |
+| 10 | `PXL_20260813_180243788.jpg` | Bell section | |
 
-**Status:** Serial **798865 ✅**; water key cork still missing (SVC-TRB-001). Holder: Emmanuel Martinie-Eiler (ASGN-032).
+**Status:** Brand **Olds** confirmed on disk (Aug 13 Pixel). Serial **798865 ✅** still only in the missing Aug 16 `1000######` pair. Holder: Emmanuel Martinie-Eiler (ASGN-032).
 
 ---
 
@@ -442,15 +483,136 @@ are also not on disk — a second un-exported batch, from Aug 17.
 | # | Filename | Shows | Notes |
 |:-:|---|---|---|
 | 1 | `PXL_20260817_164701662.jpg` | Headjoint engraving | “TREVOR JAMES” + “PRIVILEGE”; serial **P54427 ✅** |
-| 2 | `PXL_20260817_164703953_MP.jpg` | Body engraving (full) | “TREVOR” · “JAMES” · “PRIVILEGE” · serial **P54427 ✅** |
-| 3 | `PXL_20260817_164723743_MP.jpg` | Body engraving (lower) | “JAMES” · “PRIVILEGE” · serial **P54427 ✅** |
+| 2 | `PXL_20260817_164703953.MP.jpg` | Body engraving (full) | “TREVOR” · “JAMES” · “PRIVILEGE” · serial **P54427 ✅** |
+| 3 | `PXL_20260817_164723743.MP.jpg` | Body engraving (lower) | “JAMES” · “PRIVILEGE” · serial **P54427 ✅** |
 | 4 | `PXL_20260817_164643037.jpg` | Repair tag #064 front | Jesse Frase, 4/18, “Flute - Trevor James”, Work: “P/C” |
-| 5 | `PXL_20260817_164706503_MP.jpg` | Foot-joint engraving | Serial **P54427 ✅** |
+| 5 | `PXL_20260817_164706503.MP.jpg` | Foot-joint engraving | Serial **P54427 ✅** |
 | 6 | `PXL_20260817_164633722.jpg` | Flute in case, open lid | Black foam interior, two-flute case |
 | 7 | `PXL_20260817_164659040.jpg` | Headjoint close-up | “TREVOR” · “PRIVILEGE” · serial stamp |
 | 8 | `PXL_20260817_164638362.jpg` | Repair tag #064 back | “keys adjusted + oiled / pods sealed / key corks replaced” / $100 |
 
-**Status:** Trevor James Privilege III; serial **P54427 ✅**; Good. SVC-FLT-002 closed (Appleseed P/C $100, tag 064). Play-test and permanent tag still outstanding.
+**Status:** Trevor James Privilege III; serial **P54427 ✅**; Good. SVC-FLT-002 closed (Appleseed P/C $100, tag 064). **All 8 frames on disk** after the 2026-08-19 `Flutes` re-export (disk uses `.MP.jpg`). Play-test and permanent tag still outstanding.
+
+---
+
+## MPR-088 — Penzel-Müller A Clarinet
+
+**Onboarded:** August 19, 2026  
+**Source:** On-hand (back-room wind stock; ownership assumed program-owned)  
+**Folder:** `MPR-088_Penzel-Mueller-A-Clarinet/`  
+**CE placeholder:** `MPR-TBD` — assigned **MPR-088** at merge
+
+| Filename | Shows |
+|---|---|
+| `PXL_20260819_220901982.jpg` | Bell socket, serial "7580" stamped, tenon cork (worn/split), rocker-arm key hardware |
+| `PXL_20260819_220804102.jpg` | Bell socket serial "7580," second angle, cork detail |
+| `PXL_20260819_220753488.jpg` | Bell socket serial "7580," close-up, cork gaps/holes — **not in the Aug 19 dump received** |
+| `PXL_20260819_220858384.MP.jpg` | Bell socket serial "7580," wider angle showing key hardware and tenon ring |
+| `PXL_20260819_220422223.jpg` | Upper joint: eagle trademark, "A" pitch stamp, Penzel-Müller circular stamp, separate "L·P", register key, tenon cork |
+| `PXL_20260819_220335554.MP.jpg` | Upper joint: "L·P" stamp close-up, tenon cork detail |
+| `PXL_20260819_220508988.jpg` | Upper joint: "PENZEL MULLER & CO / NEW YORK" stamp |
+| `PXL_20260819_220300442.jpg` | Upper joint: full maker's mark — sharpest capture |
+| `PXL_20260819_220207705.jpg` | Full case interior: joints, bell, **mouthpiece + ligature + cap on the barrel** (lower right), Rico reed case, swab, disassembly card |
+| `PXL_20260819_220218988.jpg` | Case lid plaque: Lyons Band Instrument Co., Chicago |
+| `PXL_20260819_220324394.jpg` | Upper joint maker's mark (duplicate captures in the CE upload) |
+| `PXL_20260819_220506911.jpg` | Upper joint stamp, partial/blurry, key mechanism |
+| `PXL_20260819_220435520.jpg` | Upper joint stamp with case card in frame |
+| `PXL_20260819_220153977.jpg` | Case exterior, textured black covering, wooden handle |
+
+**Status:** Serial **7580 ✅**; Key of A confirmed. **Mouthpiece present** (on barrel, with ligature and cap) — CE “no mouthpiece” was wrong. Corks worn. Condition **Unknown**. Disk uses `.MP.jpg`. One CE filename (`220753488`) is missing from the dump.
+
+---
+
+## MPR-089 — Holton C-Melody Saxophone
+
+**Onboarded:** August 19, 2026  
+**Source:** On-hand (years; date unknown)  
+**Folder:** `MPR-089_Holton-CMelody/`  
+**CE placeholder:** `MPR-TBD` — assigned **MPR-089** at merge
+
+| # | Filename | Shows | Notes |
+|:-:|---|---|---|
+| 1 | `PXL_20260819_221921596.jpg` | Serial stamp, body tube near neck receiver | "C" above serial **17770**, "LP" below ✅ |
+| 2 | `PXL_20260819_221846273.jpg` | Bell engraving, angled | **Not in the Aug 19 dump received** |
+| 3 | `PXL_20260819_221906779.jpg` | Bell engraving, angled (different crop) | Same engraving as #2 |
+| 4 | `PXL_20260819_221737907.jpg` | Case interior latch-side tag | Brass tag: "PLATT MUSIC CO. LOS ANGELES" |
+| 5 | `PXL_20260819_221710215.jpg` | Case exterior medallion | Frank Holton & Co. Elkhorn Wis., elk-head trademark |
+| 6 | `PXL_20260819_221748026.jpg` | Neck/crook in case compartment | Silver neck with cork tenon |
+| 7 | `PXL_20260819_221856177.jpg` | Bell engraving, straight-on | **Not in the Aug 19 dump received** |
+| 8 | `PXL_20260819_221658612.jpg` | Case exterior, full | Black hardshell, worn corners, intact leather handle |
+| 9 | `PXL_20260819_221808231.jpg` | Accessory compartment | Gray mouthpiece case (closed in photo); **mouthpiece confirmed present** (Jesse, Aug 19). Yamaha cleaning rod, brush, cloth. No neck strap |
+| 10 | `PXL_20260819_221833557.jpg` | Bell engraving, close crop | Confirms "MADE BY Frank Holton ELKHORN WIS." |
+| 11 | `PXL_20260819_221850623.jpg` | Bell engraving, close crop (second read) | Same engraving |
+| 12 | `PXL_20260819_221729634.jpg` | Full instrument in case, overview | Silver-plate body and keywork; neck stored separately |
+
+**Status:** Serial **17770 ✅**; C-melody confirmed. Mouthpiece **present** (Jesse). Condition **Excellent** (visual, not bench-tested). Two CE filenames (`221846273`, `221856177`) missing from dump.
+
+---
+
+## MPR-090 — Yamaha YBS-52 Baritone Saxophone
+
+**Onboarded:** August 19, 2026  
+**Source:** On-hand (reported acquired 2015, previously untracked in the closet)  
+**Folder:** `MPR-090_Yamaha-YBS-52/`  
+**CE placeholder:** `MPR-TBD` — assigned **MPR-090** at merge
+
+| # | Filename | Shows | Notes |
+|:-:|---|---|---|
+| 1 | `PXL_20260819_222732819.jpg` | Body/upper stack, Yamaha medallion | Lacquer finish, no visible dents |
+| 2 | `PXL_20260819_222713935.jpg` | Full case, open, overhead | Body, neck, mouthpiece, neck strap, reed case. Case label "Alto/Bari Sax" |
+| 3 | `PXL_20260819_222650964.jpg` | Yellow permanent asset tag, close-up | "Yamaha YBS-52 … purchase value: $3500 / serviced 05/15 KB" |
+| 4 | `PXL_20260819_222728025.jpg` | Bell engraving close-up | "YAMAHA — ESTABLISHED IN 1887 — JAPAN" |
+| 5 | `PXL_20260819_222834941.jpg` | Bow/neck-brace, low-A mechanism | No dents or solder repairs visible |
+| 6 | `PXL_20260819_222805270.MP.jpg` | Serial stamp close-up, body tube | **YAMAHA YBS-52 / 020945** ✅ |
+
+**Status:** Yamaha YBS-52; serial **020945 ✅**; Japan; lacquer. Condition **Excellent** (play-tested). Disk uses `.MP.jpg`.
+
+---
+
+## MPR-091 — Platz Oboe
+
+**Onboarded:** August 18, 2026 (merged Aug 19)  
+**Source:** On-hand (storage room; years)  
+**Folder:** `MPR-091_Platz-Oboe/`  
+**CE placeholder:** `MPR-TBD` — assigned **MPR-091** at merge
+
+| Filename | Shows | Status |
+|---|---|---|
+| `PXL_20260818_113655607.jpg` | Case exterior, closed, black leather | ✅ |
+| `PXL_20260818_113708356.jpg` | Case interior, three pieces, yellow lining, swab/reed case | ✅ |
+| `PXL_20260818_113715944.jpg` | Same case interior, alternate angle | ✅ |
+| `PXL_20260818_113744635.jpg` | Bell tenon, PLATZ medallion | ✅ |
+| `PXL_20260818_113824689.jpg` | Bell tenon, PLATZ medallion, wider crop | ✅ |
+| `PXL_20260818_113832108.jpg` | Upper joint, serial stamp area | **1520 ✅** Jesse's read (stamp worn but confirmed) |
+| `PXL_20260818_113844385.jpg` | Upper joint serial digits, extreme close-up | ✋ |
+| `PXL_20260818_113853632.jpg` | Upper joint, PLATZ text near key mechanism | ✅ |
+
+**Status:** Platz oboe; serial **1520 ✅** (Jesse, Aug 19). Condition **Unknown**. Play-test pending. Not MNT-001.
+
+---
+
+## MPR-092 — Signet 123 Oboe
+
+**Onboarded:** August 18, 2026 (merged Aug 19)  
+**Source:** On-hand (storage room)  
+**Folder:** `MPR-092_Signet-123/`  
+**CE ID:** session labeled **MPR-087** — remapped to **MPR-092**
+
+| Filename | Shows | Notes |
+|---|---|---|
+| `PXL_20260818_114238526.jpg` | Signet case lid plate | Original Signet hard case |
+| `PXL_20260818_114247788.jpg` | Barrel/upper joint | Serial region |
+| `PXL_20260818_114253853.jpg` | Joint / cork wrap | |
+| `PXL_20260818_114307310.jpg` | Serial / key hardware | |
+| `PXL_20260818_114310979.jpg` | Serial region, additional angle | |
+| `PXL_20260818_114415158.jpg` | Serial **M 31137** on corked joint | ✅ |
+| `PXL_20260818_114638258.jpg` | Serial **M 31137**, joint + cork tenon, keywork both sides | ✅ |
+| `PXL_20260818_114807896.jpg` | Serial **M 31137**, joint close-up with pad cup | ✅ |
+| `PXL_20260818_114826068.jpg` | Serial **M 31137**, sharpest read; cork tenon detail | ✅ |
+
+**Duplicates:** four `(1)`-suffixed copies on disk (`114415158`, `114638258`, `114807896`, `114826068`) are Pixel stack/download duplicates of the frames above — not extra shots.
+
+**Status:** Signet **123**; serial **M 31137 ✅** — both Jesse's reads (Aug 19). Condition **Unknown**, play-test pending. Photos are joint/serial close-ups plus case lid.
 
 ---
 
@@ -925,10 +1087,12 @@ The Aug 18 recovery put the **Reynolds vintage-case** NIGHT frames here. Those m
 
 | # | Filename | Shows | Notes |
 |:-:|---|---|---|
-| — | `1000033786.jpg` | Named in sale record | **Not on disk** — `1000######` export |
-| — | `1000033787.jpg` | Named in sale record | **Not on disk** |
+| 1 | `PXL_20260813_174318443.jpg` | Full case, open — bell + slide, Bundy counterweight | **Thu Aug 13** Pixel |
+| 2 | `PXL_20260813_174350130.jpg` | Bundy medallion on tuning-slide counterweight | |
+| 3 | `PXL_20260813_174651883.jpg` | Bell engraving | **BUNDY / DESIGNED BY VINCENT BACH / THE SELMER COMPANY / U.S.A.** |
+| — | `1000033786.jpg`, `1000033787.jpg` | Named in sale record | Still not on disk (`1000######`, same **Aug 13** sitting, different camera) |
 
-**Status:** No recoverable cluster in `intrument-pics/`. Search range tried: all Aug 6 PXL files (saxes/clarinets/flutes only).
+**Status:** Pixel cluster on disk. Serial **678064** still from the sale/play-test record, not from this Pixel set.
 
 ---
 

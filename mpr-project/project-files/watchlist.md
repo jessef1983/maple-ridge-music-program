@@ -1,7 +1,7 @@
 # Purchase Watchlist
 
 **Maple Ridge School** · Ulster Park, NY
-**Last updated:** August 12, 2026
+**Last updated:** August 19, 2026
 **Numbering:** `WATCH-###`, sequential, never reused.
 
 ---
@@ -26,11 +26,8 @@ Candidate listings under evaluation, in transit, or closed out. **A `WATCH-###` 
 | WATCH | Instrument | Model | Seller | Item | Ship | Landed | Stage | Return | Notes |
 |:---:|---|---|---|---:|---:|---:|:---:|:---:|---|
 | WATCH-001 | Euphonium | Yamaha YEP-321S | rick_maggie (eBay) | `$629.00` | `$166.00` | `$858.60` | Landed | — | Final sale, no return. → **MPR-019**. Intake inspection outstanding |
-| WATCH-002 | Euphonium | Yamaha YEP-201S | musiqueweb | `$595.00` | `$58.00` | `$705.24` | Landed | ⏰ **Sep 4 2026** | → **MPR-020**. Returnable. Compare against MPR-019; loser goes back |
-| WATCH-003 | Trumpet | Yamaha YTR-3325S | yokamonmarket (eBay) | `$569.00` | `$80.00` | `$700.92` | In transit | — | → **MPR-021**. Intended for an incoming 5th/7th grader |
-| WATCH-004 | Trumpet | Nikkan YTR-334S | yokamonmarket (eBay) | `$399.00` | `$60.00` | `$495.72` | In transit | — | → **MPR-022**. Pre-1984 three-digit, outside modern parts kits |
-
-**Count backwards from September 4.** A return needs MPR-020 assessed, packed and moving several days ahead of the date — not on it.
+| WATCH-003 | Trumpet | Yamaha YTR-3325S | yokamonmarket (eBay) | `$569.00` | `$80.00` | `$700.92` | Landed | — | → **MPR-021**. Intended for an incoming 5th/7th grader |
+| WATCH-004 | Trumpet | Yamaha YTR-334S (listed as Nikkan; corrected — genuine Yamaha, 1977–82 vintage) | yokamonmarket (eBay) | `$399.00` | `$60.00` | `$495.72` | Landed | — | → **MPR-022**. Pre-1984 three-digit, outside modern parts kits |
 
 ---
 
@@ -38,6 +35,7 @@ Candidate listings under evaluation, in transit, or closed out. **A `WATCH-###` 
 
 | WATCH | Instrument | Model | Outcome | Closed at | Lesson |
 |:---:|---|---|---|---:|---|
+| WATCH-002 | Euphonium | Yamaha YEP-201S | Returned to seller within window (musiqueweb) — listed as brass-shop cleaned, valves filthy on inspection; not needed once MPR-019 filled the slot | `$705.24` (refunded) | MPR ID retired (MPR-020). Verify "professionally cleaned" claims against inspection, even on a returnable listing |
 | — | Euphonium | Yamaha YEP-321S | **Lost** | `$590.00` | Bid $500 as a probe against a true $600 ceiling. The proxy system only ever bids the minimum needed to hold the lead — entering the real maximum would have won at $600 or less. Probing loses auctions you'd have won |
 
 ---

@@ -1,7 +1,7 @@
 # Student Roster
  
 **Maple Ridge School** · Ulster Park, NY  
-**Last updated:** August 10, 2026  
+**Last updated:** August 19, 2026  
 **Annual review date:** August 1 (before school year)
  
 ---
@@ -57,8 +57,8 @@
  
 | Name | Last Name | Status | Instrument | MPR |
 |---|---|---|---|:---:|
-| Franklin | Nelson | Active | Alto Sax | — |
-| Evan | Barton | Active | Bassoon | — |
+| Franklin | Nelson | Active | Alto Sax | MPR-028 |
+| Evan | Barton | Active | Bassoon | MPR-027 |
 | Jessica | Horning | Active | Violin | — |
 | Dina | Zimmermann | Active | — | — |
 | Janice | Meier | Active | Trumpet | MPR-006 |
@@ -76,7 +76,7 @@
 | Sheldon | Mow | Active | — | — |
 | Megan | Loewenthal | Active | Cello | — |
 | Simon | Martinie-Eiler | Active | — | — |
-| Tyler | Frase | Active | Euphonium | MPR-013 |
+| Tyler | Frase | Active | Euphonium | MPR-019 |
  
 ### 8th Grade (Year 7)
 *7th graders from last year, bumped to 8th.*
@@ -85,28 +85,11 @@
 |---|---|---|---|:---:|
 | Eva | Zimmermann | Active | — | — |
 | Connor | Bazeley | Active | Trumpet | MPR-011 |
-| Sean | Bazeley | Active | Drums | MPR-009 |
+| Sean | Bazeley | Active | — | — |
 | Colleen | Rimes | Active | — | — |
 | Myles | Wipf | Active | Violin | — |
 | Giana | Loewenthal | Active | Viola | — |
-| Nigel | King | Active | French Horn | — |
- 
-### 9th Grade (Year 8)
-*8th graders from last year, bumped to 9th (middle school).*
- 
-| Name | Last Name | Status | Instrument | MPR |
-|---|---|---|---|:---:|
-| Darron | Bazeley | Active | — | — |
-| Sara | Meier | Active | — | — |
-| Dayna | Mathis | Active | — | — |
-| Davis | Loewenthal | Active | Tuba | — |
-| Cedric | Nelson | Active | — | — |
-| Baxter | Mow | Active | Alto Sax | — |
-| Tara | Huleatt | Active | — | — |
-| Anita | Bazeley | Active | Flute | MPR-001 |
-| Dylan | Barton | Active | — | — |
- 
----
+| Nigel | King | Active | French Horn | MPR-030 |
  
 ## High School (9th–12th grade)
  
@@ -118,9 +101,9 @@
 | Darron | Bazeley | Active | — | — | Bump from 8th MS |
 | Sara | Meier | Active | — | — | Bump from 8th MS |
 | Dayna | Mathis | Active | — | — | Bump from 8th MS |
-| Davis | Loewenthal | Active | Tuba | — | Bump from 8th MS |
+| Davis | Loewenthal | Active | Tuba | MPR-048 | Bump from 8th MS |
 | Cedric | Nelson | Active | — | — | Bump from 8th MS |
-| Baxter | Mow | Active | Alto Sax | — | Bump from 8th MS |
+| Baxter | Mow | Active | Alto Sax | MPR-029 | Bump from 8th MS |
 | Tara | Huleatt | Active | — | — | Bump from 8th MS |
 | Anita | Bazeley | Active | Flute | MPR-001 | Bump from 8th MS; sibling: Connor, Sean |
 | Dylan | Barton | Active | — | — | Bump from 8th MS |
@@ -180,19 +163,18 @@
 | 6th | 5 | 9 |
 | 7th | 6 | 5 |
 | 8th | 7 | 7 |
-| 9th (MS) | 8 | 9 |
 | HS 9th | 8 (transfer) | 9 |
 | HS 10th | 9 | 9 |
 | HS 11th | 10 | 8 |
 | HS 12th | 11 (senior) | 7 |
  
-**Total:** 83 students
+**Total:** 74 students
  
 ---
  
 ## Notes
  
-- **MS to HS transition:** 9th graders move from middle school to high school structure; the 2nd table shows them as HS 9th
+- **MS to HS transition:** 9th graders move from middle school to high school structure and are listed once under HS 9th
 - **Instruments:** Most of middle school (2nd–8th) and all of HS have — (TBD or not yet recorded); the known instruments (Flute, Trumpet, etc.) are carried over from your existing assignments
 - **Familiar names across grades:** Mow, Bazeley, Loewenthal, Horning, Huleatt, Wipf, Frase, Woolston appear in multiple cohorts — likely siblings progressing together
 - **Annual update:** Each August 1, bump all grades by 1, add new 2nd graders, flag 9th grade for HS and 12th for graduation

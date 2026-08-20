@@ -58,5 +58,15 @@ Records every tag print event, both kinds:
 | MPR-038 | Permanent | 2026-08-16 | Boosey & Hawkes clarinet, storage (photo-confirmed) |
 | MPR-023 | Permanent | Pending | Holton H378 double F/Bb, serial 596484 ✅; print after oil check |
 | MPR-082 | Permanent | Pending | Yamaha YCL-250; storage, awaiting assignment or storage-location confirmation |
+| MPR-010 | Permanent | 2026-08-19 | Yamaha YTR-3335S; serial 010199 — Matt Bazeley (ASGN-006); student tag not on this sheet |
+| MPR-023 | Permanent | 2026-08-19 | Holton H378; serial 596484 — printed ahead of SVC-HRN-003 (still open) |
+| MPR-023 | Student | 2026-08-19 | Micah Frase (ASGN-014) |
+| MPR-026 | Permanent | 2026-08-19 | Yamaha YFL-225S; serial 033480 — storage, no student tag |
+| MPR-027 | Permanent | 2026-08-19 | Fox Model IV; serial 14649 |
+| MPR-027 | Student | 2026-08-19 | Evan Barton (ASGN-025) |
+| MPR-029 | Permanent | 2026-08-19 | Yamaha YAS-52; serial 021047A — Baxter Mow; student tag not on this sheet |
+| MPR-037 | Permanent | 2026-08-19 | Yamaha YAS-62; serial 082611 — Baxter Mow trial; student tag not on this sheet |
+| MPR-082 | Permanent | 2026-08-19 | Yamaha YCL-250; serial 110041 — storage |
+| MPR-083 | Permanent | 2026-08-19 | Olds 0-991 BBb; serial 947832 — band room |
 
 <!-- Append new rows above this line. One row per print event — don't overwrite or delete prior rows; the log keeps every printing, and generate-tags.js uses only the LATEST row per MPR ID + Tag Type (ties broken by file order — later row wins). -->

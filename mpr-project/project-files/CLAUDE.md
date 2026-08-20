@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-The **Maple Ridge Music Program** is a complete management system for Maple Ridge School's music program (Ulster Park, NY). It tracks 83 students across grades 2–12, manages a fleet of 73 program-owned + 2 borrowed instruments, logs assignments and service records, and handles the disposal pipeline for surplus instruments.
+The **Maple Ridge Music Program** is a complete management system for Maple Ridge School's music program (Ulster Park, NY). It tracks 74 students across grades 2–12, manages a fleet of 78 program-owned + 2 borrowed instruments, logs assignments and service records, and handles the disposal pipeline for surplus instruments.
 
 Instead of juggling files, users work through **skills** — guided workflows that update the right files and keep everything consistent.
 
@@ -17,7 +17,7 @@ project-files/
 ├── assignment.md              # Who has what: active & historical assignments
 ├── inventory.md                # Fleet instruments: MPR-###, serials, costs, service history
 ├── sale-inventory.md          # Disposal pipeline: LOT-### items for sale
-├── students.md                 # Roster of all 83 students
+├── students.md                 # Roster of all 74 students
 ├── repertoire.md                # Concert band music library: REP-### owned, programmed, rejected
 ├── watchlist.md                 # Purchase candidates under evaluation (WATCH-### IDs)
 ├── tag-log.md                   # Log of every permanent/student tag print event
@@ -44,8 +44,8 @@ The five skills that drive the workflows below (`Instrument Inventory Management
 All data lives in nine files. Skills read and write to these automatically, but they're also human-readable:
 
 **Core Program Data:**
-- **`students.md`** — 83 students, grades 2–12, status, birthday
-- **`inventory.md`** — Fleet assets: 49 MPR-### + 2 MNT-### instruments, serials, costs, service history
+- **`students.md`** — 74 students, grades 2–12, status, birthday
+- **`inventory.md`** — Fleet assets: 78 MPR-### + 2 MNT-### instruments, serials, costs, service history
 - **`assignment.md`** — Active & historical: who has what, dates, condition
 - **`sale-inventory.md`** — Disposal pipeline: LOT-### items held for sale (separate from fleet)
 

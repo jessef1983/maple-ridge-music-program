@@ -70,7 +70,7 @@
 
 | LOT | Brand / Model | Serial | Condition | Stage | Status |
 |:---:|---|:---:|:---:|:---:|---|
-| LOT-019 | Bundy trombone (Designed by Vincent Bach) | 678064 ✅ (slide) | Good | Priced | **Play-tested Aug 13:** sounds good; tuning + main slides free. Conn 3 mouthpiece; black hard case, blue velvet. **Keep-if-no-offer pricing:** ask **$275** / floor **$200**, local pickup. Photos named `1000033786.jpg`, `1000033787.jpg` (not yet in local `intrument-pics` dump). |
+| LOT-019 | Bundy trombone (Designed by Vincent Bach) | 678064 ✅ (slide) | Good | Priced | **Play-tested Aug 13:** sounds good; tuning + main slides free. Conn 3 mouthpiece; black hard case, blue velvet. **Keep-if-no-offer pricing:** ask **$275** / floor **$200**, local pickup. Photos: Pixel **Aug 13** cluster `PXL_20260813_174318443`–`174651883` now in `intrument-pics/`. Original names `1000033786.jpg`, `1000033787.jpg` (other camera, same day) still not exported. |
 
 ## Euphonium / Trumpet (fleet → LOT)
 

@@ -1,7 +1,7 @@
 # Assignment Log
  
 **Maple Ridge School** · Ulster Park, NY  
-**Last updated:** August 17, 2026 (Aug 17 intake merge)
+**Last updated:** August 19, 2026
  
 ---
  
@@ -19,7 +19,7 @@
 | ASGN-001 | MPR-001 | Flute | Anita Bazeley | 2024-09-?? | Unknown | — |
 | ASGN-003 | MPR-006 | Trumpet | Janice Meier | 2026-01-12 | Good | — |
 | ASGN-004 | MPR-007 | Trumpet | Kevin Hofer | 2025-10-21 | Fair | Sticky valves; heavier oil trial in progress |
-| ASGN-006 | MPR-010 | Trumpet | Matt | 2025-04-29 | Unknown | **Not in student roster** — verify status |
+| ASGN-006 | MPR-010 | Trumpet | Matt Bazeley (Assistant Director) | 2025-04-29 | Good | Yamaha YTR-3335S; serial **010199 ✅** confirmed Aug 19; complete case, two mouthpieces + maintenance kit. Supports trumpet section |
 | ASGN-007 | MPR-011 | Trumpet | Connor Bazeley | 2025-01-28 | Unknown | — |
 | ASGN-009 | MPR-014 | Euphonium | Kevin Robertshaw (Instructor) | 2021-08-16 | Good | — |
 | ASGN-010 | MPR-016 | Euphonium | Julian Alexander | ⚠️ date pending | Good | — |
@@ -27,20 +27,21 @@
 | ASGN-014 | MPR-023 | French Horn | Micah Frase | TBD | Good | Holton H378, serial **596484 ✅**. SVC-HRN-001 completed Fall 2025; **SVC-HRN-003** open — oil valves, 30-min play test before clearing |
 | ASGN-021 | MPR-048 | Tuba | Davis Loewenthal | 2026-08-13 | Good | Dynasty U.S.A. BBb; includes rare DEG replacement pistons |
 | ASGN-024 | MPR-015 | Euphonium | Jesse Frase | 2026-08-13 | Good | Besson 767 Compensating; inscription & serial 767-716691 verified |
-| ASGN-025 | MPR-027 | Bassoon | Evan Barton | 2026-08-13 | Unknown | Fox Bassoon; discovered in Aug 13 band room inventory session |
+| ASGN-025 | MPR-027 | Bassoon | Evan Barton | 2026-08-13 | Good | Fox Model IV (1988, polypropylene); serial **14649 ✅**. Regular active use |
 | ASGN-026 | MPR-028 | Alto Sax | Franklin Nelson | 2026-08-13 | Unknown | Model pending; discovered in Aug 13 band room inventory session |
 | ASGN-027 | MPR-029 | Alto Sax | Baxter Mow | 2026-08-13 | Good | Yamaha YAS-52; serial 021047A ✅; nice condition, some finish corrosion, well cared for; discovered in Aug 13 band room inventory session |
-| ASGN-028 | MPR-033 | Tuba | Sheridan Durgin (Assistant Director) | 2026-08-13 | Unknown | Model pending; discovered in Aug 13 band room inventory session |
+| ASGN-028 | MPR-033 | Tuba | Sheridan Durgin (Assistant Director) | 2026-08-13 | Unknown | Model pending; discovered in Aug 13 band room inventory session. Plays tuba section |
 | ASGN-030 | MPR-019 | Euphonium | Tyler Frase | 2026-08-13 | Good | Yamaha YEP-321S; confirmed handed to Tyler (his second euphonium alongside MPR-013). Valve caps were frozen on arrival — freed with penetrating oil, hot soak, and non-marring pliers (SVC-EUP-002). Cleaned up into a great horn; Tyler's thrilled with it. Dent above bow (SVC-EUP-001) still deferred. Tuba mouthpiece 24AW 1 arrived in shipment — disposition pending |
 | ASGN-031 | MPR-037 | Alto Sax | Baxter Mow | 2026-08-13 | Good | Yamaha YAS-62 — trial loan, deciding whether to upgrade from his YAS-52 (MPR-029). Bell rim dent deferred (SVC-SAX-001). Using the MPR-029 mouthpiece for the trial — still needs its own if he keeps it or it's reassigned |
 | ASGN-032 | MPR-036 | Trombone | Emmanuel Martinie-Eiler | 2026-08-13 | Good | Olds trombone (Fullerton, CA), early vintage with reversed tuning slide (male-female connector for smooth airflow). No F attachment. Playable. Serial **798865 ✅** (verified Aug 16). Water key cork missing — temporary paper towel plug (SVC-TRB-001, cork replacement pending). **MPR ID updated Aug 14** — this row previously read MPR-061; consolidated into MPR-036 (duplicate registration of the same instrument, see `inventory.md` Retired IDs note) |
 | ASGN-033 | MPR-063 | Bassoon | Roger Woolston | 2026-08-14 | Good | Conn bassoon, donated free transfer from Platte Clove School. Serial **4865 ✅**. **Bocal from MNT-001 spare fits and is in use** (SVC-BAS-001 closed Aug 16). Still needs new neck strap + cork grease for Roger |
 | ASGN-034 | MPR-013 | Euphonium | Joseph Wipf | 2026-08-14 | Unknown | Handed down directly from Tyler Frase (closed ASGN-008) once Tyler's second euphonium (MPR-019) was in service — not a return through storage. Both permanent and student tags printed 2026-08-14 |
 | ASGN-035 | MPR-003 | Flute | Anita Bazeley | 2026-08-14 | Very Good | Second flute for Anita, reassigned directly from Christel Mow (closed ASGN-002) — not a return through storage. Both permanent and student tags printed 2026-08-14 |
-| ASGN-036 | MPR-080 | Cornet | Sarah Frase | TBD (on-hand; date out unknown) | Good | American Standard (H.N. White) cornet, serial **22909 ✅**; ~1930–1935. CE session labeled as MPR-064 — remapped to MPR-080. Tags not yet printed |
+| ASGN-036 | MPR-080 | Cornet | Sarah Frase | TBD (on-hand; date out unknown) | Good | American Standard (H.N. White) cornet, serial **22909 ✅**; ~1930–1935. CE session labeled as MPR-064 — remapped to MPR-080. Both permanent and student tags printed 2026-08-16 (see tag-log.md). |
 | ASGN-037 | MPR-081 | Flute | Christel Mow | TBD | Unknown | Jupiter JFL 507; serial **P68134 ✅**. Reassignment after MPR-003 was handed down to Anita Bazeley Aug 14; condition assessment and photos pending |
+| ASGN-038 | MPR-030 | French Horn | Nigel King | TBD (on-hand; date out unknown) | Unknown | Dillon; serial pending. **SVC-HRN-002** open — 3rd slide binding, flagged for follow-up (not scheduled). Confirmed holder Aug 19 |
  
-**23 active assignments.** Two students (Matt, Steph) not in the student roster — clarify whether they're continuing or need to be added/removed. Micah Frase is rostered (10th grade) on MPR-023. Aug 13 reconciliation: added Davis Loewenthal (MPR-048), Jesse Frase (MPR-015), Evan Barton (MPR-027), Franklin Nelson (MPR-028), Baxter Mow (MPR-029), Sheridan Durgin (MPR-033), Emmanuel Martinie-Eiler (MPR-036, placeholder — see Aug 14 consolidation below), Tyler Frase (MPR-019, second euphonium), Baxter Mow (MPR-037, trial loan); closed out Sean Bazeley (MPR-009, returned to band room), Greg (MPR-018, returned to storage), and Joseph Wipf (MPR-020, returned to seller — retired ID). **Aug 14 consolidation:** ASGN-029 (MPR-036 placeholder trombone) and ASGN-032 (MPR-061 Olds trombone) were the same physical instrument logged twice; ASGN-029 closed out below, ASGN-032 now carries the corrected MPR-036 ID. **Aug 14 tagging-session reassignments:** MPR-013 handed down from Tyler Frase to Joseph Wipf (ASGN-008 closed, ASGN-034 opened) once Tyler's MPR-019 was in service; MPR-003 reassigned from Christel Mow to Anita Bazeley as her second flute (ASGN-002 closed, ASGN-035 opened). Both moves were direct handoffs, not returns through storage, and both instruments got fresh permanent + student tags the same day. **Aug 16–17:** ASGN-036 opened for Sarah Frase / MPR-080 cornet; MPR-036 serial verified; MPR-063 bocal in use; ASGN-037 opened for Christel Mow / MPR-081 Jupiter flute.
+**24 active assignments.** Matt Bazeley is Assistant Director staff, not a student — correctly excluded from the student roster. Steph still not in the student roster — clarify whether continuing or needs to be added/removed. Micah Frase is rostered (10th grade) on MPR-023. Aug 13 reconciliation: added Davis Loewenthal (MPR-048), Jesse Frase (MPR-015), Evan Barton (MPR-027), Franklin Nelson (MPR-028), Baxter Mow (MPR-029), Sheridan Durgin (MPR-033), Emmanuel Martinie-Eiler (MPR-036, placeholder — see Aug 14 consolidation below), Tyler Frase (MPR-019, second euphonium), Baxter Mow (MPR-037, trial loan); closed out Sean Bazeley (MPR-009, returned to band room), Greg (MPR-018, returned to storage), and Joseph Wipf (MPR-020, returned to seller — retired ID). **Aug 14 consolidation:** ASGN-029 (MPR-036 placeholder trombone) and ASGN-032 (MPR-061 Olds trombone) were the same physical instrument logged twice; ASGN-029 closed out below, ASGN-032 now carries the corrected MPR-036 ID. **Aug 14 tagging-session reassignments:** MPR-013 handed down from Tyler Frase to Joseph Wipf (ASGN-008 closed, ASGN-034 opened) once Tyler's MPR-019 was in service; MPR-003 reassigned from Christel Mow to Anita Bazeley as her second flute (ASGN-002 closed, ASGN-035 opened). Both moves were direct handoffs, not returns through storage, and both instruments got fresh permanent + student tags the same day. **Aug 16–17:** ASGN-036 opened for Sarah Frase / MPR-080 cornet; MPR-036 serial verified; MPR-063 bocal in use; ASGN-037 opened for Christel Mow / MPR-081 Jupiter flute. **Aug 19:** ASGN-038 opened for Nigel King / MPR-030 Dillon; Keith Woolston's horn still uninventoried.
  
 ---
  
@@ -54,6 +55,11 @@
 | MPR-082 | Clarinet | Storage | Yamaha YCL-250; serial 110041 ✅; excellent, complete hardshell-case outfit; ready for assignment | Excellent |
 | MPR-026 | Flute | Storage | Yamaha YFL-225S; serial **033480 ✅**; Japan-stamped (pre-2012); Excellent after April service (SVC-FLT-003). Ready for assignment — prior retire/sell note superseded | Excellent |
 | MPR-087 | Flute | Storage | Trevor James Privilege III; serial **P54427 ✅**; Good; SVC-FLT-002 closed (Appleseed P/C $100, tag 064). CE labeled MPR-059 — remapped to MPR-087. Play-test + permanent tag pending | Good |
+| MPR-088 | Clarinet (A) | Unassigned | Penzel-Müller & Co. New York; serial **7580 ✅**; mouthpiece + ligature/cap in case; corks worn; not play-tested | Unknown |
+| MPR-089 | Saxophone (C-melody) | Storage | Holton Elkhorn; serial **17770 ✅**; Excellent (visual); neck + mouthpiece present | Excellent |
+| MPR-090 | Baritone Saxophone | Storage | Yamaha YBS-52; serial **020945 ✅**; Excellent (play-tested); historical purchase $3,500; closet find 2015 | Excellent |
+| MPR-091 | Oboe | Storage | Platz; serial **1520 ✅** (Jesse's read); wood, yellow-plush case; play-test pending | Unknown |
+| MPR-092 | Oboe | Storage | Signet 123 plastic; serial **M 31137 ✅**; CE labeled MPR-087 — remapped. Play-test pending | Unknown |
 | MPR-032 | Tuba | Storage | Model/serial pending | Unknown |
 | MPR-034 | Tuba | For Sale | Besson Eb Chicago, 3-valve non-comp; serial 74353 ✅; Ask $1,100–1,250 / floor $700–750; **cash, local pickup only** | Fair |
 | MPR-035 | Trombone | Storage | Bach 42; serial pending | Unknown |
@@ -67,10 +73,25 @@
 | MPR-047 | Trombone | Storage | Conn 906 F-attachment; red brass bell; serial 066761 ✅; rotary valve string loose (deferred, not yet a service ticket) | Fair |
 | MPR-049 | Percussion | Storage | Mark Tree (Sweetwater); details pending | Unknown |
 | MPR-058 | Tenor Sax | Storage | Spencer; serial 81597 ✅; flagged as possible sale candidate ($200–400) | Good |
+| MPR-064 | English Horn | Storage | Selmer, Paris (cor anglais); serial **02744 ✅**; two bocals, cleaning rod, swab, grease, hard case; not yet play-tested | Excellent |
+| MPR-065 | Oboe | Storage | Gordet Paris N.Y. (Italian import, Bulgheroni-made); serial **B263 ✅**; play-test pending | Excellent |
+| MPR-066 | English Horn | Storage | Gordet Paris N.Y.; serial **A765 ✅**; two Lorée bocals in case (non-matching numbers) — leave in place, may be in active use; play-test pending | Excellent |
+| MPR-067 | English Horn | Storage | Forrest (Marigaux stencil); serial **4041 ✅**; overhauled by Kim Boller 2014; landed $3,000 | Good |
+| MPR-068 | Oboe | Storage | C.G. Conn, flared bell; serial **P509 ✅**; no bocals needed | Excellent |
+| MPR-069 | English Horn | Storage | Fritz Schüller (Markneukirchen); serial **7905 ✅**; Miraphone case; bocal stamped TH2/B13 (non-matching) | Excellent |
+| MPR-070 | Trumpet | Storage | Bach Stradivarius Model 43, silver-plate; serial **465243 ✅** | Excellent |
+| MPR-071 | Piccolo Trumpet | Storage | Getzen Eterna A/Bb; serial **P16101 ✅**; 4th-valve water-key clip missing, 3rd-valve water key jammed | Excellent |
+| MPR-072 | Piccolo Trumpet | For Sale | Mack Piccolo Bb/A; serial **943 ✅**; flagged for sale, pending LOT creation (see `inventory.md` open item #13) | Excellent |
+| MPR-073 | Trumpet | Storage | Vincent Bach Stradivarius 236 (D); serial **46696 ✅**; play-tested Aug 15, excellent valve compression, aftermarket trigger | Good |
+| MPR-074 | Trumpet | Storage | E. Benge Custom (D/Eb), silver-plate; serial **16510 ✅** | Excellent |
+| MPR-076 | Trombone | Storage | Signature 2000 Custom Series (F attachment); serial **26 ⚠️**; rotary-valve plastic stop broken/rattling — SVC-TRB-002 open | Good |
+| MPR-077 | Trombone | Storage | Vincent Bach Model 42 (F attachment); serials **55971 ✅ / 24106 ✅ / 11655 ✅**; brief play-test pending | Excellent |
+| MPR-078 | Trombone | Storage | Model 11B2 C-valve, maker unknown; serials **2316 ✅ / 887888 ✅**; plays well | Fair |
+| MPR-079 | Alto Horn (F) | Storage | Olds Ambassador (E.E. Olds & Son, Fullerton); serial **758200 ✅**; lyre bracket and mouthpiece missing | Good |
 | MNT-001 | Bassoon | Storage | **Borrowed from MNT Academy** — not MPR-owned; see `inventory.md` Borrowed Instruments section. Not yet play-tested | Unknown |
 | MNT-002 | Clarinet | Storage | **Borrowed from MNT Academy** — not MPR-owned; see `inventory.md` Borrowed Instruments section. Needs a holder | Good |
  
-**19 MPR-owned instruments in storage or incoming**, plus 2 MNT-owned instruments on loan (MNT-001, MNT-002 — see `inventory.md` Borrowed Instruments section). Both trumpets arrived Aug 13. MPR-021 needs a bath/chem flush before assigning. MPR-022 turned out to be a genuine Yamaha YTR-334S in excellent condition (not the "Nikkan" it was listed as) — seller notified, kept as the better deal. MPR-082 is a ready-to-assign Yamaha YCL-250. MPR-026 (YFL-225S) and MPR-087 (Trevor James Privilege III) are unassigned flutes ready for play-test/assignment. MPR-037 is out on trial with Baxter Mow, see Active. MPR-015 assigned to Jesse Frase (ASGN-024). MPR-020 returned to seller Aug 13 — no longer part of the fleet (see history and inventory.md Retired IDs).
+**39 MPR-owned instruments in storage or incoming**, plus 2 MNT-owned instruments on loan (MNT-001, MNT-002 — see `inventory.md` Borrowed Instruments section). Both trumpets arrived Aug 13. MPR-021 needs a bath/chem flush before assigning. MPR-022 turned out to be a genuine Yamaha YTR-334S in excellent condition (not the "Nikkan" it was listed as) — seller notified, kept as the better deal. MPR-082 is a ready-to-assign Yamaha YCL-250. MPR-026 (YFL-225S) and MPR-087 (Trevor James Privilege III) are unassigned flutes ready for play-test/assignment. Aug 19 closet/back-room intake added MPR-088–090; Aug 18 storage-room oboes are MPR-091 (Platz) and MPR-092 (Signet 123). MPR-037 is out on trial with Baxter Mow, see Active. MPR-015 assigned to Jesse Frase (ASGN-024). MPR-020 returned to seller Aug 13 — no longer part of the fleet (see history and inventory.md Retired IDs).
  
 ---
  
@@ -158,18 +179,18 @@ When new students are placed or returning students swap instruments, use this se
 *This is a denormalized view for at-a-glance checking. Update it whenever an assignment changes.*
  
 **Flute:** Anita (MPR-001, MPR-003), Christel Mow (MPR-081)  
-**Trumpet:** Janice (MPR-006), Kevin H. (MPR-007), Matt (MPR-010), Connor (MPR-011)  
+**Trumpet:** Janice (MPR-006), Kevin H. (MPR-007), Matt Bazeley (Assistant Director, MPR-010), Connor (MPR-011)  
 **Euphonium:** Joseph Wipf (MPR-013), Tyler (MPR-019), Kevin R. (Instructor, MPR-014), Jesse Frase (MPR-015), Julian (MPR-016)  
-**French Horn:** Steph (MPR-017), Micah Frase (MPR-023)  
+**French Horn:** Steph (MPR-017), Micah Frase (MPR-023), Nigel King (MPR-030)  
 **Tuba:** Davis Loewenthal (MPR-048), Sheridan Durgin (Assistant Director, MPR-033)  
 **Bassoon:** Evan Barton (MPR-027), Roger Woolston (MPR-063)  
 **Alto Sax:** Franklin Nelson (MPR-028), Baxter Mow (MPR-029, MPR-037 on trial)  
 **Trombone:** Emmanuel Martinie-Eiler (MPR-036)  
 **Cornet:** Sarah Frase (MPR-080)
  
-**In storage:** MPR-018, 021, 022, 026, 032, 034, 035, 038, 041, 042, 043, 044, 045, 046, 047, 058, 082  
+**In storage:** MPR-018, 021, 022, 026, 032, 034, 035, 038, 041, 042, 043, 044, 045, 046, 047, 049, 058, 064, 065, 066, 067, 068, 069, 070, 071, 072, 073, 074, 076, 077, 078, 079, 082, 087, 088, 089, 090, 091, 092  
 **Band Room (shared, unassigned to a student):** MPR-009, 050, 051, 052, 053, 054, 055, 056, 057, 083, 084, 085, 086  
-**No holder recorded anywhere:** MPR-030 (Dillon French Horn) — needs a holder assigned or confirmed as Storage
+**No MPR yet:** Keith Woolston's French horn — still needs inventory/onboarding
  
 ---
  
