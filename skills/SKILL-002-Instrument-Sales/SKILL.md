@@ -260,6 +260,7 @@ A Seller Hub Reports row is roughly `Action, CustomLabel, Category, Title, Descr
 That leaves:
 
 - **Manual posting from generated copy** — this skill produces title, price, condition and description per item; posting is copy-paste plus photo upload. Two or three minutes an item.
+  - **Photos must come from git `photos/LOT-###/`** (fleet→LOT items may still be under `photos/MPR-###/`). After `@admin-ingest` has committed the files, **`present_files` those images** so they can be attached to the listing. If that folder is empty, do not post — copy without photos is blocked. Do not invent Drive links. The 15-file project seed does not include the photo tree; a marketplace skill package (or a dedicated photo upload) must bundle the LOT folders you are posting.
 - **Bulk-lister browser extensions** exist and fill the Marketplace create flow from a CSV. They automate a human session rather than an API, which puts them against Meta's automation terms and puts the account at risk. Not recommended for an account tied to a school program.
 
 So: **eBay by CSV, Facebook by hand.** Say that plainly when asked, rather than implying a Marketplace integration is available.

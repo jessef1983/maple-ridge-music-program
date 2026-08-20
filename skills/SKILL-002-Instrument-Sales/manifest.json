@@ -1,9 +1,7 @@
 {
   "id": "SKILL-002",
   "mcp_actions_required": [],
-  "name": "Instrument Sales",
-  "mcp_tools_optional": [],
-  "version": "1.2.0",
+  "version": "1.3.0",
   "mcp_tools_required": [],
   "output_format": "session-updates-<chat-name>.md deltas (Claude Enterprise can't edit project files in place); structured summaries and confirmations",
   "supporting_frameworks": [],
@@ -27,6 +25,13 @@
       "date": "2026-08-17",
       "changes": [
         "Session-updates: chat-named file, end-of-session present, photo index, no invented MPR IDs"
+      ]
+    },
+    {
+      "version": "1.3.0",
+      "date": "2026-08-20",
+      "changes": [
+        "Marketplace posting uses git-tracked photos under photos/LOT-### (or photos/MPR-### for fleet→LOT); present_files those shots; do not post copy without photos"
       ]
     }
   ],

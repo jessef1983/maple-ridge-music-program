@@ -122,7 +122,7 @@ The most-purchased family and the one where the finish trap bites hardest. Cross
 
 ## Part 5 — French Horn
 
-**Standing intent (April 2026):** intermediate double for an amateur player, Yamaha preferred, under $2,000. Three horns since acquired — MPR-017, MPR-018, MPR-023 — so treat this as comp data pending a fresh spec.
+**Standing intent (April 2026):** intermediate double for an amateur player, Yamaha preferred, under $2,000. Four horns now on fleet — MPR-017, MPR-018, MPR-023, MPR-093 — so treat this as comp data pending a fresh spec.
 
 | Model | Type | Tier | Price signal (Apr 2026) | Notes |
 |---|---|---|---|---|
@@ -133,6 +133,7 @@ The most-purchased family and the one where the finish trap bites hardest. Cross
 | Yamaha YHR-322II | Step-up | Student–intermediate | — | Stop-valve spec never confirmed |
 | Yamaha YHR-87D Custom | Double | Custom/pro | — | Deal-dependent only |
 | Holton H378 | Double | Intermediate | TBD | MPR-023 |
+| Reynolds Contempora Chambers Model | Double | Artist/intermediate (Cleveland, RMC-era) | — | MPR-093. Catalog name **Contempora** + **Chambers Model** (James Chambers, 1958). SN **64178** → c.1961 Cleveland estimate. Sources: contemporacorner.com |
 | Holton Farkas | Double | Model-dependent | — | Player preference reference, not a listing |
 | Kruspe Erfurt single F | Single F | Vintage niche | Consignment $1,200–1,800 | Sell candidate, not a buy target. Since removed |
 

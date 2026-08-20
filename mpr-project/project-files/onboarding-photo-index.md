@@ -4,7 +4,7 @@
 **Purpose:** Durable index of intake/assessment photos for fleet instruments (`MPR-###`) and sale-pipeline items (`LOT-###`). Cross-reference against `inventory.md`, `assignment.md`, and `sale-inventory.md`.  
 **Naming convention for folders:** `MPR-###_Brand-Model` or `LOT-###_Brand-Model` (no holder name — holders change)
 
-**Last reconciled:** August 19, 2026 (Aug 19 intake + Aug 18 oboe merge; Aug 17 flute photos on disk)
+**Last reconciled:** August 20, 2026 (LOT-022 Heimer; MPR-067 Oboe; **MPR-093** Reynolds Contempora Chambers Model for Keith)
 
 > **Read this before concluding an instrument has no photos.**
 >
@@ -174,15 +174,15 @@ whose photos were never exported** — not seven separate oversights:
 
 ---
 
-## MPR-067 — Forrest (Marigaux) English Horn
-**Onboarded:** August 15, 2026 · **Source:** On-hand · **Folder:** `MPR-067_Forrest-EnglishHorn/`
+## MPR-067 — Forrest (Marigaux) Oboe
+**Onboarded:** August 15, 2026 · **Source:** On-hand · **Folder:** `photos/MPR-067/` (legacy index folder `MPR-067_Forrest-EnglishHorn/`)
 
 | # | Filename | Shows |
 |:-:|---|---|
 | 1–4 | `PXL_20260815_152021394.jpg`, `PXL_20260815_152053919.jpg`, `PXL_20260815_152111793.jpg`, `PXL_20260815_152133039.jpg` | Forrets bag, case/outfit, Forrest Made in France stamps, reeds |
 | 5–9 | `PXL_20260815_152158754.jpg`, `PXL_20260815_152223828.jpg`, `PXL_20260815_152227163.jpg`, `PXL_20260815_152249720.jpg`, `PXL_20260815_152250963.jpg` | Reed/keywork detail, serial **4041**, Kim Boller 2014 overhaul stamp |
 
-**Status:** English horn. Forrest / Made in France (Marigaux stencil). Serial **4041 ✅**. Kim Boller overhaul **2014**. Landed **`$3,000.00`**. Not an oboe; not a “Forrest L Loree-style” model.
+**Status:** **Oboe** (reclassified Aug 20 storage walkthrough; was logged as English horn). Forrest / Made in France (Marigaux stencil). Serial **4041 ✅**. Kim Boller overhaul **2014**. Landed **`$3,000.00`**. Legacy photos still under the English-horn folder name until filed into `photos/MPR-067/`.
 
 ---
 
@@ -613,6 +613,27 @@ whose photos were never exported** — not seven separate oversights:
 **Duplicates:** four `(1)`-suffixed copies on disk (`114415158`, `114638258`, `114807896`, `114826068`) are Pixel stack/download duplicates of the frames above — not extra shots.
 
 **Status:** Signet **123**; serial **M 31137 ✅** — both Jesse's reads (Aug 19). Condition **Unknown**, play-test pending. Photos are joint/serial close-ups plus case lid.
+
+---
+
+## MPR-093 — Reynolds Contempora Chambers Model double French horn
+
+**Onboarded:** August 20, 2026  
+**Source:** On-hand (Keith Woolston uses it)  
+**Folder:** `photos/MPR-093/`
+
+| # | Filename | Shows | Notes |
+|:-:|---|---|---|
+| 1 | `PXL_20260820_112607236.jpg` | Bell engraving, wide | Reynolds / Cleveland Ohio / RMC shield (album completion, Aug 20) |
+| 2 | `PXL_20260820_112611193.jpg` | Bell engraving / crest | Jesse: Reynolds / Contemporary / Cleveland / Chambers Hon… / RMC. Catalog: **Contempora** + **Chambers Model** |
+| 3 | `PXL_20260820_112619065.jpg` | Bell engraving, sharpest | **Contempora** script + **CLEVELAND / OHIO** + **RMC** shield (lyre). Closes BMC/Bohemian first-pass |
+| 4 | `PXL_20260820_112625445.jpg` | Bell engraving, alt angle | Same Reynolds Contempora / Cleveland / RMC stamp; plating wear |
+| 5 | `PXL_20260820_112630476.jpg` | Bell engraving, alt angle | Same stamp; pitting |
+| 6 | `PXL_20260820_112708425.jpg` | Rotary valve casing, alt | Serial **64178 ✅** (second angle) |
+| 7 | `PXL_20260820_112714088.jpg` | Rotary valve casing | Serial **64178 ✅** (faint **L** above digits) |
+| 8 | `PXL_20260820_112820062.jpg` | Rotary valves 1–3 | Caps stamped 1 A / 2 A / 3 A; green corrosion on cap centers |
+
+**Status:** Double French horn, **Reynolds Contempora Chambers Model**, Cleveland, serial **64178 ✅** (c.1961 RMC estimate). Assigned to Keith Woolston (ASGN-039). Condition Unknown. **RMC shield confirmed** on additional bell shots. Remaining Chambers letters still unconfirmed.
 
 ---
 
@@ -1123,6 +1144,30 @@ Already indexed under **MPR-075**: `PXL_20260815_165739969.jpg`, `165755510`, `1
 
 ---
 
+## LOT-022 — Heimer Bb trumpet (serial 109)
+
+**Session:** August 20, 2026  
+**Purpose:** Sale-pipeline intake from photos (not play-tested)  
+**Folder:** `photos/LOT-022/`
+
+| # | Filename | Shows | Notes |
+|:-:|---|---|---|
+| 1 | `PXL_20260820_114858736.jpg` | Case exterior, closed | Gold "Harmonic Brass" sticker + "BESSON" nameplate (upside-down) |
+| 2 | `PXL_20260820_114905584.jpg` | Case open, lid up | Assembled trumpet in case |
+| 3 | `PXL_20260820_114933620.jpg` | Bell engraving close-up | Cursive **"Heim[er]"** + **MADE IN CHINA** |
+| 4 | `PXL_20260820_114947901.jpg` | Bell engraving close-up, alt crop | **"...mer" / SINCE 1958** |
+| 5 | `PXL_20260820_114952267.MP.jpg` | Bell engraving close-up | **"...mer" / SINCE 1958** |
+| 6 | `PXL_20260820_115053972.MP.jpg` | Extreme macro, unidentified mark | Illegible — not logged as serial |
+| 7 | `PXL_20260820_115116853.jpg` | Valve casings, top-down | Serial **109 ✅** on 2nd valve casing |
+| 8 | `PXL_20260820_115217643.jpg` | Assembled trumpet in case, angle A | |
+| 9 | `PXL_20260820_115230079.jpg` | Assembled trumpet in case, angle B | |
+| 10 | `PXL_20260820_115437191.jpg` | Case open, overview | Disassembled slides/valve tops |
+| 11 | `PXL_20260820_115445143.jpg` | Disassembled parts close-up | Valve caps, slides, crooks |
+
+**Status:** 11/11 on disk in `photos/LOT-022/`. Brand + serial photo-confirmed. Condition Unassessed. No mouthpiece. Case mismatch flagged.
+
+---
+
 ### Unassigned / not-sale (same dumps)
 
 | Cluster | Files | What it is |
@@ -1135,6 +1180,7 @@ Already indexed under **MPR-075**: `PXL_20260815_165739969.jpg`, `165755510`, `1
 | Aug 13 13:58 | `135833818`, `135840108` | Signet Special wood clarinet — fleet, not a sale LOT |
 | Aug 13 17:12–17:19 | `171224929`, `171531283`, `171557321`, `171934062` | **MNT-001** Signet Selmer USA bassoon + bocals |
 | Aug 13 17:26–17:31 | `172622389`, `172815087.MP`, `173140830` | **MPR-082** Yamaha clarinet / **MNT-002** Yamaha 450N + Vandoren B45 |
+| Aug 20 11:30 | `PXL_20260820_113021378.jpg` | Already-printed tags laid out for confirmation (not a new print). Permanent: MPR-083, 026, 029, 037, 082, 045, 003. Student: Julian Alexander (euphonium / MPR-016), Roger Woolston (bassoon / MPR-063), Kevin Hofer (trumpet / MPR-007). Matches existing `tag-log.md` rows — **do not add an Aug 20 print date.** In `photos/_pending/printed-tags-2026-08-20/` — student names visible, not for public listing |
 
 ---
 

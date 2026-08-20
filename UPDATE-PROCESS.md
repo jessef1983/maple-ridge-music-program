@@ -6,11 +6,16 @@
 
 ## Real, Confirmed File Locations
 
+**How to run this process:** invoke **`@admin-ingest`** in Cursor, Copilot, or Claude Code (`.github/agents/admin-ingest.agent.md`). The agent audits `updates/`, compares to inventory, asks about missing summary / photo index / photos, files photos into git, then executes the steps below and opens a PR. Do not skip the gap check.
+
 ```
 C:\jf-devops\maple-ridge-music-program\
 ├── updates\                                          ← Inbox. User drops new files here — manual file replacements AND session-updates*.md from CE.
+├── photos\                                           ← Git-tracked per-MPR / per-LOT photos (marketplace `present_files`). Not in the 15-file CE seed.
+│   └── _pending\                                     ← Photos waiting for an assigned ID
 ├── landing-zone\
 │   └── archive\                                      ← Everything superseded goes here, dated.
+├── .github\agents\admin-ingest.agent.md                    ← Copilot/Cursor/Claude local ingest agent
 ├── mpr-project\
 │   ├── generate-tags.js                              ← Local dev tool. Run from here: `node generate-tags.js`. NOT uploaded.
 │   ├── tags-template.html                            ← Master template for generate-tags.js. NOT uploaded.
@@ -61,6 +66,8 @@ C:\jf-devops\maple-ridge-music-program\
 
 ## Process (Every Update)
 
+Run via `@admin-ingest` unless the user is doing a tiny documented one-file edit.
+
 ### Step 0: Inventory before acting
 Before moving, deleting, or archiving ANYTHING:
 ```
@@ -70,6 +77,20 @@ For each top-level folder/file you don't immediately recognize:
   → THEN decide: current / stale / misplaced / genuinely obsolete
 ```
 Never label something "clutter" from the name and timestamp alone.
+
+### Step 0b: Audit, compare, gap check (ingest)
+
+Before merging, classify every item in `/updates/` and compare serials / brands / IDs / photo filenames to `inventory.md`, `sale-inventory.md`, `assignment.md`, `onboarding-photo-index.md`, and `photos/`.
+
+**Each intake cluster needs all three** (or an explicit user waiver):
+
+1. **Summary MD** — `session-updates*.md` and/or `session-summary-*.md`
+2. **Photo index** — filenames + what each shot shows (for `onboarding-photo-index.md`)
+3. **Photos** — files on disk matching the index (match Pixel shots on the 9-digit timestamp when suffixes differ)
+
+Stop and ask intelligent questions on collisions, missing pieces, `MPR-TBD`/`LOT-TBD` (propose the next free ID from live files — do not trust a CE-suggested next ID), nested duplicate extract folders, and tag lists that have not actually been printed (`tag-log.md` only after a real print).
+
+Ignore `*.agent.md` samples and process-notes in the inbox — they are not instrument records.
 
 ### Step 1a: Manual full-file replacements → project-files/
 ```
@@ -140,13 +161,32 @@ hand-edited and never carried over from a previous session — it is always fres
 this step, every time `inventory.md`, `tag-log.md`, or `assignment.md` changes. Run this step
 **after** Step 1/1b so the regenerated tag flags reflect any tag-log.md entries just merged in.
 
-### Step 4: Archive the session's clutter
+### Step 4: File photos
+
+Copy new intake/sale photos from `/updates/` into `photos/<MPR-###>/` or `photos/<LOT-###>/` and **`git add` them**.
+Unassigned IDs go to `photos/_pending/` and move when Step 1b assigns the ID.
+Keep original filenames; no student names in folder names.
+Update `onboarding-photo-index.md` with repo-relative paths into `photos/`.
+Do not gitignore `photos/`. Do not dump this tree into the 15-file CE seed — bundle selected LOT folders into a marketplace skill for Claude posting.
+Historical `intrument-pics/` is not this folder — file from it into `photos/`, then commit `photos/`.
+
+### Step 5: Archive the session's clutter
 Move to `landing-zone/archive/session-docs-YYYY-MM-DD/`:
 - any `session-summary-*.md`, `research-quality-audit-*.md`, `HANDOFF-*.md` produced this session
 - the previous `mpr-tags.html` if one was sitting in project-files/ (shouldn't be, per Step 3)
-- the contents of `/updates/` once fully merged (copy to `landing-zone/archive/updates-YYYY-MM-DD/`, then clear `/updates/`)
+- the contents of `/updates/` once fully merged (copy to `landing-zone/archive/updates-YYYY-MM-DD/`, then clear `/updates/`, leaving `updates/.gitkeep`)
 
-### Step 5: Verify — run the checklist below before saying "done"
+### Step 6: Verify — run the checklist below before saying "done"
+
+### Step 7: Session branch and PR to main
+
+Do **not** commit ingest merges on `main`.
+
+- Branch: `session-YYYY-MM-DD-<short-topic>` (e.g. `session-2026-08-20-wfl-timpani`)
+- Commit merged `project-files/`, `photos/`, `skills/SKILL-00N-*/` if touched, and the archive
+- Push and open a PR into `main` (`gh pr create --base main`). Use the session summary / gap notes as the PR body
+- Do not merge the PR unless the user asked to merge
+- After merge (human): delete the local `project-files/` copy in CE and re-upload fresh from `mpr-project/project-files/` on `main`
 
 ---
 
@@ -168,7 +208,7 @@ Move to `landing-zone/archive/session-docs-YYYY-MM-DD/`:
 ❌ NEVER: mpr-tags.html left over from a prior session (regenerate, don't carry forward)
 ❌ NEVER: session-summary-*.md / HANDOFF-*.md / research-quality-audit-*.md (archive immediately)
 ❌ NEVER: an unmerged session-updates*.md sitting in project-files/ — it belongs in /updates/ until
-          merged (Step 1b), then archived (Step 4); it is never itself a project-files/ file
+          merged (Step 1b), then archived (Step 5); it is never itself a project-files/ file
 ```
 
 The user's deploy process is: **delete project-files/ entirely, then upload it fresh.** That means
@@ -190,8 +230,11 @@ no local tooling (Claude Enterprise reads files, it doesn't execute them).
 [ ] Any references/ files are inside the built package (SKILL-004) — no ../ links out of a skill
 [ ] Every superseded .skill build has been moved to skills/archives/
 [ ] No stray folders exist: no mpr-project/skills/, no skills/instrument-inventory/ (unnumbered)
-[ ] /updates/ has been archived or cleared
+[ ] /updates/ has been archived or cleared (`.gitkeep` remains)
 [ ] Session docs (summaries, audits, handoffs, and any merged session-updates*.md) archived to landing-zone/archive/, not left in project-files/
+[ ] New photos are under `photos/<MPR-### or LOT-###>/` (or `_pending/`), indexed in `onboarding-photo-index.md`, and **git-added** (not left untracked)
+[ ] Gap check ran: each merged cluster had summary MD, photo index, and photos — or the user waived a named gap
+[ ] Changes are on `session-YYYY-MM-DD-<topic>` with a PR to `main` (not committed on `main`)
 ```
 
 If any box fails, fix it before telling the user it's done. Do not report "ready for deployment"

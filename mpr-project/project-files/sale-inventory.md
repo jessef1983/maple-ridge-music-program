@@ -1,15 +1,15 @@
 # Sale Inventory
 
 **Maple Ridge School** · Ulster Park, NY · (845) 339-6681  
-**Last updated:** August 17, 2026  
+**Last updated:** August 20, 2026  
 **Numbering:** `LOT-###` — this is a **disposal pipeline, not the fleet.**
 
 ---
 
 ## Summary
 
-**20 items total:** 3 saxophones · 11 clarinets · 3 flutes · 1 trombone · 1 euphonium · 1 trumpet  
-**Assessed:** 20 of 20 · **Play-tested:** LOT-001, 003–021 (LOT-002 removed from pipeline — see below)  
+**21 items total:** 3 saxophones · 11 clarinets · 3 flutes · 1 trombone · 1 euphonium · 2 trumpets  
+**Assessed:** 20 of 21 · **Play-tested:** LOT-001, 003–021 (LOT-002 removed; LOT-022 photo-logged only, not play-tested)  
 **Pricing:** all active LOTs priced Aug 17 (see valuation matrices below). Repair quotes can still change the as-is decisions for LOT-005, 008, and 016.
 
 **Merged Aug 17 from missed CE session summary (`session-summary-2026-08-13-sale-inventory.md`):** LOT-002 removal, LOT-003 Camelot assessment, LOT-019 Bundy trombone add, LOT-008 accessory note. Aug 15 flute play-tests kept over that summary’s earlier “Good” grades.
@@ -81,6 +81,12 @@ Former fleet IDs stay on the MPR row in `inventory.md` (Location **For Sale**) u
 | LOT-020 | MPR-062 | Buescher True Tone 393 euphonium | 330366 ✅ | Good | Priced | Plays well; good intonation; fair valve compression. **Bell attachment needs repair** (both tightening screws missing; one fixture fallen off). Includes Vincent Bach 12C. Ask **$275** / floor **$175**, FBM local. Disclose attachment fault. |
 | LOT-021 | MPR-075 | Bach 1530 trumpet | E91664 ✅ | Good | Priced | Student/intermediate Bach; Vincent Bach 2C included. Ask **$175** / floor **$115**, FBM local. |
 
+## Trumpet (non-fleet)
+
+| LOT | Brand / Model | Serial | Condition | Stage | Status |
+|:---:|---|:---:|:---:|:---:|---|
+| LOT-022 | Heimer Bb trumpet (cursive engraving; no model name) | **109 ✅** | Unassessed | Logged | **Photo-logged Aug 20, not play-tested.** Heavy tarnish/oxidation; little lacquer remaining. Slides and 3 valves appear complete; **no mouthpiece.** Hard case has Harmonic Brass sticker + upside-down Besson nameplate — **case does not match the horn.** Bell: MADE IN CHINA / SINCE 1958 (stock brand text, not a manufacture date). One illegible secondary engraving not treated as a serial. Photos: `photos/LOT-022/`. |
+
 ### Clarinet, flute, and trombone pricing pass — Aug 17, 2026
 
 **Method:** sold/retail-comp evidence is adjusted down for no warranty, no technician setup, and documented faults. All asks assume Facebook Marketplace local pickup. Use `For parts or not working` for LOT-005, 008, and 016 on eBay; disclose every fault before accessories.
@@ -104,8 +110,9 @@ Former fleet IDs stay on the MPR row in `inventory.md` (Location **For Sale**) u
 3. **LOT-012 gap inspection** — if bell/lower-joint mismatch is confirmed, relist as project and revisit the $40/$25 price
 4. **Serial verifies** — LOT-005 (N.1673 vs N.1573 — Masson photos exist, stamp unread); LOT-006 (1324589 vs 1324859 — Bundy 577 photos exist, stamp unread); LOT-003 serial stamp still ⚠️; LOT-016 Artley 18-0 stamp is `PXL_20260806_154344451.jpg` — human-read 252-817 vs 25287 before promoting ✋→✅; LOT-018 still wants a **41249** stamp frame
 5. **Provenance** — source + proceeds budget line for all LOTs
-6. **Photo index backfill** — Aug 18 pass indexed LOT-001, 003–018, 021 from `intrument-pics/`. **Still open:** LOT-019 `1000######` export; LOT-020 human confirm of Buescher **330366** in the Aug 15 13:44–13:59 cluster (mixed with MPR-045 **159676**); crop named tag on LOT-003 `164216425`
+6. **LOT-022 Heimer trumpet (serial 109)** — play-test before pricing; re-shoot illegible secondary mark; confirm mouthpiece (none in case)
+7. **Photo index backfill** — Aug 18 pass indexed LOT-001, 003–018, 021 from `intrument-pics/`. **Still open:** LOT-019 `1000######` export; LOT-020 human confirm of Buescher **330366** in the Aug 15 13:44–13:59 cluster (mixed with MPR-045 **159676**); crop named tag on LOT-003 `164216425`
 
 ---
 
-Last session: August 18, 2026 (photo-index backfill from `intrument-pics/`; pricing unchanged)
+Last session: August 20, 2026 (LOT-022 Heimer trumpet photo-logged; MPR-067 reclassified Oboe)

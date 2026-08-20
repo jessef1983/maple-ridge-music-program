@@ -1,7 +1,7 @@
 # Instrument Inventory
  
 **Maple Ridge School** · Ulster Park, NY · (845) 339-6681  
-**Last updated:** August 19, 2026
+**Last updated:** August 20, 2026
 **Numbering:** `MPR-###`, retired IDs are never reused.
  
 ---
@@ -71,7 +71,7 @@
 | MPR-064 | English Horn | Selmer | Storage | 02744 ✅ | TBD | Owned | Excellent |
 | MPR-065 | Oboe | Gordet (Paris N.Y. / Italian) | Storage | B263 ✅ | TBD | Owned | Excellent |
 | MPR-066 | English Horn | Gordet (Paris N.Y.) | Storage | A765 ✅ | TBD | Owned | Excellent |
-| MPR-067 | English Horn | Forrest (Marigaux stencil) | Storage | 4041 ✅ | `$3,000.00` | Owned | Good |
+| MPR-067 | Oboe | Forrest (Marigaux stencil) | Storage | 4041 ✅ | `$3,000.00` | Owned | Good |
 | MPR-068 | Oboe | Conn | Storage | P509 ✅ | TBD | Owned | Excellent |
 | MPR-069 | English Horn | Fritz Schüller (Markneukirchen) | Storage | 7905 ✅ | TBD | Owned | Excellent |
 | MPR-070 | Trumpet | Bach Stradivarius Model 43 | Storage | 465243 ✅ | TBD | Owned | Excellent |
@@ -97,8 +97,9 @@
 | MPR-090 | Baritone Saxophone | Yamaha YBS-52 | Storage | 020945 ✅ | `$3,500.00` | Owned | Excellent |
 | MPR-091 | Oboe | Platz | Storage | 1520 ✅ | TBD | Owned | Unknown |
 | MPR-092 | Oboe | Signet 123 | Storage | M 31137 ✅ | TBD | Owned | Unknown |
+| MPR-093 | French Horn | Reynolds Contempora Chambers Model (Cleveland, double) | Assigned | 64178 ✅ | TBD | Owned | Unknown |
 
-**78 MPR-owned instruments total.** Last verified: August 19, 2026. Fleet by category: 5 flutes, 3 clarinets, 6 saxophones, **10 trumpets**, 1 cornet, 2 piccolo trumpets, **4 French horns**, 1 mellophone, 1 flugelhorn, 6 trombones, **7 euphoniums**, 7 tubas, **2 bassoons**, 4 oboes, 4 English horns, 3 specialty horns, **12 percussion**. Plus **2 MNT-owned (borrowed) instruments** — see Borrowed Instruments section below. **60+ serials verified** ✅; remainder pending photo/label reads. MPR-020 returned to seller Aug 13. MPR-062 flagged for sale. MPR-063 (Conn Schreiber Intermediate) donated from Platte Clove School; MNT-001 spare bocal fits and is in use (SVC-BAS-001 closed). MPR-036/MPR-061 consolidated Aug 14 (duplicate registration of one trombone). CE session labels colliding MPR-081 entries were reconciled at merge: MPR-081 Jupiter flute, MPR-082 Yamaha clarinet, MPR-083 Olds tuba, and MPR-084–086 timpani. CE labeled the Trevor James Privilege III as MPR-059 — remapped to **MPR-087** (MPR-059 was a stale Selmer Signet alias, now MNT-001). See `assignment.md` for current holders.
+**79 MPR-owned instruments total.** Last verified: August 20, 2026. Fleet by category: 5 flutes, 3 clarinets, 6 saxophones, **10 trumpets**, 1 cornet, 2 piccolo trumpets, **5 French horns**, 1 mellophone, 1 flugelhorn, 6 trombones, **7 euphoniums**, 7 tubas, **2 bassoons**, 4 oboes, 4 English horns, 3 specialty horns, **12 percussion**. Plus **2 MNT-owned (borrowed) instruments** — see Borrowed Instruments section below. **60+ serials verified** ✅; remainder pending photo/label reads. MPR-020 returned to seller Aug 13. MPR-062 flagged for sale. MPR-063 (Conn Schreiber Intermediate) donated from Platte Clove School; MNT-001 spare bocal fits and is in use (SVC-BAS-001 closed). MPR-036/MPR-061 consolidated Aug 14 (duplicate registration of one trombone). CE session labels colliding MPR-081 entries were reconciled at merge: MPR-081 Jupiter flute, MPR-082 Yamaha clarinet, MPR-083 Olds tuba, and MPR-084–086 timpani. CE labeled the Trevor James Privilege III as MPR-059 — remapped to **MPR-087** (MPR-059 was a stale Selmer Signet alias, now MNT-001). See `assignment.md` for current holders.
  
 ---
  
@@ -135,7 +136,7 @@
 | MPR-064 | TBD | On-hand (storage) | — | **Brand:** Selmer, Paris. **Model:** English horn (cor anglais). **Serial:** 02744 ✅. **Condition:** Excellent. **Outfit:** two bocals, cleaning rod, swab, grease, hard case. **Outstanding:** acquisition source/date unknown; bocal ownership still unclarified but leave as-is if in use; not yet play-tested. |
 | MPR-065 | TBD | On-hand (storage) | — | **Brand:** Gordet Paris N.Y. (Ben Storch brand stamp on European import — not a Paris factory). **Origin:** ITALY stamped on body (Italian Gordet line, typically Bulgheroni). **Serial:** B263 ✅. **Model:** unknown — B263 is the serial, not a published Gordet model code. **Outstanding:** acquisition date/cost unknown; play-test before assignment. Earlier “Cabart” / “regular + petit” reads were incorrect. |
 | MPR-066 | TBD | On-hand (storage) | — | **Brand:** Gordet Paris N.Y. (Storch brand stamp). **Serial:** A765 ✅ — readable on two parts of the horn. **Model:** unknown — A765 is the serial/mark, not treated as a published model code. **Inscription:** Albion College / COLLEGE (case or body — confirm location if needed). **Outfit:** case, reeds. **Bocals in case:** two **F. Lorée Paris** English horn bocals — size **#2** (standard) and size **#1** (short), older series, silver-plated nickel silver. Numbers do **not** match A765. **Leave in place** — may be in active use; do not reassign or list for sale without checking first. **Outstanding:** acquisition date/source unknown; play-test pending. |
-| MPR-067 | 2014 | On-hand | — | **Brand:** Forrest (Made in France) — Marigaux stencil per maker references. **Instrument:** English horn (bulb bell), not oboe. **Serial:** 4041 ✅. **Overhaul:** Kim Boller, 2014 (master technician). **Landed:** `$3,000.00` (confirmed). **Outfit:** Forrets/Forrests soft outer bag + hard case; reeds; Lorée-marked end cap in case (mixed accessories). **Outstanding:** play-test as needed. |
+| MPR-067 | 2014 | On-hand | — | **Brand:** Forrest (Made in France) — Marigaux stencil per maker references. **Instrument:** Oboe (Aug 20 storage walkthrough reclassified from English horn — physical count 5 oboes / 3 English horns; MPR-067 was the mis-typed horn). **Serial:** 4041 ✅. **Overhaul:** Kim Boller, 2014 (master technician). **Landed:** `$3,000.00` (confirmed). **Outfit:** Forrets/Forrests soft outer bag + hard case; reeds; Lorée-marked end cap in case (mixed accessories). **Outstanding:** play-test as needed. |
 | MPR-068 | TBD | On-hand | — | **Brand:** C.G. Conn. **Instrument:** Oboe (flared bell). **Serial:** P509 ✅. **Outfit:** three joints, case, grease/accessories as photographed — **no bocals** (oboes don’t use them; earlier “two bocals” claim dropped). **Outstanding:** acquisition date/source and landed cost unknown. |
 | MPR-069 | TBD | On-hand | — | **Brand:** Fritz Schüller (Gebr.), Markneukirchen — stamp faded but confirmed; not “Chadwick, Germany.” **Serial:** 7905 ✅. **Case:** Miraphone (not Amolfozia). **Bocal:** present — stamped **TH2 / B13** (not matching 7905; record as this outfit’s bocal unless later reassigned). **Condition:** no cracks observed. **Outstanding:** acquisition date/source unknown; play-test pending; exact model line still open. |
 | MPR-070 | TBD | On-hand | — | **Brand:** Bach (Vincent Bach Corporation). **Model:** Stradivarius Model 43. **Serial:** 465243 ✅. **Finish:** silver-plate. **Outfit:** mouthpiece, case, cleaning cloth, valve oil. **Outstanding:** acquisition date and landed cost unknown. |
@@ -162,6 +163,7 @@
 | MPR-090 | 2015 (reported) | On-hand (closet; previously untracked) | existing asset tag | **Brand:** Yamaha. **Model:** YBS-52 (Japan, lacquer — not silver-plate). **Serial:** 020945 ✅. **Landed:** `$3,500.00` (historical purchase value from yellow asset tag). **Service:** SVC-SAX-002, Kim Boller, May 2015 (asset tag “serviced 05/15 KB”; no invoice). **Condition:** Excellent (play-tested; user reports mint). **Outfit:** neck, mouthpiece + cap, neck strap, reed case. **Market:** rough $2,000–$3,500 estimate from dated 2022 comps — not sold-comp verified for insurance/sale. Production year from serial unconfirmed. |
 | MPR-091 | TBD | On-hand (storage room; years) | — | **Brand:** Platz. **Instrument:** oboe (three-piece wood body, silver-plated keywork). **Model:** unknown. **Serial:** **1520 ✅** — Jesse's read from the upper-joint stamp (Aug 19 confirm). Photo is worn/faint but the read is owner-verified, not a CE guess. **Condition:** Unknown — play-test pending. **Outfit:** black leather case, yellow plush; swab and apparent reed case in the case. **Outstanding:** play-test. Not MNT-001 (that is a Signet bassoon, serial 9400). |
 | MPR-092 | TBD | On-hand (storage room, Aug 18) | — | **Brand:** Signet. **Model:** **123** (Jesse's identification). **Serial:** **M 31137 ✅** (Jesse's read; matches photo stamp). Student all-plastic oboe. **Condition:** Unknown (cork wrap aged but intact; play-test pending). **Outfit:** original Signet hard case. **CE ID:** session labeled this **MPR-087** — remapped at merge (**MPR-087** is the Trevor James flute). **Outstanding:** play-test. Not MNT-001/002. Pixel `(1)` files are stack duplicates of the same horn — one instrument only. |
+| MPR-093 | TBD | On-hand (assigned; Keith Woolston) | — | **Brand / line:** Reynolds **Contempora** double French horn, **Chambers Model** (James Chambers / NY Phil endorsement line). Jesse’s Aug 20 bell read was Reynolds / Contemporary / Cleveland / Chambers Hon… / RMC — **Contempora** is the catalog spelling of that line ([Contempora Corner](https://contemporacorner.com/horns/contempora-horns/)); **Chambers Model** is the published artist-model name (introduced 1958). Do not complete “Hon…” to “Honor” until the remaining letters are re-read on the bell. **RMC** = Richards Music Corp. ownership mark (1961–1964). **Serial:** **64178 ✅** on 2nd-valve casing (standard Reynolds horn location). **Est. date:** c. **1961**, Cleveland — SN above 61000 typically carry the RMC shield and fall in the RMC years ([Contempora Corner serials](https://contemporacorner.com/serial-numbers/); [Horn-u-copia Reynolds list](https://www.horn-u-copia.net/serial/Reynoldslist.shtml) places ~65000 at 1961). Estimate only — Reynolds published no surviving factory serial ledger for this era. **Not** an Abilene/Texas reset horn (those start at 200000 in 1964). **Crest:** **RMC** shield (lyre) confirmed on additional bell shots (`photos/MPR-093/PXL_20260820_112619065.jpg` and related). First photo pass “B.M.C. / Bohemian Elkhart” was a misread of that shield — not a Blessing/Elkhart Medalist. **Condition:** Unknown — not play-tested. Photos show plating wear, pitting, rotary-cap verdigris. **Outstanding:** confirm remaining Chambers letters on the bell; play-test; print tags. |
  
 ---
  
@@ -260,7 +262,7 @@
 21. **MPR-089 Holton C-melody** — play-test to bench-confirm Excellent; “LP” stamp unexplained
 22. **MPR-091 Platz oboe** — play-test (serial **1520 ✅** confirmed Aug 19 by Jesse)
 23. **MPR-092 Signet 123** — play-test (model 123 and serial **M 31137 ✅** are Jesse's reads)
-24. **Keith Woolston's French horn** — still needs onboarding (no MPR yet); do not invent an ID until the horn is inventoried
+24. **MPR-093 Reynolds Contempora Chambers Model** — re-read remaining “Chambers Hon…” letters on the bell; play-test; print permanent + student tags for Keith Woolston
 
 ---
 
@@ -281,4 +283,5 @@
 - **Ross Martinie-Eiler** — no MPR assignment. Assistant director for drum lessons / percussion; leave off until he holds a numbered instrument (Jesse, Aug 19).
 - **Aug 17 flute photo export** — closed Aug 19 second pass: MPR-026 **11/11** and MPR-087 **8/8** now in `intrument-pics/`. `1000######` batch remains a separate missing device.
 - **Back-room wind inventory** — closed Aug 19. Today’s three: **MPR-088** A clarinet (Penzel-Müller 7580), **MPR-089** C-melody sax (Holton 17770), **MPR-090** bari sax (Yamaha YBS-52 020945). Aug 18 oboes already logged: **MPR-091** Platz 1520, **MPR-092** Signet 123 / M 31137. Shelf complete per Jesse.
+- **MPR-093 Reynolds Contempora Chambers Model** — onboarded Aug 20 as Keith Woolston's double French horn; serial **64178 ✅**. Inscription sourced to Contempora / Chambers Model / RMC Cleveland c.1961 (see acquisition notes). No prior fleet placeholder — roster had French Horn with no MPR until this ID.
 - **MPR-080 tags** — resolved. `tag-log.md` confirms both Permanent and Student tags were printed 2026-08-16 for Sarah Frase's cornet.

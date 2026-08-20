@@ -11,5 +11,6 @@ When merging CE intake or editing skills/concierge docs for this repo:
 2. **At merge:** assign real `MPR-###` wherever entries say `MPR-TBD` — never trust a CE-suggested next ID (parallel chats collide).
 3. **Photo indexes** in session-updates targeting `onboarding-photo-index.md` must be merged; filenames must not stay chat-only.
 4. **Skills/concierge must teach CE to:** present a chat-named session-updates file at end of session; index photos into it; never invent new MPR IDs for new instruments.
+5. **Local merge** is `@admin-ingest` (`.github/agents/admin-ingest.agent.md`) — audit `updates/`, gap-check summary/photo-index/photos, file `photos/` into git, then `UPDATE-PROCESS.md`.
 
 Canonical wording: `mpr-project/project-files/CLAUDE.md` (Recording changes…), `ROUTING.md` (End of every session), `UPDATE-PROCESS.md` Step 1b, and each `skills/SKILL-00N-*/SKILL.md`.
