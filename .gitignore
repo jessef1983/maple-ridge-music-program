@@ -1,3 +1,10 @@
 # Working crops only — listing/intake source of truth is photos/
 _crops/
 scratch-crops/
+
+# Local-only photo dump and quarantine (do not GitHub Sync)
+intrument-pics/
+local-photo-hold/
+
+# Temp sync audit lists
+_photo-*.txt
