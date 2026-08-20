@@ -163,18 +163,25 @@ this step, every time `inventory.md`, `tag-log.md`, or `assignment.md` changes. 
 
 ### Step 4: File photos
 
-Copy new intake/sale photos from `/updates/` into `photos/<MPR-###>/` or `photos/<LOT-###>/` and **`git add` them**.
-Unassigned IDs go to `photos/_pending/` and move when Step 1b assigns the ID.
-Keep original filenames; no student names in folder names.
-Update `onboarding-photo-index.md` with repo-relative paths into `photos/`.
-Do not gitignore `photos/`. Do not dump this tree into the 15-file CE seed — bundle selected LOT folders into a marketplace skill for Claude posting.
-Historical `intrument-pics/` is not this folder — file from it into `photos/`, then commit `photos/`.
+**Copy** (never move/delete) intake photos from `/updates/` or `intrument-pics/` into `photos/<MPR-###>/` or `photos/<LOT-###>/`, then **`git add` them**.
+Unassigned IDs go to `photos/_pending/<slug>/` until Step 1b assigns the ID.
+Keep original camera filenames; no student names in folder names.
+
+**Index rules (required for every photo cluster):**
+- `onboarding-photo-index.md` **Folder:** line must be exactly `` `photos/MPR-###/` `` or `` `photos/LOT-###/` `` (no brand suffix).
+- Table filenames must be the **full** on-disk name (`PXL_….jpg`, `IMG_….jpg`). Do not leave bare 9-digit stems in new rows; expand CE shorthand at merge.
+- `1000######.jpg` means a **non-Pixel camera** — record as missing until that export lands; do not invent Pixel names for them.
+- Fleet→LOT (LOT-020 / LOT-021): keep files under the fleet `photos/MPR-###/` and say so on the Folder line.
+
+Do not gitignore `photos/`. Do **not** `git add` photo binaries under `landing-zone/archive/` (markdown archive only). Do not dump `photos/` into the 15-file CE seed.
+`intrument-pics/` is local-only (gitignored dump) — **copy** from it into `photos/`; never delete the dump during ingest.
 
 ### Step 5: Archive the session's clutter
 Move to `landing-zone/archive/session-docs-YYYY-MM-DD/`:
 - any `session-summary-*.md`, `research-quality-audit-*.md`, `HANDOFF-*.md` produced this session
 - the previous `mpr-tags.html` if one was sitting in project-files/ (shouldn't be, per Step 3)
-- the contents of `/updates/` once fully merged (copy to `landing-zone/archive/updates-YYYY-MM-DD/`, then clear `/updates/`, leaving `updates/.gitkeep`)
+- the **markdown** contents of `/updates/` once fully merged (copy to `landing-zone/archive/updates-YYYY-MM-DD/`, then clear `/updates/`, leaving `updates/.gitkeep`)
+- Inbox **photo binaries**: leave them out of git archive (already filed under `photos/`); do not double-commit jpgs into `landing-zone/archive/`
 
 ### Step 6: Verify — run the checklist below before saying "done"
 

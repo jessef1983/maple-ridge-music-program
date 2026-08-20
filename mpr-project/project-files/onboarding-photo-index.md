@@ -2,7 +2,7 @@
 
 **Maple Ridge School** · Instrument Onboarding + Sale LOT photo evidence  
 **Purpose:** Durable index of intake/assessment photos for fleet instruments (`MPR-###`) and sale-pipeline items (`LOT-###`). Cross-reference against `inventory.md`, `assignment.md`, and `sale-inventory.md`.  
-**Naming convention for folders:** `MPR-###_Brand-Model` or `LOT-###_Brand-Model` (no holder name — holders change)
+**Naming convention for folders:** `photos/MPR-###/` or `photos/LOT-###/` only (no brand suffix, no holder name). Legacy `MPR-###_Brand-Model/` names are retired.
 
 **Last reconciled:** August 20, 2026 (LOT-022 Heimer; MPR-067 Oboe; **MPR-093** Reynolds Contempora Chambers Model for Keith)
 
@@ -17,6 +17,7 @@
 > 3. **Filename suffixes differ between docs and disk.** Session summaries write
 >    `154330926_MP` and `155229537_NIGHT`; the files are `.MP.jpg` and `.NIGHT.jpg`. Match on
 >    the 9-digit timestamp, never on the whole string.
+> 5. **Filename families (not bugs):** `PXL_*` = Pixel phone; `IMG_*` = other phone (e.g. MPR-010); `1000######.jpg` = a **different camera** whose export is still missing (documented below). Bare `` `163855038` `` stems are CE shorthand for the Pixel 9-digit timestamp — match on those digits, not the full string.
 > 4. **39 files are duplicates** (`~2`, `~3`, `" - Copy"`). 695 files, 656 unique photos.
 
 ### Coverage checklist
@@ -53,7 +54,7 @@ whose photos were never exported** — not seven separate oversights:
 
 **Session:** August 19, 2026  
 **Purpose:** Serial confirmation for existing assigned instrument (not new intake)  
-**Folder:** `MPR-010_Yamaha-YTR-3335S/`
+**Folder:** `photos/MPR-010/`
 
 | # | Filename | Shows | Notes |
 |:-:|---|---|---|
@@ -66,7 +67,7 @@ whose photos were never exported** — not seven separate oversights:
 
 ## MPR-027 — Fox Model IV Bassoon
 
-**Session:** August 19, 2026 · **Folder:** `MPR-027_Fox-Bassoon/`
+**Session:** August 19, 2026 · **Folder:** `photos/MPR-027/`
 
 | # | Filename | Shows | Notes |
 |:-:|---|---|---|
@@ -89,7 +90,7 @@ whose photos were never exported** — not seven separate oversights:
 
 **Onboarded:** August 17, 2026  
 **Source:** On-hand (acquisition date unknown)  
-**Folder:** `MPR-026_Yamaha-YFL-225S/`
+**Folder:** `photos/MPR-026/`
 
 | # | Filename | Shows | Notes |
 |:-:|---|---|---|
@@ -113,7 +114,7 @@ whose photos were never exported** — not seven separate oversights:
 
 **Onboarded:** August 14, 2026
 **Source:** Donated, free transfer from Platte Clove School
-**Folder:** `MPR-063_Conn-Bassoon/`
+**Folder:** `photos/MPR-063/`
 
 | # | Filename | Shows | Notes |
 |:-:|---|---|---|
@@ -138,7 +139,7 @@ whose photos were never exported** — not seven separate oversights:
 ---
 
 ## MPR-064 — Selmer English Horn
-**Onboarded:** August 15, 2026 · **Source:** On-hand storage · **Folder:** `MPR-064_Selmer-English-Horn/`
+**Onboarded:** August 15, 2026 · **Source:** On-hand storage · **Folder:** `photos/MPR-064/`
 
 | # | Filename | Shows |
 |:-:|---|---|
@@ -151,7 +152,7 @@ whose photos were never exported** — not seven separate oversights:
 ---
 
 ## MPR-065 — Gordet Oboe (Italian)
-**Onboarded:** August 15, 2026 · **Source:** On-hand storage · **Folder:** `MPR-065_Gordet-Oboe/`
+**Onboarded:** August 15, 2026 · **Source:** On-hand storage · **Folder:** `photos/MPR-065/`
 
 | # | Filename | Shows |
 |:-:|---|---|
@@ -162,7 +163,7 @@ whose photos were never exported** — not seven separate oversights:
 ---
 
 ## MPR-066 — Gordet English Horn
-**Onboarded:** August 15, 2026 · **Source:** On-hand storage · **Folder:** `MPR-066_Gordet-EnglishHorn/`
+**Onboarded:** August 15, 2026 · **Source:** On-hand storage · **Folder:** `photos/MPR-066/`
 
 | # | Filename | Shows |
 |:-:|---|---|
@@ -175,7 +176,7 @@ whose photos were never exported** — not seven separate oversights:
 ---
 
 ## MPR-067 — Forrest (Marigaux) Oboe
-**Onboarded:** August 15, 2026 · **Source:** On-hand · **Folder:** `photos/MPR-067/` (legacy index folder `MPR-067_Forrest-EnglishHorn/`)
+**Onboarded:** August 15, 2026 · **Source:** On-hand · **Folder:** `photos/MPR-067/`
 
 | # | Filename | Shows |
 |:-:|---|---|
@@ -187,7 +188,7 @@ whose photos were never exported** — not seven separate oversights:
 ---
 
 ## MPR-068 — Conn Oboe
-**Onboarded:** August 15, 2026 · **Source:** On-hand · **Folder:** `MPR-068_Conn-Oboe/`
+**Onboarded:** August 15, 2026 · **Source:** On-hand · **Folder:** `photos/MPR-068/`
 
 | # | Filename | Shows |
 |:-:|---|---|
@@ -199,7 +200,7 @@ whose photos were never exported** — not seven separate oversights:
 ---
 
 ## MPR-069 — Fritz Schüller English Horn
-**Onboarded:** August 15, 2026 · **Source:** On-hand storage · **Folder:** `MPR-069_Schuller-English-Horn/`
+**Onboarded:** August 15, 2026 · **Source:** On-hand storage · **Folder:** `photos/MPR-069/`
 
 | # | Filename | Shows | Notes |
 |:-:|---|---|---|
@@ -219,7 +220,7 @@ whose photos were never exported** — not seven separate oversights:
 ---
 
 ## MPR-070 — Bach Stradivarius Model 43 Trumpet
-**Onboarded:** August 15, 2026 · **Source:** On-hand storage · **Folder:** `MPR-070_Bach-Stradivarius/`
+**Onboarded:** August 15, 2026 · **Source:** On-hand storage · **Folder:** `photos/MPR-070/`
 
 | # | Filename | Shows | Notes |
 |:-:|---|---|---|
@@ -235,7 +236,7 @@ whose photos were never exported** — not seven separate oversights:
 ---
 
 ## MPR-071 — Getzen Eterna A/Bb Piccolo Trumpet
-**Onboarded:** August 15, 2026 · **Source:** On-hand · **Folder:** `MPR-071_Getzen-Eterna/`
+**Onboarded:** August 15, 2026 · **Source:** On-hand · **Folder:** `photos/MPR-071/`
 
 | # | Filename | Shows |
 |:-:|---|---|
@@ -246,7 +247,7 @@ whose photos were never exported** — not seven separate oversights:
 ---
 
 ## MPR-072 — Mack Bb/A Piccolo Trumpet
-**Onboarded:** August 15, 2026 · **Source:** On-hand · **Folder:** `MPR-072_Mack-Piccolo/`
+**Onboarded:** August 15, 2026 · **Source:** On-hand · **Folder:** `photos/MPR-072/`
 
 | # | Filename | Shows |
 |:-:|---|---|
@@ -255,14 +256,14 @@ whose photos were never exported** — not seven separate oversights:
 ---
 
 ## MPR-073 — Vincent Bach Stradivarius 236 Trumpet
-**Onboarded:** August 15, 2026 · **Source:** On-hand storage · **Folder:** `MPR-073_Vincent-Bach-Stradivarius/`
+**Onboarded:** August 15, 2026 · **Source:** On-hand storage · **Folder:** `photos/MPR-073/`
 
 **Photos:** `PXL_20260815_163842148.jpg`, `163855038`, `163909428`, `163935032`, `163944755`, `163948523`, `163953910`, and `164043403` document the case, Model 236 engraving, aftermarket first-slide trigger, and serial **46696**.
 
 ---
 
 ## MPR-074 — E. Benge Custom Trumpet (D / E♭)
-**Onboarded:** August 15, 2026 · **Source:** On-hand · **Folder:** `MPR-074_E-Benge-Custom/`
+**Onboarded:** August 15, 2026 · **Source:** On-hand · **Folder:** `photos/MPR-074/`
 
 | # | Filename | Shows | Notes |
 |:-:|---|---|---|
@@ -276,35 +277,35 @@ whose photos were never exported** — not seven separate oversights:
 ---
 
 ## MPR-075 — Bach 1530 Trumpet
-**Onboarded:** August 15, 2026 · **Source:** On-hand · **Folder:** `MPR-075_Bach-1530/`
+**Onboarded:** August 15, 2026 · **Source:** On-hand · **Folder:** `photos/MPR-075/`
 
 **Photos:** `PXL_20260815_165739969.jpg`, `165755510`, `165808170`, `165814004`, `165837183`, and `165841055` document the Bach 1530 marking, serial **E91664**, slide action, 2C mouthpiece, and case.
 
 ---
 
 ## MPR-076 — Signature 2000 Custom Series Trombone
-**Onboarded:** August 15, 2026 · **Source:** On-hand · **Folder:** `MPR-076_Signature-2000-Trombone/`
+**Onboarded:** August 15, 2026 · **Source:** On-hand · **Folder:** `photos/MPR-076/`
 
 **Photos:** `PXL_20260815_171819604.jpg`, `171517029`, `171525835`, `171403601`, `170929814_MP`, `170848988`, `170843577`, `170835413`, `170838444`, `170733018_MP`, `170652868`, and `170634346` document the bell dents, Dennis Wick 5AL, partial serial **26**, brand, broken rotary stop, and case.
 
 ---
 
 ## MPR-077 — Vincent Bach Model 42 Trombone
-**Onboarded:** August 15, 2026 · **Source:** Donation from former school member · **Folder:** `MPR-077_Bach-Trombone/`
+**Onboarded:** August 15, 2026 · **Source:** Donation from former school member · **Folder:** `photos/MPR-077/`
 
 **Photos:** `PXL_20260815_172645507.jpg`, `172320578`, `172542500`, `172702947`, `172516867`, `172441602_MP`, `172446791_MP`, `172248536`, `172258411`, `172411559_MP`, `172450596`, and `172337201` document both mouthpieces, F attachment, Model 42 marking, and serials **55971**, **24106**, and **11655**.
 
 ---
 
 ## MPR-078 — Model 11B2 C-Valve Trombone
-**Onboarded:** August 15, 2026 · **Source:** On-hand · **Folder:** `MPR-078_Model-11B2_C-Valve-Trombone/`
+**Onboarded:** August 15, 2026 · **Source:** On-hand · **Folder:** `photos/MPR-078/`
 
 **Photos:** `PXL_20260815_173738144.jpg`, `173742695`, `173759464`, `173649904`, `173636614`, `173609409`, and `173558948` document valve-casing serial **2316**, bell/tuning-slide stamp **887888**, Model 11B2 marking, outfit, and case.
 
 ---
 
 ## MPR-079 — Olds Ambassador F Alto Horn
-**Onboarded:** August 15, 2026 · **Source:** On-hand · **Folder:** `MPR-079_Olds-Ambassador/`
+**Onboarded:** August 15, 2026 · **Source:** On-hand · **Folder:** `photos/MPR-079/`
 
 | # | Filename | Shows |
 |:-:|---|---|
@@ -320,7 +321,7 @@ whose photos were never exported** — not seven separate oversights:
 **Onboarded:** August 13, 2026 (band room discovery)  
 **Consolidated:** August 14, 2026 (merged duplicate MPR-061 into MPR-036)  
 **Serial verified:** August 16, 2026  
-**Folder:** `MPR-036_Olds-Trombone/`
+**Folder:** `photos/MPR-036/`
 
 | # | Filename | Shows | Notes |
 |:-:|---|---|---|
@@ -341,7 +342,7 @@ whose photos were never exported** — not seven separate oversights:
 
 ## MPR-080 — American Standard Cornet (H.N. White)
 
-**Onboarded:** August 16, 2026 · **Source:** On-hand, program-owned several years · **Folder:** `MPR-080_American-Standard-Cornet/`  
+**Onboarded:** August 16, 2026 · **Source:** On-hand, program-owned several years · **Folder:** `photos/MPR-080/`  
 **Note:** CE session labeled this MPR-064 — remapped to MPR-080 (064 already = Selmer English horn).
 
 | # | Filename | Shows | Notes |
@@ -362,7 +363,7 @@ whose photos were never exported** — not seven separate oversights:
 
 **Onboarded:** August 16, 2026 (photo documentation)  
 **Source:** On-hand storage (predates current records)  
-**Folder:** `MPR-023_Holton-H378/`
+**Folder:** `photos/MPR-023/`
 
 | # | Filename | Shows | Notes |
 |:-:|---|---|---|
@@ -381,7 +382,7 @@ whose photos were never exported** — not seven separate oversights:
 
 **Onboarded:** August 17, 2026  
 **Source:** On-hand, program-owned (acquisition date unknown)  
-**Folder:** `MPR-081_Jupiter-JFL-507/`
+**Folder:** `photos/MPR-081/`
 
 | # | Filename | Shows | Notes |
 |:-:|---|---|---|
@@ -396,7 +397,7 @@ whose photos were never exported** — not seven separate oversights:
 
 ## MPR-082 — Yamaha YCL-250 Clarinet
 
-**Onboarded:** August 16, 2026 · **Source:** On-hand storage · **Folder:** `MPR-082_Yamaha-YCL-250/`
+**Onboarded:** August 16, 2026 · **Source:** On-hand storage · **Folder:** `photos/MPR-082/`
 
 | # | Filename | Shows | Notes |
 |:-:|---|---|---|
@@ -411,7 +412,7 @@ whose photos were never exported** — not seven separate oversights:
 
 ## MPR-083 — Olds 0-991 BBb Tuba
 
-**Onboarded:** August 16, 2026 · **Source:** On-hand band room · **Folder:** `MPR-083_Olds-0991-Tuba/`
+**Onboarded:** August 16, 2026 · **Source:** On-hand band room · **Folder:** `photos/MPR-083/`
 
 | # | Filename | Shows | Notes |
 |:-:|---|---|---|
@@ -428,7 +429,7 @@ whose photos were never exported** — not seven separate oversights:
 
 ## MPR-084 — W.F.L. Symphony Model Timpani (25", no gauge)
 
-**Onboarded:** August 16, 2026 · **Corrected:** August 17, 2026 · **Source:** Band room discovery · **Folder:** `Timpani-Three-Drum-Discovery_Aug16/`
+**Onboarded:** August 16, 2026 · **Corrected:** August 17, 2026 · **Source:** Band room discovery · **Folder:** `photos/MPR-084/`
 
 | # | Filename | Shows | Notes |
 |:-:|---|---|---|
@@ -443,7 +444,7 @@ whose photos were never exported** — not seven separate oversights:
 
 ## MPR-085 — W.F.L. Symphony Model Timpani (28", Planet Exactone)
 
-**Onboarded:** August 16, 2026 · **Corrected:** August 17, 2026 · **Source:** Band room discovery · **Folder:** `Timpani-Three-Drum-Discovery_Aug16/`
+**Onboarded:** August 16, 2026 · **Corrected:** August 17, 2026 · **Source:** Band room discovery · **Folder:** `photos/MPR-085/`
 
 | # | Filename | Shows | Notes |
 |:-:|---|---|---|
@@ -459,7 +460,7 @@ whose photos were never exported** — not seven separate oversights:
 
 ## MPR-086 — W.F.L. Concert Grand Timpani (Planet Exactone)
 
-**Onboarded:** August 16, 2026 · **Corrected:** August 17, 2026 · **Source:** Band room discovery · **Folder:** `Timpani-Three-Drum-Discovery_Aug16/`
+**Onboarded:** August 16, 2026 · **Corrected:** August 17, 2026 · **Source:** Band room discovery · **Folder:** `photos/MPR-086/`
 
 | # | Filename | Shows | Notes |
 |:-:|---|---|---|
@@ -477,7 +478,7 @@ whose photos were never exported** — not seven separate oversights:
 
 **Onboarded:** August 17, 2026  
 **Source:** On-hand (acquisition date unknown)  
-**Folder:** `MPR-087_Trevor-James-Privilege-III/`  
+**Folder:** `photos/MPR-087/`  
 **CE ID:** session labeled this horn **MPR-059** — remapped at merge to **MPR-087**
 
 | # | Filename | Shows | Notes |
@@ -499,7 +500,7 @@ whose photos were never exported** — not seven separate oversights:
 
 **Onboarded:** August 19, 2026  
 **Source:** On-hand (back-room wind stock; ownership assumed program-owned)  
-**Folder:** `MPR-088_Penzel-Mueller-A-Clarinet/`  
+**Folder:** `photos/MPR-088/`  
 **CE placeholder:** `MPR-TBD` — assigned **MPR-088** at merge
 
 | Filename | Shows |
@@ -527,7 +528,7 @@ whose photos were never exported** — not seven separate oversights:
 
 **Onboarded:** August 19, 2026  
 **Source:** On-hand (years; date unknown)  
-**Folder:** `MPR-089_Holton-CMelody/`  
+**Folder:** `photos/MPR-089/`  
 **CE placeholder:** `MPR-TBD` — assigned **MPR-089** at merge
 
 | # | Filename | Shows | Notes |
@@ -553,7 +554,7 @@ whose photos were never exported** — not seven separate oversights:
 
 **Onboarded:** August 19, 2026  
 **Source:** On-hand (reported acquired 2015, previously untracked in the closet)  
-**Folder:** `MPR-090_Yamaha-YBS-52/`  
+**Folder:** `photos/MPR-090/`  
 **CE placeholder:** `MPR-TBD` — assigned **MPR-090** at merge
 
 | # | Filename | Shows | Notes |
@@ -573,7 +574,7 @@ whose photos were never exported** — not seven separate oversights:
 
 **Onboarded:** August 18, 2026 (merged Aug 19)  
 **Source:** On-hand (storage room; years)  
-**Folder:** `MPR-091_Platz-Oboe/`  
+**Folder:** `photos/MPR-091/`  
 **CE placeholder:** `MPR-TBD` — assigned **MPR-091** at merge
 
 | Filename | Shows | Status |
@@ -595,7 +596,7 @@ whose photos were never exported** — not seven separate oversights:
 
 **Onboarded:** August 18, 2026 (merged Aug 19)  
 **Source:** On-hand (storage room)  
-**Folder:** `MPR-092_Signet-123/`  
+**Folder:** `photos/MPR-092/`  
 **CE ID:** session labeled **MPR-087** — remapped to **MPR-092**
 
 | Filename | Shows | Notes |
@@ -639,7 +640,7 @@ whose photos were never exported** — not seven separate oversights:
 
 ## MPR-019 accessory — Tuba mouthpiece (arrived with YEP-321S)
 
-**Logged:** August 16, 2026 · **Folder:** `MPR-019_YEP-321S/` (or accessory subfolder)  
+**Logged:** August 16, 2026 · **Folder:** `photos/MPR-019/`  
 **Note:** Not a euphonium mouthpiece. Rim stamp **24AW 1**; maker unknown. Disposition pending.
 
 | # | Filename | Shows | Notes |
@@ -658,7 +659,7 @@ frames are marked. **LOT-002** removed (Baxter parts) — no section.
 
 ### LOT-001 — Spencer alto sax
 
-**Assessed:** August 13, 2026 · **Serial:** **400654 ✅** · **Folder:** `LOT-001_Spencer-alto/`
+**Assessed:** August 13, 2026 · **Serial:** **400654 ✅** · **Folder:** `photos/LOT-001/`
 
 **Photo shoot:** August 6, 2026, 13:15–13:24.
 
@@ -684,7 +685,7 @@ frames are marked. **LOT-002** removed (Baxter parts) — no section.
 
 ### LOT-003 — Camelot tenor sax
 
-**Assessed:** August 13, 2026 · **Serial:** ⚠️ pending · **Folder:** `LOT-003_Camelot-tenor/`
+**Assessed:** August 13, 2026 · **Serial:** ⚠️ pending · **Folder:** `photos/LOT-003/`
 
 **Photo shoots:** August 6, 13:26–13:39 and August 13, 16:42.
 
@@ -729,7 +730,7 @@ frames are marked. **LOT-002** removed (Baxter parts) — no section.
 
 ### LOT-004 — Bundy II alto sax
 
-**Assessed:** August 13, 2026 · **Serial:** **905114 ✅** · **Folder:** `LOT-004_Bundy-II-alto/`
+**Assessed:** August 13, 2026 · **Serial:** **905114 ✅** · **Folder:** `photos/LOT-004/`
 
 **Photo shoot:** August 6, 2026, 14:41–14:45.
 
@@ -756,7 +757,7 @@ frames are marked. **LOT-002** removed (Baxter parts) — no section.
 
 ### LOT-005 — M. Masson clarinet
 
-**Assessed:** August 13, 2026 · **Serial:** N.1673 ✅ in sale record; **not re-read in these frames** · **Folder:** `LOT-005_Masson/`
+**Assessed:** August 13, 2026 · **Serial:** N.1673 ✅ in sale record; **not re-read in these frames** · **Folder:** `photos/LOT-005/`
 
 **Photo shoot:** August 6, 2026, 13:48–13:50.
 
@@ -775,7 +776,7 @@ frames are marked. **LOT-002** removed (Baxter parts) — no section.
 
 ### LOT-006 — Bundy 577 Resonite clarinet
 
-**Assessed:** August 13, 2026 · **Serial:** 1324589 ✅ in sale record; **not re-read in these frames** · **Folder:** `LOT-006_Bundy-577/`
+**Assessed:** August 13, 2026 · **Serial:** 1324589 ✅ in sale record; **not re-read in these frames** · **Folder:** `photos/LOT-006/`
 
 **Photo shoot:** August 6, 2026, 13:52–14:00.
 
@@ -801,7 +802,7 @@ frames are marked. **LOT-002** removed (Baxter parts) — no section.
 
 ### LOT-007 — Normandy clarinet
 
-**Assessed:** August 13, 2026 · **Serial:** **3621A ✅** · **Folder:** `LOT-007_Normandy/`
+**Assessed:** August 13, 2026 · **Serial:** **3621A ✅** · **Folder:** `photos/LOT-007/`
 
 **Photo shoot:** August 6, 2026, 14:06–14:13. Lives in an **A. Fontaine Paris** labeled case — that is the case, not the horn.
 
@@ -823,7 +824,7 @@ frames are marked. **LOT-002** removed (Baxter parts) — no section.
 
 ### LOT-008 — “Bundy” 577 mixed parts
 
-**Assessed:** August 13, 2026 · **Serial:** 577 ✋ (model stamp, not a body serial) · **Folder:** `LOT-008_Bundy-577-mixed/`
+**Assessed:** August 13, 2026 · **Serial:** 577 ✋ (model stamp, not a body serial) · **Folder:** `photos/LOT-008/`
 
 **Photo shoot:** August 6, 2026, 14:15–14:19.
 
@@ -848,7 +849,7 @@ frames are marked. **LOT-002** removed (Baxter parts) — no section.
 
 ### LOT-009 — Vito Reso-Tone clarinet
 
-**Assessed:** August 13, 2026 · **Serial:** **C02823-7212 ✅** · **Folder:** `LOT-009_Vito/`
+**Assessed:** August 13, 2026 · **Serial:** **C02823-7212 ✅** · **Folder:** `photos/LOT-009/`
 
 **Photo shoots:** August 6, 14:22–14:28 and August 13, 13:20.
 
@@ -871,7 +872,7 @@ frames are marked. **LOT-002** removed (Baxter parts) — no section.
 
 ### LOT-010 — Artley clarinet
 
-**Assessed:** August 13, 2026 · **Serial:** **787905 ✅** · **Folder:** `LOT-010_Artley/`
+**Assessed:** August 13, 2026 · **Serial:** **787905 ✅** · **Folder:** `photos/LOT-010/`
 
 **Photo shoots:** August 6, 14:51–14:52 and August 13, 13:21.
 
@@ -894,7 +895,7 @@ frames are marked. **LOT-002** removed (Baxter parts) — no section.
 
 ### LOT-011 — Jean Baptiste JCL480
 
-**Assessed:** August 13, 2026 · **Serial:** **F5495 ✅** · **Folder:** `LOT-011_Jean-Baptiste-JCL480/`
+**Assessed:** August 13, 2026 · **Serial:** **F5495 ✅** · **Folder:** `photos/LOT-011/`
 
 **Photo shoot:** August 6, 2026, 14:55–14:58. Extra tuning barrel visible.
 
@@ -918,7 +919,7 @@ The four frames formerly **LOT-UNKNOWN-A** (`145811167`–`145847697`) are the a
 
 ### LOT-012 — Bundy clarinet
 
-**Assessed:** August 13, 2026 · **Serial:** **775674 ✅** · **Folder:** `LOT-012_Bundy/`
+**Assessed:** August 13, 2026 · **Serial:** **775674 ✅** · **Folder:** `photos/LOT-012/`
 
 **Photo shoot:** August 6, 2026, 15:02–15:05. Shot case (lid lining hanging).
 
@@ -943,7 +944,7 @@ The four frames formerly **LOT-UNKNOWN-A** (`145811167`–`145847697`) are the a
 
 ### LOT-013 — Bundy Resonite clarinet
 
-**Assessed:** August 13, 2026 · **Serial:** **645-107 ✅** · **Folder:** `LOT-013_Bundy-Resonite/`
+**Assessed:** August 13, 2026 · **Serial:** **645-107 ✅** · **Folder:** `photos/LOT-013/`
 
 **Photo shoot:** August 6, 2026, 15:07–15:10.
 
@@ -972,7 +973,7 @@ The old Drive resume point `151006121` is **this horn’s serial**, not the star
 
 ### LOT-014 — Artley 175 clarinet
 
-**Assessed:** August 13, 2026 · **Serial:** **249004 ✅** · **Folder:** `LOT-014_Artley-175/`
+**Assessed:** August 13, 2026 · **Serial:** **249004 ✅** · **Folder:** `photos/LOT-014/`
 
 **Photo shoot:** August 6, 2026, 15:12–15:16. The Aug 13 CE filename table was never merged; **recovered from disk this pass.**
 
@@ -997,7 +998,7 @@ The old Drive resume point `151006121` is **this horn’s serial**, not the star
 
 ### LOT-015 — Bundy clarinet
 
-**Assessed:** August 13, 2026 · **Serial:** **225852 ✅** · **Folder:** `LOT-015_Bundy/`
+**Assessed:** August 13, 2026 · **Serial:** **225852 ✅** · **Folder:** `photos/LOT-015/`
 
 **Photo shoot:** August 6, 2026, 15:18–15:22. Nicer LeBlanc-badged case than LOT-014; handle tag **BUNDY #225852**.
 
@@ -1022,7 +1023,7 @@ The old Drive resume point `151006121` is **this horn’s serial**, not the star
 
 ### LOT-016 — Artley 18-0 (flute)
 
-**Assessed:** August 15, 2026 · **Serial:** **252-817 ✋** · **Folder:** `LOT-016_Artley-18-0/`
+**Assessed:** August 15, 2026 · **Serial:** **252-817 ✋** · **Folder:** `photos/LOT-016/`
 
 **Photo shoot:** August 6, 2026, 15:40–15:45.
 
@@ -1050,7 +1051,7 @@ The old Drive resume point `151006121` is **this horn’s serial**, not the star
 
 ### LOT-017 — Armstrong 104 (flute)
 
-**Assessed:** August 15–16, 2026 · **Serial:** **G9114 / G9116 ✅** · **Folder:** `LOT-017_Armstrong-104/`
+**Assessed:** August 15–16, 2026 · **Serial:** **G9114 / G9116 ✅** · **Folder:** `photos/LOT-017/`
 
 **Photo shoots:** August 6, 15:47–15:50 (case/horn) and August 16, 02:54–02:55 (serial stamps).
 
@@ -1080,7 +1081,7 @@ The Aug 18 recovery put the **Reynolds vintage-case** NIGHT frames here. Those m
 
 ### LOT-018 — Reynolds R11C (flute)
 
-**Assessed:** August 15, 2026 · **Serial:** **41249 ✅** (play-test; **not** in these frames) · **Folder:** `LOT-018_Reynolds-R11C/`
+**Assessed:** August 15, 2026 · **Serial:** **41249 ✅** (play-test; **not** in these frames) · **Folder:** `photos/LOT-018/`
 
 **Photo shoot:** August 6, 2026, 15:52–15:55 — vintage leather case, royal-blue velvet, **cleaning rod** (016/017 have no rod).
 
@@ -1104,7 +1105,7 @@ The Aug 18 recovery put the **Reynolds vintage-case** NIGHT frames here. Those m
 
 ### LOT-019 — Bundy trombone
 
-**Assessed:** August 13, 2026 · **Serial:** **678064 ✅** · **Folder:** `LOT-019_Bundy-trombone/`
+**Assessed:** August 13, 2026 · **Serial:** **678064 ✅** · **Folder:** `photos/LOT-019/`
 
 | # | Filename | Shows | Notes |
 |:-:|---|---|---|
@@ -1119,7 +1120,7 @@ The Aug 18 recovery put the **Reynolds vintage-case** NIGHT frames here. Those m
 
 ### LOT-020 — Buescher True Tone 393 euphonium (fleet **MPR-062**)
 
-**Assessed:** August 13 / 17, 2026 · **Serial:** **330366 ✅** in inventory · **Folder:** stays `MPR-062` until a LOT folder exists
+**Assessed:** August 13 / 17, 2026 · **Serial:** **330366 ✅** in inventory · **Folder:** `photos/MPR-062/` (fleet→LOT; files stay under MPR-062)
 
 August 15 13:44–13:59 (`PXL_20260815_134452237`–`135947155`, 20 files) is a **mixed** silver 3-valve session.
 
@@ -1136,7 +1137,7 @@ August 15 13:44–13:59 (`PXL_20260815_134452237`–`135947155`, 20 files) is a 
 
 ### LOT-021 — Bach 1530 trumpet (fleet **MPR-075**)
 
-**Assessed:** August 15 / 17, 2026 · **Serial:** **E91664 ✅** · **Folder:** `MPR-075_Bach-1530/`
+**Assessed:** August 15 / 17, 2026 · **Serial:** **E91664 ✅** · **Folder:** `photos/MPR-075/` (fleet→LOT; files stay under MPR-075) (fleet→LOT; files stay under MPR-062)
 
 Already indexed under **MPR-075**: `PXL_20260815_165739969.jpg`, `165755510`, `165808170` (serial **E91664**), `165814004`, `165837183`, `165841055`.
 

@@ -18,7 +18,7 @@ You handle:
 - **Compare** — match intake against `inventory.md`, `sale-inventory.md`, `assignment.md`, `students.md`, `tag-log.md`, `onboarding-photo-index.md`, and `photos/`
 - **Gap questions** — stop when a cluster is missing summary, photo index, or photos
 - **Merge** — apply session-updates / summaries / full-file replacements; assign real `MPR-###` / `LOT-###` at merge time
-- **Photos** — file into `photos/<MPR-###>/` or `photos/<LOT-###>/` (or `photos/_pending/`) and **commit them in git** (marketplace / CE listing skills `present_files` from this tree)
+- **Photos** — **copy** into `photos/<MPR-###>/` or `photos/<LOT-###>/` (or `photos/_pending/`) and **commit them in git**; never delete `intrument-pics/`; never git-add archive jpgs; index Folder lines must be `photos/<ID>/` with full filenames
 - **Skills** — merge `SKILL.md` / `manifest.json` into the matching `skills/SKILL-00N-*/` only
 - **Tags HTML** — regenerate `mpr-tags.html` after inventory/tag-log/assignment changes
 - **Archive** — copy `updates/` to `landing-zone/archive/updates-YYYY-MM-DD/`, then clear the inbox
