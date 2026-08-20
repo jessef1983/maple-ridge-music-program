@@ -16,18 +16,18 @@ photos/
 ## Rules
 
 - One folder per `MPR-###` or `LOT-###` — **no brand suffix** in the folder name
-- Keep original camera filenames (`PXL_*`, `IMG_*`, etc.)
+- Keep original on-disk filenames (`PXL_*`, and rare export names like `IMG_*` when that is what landed)
 - No student names in folder names
 - `onboarding-photo-index.md` **Folder:** lines must be `` `photos/MPR-###/` `` or `` `photos/LOT-###/` ``
 - Fleet→LOT: LOT-020 files stay under `MPR-062/`; LOT-021 under `MPR-075/`
 
-## Filename families
+## Filename notes
 
-| Prefix | Meaning |
+| Pattern | Meaning |
 |---|---|
-| `PXL_*` | Pixel phone (majority of the library) |
-| `IMG_*` | Other phone (e.g. MPR-010 serial shots) |
-| `1000######.jpg` | Separate non-Pixel camera — often still missing from disk |
+| `PXL_*` | Pixel capture (majority of the library) |
+| `IMG_*` | Same intake export name when that is what is on disk (e.g. MPR-010) — **not** a second phone |
+| `1000######.jpg` | **Retired CE Drive-connector aliases** — never re-add; map to Pixel timestamps instead |
 
 Bare `` `163855038` `` in older index prose is CE shorthand for the Pixel 9-digit timestamp — match on those digits.
 

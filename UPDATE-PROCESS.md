@@ -169,8 +169,8 @@ Keep original camera filenames; no student names in folder names.
 
 **Index rules (required for every photo cluster):**
 - `onboarding-photo-index.md` **Folder:** line must be exactly `` `photos/MPR-###/` `` or `` `photos/LOT-###/` `` (no brand suffix).
-- Table filenames must be the **full** on-disk name (`PXL_….jpg`, `IMG_….jpg`). Do not leave bare 9-digit stems in new rows; expand CE shorthand at merge.
-- `1000######.jpg` means a **non-Pixel camera** — record as missing until that export lands; do not invent Pixel names for them.
+- Table filenames must be the **full** on-disk name (`PXL_….jpg`, or whatever the export actually used). Do not leave bare 9-digit stems in new rows; expand CE shorthand at merge.
+- Never invent `1000######.jpg` names — those were CE Google Drive connector aliases. Prefer Pixel timestamps from the intake sitting.
 - Fleet→LOT (LOT-020 / LOT-021): keep files under the fleet `photos/MPR-###/` and say so on the Folder line.
 
 Do not gitignore `photos/`. Do **not** `git add` photo binaries under `landing-zone/archive/` (markdown archive only). Do not dump `photos/` into the 15-file CE seed.
