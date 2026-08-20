@@ -4,7 +4,7 @@
 **Purpose:** Durable index of intake/assessment photos for fleet instruments (`MPR-###`) and sale-pipeline items (`LOT-###`). Cross-reference against `inventory.md`, `assignment.md`, and `sale-inventory.md`.  
 **Naming convention for folders:** `MPR-###_Brand-Model` or `LOT-###_Brand-Model` (no holder name — holders change)
 
-**Last reconciled:** August 20, 2026 (LOT-022 Heimer; MPR-067 Oboe; **MPR-093** Reynolds Contemporary for Keith)
+**Last reconciled:** August 20, 2026 (LOT-022 Heimer; MPR-067 Oboe; **MPR-093** Reynolds Contempora Chambers Model for Keith)
 
 > **Read this before concluding an instrument has no photos.**
 >
@@ -616,7 +616,7 @@ whose photos were never exported** — not seven separate oversights:
 
 ---
 
-## MPR-093 — Reynolds Contemporary double French horn
+## MPR-093 — Reynolds Contempora Chambers Model double French horn
 
 **Onboarded:** August 20, 2026  
 **Source:** On-hand (Keith Woolston uses it)  
@@ -624,11 +624,16 @@ whose photos were never exported** — not seven separate oversights:
 
 | # | Filename | Shows | Notes |
 |:-:|---|---|---|
-| 1 | `PXL_20260820_112611193.jpg` | Bell engraving / crest | Jesse's read: **Reynolds / Contemporary / Cleveland / Chambers Hon… / RMC**. A **B.M.C.** shield / Bohemian Elkhart mark is also in this frame |
-| 2 | `PXL_20260820_112714088.jpg` | Rotary valve casing | Serial **64178 ✅** (faint **L** above digits) |
-| 3 | `PXL_20260820_112820062.jpg` | Rotary valves 1–3 | Caps stamped 1 A / 2 A / 3 A; green corrosion on cap centers |
+| 1 | `PXL_20260820_112607236.jpg` | Bell engraving, wide | Reynolds / Cleveland Ohio / RMC shield (album completion, Aug 20) |
+| 2 | `PXL_20260820_112611193.jpg` | Bell engraving / crest | Jesse: Reynolds / Contemporary / Cleveland / Chambers Hon… / RMC. Catalog: **Contempora** + **Chambers Model** |
+| 3 | `PXL_20260820_112619065.jpg` | Bell engraving, sharpest | **Contempora** script + **CLEVELAND / OHIO** + **RMC** shield (lyre). Closes BMC/Bohemian first-pass |
+| 4 | `PXL_20260820_112625445.jpg` | Bell engraving, alt angle | Same Reynolds Contempora / Cleveland / RMC stamp; plating wear |
+| 5 | `PXL_20260820_112630476.jpg` | Bell engraving, alt angle | Same stamp; pitting |
+| 6 | `PXL_20260820_112708425.jpg` | Rotary valve casing, alt | Serial **64178 ✅** (second angle) |
+| 7 | `PXL_20260820_112714088.jpg` | Rotary valve casing | Serial **64178 ✅** (faint **L** above digits) |
+| 8 | `PXL_20260820_112820062.jpg` | Rotary valves 1–3 | Caps stamped 1 A / 2 A / 3 A; green corrosion on cap centers |
 
-**Status:** Double French horn. Serial **64178 ✅**. Assigned to Keith Woolston (ASGN-039). Condition Unknown. Bell inscription completed from Jesse's read, not from the first-pass “Bohemian” label.
+**Status:** Double French horn, **Reynolds Contempora Chambers Model**, Cleveland, serial **64178 ✅** (c.1961 RMC estimate). Assigned to Keith Woolston (ASGN-039). Condition Unknown. **RMC shield confirmed** on additional bell shots. Remaining Chambers letters still unconfirmed.
 
 ---
 
