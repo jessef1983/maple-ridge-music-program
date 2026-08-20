@@ -108,15 +108,18 @@ Questions should be specific: cite paths, serials, and the two records that coll
 
 ## Photos (git)
 
-`photos/` is the git source of truth for intake and listing shots. Claude Marketplace / CE listing skills **`present_files`** these so a listing can be posted with the actual images — not Drive filenames.
+`photos/` is the git source of truth for intake and listing shots (GitHub Sync / Marketplace `present_files`). `intrument-pics/` is a **gitignored local dump** — copy from it; never delete it during ingest.
 
 1. Assign/confirm ID first if the cluster is new.
-2. Copy into `photos/MPR-###/` or `photos/LOT-###/` (or `photos/_pending/<slug>/` if ID is blocked).
-3. Keep original filenames. No student names in folder names.
-4. Update `onboarding-photo-index.md` with repo-relative paths (`photos/MPR-034/PXL_….jpg`).
-5. **`git add` the new files.** Never gitignore `photos/`.
-6. Do **not** copy the whole tree into the 15-file CE seed. Bundle selected LOT folders into a marketplace skill package (or a dedicated photo upload) when posting from Claude.
-7. Historical `intrument-pics/` is an unfiled local dump (~1.7 GB). File from it into `photos/<ID>/` when ingesting; do not commit the dump folder as-is.
+2. **Copy** into `photos/MPR-###/` or `photos/LOT-###/` (or `photos/_pending/<slug>/` if ID is blocked). Never move/delete dump files.
+3. Keep original camera filenames. No student names in folder names.
+4. Update `onboarding-photo-index.md`:
+   - **Folder:** exactly `` `photos/MPR-###/` `` or `` `photos/LOT-###/` ``
+   - Full filenames in tables (`PXL_…`, `IMG_…`). Expand CE bare-timestamp shorthand at merge.
+   - `1000######.jpg` = other camera, often still missing — do not invent Pixel names.
+5. **`git add` only `photos/<ID>/` files.** Never gitignore `photos/`. Never `git add` jpgs under `landing-zone/archive/` (markdown archive only).
+6. Do **not** copy the whole tree into the 15-file CE seed.
+7. Fleet→LOT: LOT-020 → `photos/MPR-062/`; LOT-021 → `photos/MPR-075/`.
 
 GitHub warns at 50MB/file and blocks at 100MB. Ordinary phone photos are fine. If the `photos/` tree grows past a painful clone, add Git LFS then — it is not installed in this environment today.
 
