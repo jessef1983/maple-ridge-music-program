@@ -1,7 +1,7 @@
 # Instrument Inventory
  
 **Maple Ridge School** · Ulster Park, NY · (845) 339-6681  
-**Last updated:** August 19, 2026
+**Last updated:** August 20, 2026
 **Numbering:** `MPR-###`, retired IDs are never reused.
  
 ---
@@ -71,7 +71,7 @@
 | MPR-064 | English Horn | Selmer | Storage | 02744 ✅ | TBD | Owned | Excellent |
 | MPR-065 | Oboe | Gordet (Paris N.Y. / Italian) | Storage | B263 ✅ | TBD | Owned | Excellent |
 | MPR-066 | English Horn | Gordet (Paris N.Y.) | Storage | A765 ✅ | TBD | Owned | Excellent |
-| MPR-067 | English Horn | Forrest (Marigaux stencil) | Storage | 4041 ✅ | `$3,000.00` | Owned | Good |
+| MPR-067 | Oboe | Forrest (Marigaux stencil) | Storage | 4041 ✅ | `$3,000.00` | Owned | Good |
 | MPR-068 | Oboe | Conn | Storage | P509 ✅ | TBD | Owned | Excellent |
 | MPR-069 | English Horn | Fritz Schüller (Markneukirchen) | Storage | 7905 ✅ | TBD | Owned | Excellent |
 | MPR-070 | Trumpet | Bach Stradivarius Model 43 | Storage | 465243 ✅ | TBD | Owned | Excellent |
@@ -135,7 +135,7 @@
 | MPR-064 | TBD | On-hand (storage) | — | **Brand:** Selmer, Paris. **Model:** English horn (cor anglais). **Serial:** 02744 ✅. **Condition:** Excellent. **Outfit:** two bocals, cleaning rod, swab, grease, hard case. **Outstanding:** acquisition source/date unknown; bocal ownership still unclarified but leave as-is if in use; not yet play-tested. |
 | MPR-065 | TBD | On-hand (storage) | — | **Brand:** Gordet Paris N.Y. (Ben Storch brand stamp on European import — not a Paris factory). **Origin:** ITALY stamped on body (Italian Gordet line, typically Bulgheroni). **Serial:** B263 ✅. **Model:** unknown — B263 is the serial, not a published Gordet model code. **Outstanding:** acquisition date/cost unknown; play-test before assignment. Earlier “Cabart” / “regular + petit” reads were incorrect. |
 | MPR-066 | TBD | On-hand (storage) | — | **Brand:** Gordet Paris N.Y. (Storch brand stamp). **Serial:** A765 ✅ — readable on two parts of the horn. **Model:** unknown — A765 is the serial/mark, not treated as a published model code. **Inscription:** Albion College / COLLEGE (case or body — confirm location if needed). **Outfit:** case, reeds. **Bocals in case:** two **F. Lorée Paris** English horn bocals — size **#2** (standard) and size **#1** (short), older series, silver-plated nickel silver. Numbers do **not** match A765. **Leave in place** — may be in active use; do not reassign or list for sale without checking first. **Outstanding:** acquisition date/source unknown; play-test pending. |
-| MPR-067 | 2014 | On-hand | — | **Brand:** Forrest (Made in France) — Marigaux stencil per maker references. **Instrument:** English horn (bulb bell), not oboe. **Serial:** 4041 ✅. **Overhaul:** Kim Boller, 2014 (master technician). **Landed:** `$3,000.00` (confirmed). **Outfit:** Forrets/Forrests soft outer bag + hard case; reeds; Lorée-marked end cap in case (mixed accessories). **Outstanding:** play-test as needed. |
+| MPR-067 | 2014 | On-hand | — | **Brand:** Forrest (Made in France) — Marigaux stencil per maker references. **Instrument:** Oboe (Aug 20 storage walkthrough reclassified from English horn — physical count 5 oboes / 3 English horns; MPR-067 was the mis-typed horn). **Serial:** 4041 ✅. **Overhaul:** Kim Boller, 2014 (master technician). **Landed:** `$3,000.00` (confirmed). **Outfit:** Forrets/Forrests soft outer bag + hard case; reeds; Lorée-marked end cap in case (mixed accessories). **Outstanding:** play-test as needed. |
 | MPR-068 | TBD | On-hand | — | **Brand:** C.G. Conn. **Instrument:** Oboe (flared bell). **Serial:** P509 ✅. **Outfit:** three joints, case, grease/accessories as photographed — **no bocals** (oboes don’t use them; earlier “two bocals” claim dropped). **Outstanding:** acquisition date/source and landed cost unknown. |
 | MPR-069 | TBD | On-hand | — | **Brand:** Fritz Schüller (Gebr.), Markneukirchen — stamp faded but confirmed; not “Chadwick, Germany.” **Serial:** 7905 ✅. **Case:** Miraphone (not Amolfozia). **Bocal:** present — stamped **TH2 / B13** (not matching 7905; record as this outfit’s bocal unless later reassigned). **Condition:** no cracks observed. **Outstanding:** acquisition date/source unknown; play-test pending; exact model line still open. |
 | MPR-070 | TBD | On-hand | — | **Brand:** Bach (Vincent Bach Corporation). **Model:** Stradivarius Model 43. **Serial:** 465243 ✅. **Finish:** silver-plate. **Outfit:** mouthpiece, case, cleaning cloth, valve oil. **Outstanding:** acquisition date and landed cost unknown. |
@@ -281,4 +281,5 @@
 - **Ross Martinie-Eiler** — no MPR assignment. Assistant director for drum lessons / percussion; leave off until he holds a numbered instrument (Jesse, Aug 19).
 - **Aug 17 flute photo export** — closed Aug 19 second pass: MPR-026 **11/11** and MPR-087 **8/8** now in `intrument-pics/`. `1000######` batch remains a separate missing device.
 - **Back-room wind inventory** — closed Aug 19. Today’s three: **MPR-088** A clarinet (Penzel-Müller 7580), **MPR-089** C-melody sax (Holton 17770), **MPR-090** bari sax (Yamaha YBS-52 020945). Aug 18 oboes already logged: **MPR-091** Platz 1520, **MPR-092** Signet 123 / M 31137. Shelf complete per Jesse.
+- **MPR-067 type** — Aug 20 storage walkthrough: reclassified from English Horn to **Oboe** (Forrest 4041). Physical count 5 oboes / 3 English horns; MPR-067 was the mis-typed horn. Maker, serial, landed cost unchanged.
 - **MPR-080 tags** — resolved. `tag-log.md` confirms both Permanent and Student tags were printed 2026-08-16 for Sarah Frase's cornet.

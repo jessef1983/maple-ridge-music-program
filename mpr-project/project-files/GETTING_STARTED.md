@@ -41,7 +41,7 @@ Instead of juggling files, you use **skills** — guided workflows that ask the 
 - Generates permanent tag (laminated, exterior)
 - Generates student tag (swappable, interior)
 - Calibrates to your printer (HP M479fdw)
-- After print, Clear sheet can download a `session-updates-tag-print-*.md` for the tag log (drop in `/updates/`)
+- After print, Clear sheet can download a `session-updates-tag-print-*.md` for the tag log (drop in `/updates/`, then run local `@admin-ingest`)
 - Instructions for sealing
 **Typical time:** 3–5 minutes per instrument
  

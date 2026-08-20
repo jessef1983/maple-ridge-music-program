@@ -59,7 +59,7 @@ End the turn after presenting the picker. The user's selection arrives as their 
 5. User picks MPR ID and position on sheet
 6. User prints at 100%, Cardstock/Heavy
 7. User clicks **Clear sheet** and confirms the print succeeded — the page downloads `session-updates-tag-print-YYYY-MM-DD.md` with `tag-log.md` rows
-8. Remind once: drop that file in `/updates/` for Claude Code merge (then local `node generate-tags.js` clears the outstanding-tag flags)
+8. Remind once: drop that file in `/updates/` for `@admin-ingest` (then local `node generate-tags.js` clears the outstanding-tag flags)
 **Preamble:** "Here's the tag printer. Download it and open it in your browser — the buttons don't work in the chat preview. After you print, use Clear sheet to save the tag-log session-updates file."
  
 ---
@@ -275,6 +275,6 @@ Before leaving the conversation that changed any record:
 
 1. Ensure a single **`session-updates-<chat-name-slug>.md`** artifact exists (chat name from the "Get Started with ___" phrase or conversation title; kebab-case).
 2. If photos were added this session, it must include an **`onboarding-photo-index.md`** section (filenames + what each shows) — not chat-only lists.
-3. **`present_files`** that session-updates file and remind once: download → drop in `/updates/` for Claude Code merge.
+3. **`present_files`** that session-updates file and remind once: download → drop in `/updates/` (and drop the photos next to it). Local **`@admin-ingest`** (Cursor / Copilot / Claude Code) merges — not this CE chat.
 4. Never invent a new `MPR-###` for a brand-new instrument — use `MPR-TBD` and brand/serial/photos; merge assigns the real ID.
  

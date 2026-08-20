@@ -140,7 +140,7 @@ This reads `project-files/inventory.md`, `tag-log.md`, and `assignment.md`, merg
 
 ## Recording changes made during a Claude Enterprise session
 
-Claude Enterprise reads this project's files during a chat but can't edit them in place — nothing a skill "writes" during a conversation is real until it's back in this folder in the repo. Every skill records changes as dated entries in a **session-updates** artifact instead of handing back an entire regenerated file. The user downloads that file, drops it in `/updates/`, and Claude Code merges each entry into the correct file here — see `UPDATE-PROCESS.md` Step 1b.
+Claude Enterprise reads this project's files during a chat but can't edit them in place — nothing a skill "writes" during a conversation is real until it's back in this folder in the repo. Every skill records changes as dated entries in a **session-updates** artifact instead of handing back an entire regenerated file. The user downloads that file, drops it in `/updates/` (photos alongside it), and local **`@admin-ingest`** (Cursor / Copilot / Claude Code) merges each entry — see `UPDATE-PROCESS.md`.
 
 ### Hard rules (all skills + concierge)
 
@@ -246,15 +246,12 @@ One row per tag print event — never overwritten, so the log accumulates every 
 
 ## Workflow: Updating This Upload
 
-Full process lives in `UPDATE-PROCESS.md` at the repo root. Summary:
+Full process lives in `UPDATE-PROCESS.md` at the repo root. **Local merge is `@admin-ingest`** (Cursor / Copilot / Claude Code) — not this CE chat.
 
-1. Merge anything in `/updates/` into the matching file here — manual full-file replacements by mtime, AND any `session-updates*.md` from a CE session, applied entry by entry (assign real `MPR-###` where entries say `MPR-TBD`)
-2. Merge skill file updates into the matching `skills/SKILL-00N-*/` folder, rebuild the `.skill` package
-3. Regenerate `mpr-tags.html` locally (`node generate-tags.js`), after Step 1 so tag-log.md merges are reflected
-4. Archive session clutter (summaries, handoffs, audits, merged `session-updates.md`) to `landing-zone/archive/`
-5. Verify this folder holds exactly the 15 files listed above, nothing else
-6. Delete this folder entirely and re-upload it fresh — anything sitting here at upload time goes to Enterprise
-7. **Reminder:** re-upload project-files/ and/or reinstall any updated `.skill` package in Claude Enterprise — nothing here takes effect there until it does
+1. Drop the session-updates file (and photos) in `/updates/`
+2. Run `@admin-ingest`: audit → compare to inventory → ask if summary MD, photo index, or photos are missing → merge (assign real `MPR-###` where entries say `MPR-TBD`) → file photos under `photos/<MPR-### or LOT-###>/` → regenerate `mpr-tags.html` → archive the inbox → session branch + PR to `main`
+3. After the PR is on `main`: delete this folder in Claude Enterprise and re-upload it fresh
+4. Reinstall any updated `.skill` package if a skill source changed
 
 ---
 
@@ -295,6 +292,7 @@ Open `inventory.md`, find "Storage" section.
 
 ## Revision History
 
+- **2026-08-20** — Local **`@admin-ingest`** for `/updates/` (gap check; git-tracked `photos/` for Marketplace `present_files`; session branch + PR to `main`). Ingest is not a CE skill.
 - **2026-08-14** (4th update) — Added the fifth skill, **Music Purchase** (`SKILL-005`), and `repertoire.md` as the 15th project file: concert band repertoire chosen from the actual ensemble rather than the published grade, with `REP-###` titles, programming history, and reusable rejection reasons. Rewired the concierge — "Music Purchasing" was a Tier-2 stub still describing eBay/Reverb *instrument* buying, which is `instrument-purchase`'s job. Bumped **Coupa Expense Reconciliation to 1.1.0** with live-verified `coupa_graphql` query patterns after the skill kept failing against the connector: it named the MCP tools but taught no query syntax, so Relay-style `first:`/`filters:`, dotted nested-field filters, and `~`/`[c]=` wildcards were being improvised — all of which throw internal server errors rather than returning empty. Also documented that the `query` filter is exact-match only, that no-argument queries default to ascending `id` (making recent reports look missing), and a new data-boundary rule: an unfiltered `expenseReports` query returns cross-organization expense data and must never be logged or written to `session-updates.md`.
 - **2026-08-14** (3rd update) — Added `tag-log.md` (14th project file) and the outstanding-tag flag in `mpr-tags.html`; fixed an off-by-one bug in `generate-tags.js` that silently dropped the first row of the fleet table (MPR-001) from every generated tag file. Documented the `session-updates.md` protocol: all four skills now record CE-session changes as dated deltas instead of regenerating whole files, since Claude Enterprise can't edit project files in place. Reworded the concierge picker options as "Get Started with ___" in `ROUTING.md`/`GETTING_STARTED.md` so CE chats get a readable name instead of a generic one.
 - **2026-08-14** (2nd update) — Added the fourth skill, Coupa Expense Reconciliation (converted from a technical integration spec into the conversational workflow format used by the other three).

@@ -26,4 +26,6 @@ This instruction **is** commit-and-push approval for those publish moments.
 
 ## Maple Ridge note
 
-This repo may commit on `main`. Do not invent a branch unless the user asks or another repo's rules forbid main commits.
+**Inbox ingest (`@admin-ingest`):** always cut `session-YYYY-MM-DD-<topic>`, commit there (including `photos/`), push, and open a PR to `main`. Do not commit ingest merges directly to `main`.
+
+Other publish moments (skill packaging with no inbox merge): commit + push on the current branch if one exists; do not invent a branch unless the user asks.

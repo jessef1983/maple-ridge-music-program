@@ -76,7 +76,7 @@
 | MPR-064 | English Horn | Storage | Selmer, Paris (cor anglais); serial **02744 ✅**; two bocals, cleaning rod, swab, grease, hard case; not yet play-tested | Excellent |
 | MPR-065 | Oboe | Storage | Gordet Paris N.Y. (Italian import, Bulgheroni-made); serial **B263 ✅**; play-test pending | Excellent |
 | MPR-066 | English Horn | Storage | Gordet Paris N.Y.; serial **A765 ✅**; two Lorée bocals in case (non-matching numbers) — leave in place, may be in active use; play-test pending | Excellent |
-| MPR-067 | English Horn | Storage | Forrest (Marigaux stencil); serial **4041 ✅**; overhauled by Kim Boller 2014; landed $3,000 | Good |
+| MPR-067 | Oboe | Storage | Forrest (Marigaux stencil); serial **4041 ✅**; overhauled by Kim Boller 2014; landed $3,000 | Good |
 | MPR-068 | Oboe | Storage | C.G. Conn, flared bell; serial **P509 ✅**; no bocals needed | Excellent |
 | MPR-069 | English Horn | Storage | Fritz Schüller (Markneukirchen); serial **7905 ✅**; Miraphone case; bocal stamped TH2/B13 (non-matching) | Excellent |
 | MPR-070 | Trumpet | Storage | Bach Stradivarius Model 43, silver-plate; serial **465243 ✅** | Excellent |

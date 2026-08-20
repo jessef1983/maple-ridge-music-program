@@ -4,7 +4,7 @@
 **Purpose:** Durable index of intake/assessment photos for fleet instruments (`MPR-###`) and sale-pipeline items (`LOT-###`). Cross-reference against `inventory.md`, `assignment.md`, and `sale-inventory.md`.  
 **Naming convention for folders:** `MPR-###_Brand-Model` or `LOT-###_Brand-Model` (no holder name — holders change)
 
-**Last reconciled:** August 19, 2026 (Aug 19 intake + Aug 18 oboe merge; Aug 17 flute photos on disk)
+**Last reconciled:** August 20, 2026 (LOT-022 Heimer; MPR-067 reclassified Oboe; Aug 20 pending Bohemian + tag sheet)
 
 > **Read this before concluding an instrument has no photos.**
 >
@@ -174,15 +174,15 @@ whose photos were never exported** — not seven separate oversights:
 
 ---
 
-## MPR-067 — Forrest (Marigaux) English Horn
-**Onboarded:** August 15, 2026 · **Source:** On-hand · **Folder:** `MPR-067_Forrest-EnglishHorn/`
+## MPR-067 — Forrest (Marigaux) Oboe
+**Onboarded:** August 15, 2026 · **Source:** On-hand · **Folder:** `photos/MPR-067/` (legacy index folder `MPR-067_Forrest-EnglishHorn/`)
 
 | # | Filename | Shows |
 |:-:|---|---|
 | 1–4 | `PXL_20260815_152021394.jpg`, `PXL_20260815_152053919.jpg`, `PXL_20260815_152111793.jpg`, `PXL_20260815_152133039.jpg` | Forrets bag, case/outfit, Forrest Made in France stamps, reeds |
 | 5–9 | `PXL_20260815_152158754.jpg`, `PXL_20260815_152223828.jpg`, `PXL_20260815_152227163.jpg`, `PXL_20260815_152249720.jpg`, `PXL_20260815_152250963.jpg` | Reed/keywork detail, serial **4041**, Kim Boller 2014 overhaul stamp |
 
-**Status:** English horn. Forrest / Made in France (Marigaux stencil). Serial **4041 ✅**. Kim Boller overhaul **2014**. Landed **`$3,000.00`**. Not an oboe; not a “Forrest L Loree-style” model.
+**Status:** **Oboe** (reclassified Aug 20 storage walkthrough; was logged as English horn). Forrest / Made in France (Marigaux stencil). Serial **4041 ✅**. Kim Boller overhaul **2014**. Landed **`$3,000.00`**. Legacy photos still under the English-horn folder name until filed into `photos/MPR-067/`.
 
 ---
 
@@ -1123,6 +1123,30 @@ Already indexed under **MPR-075**: `PXL_20260815_165739969.jpg`, `165755510`, `1
 
 ---
 
+## LOT-022 — Heimer Bb trumpet (serial 109)
+
+**Session:** August 20, 2026  
+**Purpose:** Sale-pipeline intake from photos (not play-tested)  
+**Folder:** `photos/LOT-022/`
+
+| # | Filename | Shows | Notes |
+|:-:|---|---|---|
+| 1 | `PXL_20260820_114858736.jpg` | Case exterior, closed | Gold "Harmonic Brass" sticker + "BESSON" nameplate (upside-down) |
+| 2 | `PXL_20260820_114905584.jpg` | Case open, lid up | Assembled trumpet in case |
+| 3 | `PXL_20260820_114933620.jpg` | Bell engraving close-up | Cursive **"Heim[er]"** + **MADE IN CHINA** |
+| 4 | `PXL_20260820_114947901.jpg` | Bell engraving close-up, alt crop | **"...mer" / SINCE 1958** |
+| 5 | `PXL_20260820_114952267.MP.jpg` | Bell engraving close-up | **"...mer" / SINCE 1958** |
+| 6 | `PXL_20260820_115053972.MP.jpg` | Extreme macro, unidentified mark | Illegible — not logged as serial |
+| 7 | `PXL_20260820_115116853.jpg` | Valve casings, top-down | Serial **109 ✅** on 2nd valve casing |
+| 8 | `PXL_20260820_115217643.jpg` | Assembled trumpet in case, angle A | |
+| 9 | `PXL_20260820_115230079.jpg` | Assembled trumpet in case, angle B | |
+| 10 | `PXL_20260820_115437191.jpg` | Case open, overview | Disassembled slides/valve tops |
+| 11 | `PXL_20260820_115445143.jpg` | Disassembled parts close-up | Valve caps, slides, crooks |
+
+**Status:** 11/11 on disk in `photos/LOT-022/`. Brand + serial photo-confirmed. Condition Unassessed. No mouthpiece. Case mismatch flagged.
+
+---
+
 ### Unassigned / not-sale (same dumps)
 
 | Cluster | Files | What it is |
@@ -1135,6 +1159,8 @@ Already indexed under **MPR-075**: `PXL_20260815_165739969.jpg`, `165755510`, `1
 | Aug 13 13:58 | `135833818`, `135840108` | Signet Special wood clarinet — fleet, not a sale LOT |
 | Aug 13 17:12–17:19 | `171224929`, `171531283`, `171557321`, `171934062` | **MNT-001** Signet Selmer USA bassoon + bocals |
 | Aug 13 17:26–17:31 | `172622389`, `172815087.MP`, `173140830` | **MPR-082** Yamaha clarinet / **MNT-002** Yamaha 450N + Vandoren B45 |
+| Aug 20 11:26–11:28 | `PXL_20260820_112611193.jpg`, `112714088.jpg`, `112820062.jpg` | **Pending** — Bohemian / B.M.C. Elkhart (rotary; serial **64178**). No summary. In `photos/_pending/bohemian-bmc-64178/` |
+| Aug 20 11:30 | `PXL_20260820_113021378.jpg` | Printed tag sheet (program + student tags). **Not a tag-log event.** In `photos/_pending/printed-tags-2026-08-20/` — student names visible, not for public listing |
 
 ---
 

@@ -1,0 +1,12 @@
+---
+description: Route inbox merge to @admin-ingest — audit updates/, gap-check, file photos into git, PR to main
+alwaysApply: false
+---
+
+# MPR admin-ingest
+
+When the user says `@admin-ingest`, `ingest`, `merge updates`, or drops work in `updates/` to be merged:
+
+Follow `.cursor/skills/admin-ingest/SKILL.md` and `.github/agents/admin-ingest.agent.md`. Canonical steps: `UPDATE-PROCESS.md`.
+
+Require (or ask to waive) **summary MD**, **photo index**, and **photos** per intake cluster. File photos under `photos/` and **commit them**. Assign `MPR-###` at merge. Do not commit ingest to `main` — session branch + PR.
