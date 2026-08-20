@@ -1,7 +1,7 @@
 # Student Roster
  
 **Maple Ridge School** · Ulster Park, NY  
-**Last updated:** August 19, 2026  
+**Last updated:** August 20, 2026  
 **Annual review date:** August 1 (before school year)
  
 ---
@@ -64,7 +64,7 @@
 | Janice | Meier | Active | Trumpet | MPR-006 |
 | Olivia | Mow | Active | — | — |
 | Rhona | Huleatt | Active | Violin | — |
-| Keith | Woolston | Active | French Horn | — |
+| Keith | Woolston | Active | French Horn | MPR-093 |
 | Amy | Scott | Active | Cello | — |
  
 ### 7th Grade (Year 6)

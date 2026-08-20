@@ -4,7 +4,7 @@
 **Purpose:** Durable index of intake/assessment photos for fleet instruments (`MPR-###`) and sale-pipeline items (`LOT-###`). Cross-reference against `inventory.md`, `assignment.md`, and `sale-inventory.md`.  
 **Naming convention for folders:** `MPR-###_Brand-Model` or `LOT-###_Brand-Model` (no holder name — holders change)
 
-**Last reconciled:** August 20, 2026 (LOT-022 Heimer; MPR-067 reclassified Oboe; Aug 20 pending Bohemian + tag sheet)
+**Last reconciled:** August 20, 2026 (LOT-022 Heimer; MPR-067 Oboe; **MPR-093** Reynolds Contemporary for Keith)
 
 > **Read this before concluding an instrument has no photos.**
 >
@@ -616,6 +616,22 @@ whose photos were never exported** — not seven separate oversights:
 
 ---
 
+## MPR-093 — Reynolds Contemporary double French horn
+
+**Onboarded:** August 20, 2026  
+**Source:** On-hand (Keith Woolston uses it)  
+**Folder:** `photos/MPR-093/`
+
+| # | Filename | Shows | Notes |
+|:-:|---|---|---|
+| 1 | `PXL_20260820_112611193.jpg` | Bell engraving / crest | Jesse's read: **Reynolds / Contemporary / Cleveland / Chambers Hon… / RMC**. A **B.M.C.** shield / Bohemian Elkhart mark is also in this frame |
+| 2 | `PXL_20260820_112714088.jpg` | Rotary valve casing | Serial **64178 ✅** (faint **L** above digits) |
+| 3 | `PXL_20260820_112820062.jpg` | Rotary valves 1–3 | Caps stamped 1 A / 2 A / 3 A; green corrosion on cap centers |
+
+**Status:** Double French horn. Serial **64178 ✅**. Assigned to Keith Woolston (ASGN-039). Condition Unknown. Bell inscription completed from Jesse's read, not from the first-pass “Bohemian” label.
+
+---
+
 ## MPR-019 accessory — Tuba mouthpiece (arrived with YEP-321S)
 
 **Logged:** August 16, 2026 · **Folder:** `MPR-019_YEP-321S/` (or accessory subfolder)  
@@ -1159,7 +1175,6 @@ Already indexed under **MPR-075**: `PXL_20260815_165739969.jpg`, `165755510`, `1
 | Aug 13 13:58 | `135833818`, `135840108` | Signet Special wood clarinet — fleet, not a sale LOT |
 | Aug 13 17:12–17:19 | `171224929`, `171531283`, `171557321`, `171934062` | **MNT-001** Signet Selmer USA bassoon + bocals |
 | Aug 13 17:26–17:31 | `172622389`, `172815087.MP`, `173140830` | **MPR-082** Yamaha clarinet / **MNT-002** Yamaha 450N + Vandoren B45 |
-| Aug 20 11:26–11:28 | `PXL_20260820_112611193.jpg`, `112714088.jpg`, `112820062.jpg` | **Pending** — Bohemian / B.M.C. Elkhart (rotary; serial **64178**). No summary. In `photos/_pending/bohemian-bmc-64178/` |
 | Aug 20 11:30 | `PXL_20260820_113021378.jpg` | Printed tag sheet (program + student tags). **Not a tag-log event.** In `photos/_pending/printed-tags-2026-08-20/` — student names visible, not for public listing |
 
 ---
