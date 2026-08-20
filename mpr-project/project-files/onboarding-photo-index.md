@@ -4,7 +4,7 @@
 **Purpose:** Durable index of intake/assessment photos for fleet instruments (`MPR-###`) and sale-pipeline items (`LOT-###`). Cross-reference against `inventory.md`, `assignment.md`, and `sale-inventory.md`.  
 **Naming convention for folders:** `photos/MPR-###/` or `photos/LOT-###/` only (no brand suffix, no holder name). Legacy `MPR-###_Brand-Model/` names are retired.
 
-**Last reconciled:** August 20, 2026 (LOT-022 Heimer; MPR-067 Oboe; **MPR-093** Reynolds Contempora Chambers Model for Keith)
+**Last reconciled:** August 20, 2026 (Drive-alias rectification: LOT-016/017/018 notes + MPR-036 serial → Pixel timestamps; LOT-022 / MPR-093 earlier)
 
 > **Read this before concluding an instrument has no photos.**
 >
@@ -17,8 +17,8 @@
 > 3. **Filename suffixes differ between docs and disk.** Session summaries write
 >    `154330926_MP` and `155229537_NIGHT`; the files are `.MP.jpg` and `.NIGHT.jpg`. Match on
 >    the 9-digit timestamp, never on the whole string.
-> 5. **Filename families (not bugs):** `PXL_*` = Pixel phone; `IMG_*` = other phone (e.g. MPR-010); `1000######.jpg` = a **different camera** whose export is still missing (documented below). Bare `` `163855038` `` stems are CE shorthand for the Pixel 9-digit timestamp — match on those digits, not the full string.
 > 4. **39 files are duplicates** (`~2`, `~3`, `" - Copy"`). 695 files, 656 unique photos.
+> 5. **CE Drive aliases (scrambled ingest):** early CE sessions wrote `1000######.jpg` names from the Google Drive connector. Those are **not** a second camera. Rectified Aug 20 to the matching Pixel timestamps (see retired block below). Bare `` `163855038` `` stems are CE shorthand for the Pixel 9-digit timestamp. `IMG_*` on disk for MPR-010 is the export name of that session's shots — same intake, not a second phone.
 
 ### Coverage checklist
 
@@ -31,22 +31,24 @@
 | Sale Camelot LOT-003 | ✅ Aug 6 + Aug 13 | Serial stamp still ⚠️. ⚠️ **`164216425.jpg` shows a named tag — crop before any public use** |
 | Sale saxophones LOT-001, 004 | ✅ Aug 6 | LOT-001 serial **400654** and LOT-004 serial **905114** both on disk |
 | Sale clarinets LOT-005–015 | ✅ Aug 6 (005/006 brand-only) | LOT-005 Masson and LOT-006 Bundy 577 identified; their serial stamps were **not** readable in this pass. LOT-007–015 have serial or unique-fault photos. LOT-014/015 filename list recovered from disk — the lost Aug 13 CE table is no longer blocking |
-| Sale trombone LOT-019 | ✅ Aug 13 Pixel cluster | Brand/case/bell on disk (`174318443`–`174651883`). Original `1000033786/3787` still not exported |
+| Sale trombone LOT-019 | ✅ Aug 13 Pixel cluster | Brand/case/bell on disk (`174249`–`174651`). CE Drive aliases `1000033786/3787` retired |
 | Sale euphonium LOT-020 | ◐ mixed Aug 15 cluster | `PXL_20260815_134452`–`135947` is **two** silver 3-valves. Conn **159676** = fleet **MPR-045** (confirmed). Buescher **330366** was not independently confirmed this pass — do not use unmarked overviews as listing photos |
 | Sale trumpet LOT-021 | ✅ via **MPR-075** | Six Aug 15 frames already under the fleet ID |
 
-### The missing `1000######.jpg` export
+### Retired CE Drive aliases (`1000######.jpg`) — rectified Aug 20, 2026
 
-Seven referenced files are absent from disk, and all seven are from **one non-Pixel device
-whose photos were never exported** — not seven separate oversights:
+Early CE / Drive-connector sessions indexed these **alias filenames**. They were never a second phone. Mapped to on-disk Pixel files:
 
-| File | Belongs to | Date to search |
+| CE alias (do not re-add) | Real Pixel file(s) | Instrument |
 |---|---|---|
-| `1000033786.jpg`, `1000033787.jpg` | LOT-019 Bundy trombone | **Thu Aug 13, 2026** — now also covered by Pixel shots the same day (see LOT-019 section) |
-| `1000034337/8/9.jpg` | LOT-017 / 016 / 018 play-test note pages | **Sun Aug 16, 2026** |
-| `1000034352.jpg`, `1000034353.jpg` | **MPR-036** Olds trombone serial **798865** | **Sun Aug 16, 2026** — Aug 13 Pixel set has brand/slide, not this serial stamp |
+| `1000034338.jpg` | `PXL_20260816_024641784.jpg` | LOT-016 play-test notes (Artley 252817) |
+| `1000034337.jpg` | `PXL_20260816_024604731.jpg` | LOT-017 play-test notes (Armstrong G9116) |
+| `1000034339.jpg` | `PXL_20260816_024505781.jpg` | LOT-018 play-test notes (Reynolds 41249; "tenons are good") |
+| `1000034352.jpg`, `1000034353.jpg` | `PXL_20260816_151846899.jpg`, `PXL_20260816_151849893.jpg` | MPR-036 serial **798865** |
+| `1000033786.jpg`, `1000033787.jpg` | `PXL_20260813_174318443.jpg`–`174651883.jpg` (same sitting) | LOT-019 Bundy trombone |
 
-**Aug 17 Pixel flute batch (re-exported 2026-08-19, second pass):** **MPR-026** Yamaha YFL-225S **11/11 on disk**. **MPR-087** Trevor James **8/8 on disk**. The `1000######` export is still a separate missing device.
+**Aug 17 Pixel flute batch (re-exported 2026-08-19):** **MPR-026** YFL-225S **11/11 on disk**. **MPR-087** Trevor James **8/8 on disk**.
+
 
 ---
 
@@ -58,7 +60,7 @@ whose photos were never exported** — not seven separate oversights:
 
 | # | Filename | Shows | Notes |
 |:-:|---|---|---|
-| 1 | `IMG_20260819_172159.jpg` | Serial stamp close-up, valve casing | Reads **YTR3335 / D 010199** — clean, fully legible. No "S" suffix physically engraved; silver-plate confirmed via purchase history and `model-reference.md` |
+| 1 | `IMG_20260819_172159.jpg` | Serial stamp close-up, valve casing | Reads **YTR3335 / D 010199**. On-disk export name from the Aug 19 intake (not a second phone). |
 | 2 | `IMG_20260819_172204.jpg` | Full case, open — complete outfit laid out | Silver-plate trumpet, two mouthpieces (mounted + spare), cleaning/maintenance kit, soft mute. Case foam in good condition |
 
 **Status:** Serial **010199 ✅**. Condition **Good**. Finish silver-plate (catalog `S`, not stamped on the bell).
@@ -325,9 +327,9 @@ whose photos were never exported** — not seven separate oversights:
 
 | # | Filename | Shows | Notes |
 |:-:|---|---|---|
-| 1 | `1000034352.jpg` | Serial number close-up, ferrule | **798865** ✅ — **not on disk** (`1000######`, shot **Aug 16**) |
-| 2 | `1000034353.jpg` | Serial number detail, second angle | **not on disk** |
-| 3 | `PXL_20260813_175655889.jpg` | Olds badge on tuning-slide brace | ✅ on disk; **Thu Aug 13** Pixel |
+| 1 | `PXL_20260816_151846899.jpg` | Serial stamp on ferrule | **798865 ✅** — rectified from CE alias `1000034352.jpg` |
+| 2 | `PXL_20260816_151849893.jpg` | Serial stamp, second angle | Rectified from CE alias `1000034353.jpg` |
+| 3 | `PXL_20260813_175655889.jpg` | Olds badge on tuning-slide brace | **Thu Aug 13** Pixel |
 | 4 | `PXL_20260813_180013025.jpg` | Outer slide, water key | Cork still missing (SVC-TRB-001) |
 | 5 | `PXL_20260813_180034012.jpg` | Slide braces / ferrules | |
 | 6 | `PXL_20260813_180040884.jpg` | Slide joint / knurled ring | |
@@ -336,7 +338,7 @@ whose photos were never exported** — not seven separate oversights:
 | 9 | `PXL_20260813_180151877.jpg` | Olds badge, second angle | |
 | 10 | `PXL_20260813_180243788.jpg` | Bell section | |
 
-**Status:** Brand **Olds** confirmed on disk (Aug 13 Pixel). Serial **798865 ✅** still only in the missing Aug 16 `1000######` pair. Holder: Emmanuel Martinie-Eiler (ASGN-032).
+**Status:** Brand **Olds** confirmed (Aug 13 Pixel). Serial **798865 ✅** on disk (Aug 16 Pixel). Holder: Emmanuel Martinie-Eiler (ASGN-032).
 
 ---
 
@@ -1043,7 +1045,7 @@ The old Drive resume point `151006121` is **this horn’s serial**, not the star
 | 12 | `PXL_20260806_154512629.jpg` | 3-piece layout | |
 | 13 | `PXL_20260806_154529776.jpg` | 3-piece; Artley 18-0 (Elkhart stamp this angle) | |
 | 14 | `PXL_20260806_154531883.jpg` | 3-piece; Artley 18-0 | |
-| — | `1000034338.jpg` | Play-test notes page | **Not on disk** |
+| 15 | `PXL_20260816_024641784.jpg` | Play-test notes page | Artley **252817**; rectified from CE alias `1000034338.jpg` |
 
 **Outstanding:** Serial stamp is photographed; automated reads disagreed (**252-817** vs **25287**). Do not promote ✋→✅ until a human reads `154344451`.
 
@@ -1073,7 +1075,7 @@ The Aug 18 recovery put the **Reynolds vintage-case** NIGHT frames here. Those m
 | 12 | `PXL_20260806_154907671.jpg` | Foot/body production stamp | Pair with Aug 16 G9116 |
 | 13 | `PXL_20260806_154928048.jpg` | Production stamp, second angle | |
 | 14–15 | `PXL_20260806_154951074.jpg`, `155004438.jpg` | Vertical 3-piece | |
-| — | `1000034337.jpg` | Play-test notes page | **Not on disk** |
+| — | `PXL_20260816_024604731.jpg` | Play-test notes page | Armstrong **G9116**; rectified from CE alias `1000034337.jpg` |
 
 **Status:** ID-complete via Aug 16 stamps. Aug 6 cluster is the matching Armstrong case/horn.
 
@@ -1097,7 +1099,7 @@ The Aug 18 recovery put the **Reynolds vintage-case** NIGHT frames here. Those m
 | 8–10 | `PXL_20260806_155419134.jpg`, `155423018.jpg`, `155431561.jpg` | Body; two large plating-wear patches | Matches play-test fault |
 | 11 | `PXL_20260806_155437896.MP.jpg` | Cluster | |
 | 12–13 | `PXL_20260806_155459413.jpg`, `155511818.jpg` | Cluster | |
-| — | `1000034339.jpg` | Play-test notes (“Tenons are good”) | **Not on disk** |
+| — | `PXL_20260816_024505781.jpg` | Play-test notes (“Tenons are good”) | Reynolds **41249**; rectified from CE alias `1000034339.jpg` |
 
 **Status:** Case brand + outfit + rod + plating-wear match. Still want a frame that actually shows **41249**.
 
@@ -1109,12 +1111,13 @@ The Aug 18 recovery put the **Reynolds vintage-case** NIGHT frames here. Those m
 
 | # | Filename | Shows | Notes |
 |:-:|---|---|---|
-| 1 | `PXL_20260813_174318443.jpg` | Full case, open — bell + slide, Bundy counterweight | **Thu Aug 13** Pixel |
-| 2 | `PXL_20260813_174350130.jpg` | Bundy medallion on tuning-slide counterweight | |
-| 3 | `PXL_20260813_174651883.jpg` | Bell engraving | **BUNDY / DESIGNED BY VINCENT BACH / THE SELMER COMPANY / U.S.A.** |
-| — | `1000033786.jpg`, `1000033787.jpg` | Named in sale record | Still not on disk (`1000######`, same **Aug 13** sitting, different camera) |
+| 1 | `PXL_20260813_174249448.MP.jpg` | Case / outfit | **Thu Aug 13** Pixel |
+| 2 | `PXL_20260813_174318443.jpg` | Full case, open — bell + slide, Bundy counterweight | |
+| 3 | `PXL_20260813_174350130.jpg` | Bundy medallion on tuning-slide counterweight | |
+| 4 | `PXL_20260813_174645500.jpg` | Bell / body detail | |
+| 5 | `PXL_20260813_174651883.jpg` | Bell engraving | **BUNDY / DESIGNED BY VINCENT BACH / THE SELMER COMPANY / U.S.A.** |
 
-**Status:** Pixel cluster on disk. Serial **678064** still from the sale/play-test record, not from this Pixel set.
+**Status:** Pixel cluster on disk (CE Drive aliases `1000033786/3787` retired — same sitting). Serial **678064** still from the sale/play-test record, not stamped in these frames.
 
 ---
 

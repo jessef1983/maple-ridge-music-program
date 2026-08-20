@@ -115,8 +115,8 @@ Questions should be specific: cite paths, serials, and the two records that coll
 3. Keep original camera filenames. No student names in folder names.
 4. Update `onboarding-photo-index.md`:
    - **Folder:** exactly `` `photos/MPR-###/` `` or `` `photos/LOT-###/` ``
-   - Full filenames in tables (`PXL_…`, `IMG_…`). Expand CE bare-timestamp shorthand at merge.
-   - `1000######.jpg` = other camera, often still missing — do not invent Pixel names.
+   - Full filenames in tables (`PXL_…`, or the real on-disk export name). Expand CE bare-timestamp shorthand at merge.
+   - Never invent `1000######.jpg` — those were CE Drive aliases; map to Pixel timestamps from the intake sitting.
 5. **`git add` only `photos/<ID>/` files.** Never gitignore `photos/`. Never `git add` jpgs under `landing-zone/archive/` (markdown archive only).
 6. Do **not** copy the whole tree into the 15-file CE seed.
 7. Fleet→LOT: LOT-020 → `photos/MPR-062/`; LOT-021 → `photos/MPR-075/`.
