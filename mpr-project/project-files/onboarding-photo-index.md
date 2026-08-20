@@ -1180,7 +1180,7 @@ Already indexed under **MPR-075**: `PXL_20260815_165739969.jpg`, `165755510`, `1
 | Aug 13 13:58 | `135833818`, `135840108` | Signet Special wood clarinet — fleet, not a sale LOT |
 | Aug 13 17:12–17:19 | `171224929`, `171531283`, `171557321`, `171934062` | **MNT-001** Signet Selmer USA bassoon + bocals |
 | Aug 13 17:26–17:31 | `172622389`, `172815087.MP`, `173140830` | **MPR-082** Yamaha clarinet / **MNT-002** Yamaha 450N + Vandoren B45 |
-| Aug 20 11:30 | `PXL_20260820_113021378.jpg` | Printed tag sheet (program + student tags). **Not a tag-log event.** In `photos/_pending/printed-tags-2026-08-20/` — student names visible, not for public listing |
+| Aug 20 11:30 | `PXL_20260820_113021378.jpg` | Already-printed tags laid out for confirmation (not a new print). Permanent: MPR-083, 026, 029, 037, 082, 045, 003. Student: Julian Alexander (euphonium / MPR-016), Roger Woolston (bassoon / MPR-063), Kevin Hofer (trumpet / MPR-007). Matches existing `tag-log.md` rows — **do not add an Aug 20 print date.** In `photos/_pending/printed-tags-2026-08-20/` — student names visible, not for public listing |
 
 ---
 

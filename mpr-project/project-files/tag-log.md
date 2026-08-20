@@ -68,5 +68,6 @@ Records every tag print event, both kinds:
 | MPR-037 | Permanent | 2026-08-19 | Yamaha YAS-62; serial 082611 — Baxter Mow trial; student tag not on this sheet |
 | MPR-082 | Permanent | 2026-08-19 | Yamaha YCL-250; serial 110041 — storage |
 | MPR-083 | Permanent | 2026-08-19 | Olds 0-991 BBb; serial 947832 — band room |
+| MPR-063 | Student | 2026-08-20 | Roger Woolston (ASGN-033) — photo-confirmed on Aug 20 sheet (`photos/_pending/printed-tags-2026-08-20/`); already printed, not a new print date |
 
 <!-- Append new rows above this line. One row per print event — don't overwrite or delete prior rows; the log keeps every printing, and generate-tags.js uses only the LATEST row per MPR ID + Tag Type (ties broken by file order — later row wins). -->
