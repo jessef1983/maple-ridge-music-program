@@ -69,5 +69,22 @@ Records every tag print event, both kinds:
 | MPR-082 | Permanent | 2026-08-19 | Yamaha YCL-250; serial 110041 — storage |
 | MPR-083 | Permanent | 2026-08-19 | Olds 0-991 BBb; serial 947832 — band room |
 | MPR-063 | Student | 2026-08-20 | Roger Woolston (ASGN-033) — photo-confirmed on Aug 20 sheet (`photos/_pending/printed-tags-2026-08-20/`); already printed, not a new print date |
+| MPR-041 | Permanent | 2026-08-21 | Alexander; serial 9290 — storage-room reprint |
+| MPR-064 | Permanent | 2026-08-21 | Selmer English horn; serial 02744 |
+| MPR-065 | Permanent | 2026-08-21 | Gordet (Paris N.Y. / Italian) oboe; serial B263 |
+| MPR-066 | Permanent | 2026-08-21 | Gordet (Paris N.Y.) English horn; serial A765 |
+| MPR-067 | Permanent | 2026-08-21 | Forrest (Marigaux stencil) oboe; serial 4041 |
+| MPR-068 | Permanent | 2026-08-21 | Conn oboe; serial P509 |
+| MPR-069 | Permanent | 2026-08-21 | Fritz Schüller (Markneukirchen) English horn; serial 7905 |
+| MPR-071 | Permanent | 2026-08-21 | Getzen Eterna Piccolo A/Bb; serial P16101 |
+| MPR-072 | Permanent | 2026-08-21 | Mack Piccolo Bb/A; serial 943 |
+| MPR-074 | Permanent | 2026-08-21 | E. Benge Custom (D / Eb); serial 16510 |
+| MPR-079 | Permanent | 2026-08-21 | Olds Ambassador alto horn; serial 758200 |
+| MPR-087 | Permanent | 2026-08-21 | Trevor James Privilege III flute; serial P54427 |
+| MPR-088 | Permanent | 2026-08-21 | Penzel-Müller & Co. Clarinet (A); serial 7580 |
+| MPR-089 | Permanent | 2026-08-21 | Holton C-melody sax; serial 17770 |
+| MPR-090 | Permanent | 2026-08-21 | Yamaha YBS-52 bari sax; serial 020945 |
+| MPR-091 | Permanent | 2026-08-21 | Platz oboe; serial 1520 |
+| MPR-092 | Permanent | 2026-08-21 | Signet 123 oboe; serial M 31137 |
 
 <!-- Append new rows above this line. One row per print event — don't overwrite or delete prior rows; the log keeps every printing, and generate-tags.js uses only the LATEST row per MPR ID + Tag Type (ties broken by file order — later row wins). -->

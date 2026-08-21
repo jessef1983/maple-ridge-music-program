@@ -8,9 +8,9 @@
   --tpt:#C1440E; --pct:#9A3412; --hrn:#1F5673; --eup:#6A2C70;
   --fl:#2E7D5B;  --prc:#8B5A2B; --str:#7A1F3D;
   --tub:#4B3F72; --trb:#B8860B; --bsn:#4A5568;
-  --clr:#0F6E5C; --asx:#B5651D; --tsx:#8E4A9E;
+  --clr:#0F6E5C; --cla:#0F6E5C; --asx:#B5651D; --tsx:#8E4A9E; --cmx:#8E4A9E; --bsx:#8E4A9E;
   --ahn:#2F6690; --dsc:#17394D; --mel:#5B7B9A;
-  --flg:#A63446; --crt:#C1440E; --dbl:#3D6B4F; --oth:#555555;
+  --flg:#A63446; --crt:#C1440E; --obo:#3D6B4F; --eh:#3D6B4F; --oth:#555555;
   --ink:#111;
   /* calibration — adjustable from the panel, saved between visits */
   --offx:0.0313in;   /* shift right  */
@@ -131,9 +131,9 @@ body{ font-family:Helvetica,Arial,sans-serif; color:var(--ink);
           <option value="eup">Euphonium</option><option value="fl">Flute</option>
           <option value="prc">Percussion</option><option value="tub">Tuba</option>
           <option value="trb">Trombone</option><option value="bsn">Bassoon</option>
-          <option value="dbl">Double Reed</option>
-          <option value="clr">Clarinet</option><option value="asx">Alto Sax</option>
-          <option value="tsx">Tenor Sax</option><option value="ahn">Alto Horn</option>
+          <option value="obo">Oboe</option><option value="eh">English Horn</option>
+          <option value="clr">Clarinet</option><option value="cla">Clarinet (A)</option><option value="asx">Alto Sax</option>
+          <option value="tsx">Tenor Sax</option><option value="cmx">C-Melody Sax</option><option value="bsx">Baritone Sax</option><option value="ahn">Alto Horn</option>
           <option value="dsc">Descant Horn (F)</option><option value="mel">Mellophone (F)</option>
           <option value="flg">Flugelhorn (Bb)</option><option value="crt">Cornet</option>
           <option value="str">Strings</option>
@@ -218,8 +218,8 @@ const FLEET = [
 
 const FAMS = {
   tpt:"Trumpet", pct:"Piccolo Trumpet", hrn:"French Horn", eup:"Euphonium", fl:"Flute", prc:"Percussion",
-  tub:"Tuba", trb:"Trombone", bsn:"Bassoon", dbl:"Double Reed", clr:"Clarinet", asx:"Alto Sax",
-  tsx:"Tenor Sax", ahn:"Alto Horn (F)", dsc:"Descant Horn (F)", mel:"Mellophone (F)",
+  tub:"Tuba", trb:"Trombone", bsn:"Bassoon", obo:"Oboe", eh:"English Horn", clr:"Clarinet", cla:"Clarinet (A)", asx:"Alto Sax",
+  tsx:"Tenor Sax", cmx:"C-Melody Sax", bsx:"Baritone Sax", ahn:"Alto Horn (F)", dsc:"Descant Horn (F)", mel:"Mellophone (F)",
   flg:"Flugelhorn (Bb)", crt:"Cornet", str:"Strings", oth:"Other",
 };
 const KEY = "mpr-tag-sheet-v1";
