@@ -33,14 +33,15 @@ const FAMILY_MAP = {
   'Trombone': 'trb',
   'Bassoon': 'bsn',
   'Clarinet': 'clr',
-  'Clarinet (A)': 'clr',
+  'Clarinet (A)': 'cla',
   'Alto Sax': 'asx',
   'Tenor Sax': 'tsx',
-  'Saxophone (C-melody)': 'tsx',
-  'Baritone Saxophone': 'tsx',
-  // Oboe + English horn share one tag color/label (double-reed family). Bassoon stays its own.
-  'Oboe': 'dbl',
-  'English Horn': 'dbl',
+  'Saxophone (C-melody)': 'cmx',
+  'Baritone Saxophone': 'bsx',
+  // Oboe + English horn share the double-reed green, but get distinct spine labels.
+  // Bassoon stays its own family (bsn).
+  'Oboe': 'obo',
+  'English Horn': 'eh',
   'Alto Horn (F)': 'ahn',
   'Descant Horn (F)': 'dsc',
   'Mellophone (F)': 'mel',
